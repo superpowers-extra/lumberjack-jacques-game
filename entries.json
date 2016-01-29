@@ -1,0 +1,322 @@
+[
+  {
+    "id": "56",
+    "name": "Utils",
+    "type": null,
+    "children": [
+      {
+        "id": "46",
+        "name": "Fade",
+        "type": null,
+        "children": [
+          {
+            "id": "45",
+            "name": "Black Screen",
+            "type": "sprite"
+          },
+          {
+            "id": "47",
+            "name": "Fade Manager",
+            "type": "script"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "49",
+    "name": "Menus",
+    "type": null,
+    "children": [
+      {
+        "id": "29",
+        "name": "Font",
+        "type": "font"
+      },
+      {
+        "id": "53",
+        "name": "Start",
+        "type": null,
+        "children": [
+          {
+            "id": "54",
+            "name": "Scene",
+            "type": "scene"
+          },
+          {
+            "id": "55",
+            "name": "Behavior",
+            "type": "script"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "48",
+    "name": "In-Game",
+    "type": null,
+    "children": [
+      {
+        "id": "0",
+        "name": "Scene",
+        "type": "scene"
+      },
+      {
+        "id": "13",
+        "name": "Game",
+        "type": "script"
+      },
+      {
+        "id": "58",
+        "name": "Debug Behavior",
+        "type": "script"
+      },
+      {
+        "id": "50",
+        "name": "HUD",
+        "type": null,
+        "children": [
+          {
+            "id": "14",
+            "name": "Camera Behavior",
+            "type": "script"
+          },
+          {
+            "id": "27",
+            "name": "Dialog",
+            "type": null,
+            "children": [
+              {
+                "id": "26",
+                "name": "Behavior",
+                "type": "script"
+              },
+              {
+                "id": "28",
+                "name": "Frame",
+                "type": "sprite"
+              },
+              {
+                "id": "57",
+                "name": "Portraits",
+                "type": null,
+                "children": [
+                  {
+                    "id": "33",
+                    "name": "Player",
+                    "type": "sprite"
+                  },
+                  {
+                    "id": "31",
+                    "name": "Bubi",
+                    "type": "sprite"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "5",
+        "name": "Maps",
+        "type": null,
+        "children": [
+          {
+            "id": "1",
+            "name": "Outdoor Tile Set",
+            "type": "tileSet"
+          },
+          {
+            "id": "2",
+            "name": "Indoor Tile Set",
+            "type": "tileSet"
+          },
+          {
+            "id": "6",
+            "name": "Town",
+            "type": null,
+            "children": [
+              {
+                "id": "7",
+                "name": "Prefab",
+                "type": "scene"
+              },
+              {
+                "id": "4",
+                "name": "Map",
+                "type": "tileMap"
+              }
+            ]
+          },
+          {
+            "id": "22",
+            "name": "House",
+            "type": null,
+            "children": [
+              {
+                "id": "24",
+                "name": "Prefab",
+                "type": "scene"
+              },
+              {
+                "id": "25",
+                "name": "Map",
+                "type": "tileMap"
+              },
+              {
+                "id": "41",
+                "name": "Cave",
+                "type": null,
+                "children": [
+                  {
+                    "id": "42",
+                    "name": "Prefab",
+                    "type": "scene"
+                  },
+                  {
+                    "id": "43",
+                    "name": "Map",
+                    "type": "tileMap"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "16",
+            "name": "Forest",
+            "type": null,
+            "children": [
+              {
+                "id": "17",
+                "name": "Prefab",
+                "type": "scene"
+              },
+              {
+                "id": "18",
+                "name": "Map",
+                "type": "tileMap"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "51",
+        "name": "Interactions",
+        "type": null,
+        "children": [
+          {
+            "id": "15",
+            "name": "Teleport Behavior",
+            "type": "script"
+          },
+          {
+            "id": "38",
+            "name": "Interactable Behavior",
+            "type": "script"
+          },
+          {
+            "id": "40",
+            "name": "Simple Dialog Behavior",
+            "type": "script"
+          }
+        ]
+      },
+      {
+        "id": "52",
+        "name": "Entities",
+        "type": null,
+        "children": [
+          {
+            "id": "9",
+            "name": "Player",
+            "type": null,
+            "children": [
+              {
+                "id": "10",
+                "name": "Prefab",
+                "type": "scene"
+              },
+              {
+                "id": "11",
+                "name": "Player Behavior",
+                "type": "script"
+              },
+              {
+                "id": "3",
+                "name": "Sprite",
+                "type": "sprite"
+              },
+              {
+                "id": "37",
+                "name": "Axe",
+                "type": "sprite"
+              }
+            ]
+          },
+          {
+            "id": "8",
+            "name": "Characters",
+            "type": null,
+            "children": [
+              {
+                "id": "21",
+                "name": "Bubi",
+                "type": null,
+                "children": [
+                  {
+                    "id": "23",
+                    "name": "Prefab",
+                    "type": "scene"
+                  },
+                  {
+                    "id": "30",
+                    "name": "Behavior",
+                    "type": "script"
+                  },
+                  {
+                    "id": "20",
+                    "name": "Sprite",
+                    "type": "sprite"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "32",
+            "name": "Enemies",
+            "type": null,
+            "children": [
+              {
+                "id": "39",
+                "name": "Behavior",
+                "type": "script"
+              },
+              {
+                "id": "34",
+                "name": "Eye",
+                "type": null,
+                "children": [
+                  {
+                    "id": "35",
+                    "name": "Prefab",
+                    "type": "scene"
+                  },
+                  {
+                    "id": "36",
+                    "name": "Sprite",
+                    "type": "sprite"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

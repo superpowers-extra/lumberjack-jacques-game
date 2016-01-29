@@ -1,0 +1,248 @@
+{
+  "nodes": [
+    {
+      "id": "1",
+      "name": "Root",
+      "children": [
+        {
+          "id": "0",
+          "name": "Map",
+          "children": [],
+          "components": [
+            {
+              "type": "TileMapRenderer",
+              "config": {
+                "tileMapAssetId": "4",
+                "tileSetAssetId": null,
+                "castShadow": false,
+                "receiveShadow": false,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": -1.1
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefabId": null
+        },
+        {
+          "id": "3",
+          "name": "Markers",
+          "children": [
+            {
+              "id": "5",
+              "name": "From Start",
+              "children": [],
+              "components": [],
+              "position": {
+                "x": 18.5,
+                "y": 12.5,
+                "z": 0
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefabId": null
+            },
+            {
+              "id": "4",
+              "name": "From Forest",
+              "children": [],
+              "components": [],
+              "position": {
+                "x": 2,
+                "y": 11,
+                "z": 0
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefabId": null
+            },
+            {
+              "id": "2",
+              "name": "To Forest",
+              "children": [],
+              "components": [
+                {
+                  "type": "Behavior",
+                  "config": {
+                    "behaviorName": "TeleportBehavior",
+                    "propertyValues": {
+                      "target": {
+                        "type": "string",
+                        "value": "Forest"
+                      }
+                    }
+                  },
+                  "id": "0"
+                }
+              ],
+              "position": {
+                "x": 0.5,
+                "y": 11,
+                "z": 0
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefabId": null
+            },
+            {
+              "id": "6",
+              "name": "From House",
+              "children": [],
+              "components": [],
+              "position": {
+                "x": 8.5,
+                "y": 12.5,
+                "z": 0
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefabId": null
+            },
+            {
+              "id": "7",
+              "name": "To House",
+              "children": [],
+              "components": [
+                {
+                  "type": "Behavior",
+                  "config": {
+                    "behaviorName": "TeleportBehavior",
+                    "propertyValues": {
+                      "target": {
+                        "type": "string",
+                        "value": "House"
+                      }
+                    }
+                  },
+                  "id": "0"
+                }
+              ],
+              "position": {
+                "x": 8.5,
+                "y": 13.8,
+                "z": 0
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefabId": null
+            }
+          ],
+          "components": [],
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefabId": null
+        }
+      ],
+      "components": [],
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefabId": null
+    }
+  ],
+  "formatVersion": 1
+}

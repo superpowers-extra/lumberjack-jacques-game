@@ -1,0 +1,11 @@
+{
+  "pixelsPerUnit": 16,
+  "width": 30,
+  "height": 20,
+  "layerDepthOffset": 1,
+  "grid": {
+    "width": 16,
+    "height": 16
+  },
+  "formatVersion": 1
+}

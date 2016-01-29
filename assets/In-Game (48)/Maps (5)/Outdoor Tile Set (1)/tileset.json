@@ -1,0 +1,12 @@
+{
+  "grid": {
+    "width": 16,
+    "height": 16
+  },
+  "tileProperties": {
+    "0_0": {
+      "solid": ""
+    }
+  },
+  "formatVersion": 1
+}

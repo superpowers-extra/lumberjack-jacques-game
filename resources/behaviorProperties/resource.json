@@ -1,0 +1,105 @@
+{
+  "behaviors": {
+    "PlayerBehavior": {
+      "scriptId": "11",
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "position",
+          "type": "Sup.Math.Vector2"
+        }
+      ]
+    },
+    "CameraBehavior": {
+      "scriptId": "14",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "position",
+          "type": "Sup.Math.Vector2"
+        },
+        {
+          "name": "cameraWidth",
+          "type": "number"
+        },
+        {
+          "name": "cameraHeight",
+          "type": "number"
+        },
+        {
+          "name": "mapWidth",
+          "type": "number"
+        },
+        {
+          "name": "mapHeight",
+          "type": "number"
+        }
+      ]
+    },
+    "TeleportBehavior": {
+      "scriptId": "15",
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "target",
+          "type": "string"
+        }
+      ]
+    },
+    "DialogBehavior": {
+      "scriptId": "26",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": []
+    },
+    "BubiBehavior": {
+      "scriptId": "30",
+      "line": 0,
+      "parentBehavior": "SimpleDialogBehavior",
+      "properties": []
+    },
+    "InteractableBehavior": {
+      "scriptId": "38",
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "position",
+          "type": "Sup.Math.Vector2"
+        }
+      ]
+    },
+    "EnemyBehavior": {
+      "scriptId": "39",
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "position",
+          "type": "Sup.Math.Vector2"
+        }
+      ]
+    },
+    "SimpleDialogBehavior": {
+      "scriptId": "40",
+      "parentBehavior": "InteractableBehavior",
+      "properties": [
+        {
+          "name": "currentText",
+          "type": "any"
+        }
+      ]
+    },
+    "StartMenuBehavior": {
+      "scriptId": "55",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": []
+    },
+    "DebugBehavior": {
+      "scriptId": "58",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": []
+    }
+  }
+}
