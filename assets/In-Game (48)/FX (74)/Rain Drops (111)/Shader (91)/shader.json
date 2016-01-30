@@ -1,0 +1,72 @@
+{
+  "formatVersion": 1,
+  "uniforms": [
+    {
+      "id": "0",
+      "name": "map",
+      "type": "t",
+      "value": "map"
+    },
+    {
+      "id": "1",
+      "name": "color",
+      "type": "c",
+      "value": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "2",
+      "name": "layer1XYO",
+      "type": "v3",
+      "value": [
+        0.1,
+        0.7,
+        1
+      ]
+    },
+    {
+      "id": "3",
+      "name": "layer2XYO",
+      "type": "v3",
+      "value": [
+        0.1,
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "id": "4",
+      "name": "layer3XYO",
+      "type": "v3",
+      "value": [
+        0.05,
+        0.4,
+        0.3
+      ]
+    },
+    {
+      "id": "5",
+      "name": "layer4XYO",
+      "type": "v3",
+      "value": [
+        0.03,
+        0.3,
+        0.1
+      ]
+    },
+    {
+      "id": "6",
+      "name": "cameraPos",
+      "type": "v2",
+      "value": [
+        0,
+        0
+      ]
+    }
+  ],
+  "useLightUniforms": false,
+  "attributes": []
+}

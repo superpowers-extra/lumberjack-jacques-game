@@ -1,0 +1,571 @@
+{
+  "formatVersion": 1,
+  "nodes": [
+    {
+      "id": "0",
+      "name": "Treewall",
+      "children": [
+        {
+          "id": "1",
+          "name": "Dark Tree",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": 0.7755687832832336,
+            "y": -0.29261380434036255,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "81"
+          }
+        },
+        {
+          "id": "2",
+          "name": "Dark Tree",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": 4.0355119705200195,
+            "y": -2.0184662342071533,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "81"
+          }
+        },
+        {
+          "id": "3",
+          "name": "Dark Tree",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": 11.821022033691406,
+            "y": -0.17755696177482605,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "81"
+          }
+        },
+        {
+          "id": "4",
+          "name": "Dark Tree",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": 7.180397987365723,
+            "y": -0.40767061710357666,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "81"
+          }
+        },
+        {
+          "id": "5",
+          "name": "Dark Tree",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": 16.193180084228516,
+            "y": -0.6761364936828613,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "81"
+          }
+        },
+        {
+          "id": "6",
+          "name": "Dark Tree",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": 21.255680084228516,
+            "y": -0.5610796809196472,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "81"
+          }
+        },
+        {
+          "id": "7",
+          "name": "Dark Tree",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": 26.279827117919922,
+            "y": -0.9446024298667908,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "81"
+          }
+        },
+        {
+          "id": "8",
+          "name": "Dark Tree",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": 31.764204025268555,
+            "y": -1.0596592426300049,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "81"
+          }
+        },
+        {
+          "id": "9",
+          "name": "Dark Tree",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": 28.964487075805664,
+            "y": -3.7059662342071533,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "81"
+          }
+        },
+        {
+          "id": "10",
+          "name": "Dark Tree",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": 23.096588134765625,
+            "y": -3.169034481048584,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "81"
+          }
+        },
+        {
+          "id": "11",
+          "name": "Dark Tree",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": 17.803974151611328,
+            "y": -4.3196024894714355,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "81"
+          }
+        },
+        {
+          "id": "12",
+          "name": "Dark Tree",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": 12.281246185302734,
+            "y": -3.0539772510528564,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "81"
+          }
+        },
+        {
+          "id": "13",
+          "name": "Dark Tree",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": 0.046870313584804535,
+            "y": -3.7826709747314453,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "81"
+          }
+        },
+        {
+          "id": "14",
+          "name": "Dark Tree",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": 6.183234214782715,
+            "y": -4.626420497894287,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "81"
+          }
+        },
+        {
+          "id": "15",
+          "name": "Dark Tree",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": 3.230109453201294,
+            "y": -7.617898464202881,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "81"
+          }
+        },
+        {
+          "id": "16",
+          "name": "Dark Tree",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": 9.251416206359863,
+            "y": -6.122159481048584,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "81"
+          }
+        },
+        {
+          "id": "17",
+          "name": "Dark Tree",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": 13.853691101074219,
+            "y": -6.620739936828613,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "81"
+          }
+        },
+        {
+          "id": "18",
+          "name": "Dark Tree",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": 20.75710105895996,
+            "y": -6.390625476837158,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "81"
+          }
+        },
+        {
+          "id": "19",
+          "name": "Dark Tree",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": 24.899150848388672,
+            "y": -7.3877854347229,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "81"
+          }
+        },
+        {
+          "id": "20",
+          "name": "Dark Tree",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": 31.073871612548828,
+            "y": -5.738637924194336,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "81"
+          }
+        }
+      ],
+      "components": [],
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    }
+  ]
+}

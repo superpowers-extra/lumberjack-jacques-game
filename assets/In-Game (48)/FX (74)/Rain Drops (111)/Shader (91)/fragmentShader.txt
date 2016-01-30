@@ -1,0 +1,30 @@
+uniform sampler2D map;
+varying vec2 vUv;
+uniform float time;
+uniform vec3 layer1XYO;
+uniform vec3 layer2XYO;
+uniform vec3 layer3XYO;
+uniform vec3 layer4XYO;
+uniform vec3 color;
+uniform vec2 cameraPos;
+
+float SampleDrops( vec3 XYO )
+  {
+  vec2 mUV = vUv + vec2( 0.5, 1. ) * cameraPos / 25.;;
+  mUV.x += time*XYO.x - mUV.y * XYO.x * 2.;
+  mUV.y += time*XYO.y;
+  
+  return texture2D(map, mUV).r * XYO.z;
+}
+
+void main() {
+  
+  vec4 o = vec4(color, 0.);
+  
+  if ( layer1XYO.z > 0. ) o.a += SampleDrops(layer1XYO);
+  if ( layer2XYO.z > 0. ) o.a += SampleDrops(layer2XYO);
+  if ( layer3XYO.z > 0. ) o.a += SampleDrops(layer3XYO);
+  if ( layer4XYO.z > 0. ) o.a += SampleDrops(layer4XYO);
+  
+  gl_FragColor = o;
+}

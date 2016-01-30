@@ -42,7 +42,7 @@
         {
           "type": "Behavior",
           "config": {
-            "behaviorName": "EnemyBehavior",
+            "behaviorName": "EyeEnemyBehavior",
             "propertyValues": {}
           },
           "id": "2"

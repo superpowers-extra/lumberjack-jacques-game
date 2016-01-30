@@ -1,0 +1,38 @@
+{
+  "formatVersion": 1,
+  "uniforms": [
+    {
+      "id": "0",
+      "name": "map",
+      "type": "t",
+      "value": "map"
+    },
+    {
+      "id": "1",
+      "name": "color",
+      "type": "c",
+      "value": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "2",
+      "name": "speed",
+      "type": "f",
+      "value": 0.5
+    },
+    {
+      "id": "3",
+      "name": "cameraPos",
+      "type": "v2",
+      "value": [
+        0,
+        0
+      ]
+    }
+  ],
+  "useLightUniforms": false,
+  "attributes": []
+}

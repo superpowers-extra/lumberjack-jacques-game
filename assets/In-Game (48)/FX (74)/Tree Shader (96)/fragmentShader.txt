@@ -1,0 +1,21 @@
+uniform sampler2D map;
+varying vec2 vUv;
+uniform vec2 speed;
+uniform float intensity;
+uniform sampler2D deform;
+uniform float time;
+uniform vec3 color;
+
+void main() {
+  vec2 mUV = vUv;
+  
+  if ( texture2D(deform, vUv).b > 0.5 )
+    {
+   mUV += ( texture2D(deform, vUv+ speed * time).rg * 2. - 1. ) * intensity; 
+  }
+  
+  vec4 o = texture2D(map, mUV);
+  o.rgb *= color;
+  
+  gl_FragColor = o ;
+}

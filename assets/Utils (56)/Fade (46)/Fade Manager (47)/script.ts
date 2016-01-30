@@ -4,8 +4,7 @@ namespace Fade {
   let tween: Sup.Tween;
 
   export enum Direction { In, Out };
-  
-  export function isFading() { return fadeSpriteRndr != null; }
+  export let isFading = false;
 
   export function start(direction: Direction, callback?: Function, options={ duration: 300 }) {
     let [ startOpacity, endOpacity ] = direction === Direction.In ? [ 1, 0 ] : [ 0, 1 ];
@@ -20,12 +19,13 @@ namespace Fade {
     }
 
     fadeDirection = direction;
+    isFading = true;
 
     if (tween != null) tween.stop();
     tween = new Sup.Tween(fadeSpriteRndr.actor, { opacity: startOpacity })
       .to({ opacity: endOpacity }, options.duration).easing(TWEEN.Easing.Cubic.In)
       .onUpdate((object) => { fadeSpriteRndr.setOpacity(object.opacity); })
-      .onComplete(() => { end(); if (callback != null) callback() })
+      .onComplete(() => { Sup.setTimeout(50, () => { end(); if (callback != null) callback(); }) })
       .start();
   }
 
@@ -33,6 +33,7 @@ namespace Fade {
     fadeSpriteRndr.actor.destroy();
     fadeSpriteRndr = null;
     fadeDirection = null;
+    isFading = false;
     tween = null;
   }
 }

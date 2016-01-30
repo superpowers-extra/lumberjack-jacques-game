@@ -8,6 +8,22 @@
         {
           "name": "position",
           "type": "Sup.Math.Vector2"
+        },
+        {
+          "name": "autoPilot",
+          "type": "boolean"
+        },
+        {
+          "name": "health",
+          "type": "number"
+        },
+        {
+          "name": "hitTimer",
+          "type": "number"
+        },
+        {
+          "name": "enemySpawnPos",
+          "type": "Sup.Math.Vector2"
         }
       ]
     },
@@ -27,14 +43,6 @@
         {
           "name": "cameraHeight",
           "type": "number"
-        },
-        {
-          "name": "mapWidth",
-          "type": "number"
-        },
-        {
-          "name": "mapHeight",
-          "type": "number"
         }
       ]
     },
@@ -43,10 +51,6 @@
       "line": 0,
       "parentBehavior": null,
       "properties": [
-        {
-          "name": "target",
-          "type": "string"
-        },
         {
           "name": "direction",
           "type": "string"
@@ -63,7 +67,12 @@
       "scriptId": "30",
       "line": 0,
       "parentBehavior": "SimpleDialogBehavior",
-      "properties": []
+      "properties": [
+        {
+          "name": "dialogName",
+          "type": "string"
+        }
+      ]
     },
     "InteractableBehavior": {
       "scriptId": "38",
@@ -77,12 +86,36 @@
     },
     "EnemyBehavior": {
       "scriptId": "39",
-      "line": 0,
+      "line": 1,
       "parentBehavior": null,
       "properties": [
         {
           "name": "position",
           "type": "Sup.Math.Vector2"
+        },
+        {
+          "name": "velocity",
+          "type": "Sup.Math.Vector2"
+        },
+        {
+          "name": "direction",
+          "type": "Sup.Math.Vector2"
+        },
+        {
+          "name": "moveSpeed",
+          "type": "number"
+        },
+        {
+          "name": "moveDistance",
+          "type": "number"
+        },
+        {
+          "name": "attackDistance",
+          "type": "number"
+        },
+        {
+          "name": "hitTimer",
+          "type": "number"
         }
       ]
     },
@@ -90,7 +123,12 @@
       "scriptId": "40",
       "line": 0,
       "parentBehavior": "InteractableBehavior",
-      "properties": []
+      "properties": [
+        {
+          "name": "dialogName",
+          "type": "string"
+        }
+      ]
     },
     "StartMenuBehavior": {
       "scriptId": "55",
@@ -106,6 +144,88 @@
     },
     "BulletBehavior": {
       "scriptId": "66",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "ticks",
+          "type": "number"
+        }
+      ]
+    },
+    "LanguageSelectBehavior": {
+      "scriptId": "114",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "languageIndex",
+          "type": "number"
+        },
+        {
+          "name": "inactiveOpacity",
+          "type": "number"
+        }
+      ]
+    },
+    "StaticEnemyBehavior": {
+      "scriptId": "147",
+      "line": 0,
+      "parentBehavior": "EnemyBehavior",
+      "properties": []
+    },
+    "EyeEnemyBehavior": {
+      "scriptId": "148",
+      "line": 0,
+      "parentBehavior": "EnemyBehavior",
+      "properties": []
+    },
+    "LightningBehavior": {
+      "scriptId": "152",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": []
+    },
+    "RangedEnemyBehavior": {
+      "scriptId": "165",
+      "line": 0,
+      "parentBehavior": "EnemyBehavior",
+      "properties": []
+    },
+    "AnimatedTextBehavior": {
+      "scriptId": "171",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "charsPerLine",
+          "type": "number"
+        },
+        {
+          "name": "framesPerChar",
+          "type": "number"
+        }
+      ]
+    },
+    "EnemyBulletBehavior": {
+      "scriptId": "174",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "ticks",
+          "type": "number"
+        }
+      ]
+    },
+    "TimeOffsetBehavior": {
+      "scriptId": "176",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": []
+    },
+    "RandomTreeColorBehavior": {
+      "scriptId": "211",
       "line": 0,
       "parentBehavior": null,
       "properties": []

@@ -1,0 +1,43 @@
+{
+  "formatVersion": 1,
+  "uniforms": [
+    {
+      "id": "0",
+      "name": "map",
+      "type": "t",
+      "value": "map"
+    },
+    {
+      "id": "1",
+      "name": "light",
+      "type": "t",
+      "value": "light"
+    },
+    {
+      "id": "2",
+      "name": "intensityMin",
+      "type": "f",
+      "value": 0.8
+    },
+    {
+      "id": "3",
+      "name": "intensityMax",
+      "type": "f",
+      "value": 1.3
+    },
+    {
+      "id": "4",
+      "name": "noiseTex",
+      "type": "t",
+      "value": "noise"
+    },
+    {
+      "id": "5",
+      "name": "speed",
+      "type": "f",
+      "value": 0.5
+    }
+  ],
+  "useLightUniforms": false,
+  "attributes": []
+}

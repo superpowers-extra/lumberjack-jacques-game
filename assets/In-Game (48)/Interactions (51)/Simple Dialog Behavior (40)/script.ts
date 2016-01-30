@@ -1,6 +1,6 @@
 abstract class SimpleDialogBehavior extends InteractableBehavior {
   
-  texts: { name: string; text: string; }[];
+  dialogName: string;
   private currentText: number = null;
 
   interact() {
@@ -9,14 +9,24 @@ abstract class SimpleDialogBehavior extends InteractableBehavior {
       Game.playerBehavior.activeInteractable = this;
     }
     
-    if (!Game.dialogBehavior.isTextFullyDisplayed()) {
-      Game.dialogBehavior.fullyDisplaytext();
-    } else if (this.currentText < this.texts.length) {
-      Game.dialogBehavior.show(this.texts[this.currentText].name, this.texts[this.currentText].text);
+    const dialogs = Game.getDialogs(this.dialogName);
+    if (dialogs == null) {
+      Sup.log(`No dialog with name '${this.dialogName}' in language '${Game.currentLanguage}'`);
+      // Sup.log(Game.dialogs[Game.currentLanguage]);
+      return;
+    }
+    
+    if (!Game.dialogBehavior.animatedText.isTextFullyDisplayed()) {
+      Game.dialogBehavior.animatedText.fullyDisplayText();
+    } else if (this.currentText < dialogs.length) {
+      Game.dialogBehavior.show(dialogs[this.currentText].name, dialogs[this.currentText].text);
+      
       this.currentText++;
     } else {
       Game.dialogBehavior.hide();
       Game.playerBehavior.activeInteractable = null;
+      
+      Game.setGoal(Game.Goals.Village);
     }
   }
 }

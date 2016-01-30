@@ -1,0 +1,38 @@
+{
+  "formatVersion": 1,
+  "uniforms": [
+    {
+      "id": "0",
+      "name": "map",
+      "type": "t",
+      "value": "map"
+    },
+    {
+      "id": "1",
+      "name": "smokeColor",
+      "type": "t",
+      "value": "smokeColor"
+    },
+    {
+      "id": "2",
+      "name": "color",
+      "type": "c",
+      "value": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "3",
+      "name": "speed",
+      "type": "v2",
+      "value": [
+        -15,
+        0.3
+      ]
+    }
+  ],
+  "useLightUniforms": false,
+  "attributes": []
+}

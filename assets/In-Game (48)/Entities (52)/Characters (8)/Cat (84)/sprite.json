@@ -1,0 +1,100 @@
+{
+  "formatVersion": 3,
+  "maps": [
+    "map"
+  ],
+  "filtering": "pixelated",
+  "wrapping": "clampToEdge",
+  "pixelsPerUnit": 16,
+  "framesPerSecond": 10,
+  "opacity": null,
+  "alphaTest": 0.1,
+  "frameOrder": "rows",
+  "grid": {
+    "width": 25,
+    "height": 19
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 0.5
+  },
+  "animations": [
+    {
+      "id": "0",
+      "name": "1",
+      "startFrameIndex": 0,
+      "endFrameIndex": 2,
+      "speed": 1
+    },
+    {
+      "id": "1",
+      "name": "2",
+      "startFrameIndex": 3,
+      "endFrameIndex": 4,
+      "speed": 3
+    },
+    {
+      "id": "2",
+      "name": "3",
+      "startFrameIndex": 5,
+      "endFrameIndex": 7,
+      "speed": 1
+    },
+    {
+      "id": "3",
+      "name": "4",
+      "startFrameIndex": 8,
+      "endFrameIndex": 10,
+      "speed": 1
+    },
+    {
+      "id": "4",
+      "name": "5",
+      "startFrameIndex": 11,
+      "endFrameIndex": 14,
+      "speed": 1
+    },
+    {
+      "id": "5",
+      "name": "6",
+      "startFrameIndex": 15,
+      "endFrameIndex": 17,
+      "speed": 1
+    },
+    {
+      "id": "6",
+      "name": "7",
+      "startFrameIndex": 18,
+      "endFrameIndex": 21,
+      "speed": 1
+    },
+    {
+      "id": "7",
+      "name": "8",
+      "startFrameIndex": 22,
+      "endFrameIndex": 25,
+      "speed": 1
+    },
+    {
+      "id": "8",
+      "name": "9",
+      "startFrameIndex": 26,
+      "endFrameIndex": 30,
+      "speed": 1
+    },
+    {
+      "id": "9",
+      "name": "10",
+      "startFrameIndex": 31,
+      "endFrameIndex": 34,
+      "speed": 1
+    }
+  ],
+  "mapSlots": {
+    "map": "map",
+    "light": null,
+    "specular": null,
+    "alpha": null,
+    "normal": null
+  }
+}

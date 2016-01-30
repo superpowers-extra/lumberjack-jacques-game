@@ -2,17 +2,17 @@
   "nodes": [
     {
       "id": "0",
-      "name": "Makoto",
+      "name": "Player",
       "children": [
         {
           "id": "1",
-          "name": "Weapon",
+          "name": "Shadow",
           "children": [],
           "components": [
             {
               "type": "SpriteRenderer",
               "config": {
-                "spriteAssetId": "37",
+                "spriteAssetId": "184",
                 "animationId": null,
                 "horizontalFlip": false,
                 "verticalFlip": false,
@@ -28,15 +28,15 @@
             }
           ],
           "position": {
-            "x": -0.3893226087093353,
-            "y": -0.20000000298023224,
-            "z": 0.10000000149011612
+            "x": 0,
+            "y": -0.0857449546456337,
+            "z": -1
           },
           "orientation": {
             "x": 0,
             "y": 0,
-            "z": 0.25881904510252074,
-            "w": 0.9659258262890683
+            "z": 0,
+            "w": 1
           },
           "scale": {
             "x": 1,
@@ -45,15 +45,15 @@
           },
           "visible": true,
           "layer": 0,
-          "prefabId": null
+          "prefab": null
         }
       ],
       "components": [
         {
           "type": "SpriteRenderer",
           "config": {
-            "spriteAssetId": "3",
-            "animationId": "1",
+            "spriteAssetId": "136",
+            "animationId": null,
             "horizontalFlip": false,
             "verticalFlip": false,
             "castShadow": false,
@@ -83,7 +83,7 @@
             "height": 0.7,
             "offset": {
               "x": 0,
-              "y": -0.2
+              "y": 0.3
             },
             "tileMapAssetId": null,
             "tileSetPropertyName": null,

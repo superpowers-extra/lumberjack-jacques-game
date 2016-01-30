@@ -1,0 +1,35 @@
+uniform sampler2D map;
+varying vec2 vUv;
+uniform vec3 color;
+uniform float time;
+uniform float speed;
+uniform vec2 cameraPos;
+
+float ClampRain( float v, float t )
+  {
+  float o = 0.;
+  
+  if ( v < t ) o=1.;
+  if ( v < (t-0.1)) o=0.;
+  
+  return o * (1.-t);
+}
+
+void main() {
+  vec2 cUV = vUv + vec2( 0.5, 1. ) * cameraPos / 25.;
+  vec4 rain = texture2D(map, cUV);
+  
+  vec4 o = vec4(color, 1.);
+  
+  float myTime = time * speed;
+  
+  float t = mod (myTime, 1.);
+  
+  o.a = ClampRain(1.-rain.r, t);
+  t = mod(myTime+0.3, 1.);
+  o.a += ClampRain(1.-rain.g, t);
+  t = mod(myTime+0.6, 1.);
+  o.a += ClampRain(1.-rain.b, t);
+  
+  gl_FragColor = o;
+}

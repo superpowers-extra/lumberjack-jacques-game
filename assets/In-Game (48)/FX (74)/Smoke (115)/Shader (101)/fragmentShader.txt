@@ -1,0 +1,21 @@
+uniform sampler2D map;
+uniform sampler2D smokeColor;
+varying vec2 vUv;
+uniform vec3 color;
+uniform vec2 speed;
+uniform float time;
+
+void main() {
+  vec3 def = texture2D(map, vUv).rgb;
+  
+  vec4 o = vec4(color, 0.0);
+  
+  vec2 mUV = def.gb;
+  mUV.y += time*speed.y;
+  
+  o = texture2D(smokeColor, mUV);
+  o.a *= def.r * def.b;
+  o.a = ceil(sqrt(o.a)*8.) / 8.;
+  
+  gl_FragColor = o;
+}

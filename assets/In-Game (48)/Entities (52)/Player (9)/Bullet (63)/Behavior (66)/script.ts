@@ -1,5 +1,6 @@
 class BulletBehavior extends Sup.Behavior {
   private direction: Utils.Directions;
+  ticks = 0;
   
   setup(position: Sup.Math.Vector2, direction: Utils.Directions) {
     this.direction = direction;
@@ -10,6 +11,11 @@ class BulletBehavior extends Sup.Behavior {
   }
   
   update() {
+    if (++this.ticks > 300) {
+      this.actor.destroy();
+      return;
+    }
+    
     for (let enemy of Game.enemies) {
       if (Sup.ArcadePhysics2D.intersects(this.actor.arcadeBody2D, enemy.actor.arcadeBody2D)) {
         enemy.hit(this.direction);
@@ -17,9 +23,6 @@ class BulletBehavior extends Sup.Behavior {
         return;
       }
     }
-    
-    if (Sup.ArcadePhysics2D.intersects(this.actor.arcadeBody2D, Game.mapActor.arcadeBody2D))
-      this.actor.destroy();
   }
 }
 Sup.registerBehavior(BulletBehavior);

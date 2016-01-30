@@ -1,0 +1,29 @@
+uniform sampler2D map;
+uniform sampler2D mask;
+varying vec2 vUv;
+uniform vec2 tiling;
+uniform float time;
+uniform vec2 speed;
+uniform vec2 deformSpeed;
+uniform float deformIntensity;
+uniform vec2 cameraPos;
+
+void main() {
+  vec2 res = vec2(800.0, 400.0);
+  
+  vec2 cUV = vUv;
+  cUV.x = floor( vUv.x * res.x ) / res.x; 
+  cUV.y = floor( vUv.y * res.y ) / res.y;
+  cUV += vec2( 0.5, 1. ) * cameraPos / 25.;
+  
+  vec2 deform = texture2D(mask, cUV + deformSpeed * time ).gb;
+  float mask = texture2D(mask, vUv).r;
+  vec4 fog = texture2D(map, cUV * tiling + time * speed + deform * deformIntensity );
+  
+  float a = fog.a* mask;
+  a = floor(sqrt(a) * 16.) / 16. ;
+  a*=a;
+  
+  //gl_FragColor = vec4( cameraPos.xy, 0., 1.);
+  gl_FragColor = vec4( fog.rgb, a );
+}
