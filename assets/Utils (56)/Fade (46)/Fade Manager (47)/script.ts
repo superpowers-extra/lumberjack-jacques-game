@@ -6,7 +6,11 @@ namespace Fade {
   export enum Direction { In, Out };
   export let isFading = false;
 
-  export function start(direction: Direction, callback?: Function, options={ duration: 300 }) {
+  export function start(direction: Direction, options?: { duration?: number; delay?: number; }, callback?: Function) {
+    if (options == null) options = {};
+    if (options.duration == null) options.duration = 300;
+    if (options.delay == null) options.delay = 0;
+    
     let [ startOpacity, endOpacity ] = direction === Direction.In ? [ 1, 0 ] : [ 0, 1 ];
 
     if (fadeSpriteRndr != null) {
@@ -23,6 +27,7 @@ namespace Fade {
 
     if (tween != null) tween.stop();
     tween = new Sup.Tween(fadeSpriteRndr.actor, { opacity: startOpacity })
+      .delay(options.delay)
       .to({ opacity: endOpacity }, options.duration).easing(TWEEN.Easing.Cubic.In)
       .onUpdate((object) => { fadeSpriteRndr.setOpacity(object.opacity); })
       .onComplete(() => { Sup.setTimeout(50, () => { end(); if (callback != null) callback(); }) })

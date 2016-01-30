@@ -3,7 +3,7 @@
   "nodes": [
     {
       "id": "1",
-      "name": "Left",
+      "name": "Heart",
       "children": [],
       "components": [
         {
@@ -12,49 +12,6 @@
             "spriteAssetId": "248",
             "animationId": null,
             "horizontalFlip": false,
-            "verticalFlip": false,
-            "castShadow": false,
-            "receiveShadow": false,
-            "color": "ffffff",
-            "overrideOpacity": false,
-            "opacity": null,
-            "materialType": "basic",
-            "shaderAssetId": null
-          },
-          "id": "0"
-        }
-      ],
-      "position": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
-      "orientation": {
-        "x": 0,
-        "y": 0,
-        "z": 0,
-        "w": 1
-      },
-      "scale": {
-        "x": 1,
-        "y": 1,
-        "z": 1
-      },
-      "visible": true,
-      "layer": 0,
-      "prefab": null
-    },
-    {
-      "id": "6",
-      "name": "Right",
-      "children": [],
-      "components": [
-        {
-          "type": "SpriteRenderer",
-          "config": {
-            "spriteAssetId": "248",
-            "animationId": null,
-            "horizontalFlip": true,
             "verticalFlip": false,
             "castShadow": false,
             "receiveShadow": false,

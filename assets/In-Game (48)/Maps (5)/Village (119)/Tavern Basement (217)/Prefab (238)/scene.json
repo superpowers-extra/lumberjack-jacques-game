@@ -33,95 +33,32 @@
       "name": "Attached To Camera",
       "children": [
         {
-          "id": "52",
-          "name": "Fog",
-          "children": [],
-          "components": [],
-          "position": {
-            "x": 0,
-            "y": 0,
-            "z": 5
-          },
-          "orientation": {
-            "x": 0,
-            "y": 0,
-            "z": 0,
-            "w": 1
-          },
-          "scale": {
-            "x": 1,
-            "y": 1,
-            "z": 1
-          },
-          "visible": true,
-          "layer": 0,
-          "prefab": {
-            "sceneAssetId": "108"
-          }
-        },
-        {
-          "id": "53",
-          "name": "Rain Ground",
-          "children": [],
-          "components": [],
-          "position": {
-            "x": 0,
-            "y": 0,
-            "z": -5
-          },
-          "orientation": {
-            "x": 0,
-            "y": 0,
-            "z": 0,
-            "w": 1
-          },
-          "scale": {
-            "x": 1,
-            "y": 1,
-            "z": 1
-          },
-          "visible": true,
-          "layer": 0,
-          "prefab": {
-            "sceneAssetId": "110"
-          }
-        },
-        {
-          "id": "54",
-          "name": "Rain Drops",
-          "children": [],
-          "components": [],
-          "position": {
-            "x": 0,
-            "y": 0,
-            "z": 5
-          },
-          "orientation": {
-            "x": 0,
-            "y": 0,
-            "z": 0,
-            "w": 1
-          },
-          "scale": {
-            "x": 1,
-            "y": 1,
-            "z": 1
-          },
-          "visible": true,
-          "layer": 0,
-          "prefab": {
-            "sceneAssetId": "112"
-          }
-        },
-        {
           "id": "56",
-          "name": "Lightning",
+          "name": "Black Background",
           "children": [],
-          "components": [],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "spriteAssetId": "93",
+                "animationId": null,
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "000000",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            }
+          ],
           "position": {
-            "x": 0,
-            "y": 0,
-            "z": 8
+            "x": -0.739,
+            "y": 0.492,
+            "z": -2
           },
           "orientation": {
             "x": 0,
@@ -130,15 +67,13 @@
             "w": 1
           },
           "scale": {
-            "x": 1,
-            "y": 1,
+            "x": 100,
+            "y": 40,
             "z": 1
           },
           "visible": true,
           "layer": 0,
-          "prefab": {
-            "sceneAssetId": "151"
-          }
+          "prefab": null
         }
       ],
       "components": [],
@@ -168,12 +103,43 @@
       "children": [
         {
           "id": "4",
-          "name": "From Start",
+          "name": "Village_Tavern Inside",
           "children": [],
-          "components": [],
+          "components": [
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "TeleportBehavior",
+                "propertyValues": {
+                  "direction": {
+                    "type": "string",
+                    "value": "Up"
+                  }
+                }
+              },
+              "id": "0"
+            },
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "spriteAssetId": "125",
+                "animationId": null,
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "1"
+            }
+          ],
           "position": {
             "x": 0,
-            "y": 0,
+            "y": -3.1621623039245605,
             "z": 0
           },
           "orientation": {

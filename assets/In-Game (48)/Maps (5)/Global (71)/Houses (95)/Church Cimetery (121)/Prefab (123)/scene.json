@@ -29,10 +29,10 @@
             "type": "box",
             "movable": true,
             "width": 8,
-            "height": 15,
+            "height": 10,
             "offset": {
               "x": -4,
-              "y": 0
+              "y": -2
             },
             "tileMapAssetId": null,
             "tileSetPropertyName": null,
@@ -45,10 +45,10 @@
           "config": {
             "type": "box",
             "movable": true,
-            "width": 8,
+            "width": 1,
             "height": 10,
             "offset": {
-              "x": 4,
+              "x": -0.7,
               "y": 2
             },
             "tileMapAssetId": null,
@@ -56,6 +56,74 @@
             "layersIndex": null
           },
           "id": "2"
+        },
+        {
+          "type": "ArcadeBody2D",
+          "config": {
+            "type": "box",
+            "movable": true,
+            "width": 1,
+            "height": 10,
+            "offset": {
+              "x": 9,
+              "y": 2
+            },
+            "tileMapAssetId": null,
+            "tileSetPropertyName": null,
+            "layersIndex": null
+          },
+          "id": "3"
+        },
+        {
+          "type": "ArcadeBody2D",
+          "config": {
+            "type": "box",
+            "movable": true,
+            "width": 10,
+            "height": 2,
+            "offset": {
+              "x": 4,
+              "y": 6
+            },
+            "tileMapAssetId": null,
+            "tileSetPropertyName": null,
+            "layersIndex": null
+          },
+          "id": "4"
+        },
+        {
+          "type": "ArcadeBody2D",
+          "config": {
+            "type": "box",
+            "movable": true,
+            "width": 4,
+            "height": 2,
+            "offset": {
+              "x": 1,
+              "y": -2.5
+            },
+            "tileMapAssetId": null,
+            "tileSetPropertyName": null,
+            "layersIndex": null
+          },
+          "id": "5"
+        },
+        {
+          "type": "ArcadeBody2D",
+          "config": {
+            "type": "box",
+            "movable": true,
+            "width": 3,
+            "height": 2,
+            "offset": {
+              "x": 7.5,
+              "y": -2.5
+            },
+            "tileMapAssetId": null,
+            "tileSetPropertyName": null,
+            "layersIndex": null
+          },
+          "id": "6"
         }
       ],
       "position": {

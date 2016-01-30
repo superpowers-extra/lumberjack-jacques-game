@@ -11,7 +11,7 @@ namespace Utils {
     }
   }
   export function getAngleFromDirection(direction: Directions) { return direction * Math.PI / 2; }
-  export function getDirectionFromDirection(velocity: Sup.Math.Vector2) {
+  export function getDirectionFromVector(velocity: Sup.Math.Vector2) {
     let angle = velocity.angle();
     
     if (angle > Math.PI / 4 && angle < Math.PI * 3 / 4) return Directions.Up;

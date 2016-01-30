@@ -19,11 +19,11 @@ class LanguageSelectBehavior extends Sup.Behavior {
   }
 
   update() {
-    if (Sup.Input.wasKeyJustPressed("LEFT", { autoRepeat: true })) {
+    if (Sup.Input.wasKeyJustPressed("LEFT", { autoRepeat: true }) || Sup.Input.wasGamepadAxisJustPressed(0, 0, false, { autoRepeat: true })) {
       this.updateLanguage(Math.max(this.languageIndex - 1, 0));
     }
 
-    if (Sup.Input.wasKeyJustPressed("RIGHT", { autoRepeat: true })) {
+    if (Sup.Input.wasKeyJustPressed("RIGHT", { autoRepeat: true }) || Sup.Input.wasGamepadAxisJustPressed(0, 0, true, { autoRepeat: true })) {
       this.updateLanguage(Math.min(this.languageIndex + 1, this.languageRenderers.length - 1));
     }
 

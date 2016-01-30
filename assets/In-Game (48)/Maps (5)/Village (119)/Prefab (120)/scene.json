@@ -168,7 +168,7 @@
       "children": [
         {
           "id": "130",
-          "name": "Home Outside",
+          "name": "Forest House Village",
           "children": [],
           "components": [
             {
@@ -204,7 +204,7 @@
           ],
           "position": {
             "x": 54.1512451171875,
-            "y": 17.162256240844727,
+            "y": 15.885082244873047,
             "z": 6
           },
           "orientation": {
@@ -271,6 +271,118 @@
           },
           "scale": {
             "x": 4,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "190",
+          "name": "Village_Doctor House",
+          "children": [],
+          "components": [
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "TeleportBehavior",
+                "propertyValues": {
+                  "direction": {
+                    "type": "string",
+                    "value": "Up"
+                  }
+                }
+              },
+              "id": "0"
+            },
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "spriteAssetId": "125",
+                "animationId": null,
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "1"
+            }
+          ],
+          "position": {
+            "x": -2.711557149887085,
+            "y": 17.215808868408203,
+            "z": 6
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "201",
+          "name": "Village_Tavern Inside",
+          "children": [],
+          "components": [
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "TeleportBehavior",
+                "propertyValues": {
+                  "direction": {
+                    "type": "string",
+                    "value": "Up"
+                  }
+                }
+              },
+              "id": "0"
+            },
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "spriteAssetId": "125",
+                "animationId": null,
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "1"
+            }
+          ],
+          "position": {
+            "x": 16.44932746887207,
+            "y": 0,
+            "z": 8
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
             "y": 1,
             "z": 1
           },
@@ -1314,94 +1426,40 @@
           "name": "Houses",
           "children": [
             {
+              "id": "182",
+              "name": "Doctor House",
+              "children": [],
+              "components": [],
+              "position": {
+                "x": -3.372,
+                "y": 17.948,
+                "z": 0
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": {
+                "sceneAssetId": "273"
+              }
+            },
+            {
               "id": "73",
               "name": "House 1",
               "children": [],
               "components": [],
               "position": {
-                "x": -31.334627151489258,
-                "y": 27.88157844543457,
-                "z": 5
-              },
-              "orientation": {
-                "x": 0,
-                "y": 0,
-                "z": 0,
-                "w": 1
-              },
-              "scale": {
-                "x": 1,
-                "y": 1,
-                "z": 1
-              },
-              "visible": true,
-              "layer": 0,
-              "prefab": {
-                "sceneAssetId": "100"
-              }
-            },
-            {
-              "id": "74",
-              "name": "House 1",
-              "children": [],
-              "components": [],
-              "position": {
-                "x": -13,
-                "y": -10,
-                "z": 5
-              },
-              "orientation": {
-                "x": 0,
-                "y": 0,
-                "z": 0,
-                "w": 1
-              },
-              "scale": {
-                "x": 1,
-                "y": 1,
-                "z": 1
-              },
-              "visible": true,
-              "layer": 0,
-              "prefab": {
-                "sceneAssetId": "100"
-              }
-            },
-            {
-              "id": "76",
-              "name": "House 1",
-              "children": [],
-              "components": [],
-              "position": {
-                "x": -18.480314254760742,
-                "y": 27.738367080688477,
-                "z": 5
-              },
-              "orientation": {
-                "x": 0,
-                "y": 0,
-                "z": 0,
-                "w": 1
-              },
-              "scale": {
-                "x": 1,
-                "y": 1,
-                "z": 1
-              },
-              "visible": true,
-              "layer": 0,
-              "prefab": {
-                "sceneAssetId": "100"
-              }
-            },
-            {
-              "id": "77",
-              "name": "House 1",
-              "children": [],
-              "components": [],
-              "position": {
-                "x": -4,
-                "y": 15,
+                "x": -32.3944091796875,
+                "y": 27.759296417236328,
                 "z": 5
               },
               "orientation": {
@@ -1449,67 +1507,13 @@
               }
             },
             {
-              "id": "83",
-              "name": "House 1",
-              "children": [],
-              "components": [],
-              "position": {
-                "x": -27.243736267089844,
-                "y": 13.731209754943848,
-                "z": 5
-              },
-              "orientation": {
-                "x": 0,
-                "y": 0,
-                "z": 0,
-                "w": 1
-              },
-              "scale": {
-                "x": 1,
-                "y": 1,
-                "z": 1
-              },
-              "visible": true,
-              "layer": 0,
-              "prefab": {
-                "sceneAssetId": "100"
-              }
-            },
-            {
-              "id": "125",
-              "name": "House 1",
-              "children": [],
-              "components": [],
-              "position": {
-                "x": 34.11940002441406,
-                "y": 0.3516714870929718,
-                "z": 5
-              },
-              "orientation": {
-                "x": 0,
-                "y": 0,
-                "z": 0,
-                "w": 1
-              },
-              "scale": {
-                "x": 1,
-                "y": 1,
-                "z": 1
-              },
-              "visible": true,
-              "layer": 0,
-              "prefab": {
-                "sceneAssetId": "100"
-              }
-            },
-            {
               "id": "126",
               "name": "House 1",
               "children": [],
               "components": [],
               "position": {
-                "x": 36.87923812866211,
-                "y": -19.636281967163086,
+                "x": 33.34123992919922,
+                "y": -17.651552200317383,
                 "z": 5
               },
               "orientation": {
@@ -1530,14 +1534,14 @@
               }
             },
             {
-              "id": "127",
-              "name": "House 1",
+              "id": "180",
+              "name": "House 2",
               "children": [],
               "components": [],
               "position": {
-                "x": 9.029915809631348,
-                "y": 20.423259735107422,
-                "z": 5
+                "x": 38.49470901489258,
+                "y": 0.9985957741737366,
+                "z": 8
               },
               "orientation": {
                 "x": 0,
@@ -1553,7 +1557,142 @@
               "visible": true,
               "layer": 0,
               "prefab": {
-                "sceneAssetId": "100"
+                "sceneAssetId": "264"
+              }
+            },
+            {
+              "id": "181",
+              "name": "Family House",
+              "children": [],
+              "components": [],
+              "position": {
+                "x": 9.381014823913574,
+                "y": 22.784873962402344,
+                "z": 8
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": {
+                "sceneAssetId": "271"
+              }
+            },
+            {
+              "id": "183",
+              "name": "House 5",
+              "children": [],
+              "components": [],
+              "position": {
+                "x": -15.05022144317627,
+                "y": 14.452481269836426,
+                "z": 8
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": {
+                "sceneAssetId": "277"
+              }
+            },
+            {
+              "id": "184",
+              "name": "Demon House",
+              "children": [],
+              "components": [],
+              "position": {
+                "x": -13.338263511657715,
+                "y": 32.18345642089844,
+                "z": 8
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": {
+                "sceneAssetId": "280"
+              }
+            },
+            {
+              "id": "185",
+              "name": "Old Lady House",
+              "children": [],
+              "components": [],
+              "position": {
+                "x": -5.771597862243652,
+                "y": -8.722871780395508,
+                "z": 8
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": {
+                "sceneAssetId": "264"
+              }
+            },
+            {
+              "id": "186",
+              "name": "Go Away House",
+              "children": [],
+              "components": [],
+              "position": {
+                "x": 30.13320541381836,
+                "y": 0.7568292617797852,
+                "z": 8
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": {
+                "sceneAssetId": "277"
               }
             }
           ],
@@ -1584,9 +1723,9 @@
           "children": [],
           "components": [],
           "position": {
-            "x": 29.369932174682617,
-            "y": 28.00257110595703,
-            "z": 5
+            "x": 29.37,
+            "y": 28.003,
+            "z": 0
           },
           "orientation": {
             "x": 0,
@@ -1611,8 +1750,8 @@
           "children": [],
           "components": [],
           "position": {
-            "x": 17.509296417236328,
-            "y": 6.156110763549805,
+            "x": 13.996768951416016,
+            "y": 6.490637302398682,
             "z": 5
           },
           "orientation": {
@@ -1638,8 +1777,8 @@
           "children": [],
           "components": [],
           "position": {
-            "x": -3.3820037841796875,
-            "y": 3.604665994644165,
+            "x": -3.6622838973999023,
+            "y": 2.868929862976074,
             "z": 8
           },
           "orientation": {
@@ -1657,6 +1796,334 @@
           "layer": 0,
           "prefab": {
             "sceneAssetId": "229"
+          }
+        },
+        {
+          "id": "141",
+          "name": "Barrel01",
+          "children": [],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "spriteAssetId": "200",
+                "animationId": null,
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 15.209714889526367,
+            "y": -0.05935054272413254,
+            "z": 8
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "142",
+          "name": "Bucket01",
+          "children": [],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "spriteAssetId": "201",
+                "animationId": null,
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": -5.073882579803467,
+            "y": 3.9033310413360596,
+            "z": 8
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "143",
+          "name": "Crate01",
+          "children": [],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "spriteAssetId": "202",
+                "animationId": null,
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": -36.51936721801758,
+            "y": 12.043474197387695,
+            "z": 8
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "144",
+          "name": "Crate01",
+          "children": [],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "spriteAssetId": "202",
+                "animationId": null,
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": -32.3935432434082,
+            "y": -2.006636142730713,
+            "z": 8
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "145",
+          "name": "Crate01",
+          "children": [],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "spriteAssetId": "202",
+                "animationId": null,
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": -23.807363510131836,
+            "y": 36.79842758178711,
+            "z": 8
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "146",
+          "name": "Crate01",
+          "children": [],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "spriteAssetId": "202",
+                "animationId": null,
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 10.314332008361816,
+            "y": 39.02861022949219,
+            "z": 8
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "147",
+          "name": "Crate01",
+          "children": [],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "spriteAssetId": "202",
+                "animationId": null,
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 46.053001403808594,
+            "y": 7.633999824523926,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "189",
+          "name": "totem",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": 40.221527099609375,
+            "y": 17.94706916809082,
+            "z": 8
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "290"
           }
         }
       ],
@@ -1709,8 +2176,8 @@
             }
           ],
           "position": {
-            "x": 2.843,
-            "y": 37.021,
+            "x": 2.675736427307129,
+            "y": 37.18825912475586,
             "z": 0
           },
           "orientation": {
@@ -1752,8 +2219,8 @@
             }
           ],
           "position": {
-            "x": -11.374,
-            "y": 28.993,
+            "x": -12.16883659362793,
+            "y": 27.647891998291016,
             "z": 0
           },
           "orientation": {
@@ -1967,8 +2434,8 @@
             }
           ],
           "position": {
-            "x": -45.329,
-            "y": 8.921,
+            "x": -33.712154388427734,
+            "y": 9.994370460510254,
             "z": 0
           },
           "orientation": {
@@ -2311,8 +2778,8 @@
             }
           ],
           "position": {
-            "x": 1.003,
-            "y": -18.51,
+            "x": -1.9317829608917236,
+            "y": -16.553478240966797,
             "z": 0
           },
           "orientation": {
@@ -2397,8 +2864,8 @@
             }
           ],
           "position": {
-            "x": 50.681,
-            "y": 15.946,
+            "x": -1.7646483182907104,
+            "y": 4.016654968261719,
             "z": 0
           },
           "orientation": {
@@ -2802,6 +3269,146 @@
           "visible": true,
           "layer": 0,
           "prefab": null
+        },
+        {
+          "id": "187",
+          "name": "Exit Glow Path",
+          "children": [],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "spriteAssetId": "230",
+                "animationId": null,
+                "horizontalFlip": true,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 52.10457992553711,
+            "y": 15.743000030517578,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "188",
+          "name": "Exit Glow Path",
+          "children": [],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "spriteAssetId": "230",
+                "animationId": null,
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 3.450300693511963,
+            "y": 37.76611328125,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": -0.7071067811865475,
+            "w": 0.7071067811865476
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "178",
+          "name": "prefab",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": 16.975,
+            "y": 35.25,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "263"
+          }
+        },
+        {
+          "id": "179",
+          "name": "Stone02 (1)",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": -4.424,
+            "y": 25.633,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "268"
+          }
         }
       ],
       "components": [],
@@ -2826,14 +3433,14 @@
       "prefab": null
     },
     {
-      "id": "80",
-      "name": "exit vilage (1)",
+      "id": "191",
+      "name": "Pine Tree",
       "children": [],
       "components": [],
       "position": {
-        "x": 4.451,
-        "y": 44,
-        "z": 5
+        "x": -35.10765075683594,
+        "y": 36.04955291748047,
+        "z": 8
       },
       "orientation": {
         "x": 0,
@@ -2849,35 +3456,17 @@
       "visible": true,
       "layer": 0,
       "prefab": {
-        "sceneAssetId": "139"
+        "sceneAssetId": "242"
       }
     },
     {
-      "id": "141",
-      "name": "Barrel01",
+      "id": "192",
+      "name": "Pine Tree",
       "children": [],
-      "components": [
-        {
-          "type": "SpriteRenderer",
-          "config": {
-            "spriteAssetId": "200",
-            "animationId": null,
-            "horizontalFlip": false,
-            "verticalFlip": false,
-            "castShadow": false,
-            "receiveShadow": false,
-            "color": "ffffff",
-            "overrideOpacity": false,
-            "opacity": null,
-            "materialType": "basic",
-            "shaderAssetId": null
-          },
-          "id": "0"
-        }
-      ],
+      "components": [],
       "position": {
-        "x": 10.871874809265137,
-        "y": 4.683892250061035,
+        "x": 12.580947875976562,
+        "y": 34.525604248046875,
         "z": 8
       },
       "orientation": {
@@ -2893,34 +3482,18 @@
       },
       "visible": true,
       "layer": 0,
-      "prefab": null
+      "prefab": {
+        "sceneAssetId": "242"
+      }
     },
     {
-      "id": "142",
-      "name": "Bucket01",
+      "id": "193",
+      "name": "Pine Tree",
       "children": [],
-      "components": [
-        {
-          "type": "SpriteRenderer",
-          "config": {
-            "spriteAssetId": "201",
-            "animationId": null,
-            "horizontalFlip": false,
-            "verticalFlip": false,
-            "castShadow": false,
-            "receiveShadow": false,
-            "color": "ffffff",
-            "overrideOpacity": false,
-            "opacity": null,
-            "materialType": "basic",
-            "shaderAssetId": null
-          },
-          "id": "0"
-        }
-      ],
+      "components": [],
       "position": {
-        "x": -5.073882579803467,
-        "y": 3.9033310413360596,
+        "x": 42.78125,
+        "y": 34.469852447509766,
         "z": 8
       },
       "orientation": {
@@ -2936,34 +3509,18 @@
       },
       "visible": true,
       "layer": 0,
-      "prefab": null
+      "prefab": {
+        "sceneAssetId": "242"
+      }
     },
     {
-      "id": "143",
-      "name": "Crate01",
+      "id": "194",
+      "name": "Pine Tree",
       "children": [],
-      "components": [
-        {
-          "type": "SpriteRenderer",
-          "config": {
-            "spriteAssetId": "202",
-            "animationId": null,
-            "horizontalFlip": false,
-            "verticalFlip": false,
-            "castShadow": false,
-            "receiveShadow": false,
-            "color": "ffffff",
-            "overrideOpacity": false,
-            "opacity": null,
-            "materialType": "basic",
-            "shaderAssetId": null
-          },
-          "id": "0"
-        }
-      ],
+      "components": [],
       "position": {
-        "x": -36.51936721801758,
-        "y": 12.043474197387695,
+        "x": 42.632572174072266,
+        "y": 26.812910079956055,
         "z": 8
       },
       "orientation": {
@@ -2979,34 +3536,18 @@
       },
       "visible": true,
       "layer": 0,
-      "prefab": null
+      "prefab": {
+        "sceneAssetId": "242"
+      }
     },
     {
-      "id": "144",
-      "name": "Crate01",
+      "id": "195",
+      "name": "Pine Tree",
       "children": [],
-      "components": [
-        {
-          "type": "SpriteRenderer",
-          "config": {
-            "spriteAssetId": "202",
-            "animationId": null,
-            "horizontalFlip": false,
-            "verticalFlip": false,
-            "castShadow": false,
-            "receiveShadow": false,
-            "color": "ffffff",
-            "overrideOpacity": false,
-            "opacity": null,
-            "materialType": "basic",
-            "shaderAssetId": null
-          },
-          "id": "0"
-        }
-      ],
+      "components": [],
       "position": {
-        "x": -32.3935432434082,
-        "y": -2.006636142730713,
+        "x": 26.48238182067871,
+        "y": -17.883541107177734,
         "z": 8
       },
       "orientation": {
@@ -3022,34 +3563,18 @@
       },
       "visible": true,
       "layer": 0,
-      "prefab": null
+      "prefab": {
+        "sceneAssetId": "242"
+      }
     },
     {
-      "id": "145",
-      "name": "Crate01",
+      "id": "196",
+      "name": "Pine Tree",
       "children": [],
-      "components": [
-        {
-          "type": "SpriteRenderer",
-          "config": {
-            "spriteAssetId": "202",
-            "animationId": null,
-            "horizontalFlip": false,
-            "verticalFlip": false,
-            "castShadow": false,
-            "receiveShadow": false,
-            "color": "ffffff",
-            "overrideOpacity": false,
-            "opacity": null,
-            "materialType": "basic",
-            "shaderAssetId": null
-          },
-          "id": "0"
-        }
-      ],
+      "components": [],
       "position": {
-        "x": -23.807363510131836,
-        "y": 36.79842758178711,
+        "x": -5.334801197052002,
+        "y": -24.053693771362305,
         "z": 8
       },
       "orientation": {
@@ -3065,34 +3590,18 @@
       },
       "visible": true,
       "layer": 0,
-      "prefab": null
+      "prefab": {
+        "sceneAssetId": "242"
+      }
     },
     {
-      "id": "146",
-      "name": "Crate01",
+      "id": "197",
+      "name": "Pine Tree",
       "children": [],
-      "components": [
-        {
-          "type": "SpriteRenderer",
-          "config": {
-            "spriteAssetId": "202",
-            "animationId": null,
-            "horizontalFlip": false,
-            "verticalFlip": false,
-            "castShadow": false,
-            "receiveShadow": false,
-            "color": "ffffff",
-            "overrideOpacity": false,
-            "opacity": null,
-            "materialType": "basic",
-            "shaderAssetId": null
-          },
-          "id": "0"
-        }
-      ],
+      "components": [],
       "position": {
-        "x": 10.314332008361816,
-        "y": 39.02861022949219,
+        "x": -37.4493408203125,
+        "y": 3.256673574447632,
         "z": 8
       },
       "orientation": {
@@ -3108,17 +3617,19 @@
       },
       "visible": true,
       "layer": 0,
-      "prefab": null
+      "prefab": {
+        "sceneAssetId": "242"
+      }
     },
     {
-      "id": "147",
-      "name": "Crate01",
+      "id": "198",
+      "name": "Stone03",
       "children": [],
       "components": [
         {
           "type": "SpriteRenderer",
           "config": {
-            "spriteAssetId": "202",
+            "spriteAssetId": "194",
             "animationId": null,
             "horizontalFlip": false,
             "verticalFlip": false,
@@ -3134,8 +3645,8 @@
         }
       ],
       "position": {
-        "x": 40.08718490600586,
-        "y": 10.259333610534668,
+        "x": -29.829572677612305,
+        "y": 10.829980850219727,
         "z": 8
       },
       "orientation": {

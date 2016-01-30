@@ -1,19 +1,15 @@
-
 abstract class EnemyBehavior extends Sup.Behavior {
   position: Sup.Math.Vector2;
   velocity = new Sup.Math.Vector2();
-  direction = new Sup.Math.Vector2();
+  direction = Utils.Directions.Down;
 
   moveSpeed = 0.1;
   moveDistance = 1.5; // distance at which the enemy stops moving toward the player
   attackDistance = 1.5; // distance at which the enemy starts attacking the player
 
-  
-  private maxHealth = 3;
-  private health = this.maxHealth;
+  private health = 3;
 
   hitTimer = 0;
-  private hitSpeed = 0.08;
 
   awake() {
     Game.enemies.push(this);
@@ -54,7 +50,7 @@ abstract class EnemyBehavior extends Sup.Behavior {
       this.actor.destroy();
     } else {
       this.hitTimer = EnemyBehavior.hitDelay;
-      let offset = new Sup.Math.Vector2().setFromAngle(Utils.getAngleFromDirection(direction)).multiplyScalar(this.hitSpeed);
+      let offset = new Sup.Math.Vector2().setFromAngle(Utils.getAngleFromDirection(direction)).multiplyScalar(EnemyBehavior.hitSpeed);
       this.actor.arcadeBody2D.setVelocity(offset);
       
       let color = 3;
@@ -64,5 +60,8 @@ abstract class EnemyBehavior extends Sup.Behavior {
 }
 
 namespace EnemyBehavior {
+  export enum Stats { Idle, Walking, Charging, Attacking, Hitting, Dying };
+  
+  export const hitSpeed = 0.08;
   export const hitDelay = 15;
 }

@@ -12,15 +12,17 @@ namespace Game {
   export let currentMapName = "Start";
 
   export let currentLanguage = "en";
-  export let dialogs: { [language: string]: { [dialogName: string]: { name: string; text: string; }[] } } = {};
   export let texts: { [language: string]: { [key: string]: string } } = {};
 
   export function getText(textName: string) {
-    return texts[currentLanguage][textName];
-  }
+    let text = texts[currentLanguage][textName];
 
-  export function getDialogs(dialogName: string) {
-    return dialogs[currentLanguage][dialogName];
+    // Fallback to french
+    if (text == null) text = texts["fr"][textName];
+    
+    // Fallback to key
+    if (text == null) text = textName;
+    return text;
   }
   
   export function setGoal(goal: Goals) {
@@ -36,12 +38,12 @@ namespace Game {
 
     Sup.getActor("Attached To Camera").setParent(Game.cameraBehavior.actor);
 
-    let spawnName = currentMapName.split("/").pop();
-    Game.playerBehavior.setup(spawnName);
+    Game.playerBehavior.setup(currentMapName);
     currentMapName = mapName;
 
-    Fade.start(Fade.Direction.In, () => {
-      Game.playerBehavior.autoPilot = false;
+    Fade.start(Fade.Direction.In, null, () => {
+      Game.playerBehavior.actor.arcadeBody2D.setVelocity(0, 0);
+      Game.playerBehavior.actor.spriteRenderer.setAnimation(`Idle ${Utils.Directions[Game.playerBehavior.direction]}`);
     });
   }
 }

@@ -224,7 +224,7 @@
         },
         {
           "id": "56",
-          "name": "Village",
+          "name": "Forest House Village",
           "children": [],
           "components": [
             {
@@ -507,13 +507,13 @@
           "name": "Entities",
           "children": [
             {
-              "id": "29",
-              "name": "Bubi",
+              "id": "150",
+              "name": "Dying Man",
               "children": [],
               "components": [],
               "position": {
-                "x": 5.191,
-                "y": 5,
+                "x": -6.693251132965088,
+                "y": 1.5278345346450806,
                 "z": 0
               },
               "orientation": {
@@ -530,7 +530,7 @@
               "visible": true,
               "layer": 0,
               "prefab": {
-                "sceneAssetId": "23"
+                "sceneAssetId": "258"
               }
             },
             {

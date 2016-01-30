@@ -1,5 +1,5 @@
 class AnimatedTextBehavior extends Sup.Behavior {
-  charsPerLine = 33;
+  charsPerLine = 32;
   framesPerChar = 1;
 
   private text = "";

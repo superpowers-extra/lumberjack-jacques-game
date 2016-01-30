@@ -63,17 +63,6 @@
       "parentBehavior": null,
       "properties": []
     },
-    "BubiBehavior": {
-      "scriptId": "30",
-      "line": 0,
-      "parentBehavior": "SimpleDialogBehavior",
-      "properties": [
-        {
-          "name": "dialogName",
-          "type": "string"
-        }
-      ]
-    },
     "InteractableBehavior": {
       "scriptId": "38",
       "parentBehavior": null,
@@ -86,7 +75,7 @@
     },
     "EnemyBehavior": {
       "scriptId": "39",
-      "line": 1,
+      "line": 0,
       "parentBehavior": null,
       "properties": [
         {
@@ -125,8 +114,8 @@
       "parentBehavior": "InteractableBehavior",
       "properties": [
         {
-          "name": "dialogName",
-          "type": "string"
+          "name": "currentText",
+          "type": "number"
         }
       ]
     },
@@ -168,23 +157,20 @@
         }
       ]
     },
-    "StaticEnemyBehavior": {
-      "scriptId": "147",
-      "line": 0,
-      "parentBehavior": "EnemyBehavior",
-      "properties": []
-    },
-    "EyeEnemyBehavior": {
-      "scriptId": "148",
-      "line": 0,
-      "parentBehavior": "EnemyBehavior",
-      "properties": []
-    },
     "LightningBehavior": {
       "scriptId": "152",
       "line": 0,
       "parentBehavior": null,
-      "properties": []
+      "properties": [
+        {
+          "name": "minInterval",
+          "type": "number"
+        },
+        {
+          "name": "maxInterval",
+          "type": "number"
+        }
+      ]
     },
     "RangedEnemyBehavior": {
       "scriptId": "165",
@@ -228,6 +214,55 @@
       "scriptId": "211",
       "line": 0,
       "parentBehavior": null,
+      "properties": []
+    },
+    "DyingManBehavior": {
+      "scriptId": "259",
+      "line": 0,
+      "parentBehavior": "SimpleDialogBehavior",
+      "properties": [
+        {
+          "name": "activated",
+          "type": "boolean"
+        }
+      ]
+    },
+    "IntroOutsideBehavior": {
+      "scriptId": "285",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": []
+    },
+    "IntroHouseBehavior": {
+      "scriptId": "257",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "knockCounter",
+          "type": "number"
+        },
+        {
+          "name": "interval",
+          "type": "any"
+        }
+      ]
+    },
+    "ShadyPeasantBehavior": {
+      "scriptId": "308",
+      "line": 0,
+      "parentBehavior": "SimpleDialogBehavior",
+      "properties": [
+        {
+          "name": "activated",
+          "type": "boolean"
+        }
+      ]
+    },
+    "ClosedEnemyBehavior": {
+      "scriptId": "148",
+      "line": 0,
+      "parentBehavior": "EnemyBehavior",
       "properties": []
     }
   }

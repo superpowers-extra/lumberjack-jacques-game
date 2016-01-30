@@ -5,20 +5,42 @@
   ],
   "filtering": "pixelated",
   "wrapping": "clampToEdge",
-  "pixelsPerUnit": 60,
+  "pixelsPerUnit": 16,
   "framesPerSecond": 10,
   "opacity": null,
   "alphaTest": 0.1,
-  "frameOrder": "rows",
+  "frameOrder": "columns",
   "grid": {
-    "width": 63,
-    "height": 117
+    "width": 21,
+    "height": 23
   },
   "origin": {
-    "x": 1,
+    "x": 0.5,
     "y": 0.5
   },
-  "animations": [],
+  "animations": [
+    {
+      "id": "0",
+      "name": "Full",
+      "startFrameIndex": 0,
+      "endFrameIndex": 0,
+      "speed": 1
+    },
+    {
+      "id": "1",
+      "name": "Half",
+      "startFrameIndex": 1,
+      "endFrameIndex": 1,
+      "speed": 1
+    },
+    {
+      "id": "2",
+      "name": "Empty",
+      "startFrameIndex": 2,
+      "endFrameIndex": 2,
+      "speed": 1
+    }
+  ],
   "mapSlots": {
     "map": "map",
     "light": null,

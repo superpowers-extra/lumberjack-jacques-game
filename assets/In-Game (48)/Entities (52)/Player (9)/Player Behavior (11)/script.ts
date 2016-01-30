@@ -1,25 +1,25 @@
 class PlayerBehavior extends Sup.Behavior {
   
   position = new Sup.Math.Vector2();
-  private direction = Utils.Directions.Down;
+  direction = Utils.Directions.Down;
   private velocity = new Sup.Math.Vector2();
   
   private isAttacking = false;
   private hasAttackHit = false;
   private attackCooldown = 0;
 
-  autoPilot = true;
+  autoPilot = false;
   activeInteractable: InteractableBehavior;
   
   health = 5;
   healthBarActor: Sup.Actor;
   hitTimer = 0;
 
+  heartRenderers: Sup.SpriteRenderer[];
+
   // temp
   enemySpawnActor: Sup.Actor;
   enemySpawnPos: Sup.Math.Vector2; 
-
-  
 
   awake() {
     PlayerBehavior.health = PlayerBehavior.maxHealth;
@@ -34,7 +34,19 @@ class PlayerBehavior extends Sup.Behavior {
   }
 
   setup(spawnName: string) {
-    let spawnActor = Sup.getActor("Markers").getChild(spawnName);
+    // create healthbar
+    this.heartRenderers = [];
+    const heartsRoot = Sup.getActor("Hearts");
+    let offset = 1;
+    for (let i = 0; i < PlayerBehavior.maxHealth/2; i++) {
+      const heart = Sup.appendScene("In-Game/HUD/Items/Heart Prefab", heartsRoot)[0];
+      heart.setLocalPosition(i * offset, 0, 0);
+      this.heartRenderers.push(heart.spriteRenderer);
+    }
+    this.updateHealth(PlayerBehavior.health);
+    
+    Sup.log(spawnName.replace("_", "/"));
+    let spawnActor = Sup.getActor("Markers").getChild(spawnName.replace("/", "_"));
     
     if (spawnActor == null) {
       Sup.log(`Couldn't find spawn point named ${spawnName}`);
@@ -51,26 +63,12 @@ class PlayerBehavior extends Sup.Behavior {
     let angle = Utils.getAngleFromDirection(this.direction);
     this.velocity.setFromAngle(angle).multiplyScalar(PlayerBehavior.enterSpeed);
     this.actor.arcadeBody2D.setVelocity(this.velocity);
-    
-    // setup HUD
-    const heartsRoot = Sup.getActor("Hearts");
-    let offset = 2.5;
-    Sup.log("player health", PlayerBehavior.health );
-    for (let i=0; i < PlayerBehavior.health/2; i++) {
-      const hearts = Sup.appendScene("In-Game/HUD/Items/Heart Prefab", heartsRoot);     
-      hearts[0].setLocalPosition(i*offset,0,0);
-      hearts[1].setLocalPosition(i*offset,0,0);
-    }
   }
 
   hit() {
     if (PlayerBehavior.health === 0 || this.hitTimer > 0) return;
-    
-    Sup.log("player hit");
-    // Sup.log("player hit", PlayerBehavior.health, this.hitTimer );
-    PlayerBehavior.health -= 1;
-    
-    // PlayerBehavior.healthbarActor.setLocalScaleX(PlayerBehavior.health / this.maxHealth);
+
+    this.updateHealth(-1, true);
     
     if (PlayerBehavior.health === 0) {
       // FIXME: play some kind of animation or effect
@@ -87,26 +85,65 @@ class PlayerBehavior extends Sup.Behavior {
     }
   }
   
+  // updte healthbar
+  updateHealth(health: number, relative: boolean = false) {
+    if (relative === true) PlayerBehavior.health += health;
+    else PlayerBehavior.health = health;
+    PlayerBehavior.health = Sup.Math.clamp(PlayerBehavior.health, 0, PlayerBehavior.maxHealth);
+    
+    // update the healths bar accordingly
+    const lastIndex = Math.ceil(PlayerBehavior.health / 2);
+    for (let i=0; i<this.heartRenderers.length; i++) {
+      const renderer = this.heartRenderers[i];
+      if (i === lastIndex-1) {
+        if (PlayerBehavior.health % 2 == 0) {
+          renderer.setAnimation("Full", false);
+          renderer.setOpacity(1);
+          renderer.actor.setLocalScale(1,1,1);
+        }
+        else {
+          renderer.setAnimation("Half", false);
+          renderer.setOpacity(1);
+          renderer.actor.setLocalScale(0.9,0.9,1);
+        }
+      }
+      else if (i < lastIndex) {
+        renderer.setAnimation("Full");
+        renderer.setOpacity(1);
+        renderer.actor.setLocalScale(1,1,1);
+      }
+      else {
+        renderer.setAnimation("Empty");
+        renderer.setOpacity(0.6);
+        renderer.actor.setLocalScale(0.8,0.8,1);
+      }
+    }
+  }
 
-  setDirection(direction: Utils.Directions) {
+  setDirection(direction: Utils.Directions, move: boolean) {
     this.direction = direction;
-    this.velocity.setFromAngle(Utils.getAngleFromDirection(this.direction)).multiplyScalar(PlayerBehavior.moveSpeed);
-    this.actor.spriteRenderer.setAnimation(`Walk ${Utils.Directions[this.direction]}`);
+    if (move) {
+      this.velocity.setFromAngle(Utils.getAngleFromDirection(this.direction)).multiplyScalar(PlayerBehavior.enterSpeed);
+      this.actor.spriteRenderer.setAnimation(`Walk ${Utils.Directions[this.direction]}`);
+    } else {
+      this.velocity.set(0, 0);
+      this.actor.spriteRenderer.setAnimation(`Idle ${Utils.Directions[this.direction]}`);
+    }
     this.actor.arcadeBody2D.setVelocity(this.velocity);
   }
 
   update() {
-    if (this.autoPilot) {
+    if (this.activeInteractable != null) {
+      if (Sup.Input.wasKeyJustPressed("SPACE") || Sup.Input.wasKeyJustPressed("RETURN") || Sup.Input.wasGamepadButtonJustPressed(0, 0)) this.activeInteractable.interact();
+      return;
+    }
+
+    if (Fade.isFading || this.autoPilot) {
       this.position = this.actor.getLocalPosition().toVector2();
       return;
     }
 
     Sup.ArcadePhysics2D.collides(this.actor.arcadeBody2D, Sup.ArcadePhysics2D.getAllBodies());
-
-    if (this.activeInteractable != null) {
-      if (Sup.Input.wasKeyJustPressed("SPACE")) this.activeInteractable.interact();
-      return;
-    }
     
     // Movement
     this.position = this.actor.getLocalPosition().toVector2();
@@ -116,14 +153,14 @@ class PlayerBehavior extends Sup.Behavior {
 
     this.velocity.set(0, 0);
     let newDirection: Utils.Directions;
-    if (Sup.Input.isKeyDown("DOWN"))       { this.velocity.y = -1; }
-    else if (Sup.Input.isKeyDown("UP"))    { this.velocity.y =  1; }
-    if (Sup.Input.isKeyDown("LEFT"))       { this.velocity.x = -1; }
-    else if (Sup.Input.isKeyDown("RIGHT")) { this.velocity.x =  1; }
+    if (Sup.Input.isKeyDown("DOWN")       || Sup.Input.getGamepadAxisValue(0, 1) > 0.5)  { this.velocity.y = -1; }
+    else if (Sup.Input.isKeyDown("UP")    || Sup.Input.getGamepadAxisValue(0, 1) < -0.5) { this.velocity.y =  1; }
+    if (Sup.Input.isKeyDown("LEFT")       || Sup.Input.getGamepadAxisValue(0, 0) < -0.5) { this.velocity.x = -1; }
+    else if (Sup.Input.isKeyDown("RIGHT") || Sup.Input.getGamepadAxisValue(0, 0) > 0.5)  { this.velocity.x =  1; }
 
     if (this.velocity.x !== 0 || this.velocity.y !== 0) {
       this.velocity.normalize().multiplyScalar(this.isAttacking ? PlayerBehavior.attackMoveSpeed : PlayerBehavior.moveSpeed);
-      this.direction = Utils.getDirectionFromDirection(this.velocity);
+      this.direction = Utils.getDirectionFromVector(this.velocity);
       if (!this.isAttacking) this.actor.spriteRenderer.setAnimation(`Walk ${Utils.Directions[this.direction]}`);
     } else {
       if (!this.isAttacking) this.actor.spriteRenderer.setAnimation(`Idle ${Utils.Directions[this.direction]}`);
@@ -149,7 +186,7 @@ class PlayerBehavior extends Sup.Behavior {
         }
       }
       
-    } else if (Sup.Input.wasKeyJustPressed("X") && this.attackCooldown === 0) {
+    } else if ((Sup.Input.wasKeyJustPressed("X") || Sup.Input.wasGamepadButtonJustPressed(0, 2)) && this.attackCooldown === 0) {
       this.attackCooldown = PlayerBehavior.attackCooldownDelay;
       this.isAttacking = true;
       this.hasAttackHit = false;
@@ -165,28 +202,30 @@ class PlayerBehavior extends Sup.Behavior {
     }
 
     // Interactions
-    if (Sup.Input.wasKeyJustPressed("SPACE")) {
+    if (Sup.Input.wasKeyJustPressed("SPACE") || Sup.Input.wasKeyJustPressed("RETURN") || Sup.Input.wasGamepadButtonJustPressed(0, 0)) {
       let closestInteractable: InteractableBehavior;
       let closestDistance = Infinity;
       for (let interactable of Game.interactables) {
-        let distance = this.position.distanceTo(interactable.actor.getLocalPosition().toVector2());
-        if (distance < closestDistance) {
+        let diff = interactable.position.clone().subtract(this.position);
+        let distance = this.position.distanceTo(interactable.position);
+        if (diff.length() < closestDistance && Math.abs(Sup.Math.wrapAngle(diff.angle() - Utils.getAngleFromDirection(this.direction))) < Math.PI * 1 / 3) {
           closestDistance = distance;
           closestInteractable = interactable;
         }
       }
       
-      if (closestDistance < 1) closestInteractable.interact();
+      if (closestDistance < 2) {
+        closestInteractable.interact();
+        this.setDirection(this.direction, false);
+      }
     }
     
     // Spawn enemy (temporary)
     if (Sup.Input.wasKeyJustReleased("1") && this.enemySpawnActor != null) {
       Sup.appendScene("In-Game/Entities/Enemies/Eye/Prefab", this.enemySpawnActor);
-      Sup.log(Game.enemies.length);
     }
     if (Sup.Input.wasKeyJustReleased("2") && this.enemySpawnActor != null) {
       Sup.appendScene("In-Game/Entities/Enemies/Ranged/Prefab", this.enemySpawnActor);
-      Sup.log(Game.enemies.length);
     }
     
     if (this.hitTimer > 0) {
