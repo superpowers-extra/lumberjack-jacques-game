@@ -1,18 +1,19 @@
 {
+  "formatVersion": 1,
   "nodes": [
     {
       "id": "0",
-      "name": "Makoto",
+      "name": "Healthbar",
       "children": [
         {
-          "id": "1",
-          "name": "Weapon",
+          "id": "2",
+          "name": "Bar",
           "children": [],
           "components": [
             {
               "type": "SpriteRenderer",
               "config": {
-                "spriteAssetId": "37",
+                "spriteAssetId": "61",
                 "animationId": null,
                 "horizontalFlip": false,
                 "verticalFlip": false,
@@ -28,15 +29,15 @@
             }
           ],
           "position": {
-            "x": -0.3893226087093353,
-            "y": -0.20000000298023224,
-            "z": 0.10000000149011612
+            "x": -0.5,
+            "y": 0,
+            "z": 0
           },
           "orientation": {
             "x": 0,
             "y": 0,
-            "z": 0.25881904510252074,
-            "w": 0.9659258262890683
+            "z": 0,
+            "w": 1
           },
           "scale": {
             "x": 1,
@@ -45,15 +46,15 @@
           },
           "visible": true,
           "layer": 0,
-          "prefabId": null
+          "prefab": null
         }
       ],
       "components": [
         {
           "type": "SpriteRenderer",
           "config": {
-            "spriteAssetId": "3",
-            "animationId": "1",
+            "spriteAssetId": "60",
+            "animationId": null,
             "horizontalFlip": false,
             "verticalFlip": false,
             "castShadow": false,
@@ -65,31 +66,6 @@
             "shaderAssetId": null
           },
           "id": "0"
-        },
-        {
-          "type": "Behavior",
-          "config": {
-            "behaviorName": "PlayerBehavior",
-            "propertyValues": {}
-          },
-          "id": "1"
-        },
-        {
-          "type": "ArcadeBody2D",
-          "config": {
-            "type": "box",
-            "movable": true,
-            "width": 0.7,
-            "height": 0.7,
-            "offset": {
-              "x": 0,
-              "y": -0.2
-            },
-            "tileMapAssetId": null,
-            "tileSetPropertyName": null,
-            "layersIndex": null
-          },
-          "id": "2"
         }
       ],
       "position": {
@@ -110,8 +86,7 @@
       },
       "visible": true,
       "layer": 0,
-      "prefabId": null
+      "prefab": null
     }
-  ],
-  "formatVersion": 1
+  ]
 }

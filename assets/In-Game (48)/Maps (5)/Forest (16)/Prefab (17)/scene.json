@@ -25,7 +25,7 @@
           "position": {
             "x": 0,
             "y": 0,
-            "z": -2.1
+            "z": -1.5
           },
           "orientation": {
             "x": 0,
@@ -84,6 +84,10 @@
                       "target": {
                         "type": "string",
                         "value": "Town"
+                      },
+                      "direction": {
+                        "type": "string",
+                        "value": "Right"
                       }
                     }
                   },
@@ -144,6 +148,114 @@
               "position": {
                 "x": 27,
                 "y": 8,
+                "z": 0
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": {
+                "sceneAssetId": "35"
+              }
+            },
+            {
+              "id": "7",
+              "name": "Eye",
+              "children": [],
+              "components": [],
+              "position": {
+                "x": 25.242549896240234,
+                "y": 9.2487154006958,
+                "z": 0
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": {
+                "sceneAssetId": "35"
+              }
+            },
+            {
+              "id": "8",
+              "name": "Eye",
+              "children": [],
+              "components": [],
+              "position": {
+                "x": 25.56629180908203,
+                "y": 10.93679428100586,
+                "z": 0
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": {
+                "sceneAssetId": "35"
+              }
+            },
+            {
+              "id": "9",
+              "name": "Eye",
+              "children": [],
+              "components": [],
+              "position": {
+                "x": 24.571945190429688,
+                "y": 12.486126899719238,
+                "z": 0
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": {
+                "sceneAssetId": "35"
+              }
+            },
+            {
+              "id": "10",
+              "name": "Eye",
+              "children": [],
+              "components": [],
+              "position": {
+                "x": 23.36948013305664,
+                "y": 10.983043670654297,
                 "z": 0
               },
               "orientation": {

@@ -2,6 +2,7 @@
   "behaviors": {
     "PlayerBehavior": {
       "scriptId": "11",
+      "line": 0,
       "parentBehavior": null,
       "properties": [
         {
@@ -39,10 +40,15 @@
     },
     "TeleportBehavior": {
       "scriptId": "15",
+      "line": 0,
       "parentBehavior": null,
       "properties": [
         {
           "name": "target",
+          "type": "string"
+        },
+        {
+          "name": "direction",
           "type": "string"
         }
       ]
@@ -71,6 +77,7 @@
     },
     "EnemyBehavior": {
       "scriptId": "39",
+      "line": 0,
       "parentBehavior": null,
       "properties": [
         {
@@ -81,13 +88,9 @@
     },
     "SimpleDialogBehavior": {
       "scriptId": "40",
+      "line": 0,
       "parentBehavior": "InteractableBehavior",
-      "properties": [
-        {
-          "name": "currentText",
-          "type": "any"
-        }
-      ]
+      "properties": []
     },
     "StartMenuBehavior": {
       "scriptId": "55",
@@ -97,6 +100,12 @@
     },
     "DebugBehavior": {
       "scriptId": "58",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": []
+    },
+    "BulletBehavior": {
+      "scriptId": "66",
       "line": 0,
       "parentBehavior": null,
       "properties": []

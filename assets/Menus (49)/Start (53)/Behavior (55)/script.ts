@@ -6,7 +6,7 @@ class StartMenuBehavior extends Sup.Behavior {
   update() {
     if (Sup.Input.wasKeyJustPressed("RETURN")) {
       Sup.loadScene("In-Game/Scene");
-      Game.loadMap("Town");
+      Game.loadMap("Start");
     }
   }
 }

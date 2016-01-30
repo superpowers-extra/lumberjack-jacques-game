@@ -5,6 +5,11 @@
     "type": null,
     "children": [
       {
+        "id": "67",
+        "name": "Script",
+        "type": "script"
+      },
+      {
         "id": "46",
         "name": "Fade",
         "type": null,
@@ -115,6 +120,28 @@
                 ]
               }
             ]
+          },
+          {
+            "id": "59",
+            "name": "Healthbar",
+            "type": null,
+            "children": [
+              {
+                "id": "62",
+                "name": "Prefab",
+                "type": "scene"
+              },
+              {
+                "id": "60",
+                "name": "Outline",
+                "type": "sprite"
+              },
+              {
+                "id": "61",
+                "name": "Bar",
+                "type": "sprite"
+              }
+            ]
           }
         ]
       },
@@ -124,14 +151,48 @@
         "type": null,
         "children": [
           {
-            "id": "1",
-            "name": "Outdoor Tile Set",
-            "type": "tileSet"
+            "id": "71",
+            "name": "Global",
+            "type": null,
+            "children": [
+              {
+                "id": "1",
+                "name": "Outdoor Tile Set",
+                "type": "tileSet"
+              },
+              {
+                "id": "2",
+                "name": "Indoor Tile Set",
+                "type": "tileSet"
+              },
+              {
+                "id": "73",
+                "name": "Tree Dark",
+                "type": "sprite"
+              },
+              {
+                "id": "68",
+                "name": "Tree",
+                "type": "sprite"
+              }
+            ]
           },
           {
-            "id": "2",
-            "name": "Indoor Tile Set",
-            "type": "tileSet"
+            "id": "69",
+            "name": "Start",
+            "type": null,
+            "children": [
+              {
+                "id": "70",
+                "name": "Prefab",
+                "type": "scene"
+              },
+              {
+                "id": "72",
+                "name": "Map",
+                "type": "tileMap"
+              }
+            ]
           },
           {
             "id": "6",
@@ -254,6 +315,28 @@
                 "id": "37",
                 "name": "Axe",
                 "type": "sprite"
+              },
+              {
+                "id": "63",
+                "name": "Bullet",
+                "type": null,
+                "children": [
+                  {
+                    "id": "64",
+                    "name": "Prefab",
+                    "type": "scene"
+                  },
+                  {
+                    "id": "66",
+                    "name": "Behavior",
+                    "type": "script"
+                  },
+                  {
+                    "id": "65",
+                    "name": "Sprite",
+                    "type": "sprite"
+                  }
+                ]
               }
             ]
           },
@@ -314,6 +397,18 @@
                 ]
               }
             ]
+          }
+        ]
+      },
+      {
+        "id": "74",
+        "name": "FX",
+        "type": null,
+        "children": [
+          {
+            "id": "75",
+            "name": "Fog",
+            "type": "shader"
           }
         ]
       }

@@ -25,7 +25,7 @@
           "position": {
             "x": 0,
             "y": 0,
-            "z": -1.1
+            "z": -1.5
           },
           "orientation": {
             "x": 0,
@@ -109,6 +109,10 @@
                       "target": {
                         "type": "string",
                         "value": "Forest"
+                      },
+                      "direction": {
+                        "type": "string",
+                        "value": "Left"
                       }
                     }
                   },
@@ -173,6 +177,10 @@
                       "target": {
                         "type": "string",
                         "value": "House"
+                      },
+                      "direction": {
+                        "type": "string",
+                        "value": "Up"
                       }
                     }
                   },

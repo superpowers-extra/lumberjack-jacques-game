@@ -1,24 +1,28 @@
 class PlayerBehavior extends Sup.Behavior {
   
   position: Sup.Math.Vector2;
-  private direction = "Down";
+  private direction = Utils.Directions.Down;
+  private velocity = new Sup.Math.Vector2();
   
+  private attackCooldown = 0;
+
   private weapon: Sup.Actor;
   private attackTimer = 0;
-  private weaponData: { [direction: string]: { angle: number; position: Sup.Math.Vector3; }} = {
-    "Down": { angle:  -60, position: new Sup.Math.Vector3(   0, -0.5,  0.1) },
-    "Up":   { angle:  120, position: new Sup.Math.Vector3(   0,  0.4, -0.1) },
-    "Left": { angle: -150, position: new Sup.Math.Vector3(-0.4, -0.2,  0.1) },
-    "Right": { angle:  30, position: new Sup.Math.Vector3( 0.4, -0.2,  0.1) }
-  };
 
   activeInteractable: InteractableBehavior;
-  
+
   awake() {
     Game.playerBehavior = this;
-    
+
     this.weapon = this.actor.getChild("Weapon");
     this.weapon.setVisible(false);
+  }
+
+  setDirection(direction: Utils.Directions) {
+    this.direction = direction;
+    this.velocity.setFromAngle(Utils.getAngleFromDirection(this.direction)).multiplyScalar(PlayerBehavior.moveSpeed);
+    this.actor.spriteRenderer.setAnimation(`Walk ${Utils.Directions[this.direction]}`);
+    this.actor.arcadeBody2D.setVelocity(this.velocity);
   }
 
   update() {
@@ -33,35 +37,30 @@ class PlayerBehavior extends Sup.Behavior {
     this.position = this.actor.getLocalPosition().toVector2();
     if (Fade.isFading()) return;
 
-    let velocity = this.actor.arcadeBody2D.getVelocity();
-    velocity.set(0, 0);
-    
-    if (Sup.Input.isKeyDown("DOWN")) { velocity.y = -1; this.direction = "Down"; }
-    else if (Sup.Input.isKeyDown("UP")) { velocity.y = 1; this.direction = "Up"; }
-    if (Sup.Input.isKeyDown("LEFT")) { velocity.x = -1; this.direction = "Left"; }
-    else if (Sup.Input.isKeyDown("RIGHT")) { velocity.x = 1; this.direction = "Right"; }
+    this.velocity.set(0, 0);
+    let newDirection: Utils.Directions;
+    if (Sup.Input.isKeyDown("DOWN"))       { this.velocity.y = -1; }
+    else if (Sup.Input.isKeyDown("UP"))    { this.velocity.y =  1; }
+    if (Sup.Input.isKeyDown("LEFT"))       { this.velocity.x = -1; }
+    else if (Sup.Input.isKeyDown("RIGHT")) { this.velocity.x =  1; }
 
-    if (velocity.x != 0 || velocity.y != 0) {
-      velocity.normalize().multiplyScalar(0.1);
-      this.actor.spriteRenderer.setAnimation(`Walk ${this.direction}`);
+    if (this.velocity.x !== 0 || this.velocity.y !== 0) {
+      this.velocity.normalize().multiplyScalar(PlayerBehavior.moveSpeed);
+      this.direction = Utils.getDirectionFromDirection(this.velocity);
+      this.actor.spriteRenderer.setAnimation(`Walk ${Utils.Directions[this.direction]}`);
     } else {
-      this.actor.spriteRenderer.setAnimation(`Idle ${this.direction}`);
+      this.actor.spriteRenderer.setAnimation(`Idle ${Utils.Directions[this.direction]}`);
     }
+    this.actor.arcadeBody2D.setVelocity(this.velocity);
 
-    this.actor.arcadeBody2D.setVelocity(velocity);
-
-    // Attack
+    // Attack Axe
     if (Sup.Input.wasKeyJustPressed("X") && this.attackTimer === PlayerBehavior.attackDelay) {
-      let weaponData = this.weaponData[this.direction];
-      this.weapon.setLocalPosition(weaponData.position);
-
       this.weapon.setVisible(true);
       this.attackTimer = 0;
     }
 
     if (this.attackTimer < PlayerBehavior.attackDelay) {
-      let offset = Sup.Math.toRadians(this.weaponData[this.direction].angle);
-      this.weapon.setEulerZ(offset + Math.PI * 2 / 3 * Math.sin(this.attackTimer / PlayerBehavior.attackDelay * Math.PI));
+      this.weapon.setEulerZ(Math.PI * 2 / 3 * Math.sin(this.attackTimer / PlayerBehavior.attackDelay * Math.PI));
 
       this.attackTimer += 1;
       if (this.attackTimer === PlayerBehavior.attackDelay) this.weapon.setVisible(false);
@@ -75,7 +74,18 @@ class PlayerBehavior extends Sup.Behavior {
         }
       }
     }
-    
+
+    // Attack shotgun
+    if (this.attackCooldown > 0) {
+      this.attackCooldown -= 1;
+
+    } else if (Sup.Input.wasKeyJustPressed("C")) {
+      this.attackCooldown = PlayerBehavior.attackCooldownDelay;
+
+      let bullet = Sup.appendScene("In-Game/Entities/Player/Bullet/Prefab")[0];
+      bullet.getBehavior(BulletBehavior).setup(this.position, this.direction);
+    }
+
     // Interactions
     if (Sup.Input.wasKeyJustPressed("SPACE")) {
       let closestInteractable: InteractableBehavior;
@@ -95,6 +105,10 @@ class PlayerBehavior extends Sup.Behavior {
 Sup.registerBehavior(PlayerBehavior);
 
 namespace PlayerBehavior {
+  export const moveSpeed = 0.1;
+  
+  export const attackCooldownDelay = 10;
+
   export const attackDelay = 16;
   export const attackRange = 2;
 }

@@ -1,7 +1,7 @@
 abstract class SimpleDialogBehavior extends InteractableBehavior {
   
   texts: { name: string; text: string; }[];
-  currentText = null;
+  private currentText: number = null;
 
   interact() {
     if (Game.playerBehavior.activeInteractable == null) {
@@ -9,7 +9,9 @@ abstract class SimpleDialogBehavior extends InteractableBehavior {
       Game.playerBehavior.activeInteractable = this;
     }
     
-    if (this.currentText < this.texts.length) {
+    if (!Game.dialogBehavior.isTextFullyDisplayed()) {
+      Game.dialogBehavior.fullyDisplaytext();
+    } else if (this.currentText < this.texts.length) {
       Game.dialogBehavior.show(this.texts[this.currentText].name, this.texts[this.currentText].text);
       this.currentText++;
     } else {
