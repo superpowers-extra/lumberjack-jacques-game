@@ -60,60 +60,6 @@
           }
         },
         {
-          "id": "53",
-          "name": "Rain Ground",
-          "children": [],
-          "components": [],
-          "position": {
-            "x": 0,
-            "y": 0,
-            "z": -5
-          },
-          "orientation": {
-            "x": 0,
-            "y": 0,
-            "z": 0,
-            "w": 1
-          },
-          "scale": {
-            "x": 1,
-            "y": 1,
-            "z": 1
-          },
-          "visible": true,
-          "layer": 0,
-          "prefab": {
-            "sceneAssetId": "110"
-          }
-        },
-        {
-          "id": "54",
-          "name": "Rain Drops",
-          "children": [],
-          "components": [],
-          "position": {
-            "x": 0,
-            "y": 0,
-            "z": 5
-          },
-          "orientation": {
-            "x": 0,
-            "y": 0,
-            "z": 0,
-            "w": 1
-          },
-          "scale": {
-            "x": 1,
-            "y": 1,
-            "z": 1
-          },
-          "visible": true,
-          "layer": 0,
-          "prefab": {
-            "sceneAssetId": "112"
-          }
-        },
-        {
           "id": "56",
           "name": "Lightning",
           "children": [],
@@ -540,8 +486,8 @@
             }
           ],
           "position": {
-            "x": -12.00529670715332,
-            "y": 4.8662614822387695,
+            "x": -10.270715713500977,
+            "y": 5.4114155769348145,
             "z": 8
           },
           "orientation": {

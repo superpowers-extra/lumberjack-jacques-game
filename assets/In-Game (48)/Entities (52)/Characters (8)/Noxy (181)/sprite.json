@@ -20,17 +20,17 @@
   },
   "animations": [
     {
-      "id": "0",
-      "name": "1",
-      "startFrameIndex": 0,
-      "endFrameIndex": 5,
+      "id": "1",
+      "name": "Idle",
+      "startFrameIndex": 6,
+      "endFrameIndex": 8,
       "speed": 1
     },
     {
-      "id": "1",
-      "name": "2",
-      "startFrameIndex": 6,
-      "endFrameIndex": 8,
+      "id": "0",
+      "name": "Burger",
+      "startFrameIndex": 0,
+      "endFrameIndex": 5,
       "speed": 1
     }
   ],

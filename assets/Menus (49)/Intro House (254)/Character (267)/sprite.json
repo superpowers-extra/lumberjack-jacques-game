@@ -6,24 +6,24 @@
   "filtering": "pixelated",
   "wrapping": "clampToEdge",
   "pixelsPerUnit": 16,
-  "framesPerSecond": 10,
-  "opacity": null,
+  "framesPerSecond": 3,
+  "opacity": 1,
   "alphaTest": 0.1,
   "frameOrder": "rows",
   "grid": {
-    "width": 256,
-    "height": 256
+    "width": 512,
+    "height": 512
   },
   "origin": {
-    "x": 0.5,
-    "y": 0.5
+    "x": 0.44,
+    "y": 0.29
   },
   "animations": [
     {
       "id": "0",
-      "name": "Animation",
-      "startFrameIndex": 0,
-      "endFrameIndex": 3,
+      "name": "Flash",
+      "startFrameIndex": 1,
+      "endFrameIndex": 1,
       "speed": 1
     }
   ],

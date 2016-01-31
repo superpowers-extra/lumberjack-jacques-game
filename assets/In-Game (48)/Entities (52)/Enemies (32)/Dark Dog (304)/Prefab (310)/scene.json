@@ -10,7 +10,7 @@
           "type": "SpriteRenderer",
           "config": {
             "spriteAssetId": "303",
-            "animationId": "",
+            "animationId": "0",
             "horizontalFlip": false,
             "verticalFlip": false,
             "castShadow": false,
@@ -44,7 +44,12 @@
           "type": "Behavior",
           "config": {
             "behaviorName": "ClosedEnemyBehavior",
-            "propertyValues": {}
+            "propertyValues": {
+              "moveSpeed": {
+                "type": "number",
+                "value": 0.1
+              }
+            }
           },
           "id": "3"
         }

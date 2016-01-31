@@ -66,8 +66,8 @@
                 "color": "ffffff",
                 "overrideOpacity": false,
                 "opacity": null,
-                "materialType": "basic",
-                "shaderAssetId": null
+                "materialType": "shader",
+                "shaderAssetId": "87"
               },
               "id": "0"
             },
@@ -87,6 +87,14 @@
                 "layersIndex": null
               },
               "id": "1"
+            },
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "TimeOffsetBehavior",
+                "propertyValues": {}
+              },
+              "id": "2"
             }
           ],
           "position": {

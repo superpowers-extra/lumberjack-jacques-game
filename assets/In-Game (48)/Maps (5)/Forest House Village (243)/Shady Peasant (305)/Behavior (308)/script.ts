@@ -1,11 +1,16 @@
 class ShadyPeasantBehavior extends SimpleDialogBehavior {
   dialogs = [
+    { name: "shadyPeasant", text: "shadyPeasant_whereIsHe" },
     { name: "player", text: "shadyPeasant_whatsUp" },
-    { name: "shadyPeasant", text: "shadyPeasant_nothingNuch" },
+    { name: "shadyPeasant", text: "shadyPeasant_nothingMuch" },
+    { name: "player", text: "shadyPeasant_soundsWeird" },
+    { name: "shadyPeasant", text: "shadyPeasant_yesSir" },
+    { name: "player", text: "shadyPeasant_weirdGuy" }
   ];
 
   afterDialogs = [
-    { name: "player", text: "shadyPeasant_heh" }
+    { name: "shadyPeasant", text: "shadyPeasant_leaveMeAlone" },
+    { name: "player", text: "shadyPeasant_right" }
   ];
 
   activated = false;

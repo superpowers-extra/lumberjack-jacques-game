@@ -18,7 +18,7 @@ class DialogBehavior extends Sup.Behavior {
     // FIXME: restore if we have the potraits
     // this.portraitRenderer.setSprite(`In-Game/Dialog/Portraits/${speaker}`);
 
-    this.animatedText.setText(`${this.speaker.toUpperCase()}: ${text}`);
+    this.animatedText.setText(`${this.speaker.toUpperCase()}: ${text}`, this.speaker.length + 2);
   }
   
   hide() {

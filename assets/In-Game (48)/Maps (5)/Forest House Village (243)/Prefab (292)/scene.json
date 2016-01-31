@@ -203,8 +203,8 @@
             }
           ],
           "position": {
-            "x": 65.61466217041016,
-            "y": -1.828992247581482,
+            "x": 18.636049270629883,
+            "y": -4.087046146392822,
             "z": 0
           },
           "orientation": {
@@ -371,8 +371,8 @@
             }
           ],
           "position": {
-            "x": 66.60406494140625,
-            "y": -2.6540000438690186,
+            "x": 19.686731338500977,
+            "y": 4.12015962600708,
             "z": 0
           },
           "orientation": {
@@ -400,7 +400,7 @@
               "config": {
                 "type": "box",
                 "movable": false,
-                "width": 150,
+                "width": 95,
                 "height": 1,
                 "offset": {
                   "x": 0,
@@ -414,8 +414,8 @@
             }
           ],
           "position": {
-            "x": 0,
-            "y": 36.848,
+            "x": -28.351116180419922,
+            "y": 37.600685119628906,
             "z": 0
           },
           "orientation": {
@@ -443,7 +443,7 @@
               "config": {
                 "type": "box",
                 "movable": false,
-                "width": 150,
+                "width": 114,
                 "height": 1,
                 "offset": {
                   "x": 0,
@@ -457,8 +457,8 @@
             }
           ],
           "position": {
-            "x": 0,
-            "y": -38.282,
+            "x": -25.34037971496582,
+            "y": -37.027523040771484,
             "z": 0
           },
           "orientation": {
@@ -537,8 +537,8 @@
               "children": [],
               "components": [],
               "position": {
-                "x": 66.09165954589844,
-                "y": -15.205224990844727,
+                "x": 17.16716957092285,
+                "y": -20.474016189575195,
                 "z": 8
               },
               "orientation": {
@@ -564,8 +564,8 @@
               "children": [],
               "components": [],
               "position": {
-                "x": 70.28656005859375,
-                "y": 31.283401489257812,
+                "x": 16.845958709716797,
+                "y": 29.527141571044922,
                 "z": 8
               },
               "orientation": {
@@ -586,40 +586,13 @@
               }
             },
             {
-              "id": "61",
-              "name": "Tree Wall Horizontal",
-              "children": [],
-              "components": [],
-              "position": {
-                "x": 41.956329345703125,
-                "y": 40.531700134277344,
-                "z": 8
-              },
-              "orientation": {
-                "x": 0,
-                "y": 0,
-                "z": 0,
-                "w": 1
-              },
-              "scale": {
-                "x": 1,
-                "y": 1,
-                "z": 1
-              },
-              "visible": true,
-              "layer": 0,
-              "prefab": {
-                "sceneAssetId": "212"
-              }
-            },
-            {
               "id": "62",
               "name": "Tree Wall Horizontal",
               "children": [],
               "components": [],
               "position": {
-                "x": 7.714212894439697,
-                "y": 40.180503845214844,
+                "x": 5.489939212799072,
+                "y": 39.24396514892578,
                 "z": 8
               },
               "orientation": {
@@ -645,8 +618,8 @@
               "children": [],
               "components": [],
               "position": {
-                "x": -28.108306884765625,
-                "y": 40.70730209350586,
+                "x": -28.810714721679688,
+                "y": 40.12196731567383,
                 "z": 8
               },
               "orientation": {
@@ -672,35 +645,8 @@
               "children": [],
               "components": [],
               "position": {
-                "x": -62.8772087097168,
-                "y": 40.882896423339844,
-                "z": 8
-              },
-              "orientation": {
-                "x": 0,
-                "y": 0,
-                "z": 0,
-                "w": 1
-              },
-              "scale": {
-                "x": 1,
-                "y": 1,
-                "z": 1
-              },
-              "visible": true,
-              "layer": 0,
-              "prefab": {
-                "sceneAssetId": "212"
-              }
-            },
-            {
-              "id": "67",
-              "name": "Tree Wall Horizontal",
-              "children": [],
-              "components": [],
-              "position": {
-                "x": 27.205875396728516,
-                "y": -35.327754974365234,
+                "x": -64.86734771728516,
+                "y": 40.18049621582031,
                 "z": 8
               },
               "orientation": {
@@ -888,8 +834,8 @@
               "children": [],
               "components": [],
               "position": {
-                "x": 21.575105667114258,
-                "y": -11.499970436096191,
+                "x": -24.589540481567383,
+                "y": -16.517866134643555,
                 "z": 8
               },
               "orientation": {
@@ -1104,8 +1050,8 @@
               "children": [],
               "components": [],
               "position": {
-                "x": 56.84719467163086,
-                "y": 23.464319229125977,
+                "x": -8.134562492370605,
+                "y": 26.976844787597656,
                 "z": 8
               },
               "orientation": {
@@ -1158,9 +1104,9 @@
               "children": [],
               "components": [],
               "position": {
-                "x": 50.412208557128906,
-                "y": 23.617645263671875,
-                "z": 8
+                "x": -0.01764703169465065,
+                "y": 22.864961624145508,
+                "z": -10.56446647644043
               },
               "orientation": {
                 "x": 0,
@@ -1239,8 +1185,8 @@
               "children": [],
               "components": [],
               "position": {
-                "x": 32.591712951660156,
-                "y": -21.139202117919922,
+                "x": -48.19641876220703,
+                "y": -24.149940490722656,
                 "z": 8
               },
               "orientation": {
@@ -1258,6 +1204,87 @@
               "layer": 0,
               "prefab": {
                 "sceneAssetId": "242"
+              }
+            },
+            {
+              "id": "136",
+              "name": "Pine Tree",
+              "children": [],
+              "components": [],
+              "position": {
+                "x": 4.174429893493652,
+                "y": 14.642725944519043,
+                "z": 8
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": {
+                "sceneAssetId": "242"
+              }
+            },
+            {
+              "id": "137",
+              "name": "Pine Tree",
+              "children": [],
+              "components": [],
+              "position": {
+                "x": 5.930695056915283,
+                "y": 21.33325958251953,
+                "z": 8
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": {
+                "sceneAssetId": "242"
+              }
+            },
+            {
+              "id": "138",
+              "name": "Light Tree",
+              "children": [],
+              "components": [],
+              "position": {
+                "x": 12.258817672729492,
+                "y": 8.45398998260498,
+                "z": 8
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": {
+                "sceneAssetId": "98"
               }
             }
           ],
@@ -1371,8 +1398,8 @@
               "children": [],
               "components": [],
               "position": {
-                "x": -43.99879455566406,
-                "y": 7.40019416809082,
+                "x": -40.6948356628418,
+                "y": 6.21076774597168,
                 "z": 8
               },
               "orientation": {
@@ -1425,8 +1452,89 @@
               "children": [],
               "components": [],
               "position": {
-                "x": -35.0662727355957,
-                "y": 6.260988712310791,
+                "x": -35.561866760253906,
+                "y": 6.112309455871582,
+                "z": 8
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": {
+                "sceneAssetId": "207"
+              }
+            },
+            {
+              "id": "147",
+              "name": "Bush",
+              "children": [],
+              "components": [],
+              "position": {
+                "x": 14.574952125549316,
+                "y": -12.416743278503418,
+                "z": 8
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": {
+                "sceneAssetId": "207"
+              }
+            },
+            {
+              "id": "148",
+              "name": "Bush",
+              "children": [],
+              "components": [],
+              "position": {
+                "x": 11.229686737060547,
+                "y": -13.754847526550293,
+                "z": 8
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": {
+                "sceneAssetId": "207"
+              }
+            },
+            {
+              "id": "149",
+              "name": "Bush",
+              "children": [],
+              "components": [],
+              "position": {
+                "x": 13.831559181213379,
+                "y": -15.762006759643555,
                 "z": 8
               },
               "orientation": {
@@ -1527,8 +1635,89 @@
           "children": [],
           "components": [],
           "position": {
-            "x": 43.608,
-            "y": 10.133,
+            "x": 4.3621978759765625,
+            "y": 7.62405252456665,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "310"
+          }
+        },
+        {
+          "id": "150",
+          "name": "Dark Dog",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": -8.281044960021973,
+            "y": 9.91336441040039,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "310"
+          }
+        },
+        {
+          "id": "151",
+          "name": "Dark Dog",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": -6.512032508850098,
+            "y": 3.409639835357666,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "310"
+          }
+        },
+        {
+          "id": "152",
+          "name": "Dark Dog",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": -18.999187469482422,
+            "y": -0.7007143497467041,
             "z": 0
           },
           "orientation": {
@@ -1598,8 +1787,8 @@
             }
           ],
           "position": {
-            "x": 57.711177825927734,
-            "y": -31.36271095275879,
+            "x": 3.2670013904571533,
+            "y": -33.87166213989258,
             "z": 0
           },
           "orientation": {
@@ -1770,8 +1959,8 @@
             }
           ],
           "position": {
-            "x": 54.589,
-            "y": 23.109,
+            "x": -20.930341720581055,
+            "y": 27.876001358032227,
             "z": 0
           },
           "orientation": {
@@ -2028,8 +2217,8 @@
             }
           ],
           "position": {
-            "x": 60.234,
-            "y": 0.905,
+            "x": -29.586347579956055,
+            "y": -25.18806266784668,
             "z": 0
           },
           "orientation": {
@@ -2071,8 +2260,8 @@
             }
           ],
           "position": {
-            "x": 53.46,
-            "y": 2.786,
+            "x": -43.88718795776367,
+            "y": -18.03826904296875,
             "z": 0
           },
           "orientation": {
@@ -2114,8 +2303,8 @@
             }
           ],
           "position": {
-            "x": 50.826,
-            "y": -1.73,
+            "x": -32.72197341918945,
+            "y": -22.805164337158203,
             "z": 0
           },
           "orientation": {
@@ -2200,8 +2389,8 @@
             }
           ],
           "position": {
-            "x": 63.337,
-            "y": -0.224,
+            "x": 16.419668197631836,
+            "y": -4.740106582641602,
             "z": 0
           },
           "orientation": {
@@ -2295,8 +2484,8 @@
           "children": [],
           "components": [],
           "position": {
-            "x": 52.329,
-            "y": 27.033,
+            "x": -14.659923553466797,
+            "y": 28.287473678588867,
             "z": 0
           },
           "orientation": {
@@ -2322,8 +2511,8 @@
           "children": [],
           "components": [],
           "position": {
-            "x": 51.827,
-            "y": -19.968,
+            "x": -43.01124954223633,
+            "y": -25.23678970336914,
             "z": 0
           },
           "orientation": {
@@ -2410,8 +2599,8 @@
             }
           ],
           "position": {
-            "x": 56.51,
-            "y": 34.626,
+            "x": -38.328250885009766,
+            "y": 34.37510299682617,
             "z": 0
           },
           "orientation": {
@@ -2496,8 +2685,8 @@
             }
           ],
           "position": {
-            "x": 35.435,
-            "y": -16.054,
+            "x": -10.478754043579102,
+            "y": -20.821002960205078,
             "z": 0
           },
           "orientation": {
@@ -2505,6 +2694,286 @@
             "y": 0,
             "z": -0.7071067811865475,
             "w": 0.7071067811865476
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "139",
+          "name": "GrassPath1",
+          "children": [],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "spriteAssetId": "179",
+                "animationId": null,
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": -18.964,
+            "y": 8.789,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "140",
+          "name": "GrassPath1",
+          "children": [],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "spriteAssetId": "179",
+                "animationId": null,
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": -18.295,
+            "y": -21.43,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 1,
+            "w": 6.123234262925839e-17
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "141",
+          "name": "GrassPath1",
+          "children": [],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "spriteAssetId": "179",
+                "animationId": null,
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 0.773,
+            "y": 24.065,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 1,
+            "w": 6.123234262925839e-17
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "142",
+          "name": "Stone01",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": 13.207,
+            "y": -20.315,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "263"
+          }
+        },
+        {
+          "id": "143",
+          "name": "Stone01",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": 19.34,
+            "y": 15.145,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "263"
+          }
+        },
+        {
+          "id": "144",
+          "name": "Stone02 (1)",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": 21.458,
+            "y": 17.152,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "268"
+          }
+        },
+        {
+          "id": "145",
+          "name": "Stone02 (1)",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": -4.858,
+            "y": 0.76,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "268"
+          }
+        },
+        {
+          "id": "146",
+          "name": "Stone03",
+          "children": [],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "spriteAssetId": "194",
+                "animationId": null,
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": -8.203,
+            "y": -0.801,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
           },
           "scale": {
             "x": 1,

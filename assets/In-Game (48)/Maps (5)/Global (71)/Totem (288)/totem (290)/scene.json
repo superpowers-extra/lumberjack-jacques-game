@@ -28,11 +28,11 @@
           "config": {
             "type": "box",
             "movable": true,
-            "width": 2,
-            "height": 2.5,
+            "width": 1.5,
+            "height": 2,
             "offset": {
-              "x": -0.7,
-              "y": -1
+              "x": 0.3,
+              "y": 1
             },
             "tileMapAssetId": null,
             "tileSetPropertyName": null,

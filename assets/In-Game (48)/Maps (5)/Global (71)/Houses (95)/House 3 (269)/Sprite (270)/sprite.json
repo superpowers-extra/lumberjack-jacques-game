@@ -1,9 +1,9 @@
 {
   "formatVersion": 3,
   "maps": [
-    "map",
     "noise",
-    "light"
+    "light",
+    "map"
   ],
   "filtering": "pixelated",
   "wrapping": "clampToEdge",

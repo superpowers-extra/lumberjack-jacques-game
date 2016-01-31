@@ -1,8 +1,6 @@
 {
   "formatVersion": 3,
   "maps": [
-    "light",
-    "noise",
     "map"
   ],
   "filtering": "pixelated",

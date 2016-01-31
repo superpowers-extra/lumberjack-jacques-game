@@ -1,0 +1,51 @@
+{
+  "formatVersion": 3,
+  "maps": [
+    "map"
+  ],
+  "filtering": "pixelated",
+  "wrapping": "clampToEdge",
+  "pixelsPerUnit": 16,
+  "framesPerSecond": 5,
+  "opacity": null,
+  "alphaTest": 0.1,
+  "frameOrder": "rows",
+  "grid": {
+    "width": 37,
+    "height": 40
+  },
+  "origin": {
+    "x": 0.61,
+    "y": 0.02
+  },
+  "animations": [
+    {
+      "id": "0",
+      "name": "Idle",
+      "startFrameIndex": 0,
+      "endFrameIndex": 2,
+      "speed": 1
+    },
+    {
+      "id": "1",
+      "name": "Beer",
+      "startFrameIndex": 3,
+      "endFrameIndex": 7,
+      "speed": 0.5
+    },
+    {
+      "id": "2",
+      "name": "Worried",
+      "startFrameIndex": 8,
+      "endFrameIndex": 12,
+      "speed": 1
+    }
+  ],
+  "mapSlots": {
+    "map": "map",
+    "light": null,
+    "specular": null,
+    "alpha": null,
+    "normal": null
+  }
+}

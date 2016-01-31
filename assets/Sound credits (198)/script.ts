@@ -5,4 +5,6 @@
   Menus/Intro House/Rockingchair — CC0 1.0 Universal (CC0 1.0) Public Domain Dedication https://freesound.org/people/gauthier.grandgirard/sounds/110855/
   Menus/Intro Outside/Open Door Sound —
   
+  In-Game/Maps/Village/Noxy/Power Up — http://freesound.org/people/GameAudio/sounds/220173/ and http://freesound.org/people/Cman634/sounds/198784/
+  
 */

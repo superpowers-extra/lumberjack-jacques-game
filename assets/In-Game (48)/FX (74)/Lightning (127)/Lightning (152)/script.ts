@@ -4,6 +4,8 @@ class LightningBehavior extends Sup.Behavior {
 
   minInterval = 4000;
   maxInterval = 15000;
+
+  onFlash: Function;
   
   awake() {
     const backgroundActor = Sup.getActor("Background");
@@ -30,6 +32,7 @@ class LightningBehavior extends Sup.Behavior {
     if (this.actor.isDestroyed()) return;
 
     if (this.backgroundRenderer != null) this.backgroundRenderer.setAnimation("Flash", false);
+    if (this.onFlash != null) this.onFlash();
     
     this.actor.spriteRenderer.uniforms.setFloat("time", 0);
     Sup.setTimeout(Sup.Math.Random.float(100, 1000), this.playSound);

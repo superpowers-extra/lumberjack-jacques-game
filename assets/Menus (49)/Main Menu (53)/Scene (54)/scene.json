@@ -403,8 +403,8 @@
         }
       ],
       "position": {
-        "x": 4,
-        "y": -7,
+        "x": 3,
+        "y": -8,
         "z": 7
       },
       "orientation": {
@@ -528,7 +528,7 @@
           "type": "SpriteRenderer",
           "config": {
             "spriteAssetId": "251",
-            "animationId": null,
+            "animationId": "0",
             "horizontalFlip": false,
             "verticalFlip": false,
             "castShadow": false,
@@ -536,15 +536,15 @@
             "color": "ffffff",
             "overrideOpacity": false,
             "opacity": null,
-            "materialType": "basic",
-            "shaderAssetId": null
+            "materialType": "shader",
+            "shaderAssetId": "348"
           },
           "id": "0"
         }
       ],
       "position": {
-        "x": -12.30271053314209,
-        "y": 5.442731857299805,
+        "x": -8.8,
+        "y": 15.2,
         "z": 4
       },
       "orientation": {

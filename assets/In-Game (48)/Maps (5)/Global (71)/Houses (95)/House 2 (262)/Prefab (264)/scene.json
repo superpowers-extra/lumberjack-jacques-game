@@ -33,9 +33,9 @@
                 }
               ],
               "position": {
-                "x": 0.11387188732624054,
-                "y": 7.9191813468933105,
-                "z": 0
+                "x": 0.031012505292892456,
+                "y": 7.9190003871917725,
+                "z": 0.10000000149011612
               },
               "orientation": {
                 "x": 0,
@@ -66,8 +66,8 @@
                 "color": "ffffff",
                 "overrideOpacity": false,
                 "opacity": null,
-                "materialType": "basic",
-                "shaderAssetId": null
+                "materialType": "shader",
+                "shaderAssetId": "87"
               },
               "id": "0"
             },
@@ -87,6 +87,14 @@
                 "layersIndex": null
               },
               "id": "1"
+            },
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "TimeOffsetBehavior",
+                "propertyValues": {}
+              },
+              "id": "2"
             }
           ],
           "position": {

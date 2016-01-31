@@ -18,8 +18,8 @@
             "color": "ffffff",
             "overrideOpacity": false,
             "opacity": null,
-            "materialType": "basic",
-            "shaderAssetId": null
+            "materialType": "shader",
+            "shaderAssetId": "96"
           },
           "id": "0"
         },
@@ -39,6 +39,22 @@
             "layersIndex": null
           },
           "id": "1"
+        },
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "RandomTreeColorBehavior",
+            "propertyValues": {}
+          },
+          "id": "2"
+        },
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "TimeOffsetBehavior",
+            "propertyValues": {}
+          },
+          "id": "3"
         }
       ],
       "position": {

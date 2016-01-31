@@ -7,16 +7,16 @@
   "wrapping": "clampToEdge",
   "pixelsPerUnit": 16,
   "framesPerSecond": 10,
-  "opacity": null,
+  "opacity": 1,
   "alphaTest": 0.1,
   "frameOrder": "rows",
   "grid": {
-    "width": 69,
-    "height": 78
+    "width": 100,
+    "height": 100
   },
   "origin": {
     "x": 0.5,
-    "y": 0.5
+    "y": 0.25
   },
   "animations": [],
   "mapSlots": {

@@ -1,0 +1,24 @@
+uniform sampler2D map;
+uniform float time;
+varying vec2 vUv;
+
+void main() {
+  vec2 uv = vUv;
+  // uv.y += min(time, 1.) - 1.;
+  uv.x += abs(uv.y * 2. - 1.) * 0.01 * sin(time * 2. + uv.y * 10.);
+  
+  vec4 o = texture2D(map, uv);
+  
+  /*
+  uv.y -= 2. / 400.;
+  
+  if ( texture2D(map, uv).a < 0.5 )
+    {
+    o.rgb *= 0.5;
+  }
+  */
+  
+  gl_FragColor = o;
+  
+  
+}

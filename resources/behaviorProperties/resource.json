@@ -14,10 +14,6 @@
           "type": "boolean"
         },
         {
-          "name": "health",
-          "type": "number"
-        },
-        {
           "name": "hitTimer",
           "type": "number"
         },
@@ -65,6 +61,7 @@
     },
     "InteractableBehavior": {
       "scriptId": "38",
+      "line": 0,
       "parentBehavior": null,
       "properties": [
         {
@@ -83,23 +80,23 @@
           "type": "Sup.Math.Vector2"
         },
         {
+          "name": "initialPosition",
+          "type": "Sup.Math.Vector2"
+        },
+        {
           "name": "velocity",
           "type": "Sup.Math.Vector2"
         },
         {
-          "name": "direction",
-          "type": "Sup.Math.Vector2"
-        },
-        {
-          "name": "moveSpeed",
+          "name": "changeStateTimer",
           "type": "number"
         },
         {
-          "name": "moveDistance",
-          "type": "number"
+          "name": "aggressive",
+          "type": "boolean"
         },
         {
-          "name": "attackDistance",
+          "name": "health",
           "type": "number"
         },
         {
@@ -263,6 +260,46 @@
       "scriptId": "148",
       "line": 0,
       "parentBehavior": "EnemyBehavior",
+      "properties": []
+    },
+    "NoxyBehavior": {
+      "scriptId": "314",
+      "line": 0,
+      "parentBehavior": "SimpleDialogBehavior",
+      "properties": [
+        {
+          "name": "ticks",
+          "type": "number"
+        }
+      ]
+    },
+    "ChefBehavior": {
+      "scriptId": "345",
+      "line": 0,
+      "parentBehavior": "SimpleDialogBehavior",
+      "properties": []
+    },
+    "WaitressBehavior": {
+      "scriptId": "347",
+      "line": 0,
+      "parentBehavior": "SimpleDialogBehavior",
+      "properties": []
+    },
+    "DoctorBehavior": {
+      "scriptId": "376",
+      "line": 0,
+      "parentBehavior": "SimpleDialogBehavior",
+      "properties": [
+        {
+          "name": "velocity",
+          "type": "Sup.Math.Vector2"
+        }
+      ]
+    },
+    "BettyJollyEnemyBehavior": {
+      "scriptId": "388",
+      "line": 0,
+      "parentBehavior": null,
       "properties": []
     }
   }

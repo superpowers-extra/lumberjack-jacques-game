@@ -177,6 +177,14 @@
             "propertyValues": {}
           },
           "id": "2"
+        },
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "TimeOffsetBehavior",
+            "propertyValues": {}
+          },
+          "id": "3"
         }
       ],
       "position": {

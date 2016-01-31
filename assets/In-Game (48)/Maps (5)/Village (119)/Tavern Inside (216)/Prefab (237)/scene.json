@@ -39,7 +39,7 @@
           "components": [],
           "position": {
             "x": 0,
-            "y": 0,
+            "y": 0.48648643493652344,
             "z": 8
           },
           "orientation": {
@@ -221,8 +221,8 @@
             }
           ],
           "position": {
-            "x": -4.135134696960449,
-            "y": 5.594594955444336,
+            "x": -4.135135173797607,
+            "y": 5.351352214813232,
             "z": 0
           },
           "orientation": {
@@ -723,36 +723,72 @@
       "name": "Scenery",
       "children": [
         {
-          "id": "39",
-          "name": "Entities",
+          "id": "77",
+          "name": "Chef",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": 3.3610000610351562,
+            "y": 2.8278467655181885,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "344"
+          }
+        },
+        {
+          "id": "78",
+          "name": "Waitress",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": -4.8125,
+            "y": -0.5,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "346"
+          }
+        },
+        {
+          "id": "79",
+          "name": "Props",
           "children": [
             {
-              "id": "64",
-              "name": "4",
+              "id": "80",
+              "name": "Table2",
               "children": [],
-              "components": [
-                {
-                  "type": "SpriteRenderer",
-                  "config": {
-                    "spriteAssetId": "302",
-                    "animationId": "0",
-                    "horizontalFlip": false,
-                    "verticalFlip": false,
-                    "castShadow": false,
-                    "receiveShadow": false,
-                    "color": "ffffff",
-                    "overrideOpacity": false,
-                    "opacity": null,
-                    "materialType": "basic",
-                    "shaderAssetId": null
-                  },
-                  "id": "0"
-                }
-              ],
+              "components": [],
               "position": {
-                "x": -9.14,
-                "y": 5.539,
-                "z": -2
+                "x": -1.125,
+                "y": -0.125,
+                "z": 0
               },
               "orientation": {
                 "x": 0,
@@ -767,35 +803,19 @@
               },
               "visible": true,
               "layer": 0,
-              "prefab": null
+              "prefab": {
+                "sceneAssetId": "385"
+              }
             },
             {
-              "id": "65",
-              "name": "3",
+              "id": "82",
+              "name": "Stool",
               "children": [],
-              "components": [
-                {
-                  "type": "SpriteRenderer",
-                  "config": {
-                    "spriteAssetId": "301",
-                    "animationId": "0",
-                    "horizontalFlip": false,
-                    "verticalFlip": false,
-                    "castShadow": false,
-                    "receiveShadow": false,
-                    "color": "ffffff",
-                    "overrideOpacity": false,
-                    "opacity": null,
-                    "materialType": "basic",
-                    "shaderAssetId": null
-                  },
-                  "id": "0"
-                }
-              ],
+              "components": [],
               "position": {
-                "x": -8.504,
-                "y": 3.855,
-                "z": -2
+                "x": -0.7208796143531799,
+                "y": -1.6861990690231323,
+                "z": 0
               },
               "orientation": {
                 "x": 0,
@@ -810,35 +830,19 @@
               },
               "visible": true,
               "layer": 0,
-              "prefab": null
+              "prefab": {
+                "sceneAssetId": "339"
+              }
             },
             {
-              "id": "67",
-              "name": "2",
+              "id": "81",
+              "name": "Stool",
               "children": [],
-              "components": [
-                {
-                  "type": "SpriteRenderer",
-                  "config": {
-                    "spriteAssetId": "300",
-                    "animationId": "0",
-                    "horizontalFlip": false,
-                    "verticalFlip": false,
-                    "castShadow": false,
-                    "receiveShadow": false,
-                    "color": "ffffff",
-                    "overrideOpacity": false,
-                    "opacity": null,
-                    "materialType": "basic",
-                    "shaderAssetId": null
-                  },
-                  "id": "0"
-                }
-              ],
+              "components": [],
               "position": {
-                "x": -8.282,
-                "y": 2.552,
-                "z": -2
+                "x": -2.75,
+                "y": -0.375,
+                "z": 0
               },
               "orientation": {
                 "x": 0,
@@ -853,35 +857,559 @@
               },
               "visible": true,
               "layer": 0,
-              "prefab": null
+              "prefab": {
+                "sceneAssetId": "339"
+              }
             },
             {
-              "id": "68",
-              "name": "1",
+              "id": "83",
+              "name": "Stool",
               "children": [],
-              "components": [
-                {
-                  "type": "SpriteRenderer",
-                  "config": {
-                    "spriteAssetId": "298",
-                    "animationId": "0",
-                    "horizontalFlip": false,
-                    "verticalFlip": false,
-                    "castShadow": false,
-                    "receiveShadow": false,
-                    "color": "ffffff",
-                    "overrideOpacity": false,
-                    "opacity": null,
-                    "materialType": "basic",
-                    "shaderAssetId": null
-                  },
-                  "id": "0"
-                }
-              ],
+              "components": [],
               "position": {
-                "x": -8.885,
-                "y": 0.454,
-                "z": -2
+                "x": -1.25,
+                "y": 1.3125,
+                "z": 0
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": {
+                "sceneAssetId": "339"
+              }
+            },
+            {
+              "id": "84",
+              "name": "Stool",
+              "children": [],
+              "components": [],
+              "position": {
+                "x": 0.5,
+                "y": 0.125,
+                "z": 0
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": {
+                "sceneAssetId": "339"
+              }
+            },
+            {
+              "id": "85",
+              "name": "Table",
+              "children": [],
+              "components": [],
+              "position": {
+                "x": 7.6875,
+                "y": 0.0625,
+                "z": 0
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": {
+                "sceneAssetId": "335"
+              }
+            },
+            {
+              "id": "86",
+              "name": "Stool",
+              "children": [],
+              "components": [],
+              "position": {
+                "x": 8.4375,
+                "y": 1.4375,
+                "z": 0
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": {
+                "sceneAssetId": "339"
+              }
+            },
+            {
+              "id": "87",
+              "name": "Stool",
+              "children": [],
+              "components": [],
+              "position": {
+                "x": 6.75,
+                "y": 1.75,
+                "z": 0
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": {
+                "sceneAssetId": "339"
+              }
+            },
+            {
+              "id": "88",
+              "name": "Stool",
+              "children": [],
+              "components": [],
+              "position": {
+                "x": 7,
+                "y": -1.625,
+                "z": 0
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": {
+                "sceneAssetId": "339"
+              }
+            },
+            {
+              "id": "89",
+              "name": "Stool",
+              "children": [],
+              "components": [],
+              "position": {
+                "x": 8.5,
+                "y": -1.375,
+                "z": 0
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": {
+                "sceneAssetId": "339"
+              }
+            },
+            {
+              "id": "91",
+              "name": "Table90",
+              "children": [],
+              "components": [],
+              "position": {
+                "x": 1.6875,
+                "y": -3.9375,
+                "z": 8
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": {
+                "sceneAssetId": "392"
+              }
+            },
+            {
+              "id": "92",
+              "name": "Stool",
+              "children": [],
+              "components": [],
+              "position": {
+                "x": -0.0625,
+                "y": -3,
+                "z": 0
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": {
+                "sceneAssetId": "339"
+              }
+            },
+            {
+              "id": "93",
+              "name": "Stool",
+              "children": [],
+              "components": [],
+              "position": {
+                "x": 0.25,
+                "y": -4.75,
+                "z": 0
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": {
+                "sceneAssetId": "339"
+              }
+            },
+            {
+              "id": "94",
+              "name": "Stool",
+              "children": [],
+              "components": [],
+              "position": {
+                "x": 3.375,
+                "y": -3.25,
+                "z": 0
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": {
+                "sceneAssetId": "339"
+              }
+            },
+            {
+              "id": "95",
+              "name": "Stool",
+              "children": [],
+              "components": [],
+              "position": {
+                "x": 3.25,
+                "y": -4.5625,
+                "z": 0
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": {
+                "sceneAssetId": "339"
+              }
+            },
+            {
+              "id": "97",
+              "name": "Table2",
+              "children": [],
+              "components": [],
+              "position": {
+                "x": 4.9375,
+                "y": 0.125,
+                "z": 0
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": {
+                "sceneAssetId": "385"
+              }
+            },
+            {
+              "id": "98",
+              "name": "Stool",
+              "children": [],
+              "components": [],
+              "position": {
+                "x": 4.875,
+                "y": 1.75,
+                "z": 0
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": {
+                "sceneAssetId": "339"
+              }
+            },
+            {
+              "id": "99",
+              "name": "Stool",
+              "children": [],
+              "components": [],
+              "position": {
+                "x": 4.875,
+                "y": -1.25,
+                "z": 0
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": {
+                "sceneAssetId": "339"
+              }
+            },
+            {
+              "id": "100",
+              "name": "Table2",
+              "children": [],
+              "components": [],
+              "position": {
+                "x": 7.3125,
+                "y": -4.75,
+                "z": 0
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": {
+                "sceneAssetId": "385"
+              }
+            },
+            {
+              "id": "101",
+              "name": "Stool",
+              "children": [],
+              "components": [],
+              "position": {
+                "x": 8.625,
+                "y": -5,
+                "z": 0
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": {
+                "sceneAssetId": "339"
+              }
+            },
+            {
+              "id": "102",
+              "name": "Stool",
+              "children": [],
+              "components": [],
+              "position": {
+                "x": 7.131223678588867,
+                "y": -6.3303937911987305,
+                "z": 0
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": {
+                "sceneAssetId": "339"
+              }
+            },
+            {
+              "id": "103",
+              "name": "Stool",
+              "children": [],
+              "components": [],
+              "position": {
+                "x": 5.875,
+                "y": -4.6875,
+                "z": 0
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": {
+                "sceneAssetId": "339"
+              }
+            },
+            {
+              "id": "104",
+              "name": "Stool",
+              "children": [],
+              "components": [],
+              "position": {
+                "x": 7.25,
+                "y": -3.1875,
+                "z": 0
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": {
+                "sceneAssetId": "339"
+              }
+            },
+            {
+              "id": "105",
+              "name": "Big Furnitures",
+              "children": [],
+              "components": [],
+              "position": {
+                "x": -0.07120966166257858,
+                "y": -2.639122724533081,
+                "z": 8
               },
               "orientation": {
                 "x": 0,
@@ -904,49 +1432,6 @@
             "x": 0,
             "y": 0,
             "z": 0
-          },
-          "orientation": {
-            "x": 0,
-            "y": 0,
-            "z": 0,
-            "w": 1
-          },
-          "scale": {
-            "x": 1,
-            "y": 1,
-            "z": 1
-          },
-          "visible": true,
-          "layer": 0,
-          "prefab": null
-        },
-        {
-          "id": "60",
-          "name": "Interior",
-          "children": [],
-          "components": [
-            {
-              "type": "SpriteRenderer",
-              "config": {
-                "spriteAssetId": "296",
-                "animationId": null,
-                "horizontalFlip": false,
-                "verticalFlip": false,
-                "castShadow": false,
-                "receiveShadow": false,
-                "color": "ffffff",
-                "overrideOpacity": false,
-                "opacity": null,
-                "materialType": "basic",
-                "shaderAssetId": null
-              },
-              "id": "0"
-            }
-          ],
-          "position": {
-            "x": -0.589,
-            "y": 0.617,
-            "z": -5
           },
           "orientation": {
             "x": 0,
@@ -986,19 +1471,62 @@
       "prefab": null
     },
     {
-      "id": "55",
-      "name": "Enemies",
+      "id": "60",
+      "name": "Interior",
+      "children": [],
+      "components": [
+        {
+          "type": "SpriteRenderer",
+          "config": {
+            "spriteAssetId": "296",
+            "animationId": null,
+            "horizontalFlip": false,
+            "verticalFlip": false,
+            "castShadow": false,
+            "receiveShadow": false,
+            "color": "ffffff",
+            "overrideOpacity": false,
+            "opacity": null,
+            "materialType": "basic",
+            "shaderAssetId": null
+          },
+          "id": "0"
+        }
+      ],
+      "position": {
+        "x": -0.5889999866485596,
+        "y": 0.4299100339412689,
+        "z": -5
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "39",
+      "name": "Entities",
       "children": [
         {
-          "id": "58",
-          "name": "Waitress",
+          "id": "64",
+          "name": "4",
           "children": [],
           "components": [
             {
               "type": "SpriteRenderer",
               "config": {
-                "spriteAssetId": "140",
-                "animationId": null,
+                "spriteAssetId": "302",
+                "animationId": "0",
                 "horizontalFlip": false,
                 "verticalFlip": false,
                 "castShadow": false,
@@ -1013,9 +1541,9 @@
             }
           ],
           "position": {
-            "x": -4.612,
-            "y": -0.402,
-            "z": -1
+            "x": -9.14,
+            "y": 5.539,
+            "z": -2
           },
           "orientation": {
             "x": 0,
@@ -1033,15 +1561,15 @@
           "prefab": null
         },
         {
-          "id": "59",
-          "name": "Chef",
+          "id": "65",
+          "name": "3",
           "children": [],
           "components": [
             {
               "type": "SpriteRenderer",
               "config": {
-                "spriteAssetId": "102",
-                "animationId": null,
+                "spriteAssetId": "301",
+                "animationId": "0",
                 "horizontalFlip": false,
                 "verticalFlip": false,
                 "castShadow": false,
@@ -1056,9 +1584,95 @@
             }
           ],
           "position": {
-            "x": 3.9946513175964355,
-            "y": 6.443387031555176,
-            "z": 8
+            "x": -8.504,
+            "y": 3.855,
+            "z": -2
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "67",
+          "name": "2",
+          "children": [],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "spriteAssetId": "300",
+                "animationId": "0",
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": -8.282,
+            "y": 2.552,
+            "z": -2
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "68",
+          "name": "1",
+          "children": [],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "spriteAssetId": "298",
+                "animationId": "0",
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": -8.624226570129395,
+            "y": 0.45399999618530273,
+            "z": -2
           },
           "orientation": {
             "x": 0,

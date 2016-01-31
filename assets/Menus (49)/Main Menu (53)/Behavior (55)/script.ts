@@ -4,6 +4,15 @@ class StartMenuBehavior extends Sup.Behavior {
   private animatedIntroText: AnimatedTextBehavior;
 
   awake() {
+    Fade.start(Fade.Direction.In, { duration: 500 });
+    
+    const logoActor = Sup.getActor("Logo");
+    new Sup.Tween(logoActor, { y: 15.2 }).to({ y: 5.2 }, 2000)
+      .delay(300)
+      .easing(TWEEN.Easing.Bounce.Out)
+      .onUpdate((obj) => { logoActor.setLocalY(obj.y); })
+      .start();
+
     this.animatedIntroText = Sup.getActor("Intro Text").getBehavior(AnimatedTextBehavior);
     
     const lightning = Sup.getActor("Lightning").getBehavior(LightningBehavior);
@@ -39,6 +48,10 @@ class StartMenuBehavior extends Sup.Behavior {
     // temp
     if (Sup.Input.wasKeyJustReleased("V")) {
       Game.loadMap("Village");
+      Game.currentGoal = Game.Goals.Village;
+    }
+    if (Sup.Input.wasKeyJustReleased("F")) {
+      Game.loadMap("Forest House Village");
       Game.currentGoal = Game.Goals.Village;
     }
   }

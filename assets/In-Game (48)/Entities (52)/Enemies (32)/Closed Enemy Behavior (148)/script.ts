@@ -1,40 +1,97 @@
 class ClosedEnemyBehavior extends EnemyBehavior {
-  awake() {
-    Game.enemies.push(this);
-    this.position = this.actor.getLocalPosition().toVector2();
-    
-    this.moveSpeed = 0.1;
-  }
+  
+  start() { this.setIdle(); }
   
   behavior() {
-    // Movement
-    if (Game.playerBehavior == null || Game.playerBehavior.health <= 0 || this.hitTimer > 0) {
-      return;
-    }
-    
     const diff = Game.playerBehavior.position.clone().subtract(this.position);
+    const distance = diff.length();
     
-    if (diff.length() < this.moveDistance) {
-      this.direction = Utils.getDirectionFromVector(diff);
+    if (this.changeStateTimer > 0) this.changeStateTimer -= 1;
+    
+    switch (this.state) {
+      case EnemyBehavior.States.Idle:
+        if (this.changeStateTimer === 0) {
+          if (distance < EnemyBehavior.chargeDistance) this.setCharging();
+          else this.setWalking();
+        }
+        break;
 
-      if (this.velocity.x !== 0 || this.velocity.y !== 0) {
-        this.velocity.copy(diff).normalize().multiplyScalar(this.moveSpeed);
-        this.actor.spriteRenderer.setAnimation(`Walk ${Utils.Directions[this.direction]}`);
-      } else {
-        this.actor.spriteRenderer.setAnimation(`Idle ${Utils.Directions[this.direction]}`);
-      }
-      
-      this.actor.arcadeBody2D.setVelocity(this.velocity);
-    }
-    else {
-      // attack ...
-      if (this.hitTimer <= 0 && Game.playerBehavior.hitTimer <= 0) { 
-        // ... if not being attacked by player and player not already attacked
+      case EnemyBehavior.States.Walking:
+      case EnemyBehavior.States.Cooldown:
+        if (this.changeStateTimer === 0) this.setIdle();
+        break;
+
+      case EnemyBehavior.States.Charging:
+        if (distance <= EnemyBehavior.attackDistance) {
+          this.setAttacking(diff);
+
+        } else if (this.changeStateTimer === 0 || distance > EnemyBehavior.passiveDistance) {
+          this.aggressive = false;
+          this.initialPosition.copy(this.position);
+          this.setIdle();
+
+        } else {
+          this.velocity.copy(diff).normalize().multiplyScalar(EnemyBehavior.chargeSpeed);
+          this.direction = Utils.getDirectionFromVector(this.velocity);
+          this.actor.spriteRenderer.setAnimation(`Walk ${Utils.Directions[this.direction]}`);
+        }
+        break;
+
+      case EnemyBehavior.States.Attacking:
+        if (!this.actor.spriteRenderer.isAnimationPlaying()) {
+          this.setCooldown();
+        } else if (this.actor.spriteRenderer.getAnimationFrameTime() / this.actor.spriteRenderer.getAnimationFrameCount() > 0.7 && distance <= EnemyBehavior.hitRange) {
+          Game.playerBehavior.hit(this.direction);
+        }
+        break;
+
+      case EnemyBehavior.States.Hitting:
+        this.doHitting();
+        break;
         
-        // play attack animation that takes time to run, like the player's axe
-        Game.playerBehavior.hit();
-      }
+      case EnemyBehavior.States.Dying:
+        if (!this.actor.spriteRenderer.isAnimationPlaying()) this.actor.destroy();
+        break;
     }
+  }
+  
+  setWalking() {
+    this.state = EnemyBehavior.States.Walking;
+    
+    const diff = this.initialPosition.clone().subtract(this.position);
+    if (diff.length() > EnemyBehavior.maxInitialPositionDistance) {
+      this.velocity.copy(diff);
+      
+    } else {
+      let angle = Sup.Math.Random.float(-Math.PI, Math.PI);
+      this.velocity.setFromAngle(angle);
+    }
+    
+    this.velocity.normalize().multiplyScalar(EnemyBehavior.walkSpeed);
+    this.direction = Utils.getDirectionFromVector(this.velocity);
+
+    this.actor.spriteRenderer.setPlaybackSpeed(0.8);
+    this.actor.spriteRenderer.setAnimation(`Walk ${Utils.Directions[this.direction]}`);
+
+    this.resetChangeTimer();
+  }
+  
+  setCharging() {
+    this.state = EnemyBehavior.States.Charging;
+    
+    this.actor.spriteRenderer.setPlaybackSpeed(1);
+
+    this.resetChangeTimer();
+  }
+  
+  setAttacking(diff: Sup.Math.Vector2) {
+    this.state = EnemyBehavior.States.Attacking;
+
+    this.direction = Utils.getDirectionFromVector(diff);
+    this.velocity.set(0, 0);
+    
+    this.actor.spriteRenderer.setPlaybackSpeed(1);
+    this.actor.spriteRenderer.setAnimation(`Attack ${Utils.Directions[this.direction]}`, false);
   }
 }
 Sup.registerBehavior(ClosedEnemyBehavior);

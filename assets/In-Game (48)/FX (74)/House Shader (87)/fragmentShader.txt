@@ -1,6 +1,6 @@
 uniform sampler2D map;
 uniform sampler2D light;
-uniform sampler2D noise;
+uniform sampler2D noiseTex;
 varying vec2 vUv;
 uniform float intensityMin;
 uniform float intensityMax;
@@ -11,7 +11,7 @@ void main() {
   vec4 base = texture2D(map, vUv);
   vec3 light = texture2D(light, vUv).rgb;
   
-  base.rgb += light * ( intensityMin + (intensityMax - intensityMin)  * texture2D(noise, vec2(mod(time * speed,1.), 0.5)).r );
+  base.rgb += light * ( intensityMin + (intensityMax - intensityMin)  * texture2D(noiseTex, vec2(mod(time * speed,1.), 0.5)).r );
     
   gl_FragColor = base;
 }

@@ -3,28 +3,20 @@ class RangedEnemyBehavior extends EnemyBehavior {
   awake() {
     Game.enemies.push(this);
     this.position = this.actor.getLocalPosition().toVector2();
-    
-    this.attackDistance = 6;
-    this.moveDistance = 4;
   }
   
   behavior() {
-    // Movement
-    if (Game.playerBehavior == null || Game.playerBehavior.health <= 0 || this.hitTimer > 0) {
-      return;
-    }
-    
     const playerPos = Game.playerBehavior.position;
     const ditanceToPlayer = this.position.distanceTo(playerPos);
     
-    if (ditanceToPlayer > this.moveDistance) {
+    if (ditanceToPlayer > EnemyBehavior.chargeDistance) {
       // this.direction.x = Game.playerBehavior.position.x - this.position.x;
       // this.direction.y = Game.playerBehavior.position.y - this.position.y;
 
       // this.velocity.set(this.direction.x, this.direction.y);
       
       if (this.velocity.x !== 0 || this.velocity.y !== 0) {
-        this.velocity.normalize().multiplyScalar(this.moveSpeed);
+        // this.velocity.normalize().multiplyScalar(this.moveSpeed);
         //this.direction = Utils.getDirectionFromDirection(this.velocity);
         //this.actor.spriteRenderer.setAnimation(`Walk ${Utils.Directions[this.direction]}`);
       } else {
@@ -41,7 +33,7 @@ class RangedEnemyBehavior extends EnemyBehavior {
     if (RangedEnemyBehavior.attackTimer > 0) {
       RangedEnemyBehavior.attackTimer -= 1;
     }
-    else if (ditanceToPlayer < this.attackDistance && this.hitTimer <= 0) {
+    else if (ditanceToPlayer < EnemyBehavior.attackDistance && this.hitTimer <= 0) {
       // attack ... if not being attacked by player
       
       const bullet = Sup.appendScene("In-Game/Entities/Enemies/Ranged/Bullet/Prefab")[0];

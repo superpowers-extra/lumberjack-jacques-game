@@ -1,5 +1,5 @@
 class PlayerBehavior extends Sup.Behavior {
-  
+
   position = new Sup.Math.Vector2();
   direction = Utils.Directions.Down;
   private velocity = new Sup.Math.Vector2();
@@ -11,7 +11,6 @@ class PlayerBehavior extends Sup.Behavior {
   autoPilot = false;
   activeInteractable: InteractableBehavior;
   
-  health = 5;
   healthBarActor: Sup.Actor;
   hitTimer = 0;
 
@@ -22,8 +21,7 @@ class PlayerBehavior extends Sup.Behavior {
   enemySpawnPos: Sup.Math.Vector2; 
 
   awake() {
-    PlayerBehavior.health = PlayerBehavior.maxHealth;
-    Game.playerBehavior = this;
+    Game.playerBehavior = this;    
   }
 
   start() {
@@ -45,7 +43,6 @@ class PlayerBehavior extends Sup.Behavior {
     }
     this.updateHealth(PlayerBehavior.health);
     
-    Sup.log(spawnName.replace("_", "/"));
     let spawnActor = Sup.getActor("Markers").getChild(spawnName.replace("/", "_"));
     
     if (spawnActor == null) {
@@ -65,7 +62,7 @@ class PlayerBehavior extends Sup.Behavior {
     this.actor.arcadeBody2D.setVelocity(this.velocity);
   }
 
-  hit() {
+  hit(direction: Utils.Directions) {
     if (PlayerBehavior.health === 0 || this.hitTimer > 0) return;
 
     this.updateHealth(-1, true);
@@ -74,28 +71,30 @@ class PlayerBehavior extends Sup.Behavior {
       // FIXME: play some kind of animation or effect
       Game.playerBehavior = null;
       Game.loadMap(Game.currentMapName);
-      this.actor.destroy();
+
     } else {
       this.hitTimer = PlayerBehavior.hitDelay;
-      // let offset = new Sup.Math.Vector2().setFromAngle(Utils.getAngleFromDirection(direction)).multiplyScalar(this.hitSpeed);
-      // this.actor.arcadeBody2D.setVelocity(offset);
-      
+      this.velocity.setFromAngle(Utils.getAngleFromDirection(direction)).multiplyScalar(PlayerBehavior.hitSpeed);
+      this.actor.arcadeBody2D.setVelocity(this.velocity);
+
+      this.direction = Utils.getOppositeDirection(direction);
+      this.actor.spriteRenderer.setAnimation(`Idle ${Utils.Directions[this.direction]}`).pauseAnimation();
       const color = 3;
       this.actor.spriteRenderer.setColor(color, color, color);
     }
   }
   
   // updte healthbar
-  updateHealth(health: number, relative: boolean = false) {
+  updateHealth(health: number, relative = false) {
     if (relative === true) PlayerBehavior.health += health;
     else PlayerBehavior.health = health;
     PlayerBehavior.health = Sup.Math.clamp(PlayerBehavior.health, 0, PlayerBehavior.maxHealth);
     
-    // update the healths bar accordingly
+    // update the health bar accordingly
     const lastIndex = Math.ceil(PlayerBehavior.health / 2);
-    for (let i=0; i<this.heartRenderers.length; i++) {
+    for (let i=0; i < this.heartRenderers.length; i++) {
       const renderer = this.heartRenderers[i];
-      if (i === lastIndex-1) {
+      if (i === lastIndex - 1) {
         if (PlayerBehavior.health % 2 == 0) {
           renderer.setAnimation("Full", false);
           renderer.setOpacity(1);
@@ -132,7 +131,7 @@ class PlayerBehavior extends Sup.Behavior {
     this.actor.arcadeBody2D.setVelocity(this.velocity);
   }
 
-  update() {
+  update() {    
     if (this.activeInteractable != null) {
       if (Sup.Input.wasKeyJustPressed("SPACE") || Sup.Input.wasKeyJustPressed("RETURN") || Sup.Input.wasGamepadButtonJustPressed(0, 0)) this.activeInteractable.interact();
       return;
@@ -148,6 +147,15 @@ class PlayerBehavior extends Sup.Behavior {
     // Movement
     this.position = this.actor.getLocalPosition().toVector2();
     Utils.updateDepth(this.actor, this.position.y);
+    
+    if (this.hitTimer > 0) {
+      this.hitTimer -= 1;
+      if (this.hitTimer === 0) {
+        this.actor.arcadeBody2D.setVelocity(0, 0);
+        this.actor.spriteRenderer.setColor(1, 1, 1);
+      }
+      return;
+    }
     
     if (Fade.isFading) return;
 
@@ -174,15 +182,17 @@ class PlayerBehavior extends Sup.Behavior {
       if (!this.actor.spriteRenderer.isAnimationPlaying()) {
         this.isAttacking = false;
         
-      } else if (!this.hasAttackHit && this.actor.spriteRenderer.getAnimationFrameTime() / this.actor.spriteRenderer.getAnimationFrameCount() > 0.5) {
+      } else if (!this.hasAttackHit && this.actor.spriteRenderer.getAnimationFrameTime() / this.actor.spriteRenderer.getAnimationFrameCount() > 0.4) {
+        let closestEnemy: EnemyBehavior;
+        let closestEnemyDistance = PlayerBehavior.attackRange;
         for (let enemy of Game.enemies) {
           let diff = enemy.position.clone().subtract(this.position);
-          let distance = this.position.distanceTo(enemy.position);
-          if (diff.length() < PlayerBehavior.attackRange && Math.abs(Sup.Math.wrapAngle(diff.angle() - Utils.getAngleFromDirection(this.direction))) < Math.PI * 1 / 3) {
-            this.hasAttackHit = true;
-            enemy.hit(this.direction);
-            break;
-          }
+          if (diff.length() < closestEnemyDistance && Math.abs(Sup.Math.wrapAngle(diff.angle() - Utils.getAngleFromDirection(this.direction))) < Math.PI * 1 / 3)
+            closestEnemy = enemy;
+        }
+        if (closestEnemy != null) {
+          this.hasAttackHit = true;
+          closestEnemy.hit(this.direction);
         }
       }
       
@@ -208,7 +218,9 @@ class PlayerBehavior extends Sup.Behavior {
       for (let interactable of Game.interactables) {
         let diff = interactable.position.clone().subtract(this.position);
         let distance = this.position.distanceTo(interactable.position);
+        
         if (diff.length() < closestDistance && Math.abs(Sup.Math.wrapAngle(diff.angle() - Utils.getAngleFromDirection(this.direction))) < Math.PI * 1 / 3) {
+        
           closestDistance = distance;
           closestInteractable = interactable;
         }
@@ -227,15 +239,6 @@ class PlayerBehavior extends Sup.Behavior {
     if (Sup.Input.wasKeyJustReleased("2") && this.enemySpawnActor != null) {
       Sup.appendScene("In-Game/Entities/Enemies/Ranged/Prefab", this.enemySpawnActor);
     }
-    
-    if (this.hitTimer > 0) {
-      this.hitTimer -= 1;
-      if (this.hitTimer < PlayerBehavior.hitDelay/2) {
-        // this.actor.arcadeBody2D.setVelocity(0, 0);
-        this.actor.spriteRenderer.setColor(1, 1, 1);
-        
-      }
-    }
   }
 }
 Sup.registerBehavior(PlayerBehavior);
@@ -244,13 +247,15 @@ namespace PlayerBehavior {
   export const moveSpeed = 0.16;
   export const enterSpeed = 0.05;
   export const attackMoveSpeed = 0.08;
-  export const hitDelay = 40;
   
-  export const maxHealth = 10;
-  export let health = 10;
+  export const hitDelay = 10;
+  export const hitSpeed = 0.08;
+  
+  export let maxHealth = 10;
+  export let health = PlayerBehavior.maxHealth;
   
   export const attackCooldownDelay = 10;
 
   export const attackDelay = 16;
-  export const attackRange = 2;
+  export const attackRange = 3.5;
 }

@@ -1076,9 +1076,9 @@
               "children": [],
               "components": [],
               "position": {
-                "x": 4.5378265380859375,
-                "y": -22.580707550048828,
-                "z": 8
+                "x": 4.538,
+                "y": -18.418,
+                "z": 2
               },
               "orientation": {
                 "x": 0,
@@ -1992,8 +1992,8 @@
               "children": [],
               "components": [],
               "position": {
-                "x": -16.328454971313477,
-                "y": 3.452195644378662,
+                "x": -11.124710083007812,
+                "y": 4.5920634269714355,
                 "z": 0
               },
               "orientation": {
@@ -2047,7 +2047,7 @@
               "components": [],
               "position": {
                 "x": 7.8122124671936035,
-                "y": 4.248373508453369,
+                "y": 5.395716190338135,
                 "z": 2
               },
               "orientation": {
@@ -3279,6 +3279,60 @@
       "visible": true,
       "layer": 0,
       "prefab": null
+    },
+    {
+      "id": "151",
+      "name": "Stump",
+      "children": [],
+      "components": [],
+      "position": {
+        "x": 32.77420425415039,
+        "y": 9.415080070495605,
+        "z": 10
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": {
+        "sceneAssetId": "235"
+      }
+    },
+    {
+      "id": "152",
+      "name": "Bush",
+      "children": [],
+      "components": [],
+      "position": {
+        "x": 29.280256271362305,
+        "y": 12.611663818359375,
+        "z": 10
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": {
+        "sceneAssetId": "207"
+      }
     }
   ]
 }

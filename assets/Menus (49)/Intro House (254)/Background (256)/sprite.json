@@ -1,13 +1,15 @@
 {
   "formatVersion": 3,
   "maps": [
-    "map"
+    "map",
+    "light",
+    "noise"
   ],
   "filtering": "pixelated",
   "wrapping": "clampToEdge",
   "pixelsPerUnit": 16,
   "framesPerSecond": 3,
-  "opacity": null,
+  "opacity": 1,
   "alphaTest": 0.1,
   "frameOrder": "rows",
   "grid": {
@@ -20,7 +22,7 @@
   },
   "animations": [
     {
-      "id": "0",
+      "id": "1",
       "name": "Flash",
       "startFrameIndex": 1,
       "endFrameIndex": 1,

@@ -102,6 +102,13 @@
       "startFrameIndex": 44,
       "endFrameIndex": 47,
       "speed": 1
+    },
+    {
+      "id": "12",
+      "name": "Die",
+      "startFrameIndex": 48,
+      "endFrameIndex": 56,
+      "speed": 1
     }
   ],
   "mapSlots": {

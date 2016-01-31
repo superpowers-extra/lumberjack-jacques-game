@@ -7,7 +7,7 @@
   "wrapping": "clampToEdge",
   "pixelsPerUnit": 16,
   "framesPerSecond": 10,
-  "opacity": null,
+  "opacity": 1,
   "alphaTest": 0.1,
   "frameOrder": "rows",
   "grid": {

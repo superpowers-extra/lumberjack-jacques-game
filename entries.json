@@ -84,6 +84,11 @@
             "id": "251",
             "name": "Logo",
             "type": "sprite"
+          },
+          {
+            "id": "348",
+            "name": "Logo Shader",
+            "type": "shader"
           }
         ]
       },
@@ -249,12 +254,7 @@
             "children": [
               {
                 "id": "33",
-                "name": "Player",
-                "type": "sprite"
-              },
-              {
-                "id": "31",
-                "name": "Bubi",
+                "name": "player",
                 "type": "sprite"
               }
             ]
@@ -394,23 +394,6 @@
                 "type": null,
                 "children": [
                   {
-                    "id": "262",
-                    "name": "House 2",
-                    "type": null,
-                    "children": [
-                      {
-                        "id": "264",
-                        "name": "Prefab",
-                        "type": "scene"
-                      },
-                      {
-                        "id": "265",
-                        "name": "Sprite",
-                        "type": "sprite"
-                      }
-                    ]
-                  },
-                  {
                     "id": "99",
                     "name": "House 1",
                     "type": null,
@@ -422,6 +405,23 @@
                       },
                       {
                         "id": "76",
+                        "name": "Sprite",
+                        "type": "sprite"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "262",
+                    "name": "House 2",
+                    "type": null,
+                    "children": [
+                      {
+                        "id": "264",
+                        "name": "Prefab",
+                        "type": "scene"
+                      },
+                      {
+                        "id": "265",
                         "name": "Sprite",
                         "type": "sprite"
                       }
@@ -576,23 +576,6 @@
                 ]
               },
               {
-                "id": "161",
-                "name": "Vegetable garden",
-                "type": null,
-                "children": [
-                  {
-                    "id": "162",
-                    "name": "Sprite",
-                    "type": "sprite"
-                  },
-                  {
-                    "id": "170",
-                    "name": "Scene",
-                    "type": "scene"
-                  }
-                ]
-              },
-              {
                 "id": "187",
                 "name": "Foliage",
                 "type": null,
@@ -678,6 +661,33 @@
                       },
                       {
                         "id": "295",
+                        "name": "Prefab",
+                        "type": "scene"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "332",
+                    "name": "MineEntrance",
+                    "type": null,
+                    "children": [
+                      {
+                        "id": "333",
+                        "name": "MineEntrance",
+                        "type": "sprite"
+                      },
+                      {
+                        "id": "334",
+                        "name": "MineEntrance (1)",
+                        "type": "scene"
+                      },
+                      {
+                        "id": "340",
+                        "name": "MineDor",
+                        "type": "sprite"
+                      },
+                      {
+                        "id": "341",
                         "name": "Prefab",
                         "type": "scene"
                       }
@@ -779,6 +789,67 @@
                     "type": "scene"
                   }
                 ]
+              },
+              {
+                "id": "360",
+                "name": "Shelve",
+                "type": null,
+                "children": [
+                  {
+                    "id": "361",
+                    "name": "Sprite",
+                    "type": "sprite"
+                  },
+                  {
+                    "id": "363",
+                    "name": "Scene",
+                    "type": "scene"
+                  }
+                ]
+              },
+              {
+                "id": "364",
+                "name": "MineWall01",
+                "type": null,
+                "children": [
+                  {
+                    "id": "365",
+                    "name": "Sprite",
+                    "type": "sprite"
+                  },
+                  {
+                    "id": "366",
+                    "name": "Prefab",
+                    "type": "scene"
+                  },
+                  {
+                    "id": "371",
+                    "name": "Prefab2",
+                    "type": "scene"
+                  },
+                  {
+                    "id": "367",
+                    "name": "Sprite2",
+                    "type": "sprite"
+                  }
+                ]
+              },
+              {
+                "id": "380",
+                "name": "MineFloor",
+                "type": null,
+                "children": [
+                  {
+                    "id": "381",
+                    "name": "Sprite",
+                    "type": "sprite"
+                  },
+                  {
+                    "id": "383",
+                    "name": "Prefab",
+                    "type": "scene"
+                  }
+                ]
               }
             ]
           },
@@ -794,7 +865,7 @@
               },
               {
                 "id": "253",
-                "name": "Dying Man",
+                "name": "Dying Peasant",
                 "type": null,
                 "children": [
                   {
@@ -856,6 +927,28 @@
                 "type": "scene"
               },
               {
+                "id": "312",
+                "name": "Noxy",
+                "type": null,
+                "children": [
+                  {
+                    "id": "314",
+                    "name": "Behavior",
+                    "type": "script"
+                  },
+                  {
+                    "id": "313",
+                    "name": "Prefab",
+                    "type": "scene"
+                  },
+                  {
+                    "id": "386",
+                    "name": "Power Up",
+                    "type": "sound"
+                  }
+                ]
+              },
+              {
                 "id": "213",
                 "name": "Doctor House",
                 "type": null,
@@ -886,18 +979,6 @@
                 "children": [
                   {
                     "id": "236",
-                    "name": "Prefab",
-                    "type": "scene"
-                  }
-                ]
-              },
-              {
-                "id": "217",
-                "name": "Tavern Basement",
-                "type": null,
-                "children": [
-                  {
-                    "id": "238",
                     "name": "Prefab",
                     "type": "scene"
                   }
@@ -948,6 +1029,18 @@
                 ]
               },
               {
+                "id": "217",
+                "name": "Tavern Basement",
+                "type": null,
+                "children": [
+                  {
+                    "id": "238",
+                    "name": "Prefab",
+                    "type": "scene"
+                  }
+                ]
+              },
+              {
                 "id": "218",
                 "name": "Church Inside",
                 "type": null,
@@ -956,6 +1049,115 @@
                     "id": "239",
                     "name": "Prefab",
                     "type": "scene"
+                  }
+                ]
+              },
+              {
+                "id": "317",
+                "name": "Commons",
+                "type": null,
+                "children": [
+                  {
+                    "id": "318",
+                    "name": "House Interior",
+                    "type": "sprite"
+                  },
+                  {
+                    "id": "330",
+                    "name": "Walls",
+                    "type": "scene"
+                  },
+                  {
+                    "id": "323",
+                    "name": "Props",
+                    "type": null,
+                    "children": [
+                      {
+                        "id": "325",
+                        "name": "Torch",
+                        "type": "sprite"
+                      },
+                      {
+                        "id": "331",
+                        "name": "Table Sprite",
+                        "type": "sprite"
+                      },
+                      {
+                        "id": "335",
+                        "name": "Table",
+                        "type": "scene"
+                      },
+                      {
+                        "id": "336",
+                        "name": "Plate",
+                        "type": "sprite"
+                      },
+                      {
+                        "id": "337",
+                        "name": "Glass",
+                        "type": "sprite"
+                      },
+                      {
+                        "id": "338",
+                        "name": "Stool Sprite",
+                        "type": "sprite"
+                      },
+                      {
+                        "id": "339",
+                        "name": "Stool",
+                        "type": "scene"
+                      },
+                      {
+                        "id": "368",
+                        "name": "Pot",
+                        "type": "sprite"
+                      },
+                      {
+                        "id": "370",
+                        "name": "Bag",
+                        "type": "sprite"
+                      },
+                      {
+                        "id": "373",
+                        "name": "Shelf Sprite",
+                        "type": "sprite"
+                      },
+                      {
+                        "id": "374",
+                        "name": "Shelf",
+                        "type": "scene"
+                      },
+                      {
+                        "id": "378",
+                        "name": "Chest Sprite",
+                        "type": "sprite"
+                      },
+                      {
+                        "id": "379",
+                        "name": "Chest",
+                        "type": "scene"
+                      },
+                      {
+                        "id": "384",
+                        "name": "Table2 Sprite",
+                        "type": "sprite"
+                      },
+                      {
+                        "id": "385",
+                        "name": "Table2",
+                        "type": "scene"
+                      },
+                      {
+                        "id": "391",
+                        "name": "Table90 Sprite",
+                        "type": "sprite"
+                      },
+                      {
+                        "id": "392",
+                        "name": "Table90",
+                        "type": "scene"
+                      }
+                    ]
                   }
                 ]
               }
@@ -999,13 +1201,25 @@
                     "id": "245",
                     "name": "Prefab",
                     "type": "scene"
+                  },
+                  {
+                    "id": "394",
+                    "name": "room",
+                    "type": null,
+                    "children": [
+                      {
+                        "id": "393",
+                        "name": "Sprite",
+                        "type": "sprite"
+                      },
+                      {
+                        "id": "395",
+                        "name": "Prefab",
+                        "type": "scene"
+                      }
+                    ]
                   }
                 ]
-              },
-              {
-                "id": "193",
-                "name": "Prefab Totem",
-                "type": "scene"
               }
             ]
           }
@@ -1066,6 +1280,77 @@
             "type": null,
             "children": [
               {
+                "id": "343",
+                "name": "Chef",
+                "type": null,
+                "children": [
+                  {
+                    "id": "102",
+                    "name": "Chef",
+                    "type": "sprite"
+                  },
+                  {
+                    "id": "345",
+                    "name": "Behavior",
+                    "type": "script"
+                  },
+                  {
+                    "id": "344",
+                    "name": "Prefab",
+                    "type": "scene"
+                  }
+                ]
+              },
+              {
+                "id": "342",
+                "name": "Waitress",
+                "type": null,
+                "children": [
+                  {
+                    "id": "140",
+                    "name": "Waitress",
+                    "type": "sprite"
+                  },
+                  {
+                    "id": "347",
+                    "name": "Behavior",
+                    "type": "script"
+                  },
+                  {
+                    "id": "346",
+                    "name": "Prefab",
+                    "type": "scene"
+                  }
+                ]
+              },
+              {
+                "id": "375",
+                "name": "Doctor",
+                "type": null,
+                "children": [
+                  {
+                    "id": "150",
+                    "name": "Doctor",
+                    "type": "sprite"
+                  },
+                  {
+                    "id": "376",
+                    "name": "Behavior",
+                    "type": "script"
+                  },
+                  {
+                    "id": "377",
+                    "name": "Prefab",
+                    "type": "scene"
+                  }
+                ]
+              },
+              {
+                "id": "181",
+                "name": "Noxy",
+                "type": "sprite"
+              },
+              {
                 "id": "84",
                 "name": "Cat",
                 "type": "sprite"
@@ -1086,28 +1371,13 @@
                 "type": "sprite"
               },
               {
-                "id": "102",
-                "name": "Chef",
-                "type": "sprite"
-              },
-              {
                 "id": "126",
                 "name": "Peasant2",
                 "type": "sprite"
               },
               {
-                "id": "140",
-                "name": "Waitress",
-                "type": "sprite"
-              },
-              {
                 "id": "143",
                 "name": "Cultist",
-                "type": "sprite"
-              },
-              {
-                "id": "150",
-                "name": "Doctor",
                 "type": "sprite"
               },
               {
@@ -1118,11 +1388,6 @@
               {
                 "id": "167",
                 "name": "Cradle",
-                "type": "sprite"
-              },
-              {
-                "id": "181",
-                "name": "Noxy",
                 "type": "sprite"
               },
               {
@@ -1205,9 +1470,9 @@
                     "type": null,
                     "children": [
                       {
-                        "id": "173",
-                        "name": "Sprite",
-                        "type": "sprite"
+                        "id": "175",
+                        "name": "Prefab",
+                        "type": "scene"
                       },
                       {
                         "id": "174",
@@ -1215,9 +1480,9 @@
                         "type": "script"
                       },
                       {
-                        "id": "175",
-                        "name": "Prefab",
-                        "type": "scene"
+                        "id": "173",
+                        "name": "Sprite",
+                        "type": "sprite"
                       }
                     ]
                   }
@@ -1236,6 +1501,133 @@
                   {
                     "id": "303",
                     "name": "Sprite",
+                    "type": "sprite"
+                  }
+                ]
+              },
+              {
+                "id": "315",
+                "name": "Shit Eater",
+                "type": null,
+                "children": [
+                  {
+                    "id": "327",
+                    "name": "Prefab",
+                    "type": "scene"
+                  },
+                  {
+                    "id": "316",
+                    "name": "Sprite",
+                    "type": "sprite"
+                  }
+                ]
+              },
+              {
+                "id": "320",
+                "name": "Eye",
+                "type": null,
+                "children": [
+                  {
+                    "id": "321",
+                    "name": "Eye",
+                    "type": "sprite"
+                  }
+                ]
+              },
+              {
+                "id": "326",
+                "name": "My Son",
+                "type": null,
+                "children": [
+                  {
+                    "id": "329",
+                    "name": "Prefab",
+                    "type": "scene"
+                  },
+                  {
+                    "id": "328",
+                    "name": "Sprite",
+                    "type": "sprite"
+                  }
+                ]
+              },
+              {
+                "id": "349",
+                "name": "Betty Jolly",
+                "type": null,
+                "children": [
+                  {
+                    "id": "387",
+                    "name": "Prefab",
+                    "type": "scene"
+                  },
+                  {
+                    "id": "388",
+                    "name": "Behavior",
+                    "type": "script"
+                  },
+                  {
+                    "id": "350",
+                    "name": "Hand Close",
+                    "type": "sprite"
+                  },
+                  {
+                    "id": "352",
+                    "name": "Hand Open",
+                    "type": "sprite"
+                  },
+                  {
+                    "id": "353",
+                    "name": "Head Close",
+                    "type": "sprite"
+                  },
+                  {
+                    "id": "354",
+                    "name": "Head Open",
+                    "type": "sprite"
+                  },
+                  {
+                    "id": "359",
+                    "name": "Tongue",
+                    "type": "sprite"
+                  },
+                  {
+                    "id": "355",
+                    "name": "Neck",
+                    "type": "sprite"
+                  },
+                  {
+                    "id": "356",
+                    "name": "Shoulder Left",
+                    "type": "sprite"
+                  },
+                  {
+                    "id": "358",
+                    "name": "Shoulder Right",
+                    "type": "sprite"
+                  }
+                ]
+              },
+              {
+                "id": "322",
+                "name": "Spider",
+                "type": null,
+                "children": [
+                  {
+                    "id": "324",
+                    "name": "Spider",
+                    "type": "sprite"
+                  }
+                ]
+              },
+              {
+                "id": "389",
+                "name": "Spirit",
+                "type": null,
+                "children": [
+                  {
+                    "id": "390",
+                    "name": "Spirit",
                     "type": "sprite"
                   }
                 ]
