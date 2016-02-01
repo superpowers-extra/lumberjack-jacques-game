@@ -505,7 +505,130 @@
         {
           "id": "39",
           "name": "Entities",
-          "children": [],
+          "children": [
+            {
+              "id": "153",
+              "name": "Wolf Intro Trigger",
+              "children": [],
+              "components": [
+                {
+                  "type": "Behavior",
+                  "config": {
+                    "behaviorName": "WolfIntroTriggerBehavior",
+                    "propertyValues": {}
+                  },
+                  "id": "0"
+                }
+              ],
+              "position": {
+                "x": 7,
+                "y": -2,
+                "z": 0
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": null
+            },
+            {
+              "id": "133",
+              "name": "Shady Peasant",
+              "children": [],
+              "components": [],
+              "position": {
+                "x": -48.157958984375,
+                "y": 6.841052055358887,
+                "z": 8
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": {
+                "sceneAssetId": "306"
+              }
+            },
+            {
+              "id": "155",
+              "name": "Secondary Peasant",
+              "children": [],
+              "components": [],
+              "position": {
+                "x": -61.91691207885742,
+                "y": 6.7264204025268555,
+                "z": 8
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": {
+                "sceneAssetId": "402"
+              }
+            },
+            {
+              "id": "154",
+              "name": "Wolf Outro Trigger",
+              "children": [],
+              "components": [
+                {
+                  "type": "Behavior",
+                  "config": {
+                    "behaviorName": "WolfOutroTriggerBehavior",
+                    "propertyValues": {}
+                  },
+                  "id": "0"
+                }
+              ],
+              "position": {
+                "x": -68.36902618408203,
+                "y": -0.5579856634140015,
+                "z": 0
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": null
+            }
+          ],
           "components": [],
           "position": {
             "x": 0,
@@ -942,8 +1065,8 @@
               "children": [],
               "components": [],
               "position": {
-                "x": -34.603965759277344,
-                "y": -14.83895206451416,
+                "x": -66.92508697509766,
+                "y": -29.735992431640625,
                 "z": 8
               },
               "orientation": {
@@ -1286,6 +1409,141 @@
               "prefab": {
                 "sceneAssetId": "98"
               }
+            },
+            {
+              "id": "164",
+              "name": "Light Tree",
+              "children": [],
+              "components": [],
+              "position": {
+                "x": -30.111289978027344,
+                "y": 30.808252334594727,
+                "z": 8
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": {
+                "sceneAssetId": "98"
+              }
+            },
+            {
+              "id": "165",
+              "name": "Light Tree",
+              "children": [],
+              "components": [],
+              "position": {
+                "x": -47.16971206665039,
+                "y": 30.716541290283203,
+                "z": 8
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": {
+                "sceneAssetId": "98"
+              }
+            },
+            {
+              "id": "166",
+              "name": "Light Tree",
+              "children": [],
+              "components": [],
+              "position": {
+                "x": -34.603965759277344,
+                "y": -14.83895206451416,
+                "z": 8
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": {
+                "sceneAssetId": "98"
+              }
+            },
+            {
+              "id": "167",
+              "name": "Pine Tree",
+              "children": [],
+              "components": [],
+              "position": {
+                "x": -60.11409378051758,
+                "y": -27.18895721435547,
+                "z": 8
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": {
+                "sceneAssetId": "242"
+              }
+            },
+            {
+              "id": "168",
+              "name": "Pine Tree",
+              "children": [],
+              "components": [],
+              "position": {
+                "x": -56.445621490478516,
+                "y": -29.512331008911133,
+                "z": 8
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": {
+                "sceneAssetId": "242"
+              }
             }
           ],
           "components": [],
@@ -1371,8 +1629,8 @@
               "children": [],
               "components": [],
               "position": {
-                "x": -43.008941650390625,
-                "y": 6.9052629470825195,
+                "x": -43.985538482666016,
+                "y": 4.845242023468018,
                 "z": 8
               },
               "orientation": {
@@ -1398,8 +1656,8 @@
               "children": [],
               "components": [],
               "position": {
-                "x": -40.6948356628418,
-                "y": 6.21076774597168,
+                "x": -35.184288024902344,
+                "y": 6.382436275482178,
                 "z": 8
               },
               "orientation": {
@@ -1425,8 +1683,8 @@
               "children": [],
               "components": [],
               "position": {
-                "x": -37.94458770751953,
-                "y": 6.756585597991943,
+                "x": -37.89500045776367,
+                "y": 9.800838470458984,
                 "z": 8
               },
               "orientation": {
@@ -1452,8 +1710,8 @@
               "children": [],
               "components": [],
               "position": {
-                "x": -35.561866760253906,
-                "y": 6.112309455871582,
+                "x": -39.51405715942383,
+                "y": 3.4113948345184326,
                 "z": 8
               },
               "orientation": {
@@ -1553,6 +1811,33 @@
               "prefab": {
                 "sceneAssetId": "207"
               }
+            },
+            {
+              "id": "156",
+              "name": "Bush",
+              "children": [],
+              "components": [],
+              "position": {
+                "x": -41.75719451904297,
+                "y": 7.8518829345703125,
+                "z": 8
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": {
+                "sceneAssetId": "207"
+              }
             }
           ],
           "components": [],
@@ -1577,14 +1862,125 @@
           "prefab": null
         },
         {
-          "id": "133",
-          "name": "Shady Peasant",
+          "id": "175",
+          "name": "Dowie",
           "children": [],
-          "components": [],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "spriteAssetId": "540",
+                "animationId": "0",
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": true,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            },
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "DowieBehavior",
+                "propertyValues": {}
+              },
+              "id": "1"
+            },
+            {
+              "type": "ArcadeBody2D",
+              "config": {
+                "type": "box",
+                "movable": true,
+                "width": 1,
+                "height": 1,
+                "offset": {
+                  "x": 0,
+                  "y": 0.5
+                },
+                "tileMapAssetId": null,
+                "tileSetPropertyName": null,
+                "layersIndex": null
+              },
+              "id": "2"
+            }
+          ],
           "position": {
-            "x": -48.157958984375,
-            "y": 6.841052055358887,
-            "z": 8
+            "x": -64.45231628417969,
+            "y": -29.620906829833984,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0.026141073709985894,
+            "y": 0.052318022017859046,
+            "z": -0.001369995621214652,
+            "w": 0.9982873293543426
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "177",
+          "name": "Chiome",
+          "children": [],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "spriteAssetId": "552",
+                "animationId": "0",
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": true,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            },
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "ChiomeBehavior",
+                "propertyValues": {}
+              },
+              "id": "1"
+            },
+            {
+              "type": "ArcadeBody2D",
+              "config": {
+                "type": "box",
+                "movable": true,
+                "width": 1,
+                "height": 1,
+                "offset": {
+                  "x": 0,
+                  "y": -0.4
+                },
+                "tileMapAssetId": null,
+                "tileSetPropertyName": null,
+                "layersIndex": null
+              },
+              "id": "2"
+            }
+          ],
+          "position": {
+            "x": -63.07815170288086,
+            "y": -29.569406509399414,
+            "z": 0
           },
           "orientation": {
             "x": 0,
@@ -1599,9 +1995,7 @@
           },
           "visible": true,
           "layer": 0,
-          "prefab": {
-            "sceneAssetId": "306"
-          }
+          "prefab": null
         }
       ],
       "components": [],
@@ -2088,8 +2482,8 @@
             }
           ],
           "position": {
-            "x": -63.582,
-            "y": -3.235,
+            "x": -63.643150329589844,
+            "y": -7.2091851234436035,
             "z": 0
           },
           "orientation": {
@@ -2131,8 +2525,8 @@
             }
           ],
           "position": {
-            "x": -57.561,
-            "y": -3.988,
+            "x": -59.15067672729492,
+            "y": -8.63473892211914,
             "z": 0
           },
           "orientation": {
@@ -2174,8 +2568,8 @@
             }
           ],
           "position": {
-            "x": -53.421,
-            "y": -1.73,
+            "x": -55.98894119262695,
+            "y": -7.721848011016846,
             "z": 0
           },
           "orientation": {
@@ -2576,49 +2970,6 @@
           "prefab": null
         },
         {
-          "id": "127",
-          "name": "Grasspatch2",
-          "children": [],
-          "components": [
-            {
-              "type": "SpriteRenderer",
-              "config": {
-                "spriteAssetId": "185",
-                "animationId": null,
-                "horizontalFlip": false,
-                "verticalFlip": false,
-                "castShadow": false,
-                "receiveShadow": false,
-                "color": "ffffff",
-                "overrideOpacity": false,
-                "opacity": null,
-                "materialType": "basic",
-                "shaderAssetId": null
-              },
-              "id": "0"
-            }
-          ],
-          "position": {
-            "x": -38.328250885009766,
-            "y": 34.37510299682617,
-            "z": 0
-          },
-          "orientation": {
-            "x": 0,
-            "y": 0,
-            "z": -0.7071067811865475,
-            "w": 0.7071067811865476
-          },
-          "scale": {
-            "x": 1,
-            "y": 1,
-            "z": 1
-          },
-          "visible": true,
-          "layer": 0,
-          "prefab": null
-        },
-        {
           "id": "128",
           "name": "Grasspatch2",
           "children": [],
@@ -2983,6 +3334,436 @@
           "visible": true,
           "layer": 0,
           "prefab": null
+        },
+        {
+          "id": "160",
+          "name": "Grasspatch2",
+          "children": [],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "spriteAssetId": "185",
+                "animationId": null,
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": -67.88033294677734,
+            "y": 16.433815002441406,
+            "z": -5
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "161",
+          "name": "Grasspatch2",
+          "children": [],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "spriteAssetId": "185",
+                "animationId": null,
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": -67.3843994140625,
+            "y": 35.36044692993164,
+            "z": -5
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "162",
+          "name": "Grasspatch2",
+          "children": [],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "spriteAssetId": "185",
+                "animationId": null,
+                "horizontalFlip": true,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 12.442353248596191,
+            "y": 14.028924942016602,
+            "z": -5
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "163",
+          "name": "Grasspatch2",
+          "children": [],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "spriteAssetId": "185",
+                "animationId": null,
+                "horizontalFlip": true,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 12.33365535736084,
+            "y": 33.98137283325195,
+            "z": -5
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "173",
+          "name": "GrassPath1",
+          "children": [],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "spriteAssetId": "179",
+                "animationId": null,
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": -31.5493221282959,
+            "y": 6.349109649658203,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "174",
+          "name": "GrassPath1",
+          "children": [],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "spriteAssetId": "179",
+                "animationId": null,
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": -18.70965003967285,
+            "y": -6.653608798980713,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "169",
+          "name": "Paved Road 3 med",
+          "children": [],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "spriteAssetId": "412",
+                "animationId": null,
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": -64.397,
+            "y": -1.249,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "170",
+          "name": "Paved Road 2 Small",
+          "children": [],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "spriteAssetId": "411",
+                "animationId": null,
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": -59.873,
+            "y": -1.922,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "171",
+          "name": "Paved Road 4",
+          "children": [],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "spriteAssetId": "413",
+                "animationId": null,
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": -53.772,
+            "y": -1.086,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "172",
+          "name": "Paved Road 2 Small",
+          "children": [],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "spriteAssetId": "411",
+                "animationId": null,
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": -46.34,
+            "y": -0.862,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
         }
       ],
       "components": [],
@@ -3005,6 +3786,87 @@
       "visible": true,
       "layer": 0,
       "prefab": null
+    },
+    {
+      "id": "157",
+      "name": "Dark Dog",
+      "children": [],
+      "components": [],
+      "position": {
+        "x": -16.386249542236328,
+        "y": -29.32347869873047,
+        "z": 8
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": {
+        "sceneAssetId": "310"
+      }
+    },
+    {
+      "id": "158",
+      "name": "Dark Dog",
+      "children": [],
+      "components": [],
+      "position": {
+        "x": -10.897120475769043,
+        "y": -26.796308517456055,
+        "z": 8
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": {
+        "sceneAssetId": "310"
+      }
+    },
+    {
+      "id": "159",
+      "name": "Dark Dog",
+      "children": [],
+      "components": [],
+      "position": {
+        "x": -6.603642463684082,
+        "y": -28.155004501342773,
+        "z": 8
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": {
+        "sceneAssetId": "310"
+      }
     }
   ]
 }

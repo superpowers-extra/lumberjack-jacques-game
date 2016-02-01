@@ -9,6 +9,10 @@ class RandomTreeColorBehavior extends Sup.Behavior {
       Sup.Math.Random.float( this.colorA.g, this.colorB.g ),
       Sup.Math.Random.float( this.colorA.b, this.colorB.b )
     );
+    
+    let spriteSize = this.actor.spriteRenderer.getSprite().getGridSize();
+    this.actor.spriteRenderer.uniforms.setVector2( "texSize", new Sup.Math.Vector2( spriteSize.width, spriteSize.height ) );
+    
     this.destroy();
   }
 }

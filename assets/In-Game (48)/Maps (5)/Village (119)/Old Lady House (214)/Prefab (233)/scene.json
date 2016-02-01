@@ -7,8 +7,8 @@
       "children": [],
       "components": [],
       "position": {
-        "x": -10.688323974609375,
-        "y": -5.567180633544922,
+        "x": 0,
+        "y": 0,
         "z": 0
       },
       "orientation": {
@@ -33,88 +33,7 @@
       "name": "Attached To Camera",
       "children": [
         {
-          "id": "52",
-          "name": "Fog",
-          "children": [],
-          "components": [],
-          "position": {
-            "x": 0,
-            "y": 0,
-            "z": 5
-          },
-          "orientation": {
-            "x": 0,
-            "y": 0,
-            "z": 0,
-            "w": 1
-          },
-          "scale": {
-            "x": 1,
-            "y": 1,
-            "z": 1
-          },
-          "visible": true,
-          "layer": 0,
-          "prefab": {
-            "sceneAssetId": "108"
-          }
-        },
-        {
-          "id": "53",
-          "name": "Rain Ground",
-          "children": [],
-          "components": [],
-          "position": {
-            "x": 0,
-            "y": 0,
-            "z": -5
-          },
-          "orientation": {
-            "x": 0,
-            "y": 0,
-            "z": 0,
-            "w": 1
-          },
-          "scale": {
-            "x": 1,
-            "y": 1,
-            "z": 1
-          },
-          "visible": true,
-          "layer": 0,
-          "prefab": {
-            "sceneAssetId": "110"
-          }
-        },
-        {
-          "id": "54",
-          "name": "Rain Drops",
-          "children": [],
-          "components": [],
-          "position": {
-            "x": 0,
-            "y": 0,
-            "z": 5
-          },
-          "orientation": {
-            "x": 0,
-            "y": 0,
-            "z": 0,
-            "w": 1
-          },
-          "scale": {
-            "x": 1,
-            "y": 1,
-            "z": 1
-          },
-          "visible": true,
-          "layer": 0,
-          "prefab": {
-            "sceneAssetId": "112"
-          }
-        },
-        {
-          "id": "56",
+          "id": "82",
           "name": "Lightning",
           "children": [],
           "components": [],
@@ -167,13 +86,44 @@
       "name": "Markers",
       "children": [
         {
-          "id": "4",
-          "name": "From Start",
+          "id": "79",
+          "name": "Village",
           "children": [],
-          "components": [],
+          "components": [
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "TeleportBehavior",
+                "propertyValues": {
+                  "direction": {
+                    "type": "string",
+                    "value": "Down"
+                  }
+                }
+              },
+              "id": "0"
+            },
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "spriteAssetId": "125",
+                "animationId": null,
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "1"
+            }
+          ],
           "position": {
-            "x": -10.803963661193848,
-            "y": -9.01982307434082,
+            "x": 0,
+            "y": -5.5,
             "z": 0
           },
           "orientation": {
@@ -183,7 +133,7 @@
             "w": 1
           },
           "scale": {
-            "x": 1,
+            "x": 2,
             "y": 1,
             "z": 1
           },
@@ -214,7 +164,7 @@
       "prefab": null
     },
     {
-      "id": "40",
+      "id": "80",
       "name": "Limits",
       "children": [
         {
@@ -241,8 +191,8 @@
             }
           ],
           "position": {
-            "x": -19.629680633544922,
-            "y": -2.998231352080438e-8,
+            "x": -8.629680633544922,
+            "y": 3.5,
             "z": 0
           },
           "orientation": {
@@ -284,8 +234,8 @@
             }
           ],
           "position": {
-            "x": -1.8529722690582275,
-            "y": -3.5311124324798584,
+            "x": 9.147027969360352,
+            "y": -0.0311124324798584,
             "z": 0
           },
           "orientation": {
@@ -327,8 +277,8 @@
             }
           ],
           "position": {
-            "x": -10.351044654846191,
-            "y": 3.473292112350464,
+            "x": 0.6489553451538086,
+            "y": 6.973292350769043,
             "z": 0
           },
           "orientation": {
@@ -370,8 +320,8 @@
             }
           ],
           "position": {
-            "x": 4.888490676879883,
-            "y": -10.29873275756836,
+            "x": 15.888490676879883,
+            "y": -6.798732757568359,
             "z": 0
           },
           "orientation": {
@@ -412,17 +362,89 @@
       "prefab": null
     },
     {
-      "id": "10",
+      "id": "81",
       "name": "Scenery",
       "children": [
         {
-          "id": "39",
-          "name": "Entities",
+          "id": "70",
+          "name": "Cat Poo",
           "children": [],
           "components": [],
           "position": {
+            "x": -4.1875,
+            "y": -1,
+            "z": 0
+          },
+          "orientation": {
             "x": 0,
             "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "526"
+          }
+        },
+        {
+          "id": "71",
+          "name": "Table2",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": 0.4375,
+            "y": 1.8125,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "385"
+          }
+        },
+        {
+          "id": "72",
+          "name": "Glass",
+          "children": [],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "spriteAssetId": "337",
+                "animationId": null,
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 0.6875,
+            "y": 2.375,
             "z": 0
           },
           "orientation": {
@@ -441,13 +463,58 @@
           "prefab": null
         },
         {
-          "id": "35",
-          "name": "Trees",
+          "id": "73",
+          "name": "Stool",
           "children": [],
           "components": [],
           "position": {
+            "x": 0.625,
+            "y": 0.25,
+            "z": 0
+          },
+          "orientation": {
             "x": 0,
             "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "339"
+          }
+        },
+        {
+          "id": "74",
+          "name": "Plate",
+          "children": [],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "spriteAssetId": "336",
+                "animationId": null,
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 0.375,
+            "y": 1.625,
             "z": 0
           },
           "orientation": {
@@ -466,13 +533,58 @@
           "prefab": null
         },
         {
-          "id": "37",
-          "name": "Houses",
+          "id": "76",
+          "name": "Cat Poo",
           "children": [],
           "components": [],
           "position": {
+            "x": 0.375,
+            "y": 2.062000036239624,
+            "z": 0
+          },
+          "orientation": {
             "x": 0,
             "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "526"
+          }
+        },
+        {
+          "id": "77",
+          "name": "Plate",
+          "children": [],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "spriteAssetId": "336",
+                "animationId": null,
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": -5.6875,
+            "y": 1.5,
             "z": 0
           },
           "orientation": {
@@ -489,86 +601,17 @@
           "visible": true,
           "layer": 0,
           "prefab": null
-        }
-      ],
-      "components": [],
-      "position": {
-        "x": 0,
-        "y": 0,
-        "z": 0
-      },
-      "orientation": {
-        "x": 0,
-        "y": 0,
-        "z": 0,
-        "w": 1
-      },
-      "scale": {
-        "x": 1,
-        "y": 1,
-        "z": 1
-      },
-      "visible": true,
-      "layer": 0,
-      "prefab": null
-    },
-    {
-      "id": "55",
-      "name": "Enemies",
-      "children": [
-        {
-          "id": "57",
-          "name": "Cat",
-          "children": [],
-          "components": [
-            {
-              "type": "SpriteRenderer",
-              "config": {
-                "spriteAssetId": "84",
-                "animationId": "6",
-                "horizontalFlip": false,
-                "verticalFlip": false,
-                "castShadow": false,
-                "receiveShadow": false,
-                "color": "ffffff",
-                "overrideOpacity": false,
-                "opacity": null,
-                "materialType": "basic",
-                "shaderAssetId": null
-              },
-              "id": "0"
-            }
-          ],
-          "position": {
-            "x": -13.44185733795166,
-            "y": -6.702460765838623,
-            "z": 8
-          },
-          "orientation": {
-            "x": 0,
-            "y": 0,
-            "z": 0,
-            "w": 1
-          },
-          "scale": {
-            "x": 1,
-            "y": 1,
-            "z": 1
-          },
-          "visible": true,
-          "layer": 0,
-          "prefab": null
         },
         {
-          "id": "58",
-          "name": "Cat",
+          "id": "78",
+          "name": "Fish Skull",
           "children": [],
           "components": [
             {
               "type": "SpriteRenderer",
               "config": {
-                "spriteAssetId": "84",
-                "animationId": "5",
+                "spriteAssetId": "532",
+                "animationId": null,
                 "horizontalFlip": false,
                 "verticalFlip": false,
                 "castShadow": false,
@@ -583,138 +626,9 @@
             }
           ],
           "position": {
-            "x": -6.738936424255371,
-            "y": -6.144917011260986,
-            "z": 8
-          },
-          "orientation": {
-            "x": 0,
-            "y": 0,
-            "z": 0,
-            "w": 1
-          },
-          "scale": {
-            "x": 1,
-            "y": 1,
-            "z": 1
-          },
-          "visible": true,
-          "layer": 0,
-          "prefab": null
-        },
-        {
-          "id": "59",
-          "name": "Cat",
-          "children": [],
-          "components": [
-            {
-              "type": "SpriteRenderer",
-              "config": {
-                "spriteAssetId": "84",
-                "animationId": "3",
-                "horizontalFlip": false,
-                "verticalFlip": false,
-                "castShadow": false,
-                "receiveShadow": false,
-                "color": "ffffff",
-                "overrideOpacity": false,
-                "opacity": null,
-                "materialType": "basic",
-                "shaderAssetId": null
-              },
-              "id": "0"
-            }
-          ],
-          "position": {
-            "x": -6.045105457305908,
-            "y": -2.9359400272369385,
-            "z": 8
-          },
-          "orientation": {
-            "x": 0,
-            "y": 0,
-            "z": 0,
-            "w": 1
-          },
-          "scale": {
-            "x": 1,
-            "y": 1,
-            "z": 1
-          },
-          "visible": true,
-          "layer": 0,
-          "prefab": null
-        },
-        {
-          "id": "60",
-          "name": "Cat",
-          "children": [],
-          "components": [
-            {
-              "type": "SpriteRenderer",
-              "config": {
-                "spriteAssetId": "84",
-                "animationId": "2",
-                "horizontalFlip": false,
-                "verticalFlip": false,
-                "castShadow": false,
-                "receiveShadow": false,
-                "color": "ffffff",
-                "overrideOpacity": false,
-                "opacity": null,
-                "materialType": "basic",
-                "shaderAssetId": null
-              },
-              "id": "0"
-            }
-          ],
-          "position": {
-            "x": -7.990314483642578,
-            "y": -1.3128666877746582,
-            "z": 8
-          },
-          "orientation": {
-            "x": 0,
-            "y": 0,
-            "z": 0,
-            "w": 1
-          },
-          "scale": {
-            "x": 1,
-            "y": 1,
-            "z": 1
-          },
-          "visible": true,
-          "layer": 0,
-          "prefab": null
-        },
-        {
-          "id": "61",
-          "name": "Cat",
-          "children": [],
-          "components": [
-            {
-              "type": "SpriteRenderer",
-              "config": {
-                "spriteAssetId": "84",
-                "animationId": "9",
-                "horizontalFlip": false,
-                "verticalFlip": false,
-                "castShadow": false,
-                "receiveShadow": false,
-                "color": "ffffff",
-                "overrideOpacity": false,
-                "opacity": null,
-                "materialType": "basic",
-                "shaderAssetId": null
-              },
-              "id": "0"
-            }
-          ],
-          "position": {
-            "x": -16.415428161621094,
-            "y": -4.608572006225586,
-            "z": 8
+            "x": -5.6875,
+            "y": 1.5625,
+            "z": 0
           },
           "orientation": {
             "x": 0,
@@ -752,12 +666,377 @@
                 "shaderAssetId": null
               },
               "id": "0"
+            },
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "OldLadyBehavior",
+                "propertyValues": {}
+              },
+              "id": "2"
+            },
+            {
+              "type": "ArcadeBody2D",
+              "config": {
+                "type": "box",
+                "movable": true,
+                "width": 1,
+                "height": 1,
+                "offset": {
+                  "x": 0,
+                  "y": -0.25
+                },
+                "tileMapAssetId": null,
+                "tileSetPropertyName": null,
+                "layersIndex": null
+              },
+              "id": "3"
             }
           ],
           "position": {
-            "x": -5.921208381652832,
-            "y": -1.2509174346923828,
-            "z": 8
+            "x": 5.078999996185303,
+            "y": 2.249000072479248,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "57",
+          "name": "Cat",
+          "children": [],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "spriteAssetId": "84",
+                "animationId": "6",
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            },
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "CatBehavior",
+                "propertyValues": {}
+              },
+              "id": "2"
+            },
+            {
+              "type": "ArcadeBody2D",
+              "config": {
+                "type": "box",
+                "movable": true,
+                "width": 0.6,
+                "height": 0.6,
+                "offset": {
+                  "x": 0,
+                  "y": 0.25
+                },
+                "tileMapAssetId": null,
+                "tileSetPropertyName": null,
+                "layersIndex": null
+              },
+              "id": "3"
+            }
+          ],
+          "position": {
+            "x": -2.442000389099121,
+            "y": -3.431000232696533,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "58",
+          "name": "Cat",
+          "children": [],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "spriteAssetId": "84",
+                "animationId": "5",
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            },
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "CatBehavior",
+                "propertyValues": {}
+              },
+              "id": "1"
+            },
+            {
+              "type": "ArcadeBody2D",
+              "config": {
+                "type": "box",
+                "movable": true,
+                "width": 0.6,
+                "height": 0.6,
+                "offset": {
+                  "x": 0,
+                  "y": 0.25
+                },
+                "tileMapAssetId": null,
+                "tileSetPropertyName": null,
+                "layersIndex": null
+              },
+              "id": "2"
+            }
+          ],
+          "position": {
+            "x": 4.261000156402588,
+            "y": -2.9200000762939453,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "59",
+          "name": "Cat",
+          "children": [],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "spriteAssetId": "84",
+                "animationId": "3",
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            },
+            {
+              "type": "ArcadeBody2D",
+              "config": {
+                "type": "box",
+                "movable": true,
+                "width": 0.6,
+                "height": 0.6,
+                "offset": {
+                  "x": 0,
+                  "y": 0.25
+                },
+                "tileMapAssetId": null,
+                "tileSetPropertyName": null,
+                "layersIndex": null
+              },
+              "id": "1"
+            },
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "CatBehavior",
+                "propertyValues": {}
+              },
+              "id": "2"
+            }
+          ],
+          "position": {
+            "x": 4.929999828338623,
+            "y": 0.15199995040893555,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "60",
+          "name": "Cat",
+          "children": [],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "spriteAssetId": "84",
+                "animationId": "2",
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            },
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "CatBehavior",
+                "propertyValues": {}
+              },
+              "id": "1"
+            },
+            {
+              "type": "ArcadeBody2D",
+              "config": {
+                "type": "box",
+                "movable": true,
+                "width": 0.6,
+                "height": 0.6,
+                "offset": {
+                  "x": 0,
+                  "y": 0.25
+                },
+                "tileMapAssetId": null,
+                "tileSetPropertyName": null,
+                "layersIndex": null
+              },
+              "id": "2"
+            }
+          ],
+          "position": {
+            "x": 3.010000228881836,
+            "y": 2.187000036239624,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "61",
+          "name": "Cat",
+          "children": [],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "spriteAssetId": "84",
+                "animationId": "9",
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            },
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "CatBehavior",
+                "propertyValues": {}
+              },
+              "id": "1"
+            },
+            {
+              "type": "ArcadeBody2D",
+              "config": {
+                "type": "box",
+                "movable": true,
+                "width": 0.6,
+                "height": 0.6,
+                "offset": {
+                  "x": 0,
+                  "y": 0.25
+                },
+                "tileMapAssetId": null,
+                "tileSetPropertyName": null,
+                "layersIndex": null
+              },
+              "id": "2"
+            }
+          ],
+          "position": {
+            "x": -5.415000915527344,
+            "y": -1.1090002059936523,
+            "z": 0
           },
           "orientation": {
             "x": 0,
@@ -776,7 +1055,7 @@
         },
         {
           "id": "63",
-          "name": "Cat",
+          "name": "Frog Cat",
           "children": [],
           "components": [
             {
@@ -795,12 +1074,37 @@
                 "shaderAssetId": null
               },
               "id": "0"
+            },
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "CatBehavior",
+                "propertyValues": {}
+              },
+              "id": "1"
+            },
+            {
+              "type": "ArcadeBody2D",
+              "config": {
+                "type": "box",
+                "movable": true,
+                "width": 0.6,
+                "height": 0.6,
+                "offset": {
+                  "x": 0,
+                  "y": 0.4
+                },
+                "tileMapAssetId": null,
+                "tileSetPropertyName": null,
+                "layersIndex": null
+              },
+              "id": "2"
             }
           ],
           "position": {
-            "x": -14.718012809753418,
-            "y": -5.574982643127441,
-            "z": 8
+            "x": -3.7180004119873047,
+            "y": -2.0749998092651367,
+            "z": 0
           },
           "orientation": {
             "x": 0,
@@ -838,12 +1142,37 @@
                 "shaderAssetId": null
               },
               "id": "0"
+            },
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "CatBehavior",
+                "propertyValues": {}
+              },
+              "id": "1"
+            },
+            {
+              "type": "ArcadeBody2D",
+              "config": {
+                "type": "box",
+                "movable": true,
+                "width": 0.6,
+                "height": 0.6,
+                "offset": {
+                  "x": 0,
+                  "y": 0.25
+                },
+                "tileMapAssetId": null,
+                "tileSetPropertyName": null,
+                "layersIndex": null
+              },
+              "id": "2"
             }
           ],
           "position": {
-            "x": -16.650835037231445,
-            "y": -7.074156284332275,
-            "z": 8
+            "x": -5.650999069213867,
+            "y": -3.802999973297119,
+            "z": 0
           },
           "orientation": {
             "x": 0,
@@ -881,12 +1210,37 @@
                 "shaderAssetId": null
               },
               "id": "0"
+            },
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "CatBehavior",
+                "propertyValues": {}
+              },
+              "id": "1"
+            },
+            {
+              "type": "ArcadeBody2D",
+              "config": {
+                "type": "box",
+                "movable": true,
+                "width": 0.6,
+                "height": 0.6,
+                "offset": {
+                  "x": 0,
+                  "y": 0.25
+                },
+                "tileMapAssetId": null,
+                "tileSetPropertyName": null,
+                "layersIndex": null
+              },
+              "id": "2"
             }
           ],
           "position": {
-            "x": -5.52473258972168,
-            "y": -4.447504043579102,
-            "z": 8
+            "x": 5.474999904632568,
+            "y": -1.1989998817443848,
+            "z": 0
           },
           "orientation": {
             "x": 0,
@@ -924,12 +1278,37 @@
                 "shaderAssetId": null
               },
               "id": "0"
+            },
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "CatBehavior",
+                "propertyValues": {}
+              },
+              "id": "1"
+            },
+            {
+              "type": "ArcadeBody2D",
+              "config": {
+                "type": "box",
+                "movable": true,
+                "width": 0.6,
+                "height": 0.6,
+                "offset": {
+                  "x": 0,
+                  "y": 0.25
+                },
+                "tileMapAssetId": null,
+                "tileSetPropertyName": null,
+                "layersIndex": null
+              },
+              "id": "2"
             }
           ],
           "position": {
-            "x": -14.866694450378418,
-            "y": -0.9287804365158081,
-            "z": 8
+            "x": -3.866999626159668,
+            "y": 2.571000099182129,
+            "z": 0
           },
           "orientation": {
             "x": 0,
@@ -967,12 +1346,37 @@
                 "shaderAssetId": null
               },
               "id": "0"
+            },
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "CatBehavior",
+                "propertyValues": {}
+              },
+              "id": "1"
+            },
+            {
+              "type": "ArcadeBody2D",
+              "config": {
+                "type": "box",
+                "movable": true,
+                "width": 0.6,
+                "height": 0.6,
+                "offset": {
+                  "x": 0,
+                  "y": 0.25
+                },
+                "tileMapAssetId": null,
+                "tileSetPropertyName": null,
+                "layersIndex": null
+              },
+              "id": "2"
             }
           ],
           "position": {
-            "x": -12.525007247924805,
-            "y": -1.1517987251281738,
-            "z": 8
+            "x": -1.5249996185302734,
+            "y": 2.2109999656677246,
+            "z": 0
           },
           "orientation": {
             "x": 0,
@@ -1017,9 +1421,9 @@
       "children": [],
       "components": [],
       "position": {
-        "x": -10.724000930786133,
-        "y": -3.425119400024414,
-        "z": 0
+        "x": 0,
+        "y": 0,
+        "z": -10
       },
       "orientation": {
         "x": 0,

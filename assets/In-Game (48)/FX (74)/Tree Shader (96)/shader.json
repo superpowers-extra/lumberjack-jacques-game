@@ -37,6 +37,21 @@
         1,
         1
       ]
+    },
+    {
+      "id": "5",
+      "name": "texSize",
+      "type": "v2",
+      "value": [
+        128,
+        128
+      ]
+    },
+    {
+      "id": "6",
+      "name": "timeSteps",
+      "type": "f",
+      "value": 24
     }
   ],
   "useLightUniforms": false,

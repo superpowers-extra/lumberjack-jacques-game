@@ -5,6 +5,7 @@ class StartMenuBehavior extends Sup.Behavior {
 
   awake() {
     Fade.start(Fade.Direction.In, { duration: 500 });
+    Game.playMusic("Ambient 1", 0.8);
     
     const logoActor = Sup.getActor("Logo");
     new Sup.Tween(logoActor, { y: 15.2 }).to({ y: 5.2 }, 2000)
@@ -18,17 +19,30 @@ class StartMenuBehavior extends Sup.Behavior {
     const lightning = Sup.getActor("Lightning").getBehavior(LightningBehavior);
     lightning.minInterval = 2000;
     lightning.maxInterval = 8000;
+    
+    CameraBehavior.rainSoundPlayer.play();
   }
 
   update() {
     // DEBUG
-    if (this.introTimeout == null && Sup.Input.wasKeyJustPressed("I")) {
-      Game.loadMap("Home Outside");
-      return;
-    } else if (this.introTimeout == null && Sup.Input.wasKeyJustPressed("V")) {
-      Game.loadMap("Village");
-      Game.currentGoal = Game.Goals.Village;
-    }
+    // if (this.introTimeout == null && Sup.Input.wasKeyJustPressed("I")) {
+    //   Game.loadMap("Home Outside");
+    //   return;
+    // } else if (this.introTimeout == null && Sup.Input.wasKeyJustPressed("V")) {
+    //   PlayerBehavior.inventory["Key"].isActive = true;
+    //   Game.loadMap("Village");
+    //   Game.currentGoal = Game.Goals.Village;
+    // } else if (this.introTimeout == null && Sup.Input.wasKeyJustPressed("M")) {
+    //   PlayerBehavior.inventory["Rifle"].isActive = true;
+    //   Game.loadMap("Mine Path");
+    //   Game.currentGoal = Game.Goals.Mine;
+    // } else if (this.introTimeout == null && Sup.Input.wasKeyJustPressed("B")) {
+    //   Game.loadMap("Mine/Boss Room");
+    //   Game.currentGoal = Game.Goals.Boss;
+    // } else if (this.introTimeout == null && Sup.Input.wasKeyJustPressed("C")) {
+    //   Game.loadMap("Village/Church Inside");
+    //   Game.currentGoal = Game.Goals.Village;
+    // }
     
     if (!this.introStarted && Sup.Input.wasKeyJustPressed("RETURN") || Sup.Input.wasGamepadButtonJustPressed(0, 0)) {
       this.introStarted = true;

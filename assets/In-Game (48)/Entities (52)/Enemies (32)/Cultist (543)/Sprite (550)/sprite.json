@@ -1,0 +1,128 @@
+{
+  "formatVersion": 3,
+  "maps": [
+    "map"
+  ],
+  "filtering": "pixelated",
+  "wrapping": "clampToEdge",
+  "pixelsPerUnit": 16,
+  "framesPerSecond": 5,
+  "opacity": 1,
+  "alphaTest": 0.1,
+  "frameOrder": "rows",
+  "grid": {
+    "width": 22,
+    "height": 30
+  },
+  "origin": {
+    "x": 0.52,
+    "y": 0.16
+  },
+  "animations": [
+    {
+      "id": "0",
+      "name": "Idle Down",
+      "startFrameIndex": 0,
+      "endFrameIndex": 2,
+      "speed": 1
+    },
+    {
+      "id": "1",
+      "name": "Idle Up",
+      "startFrameIndex": 0,
+      "endFrameIndex": 2,
+      "speed": 1
+    },
+    {
+      "id": "2",
+      "name": "Idle Left",
+      "startFrameIndex": 10,
+      "endFrameIndex": 10,
+      "speed": 1
+    },
+    {
+      "id": "3",
+      "name": "Idle Right",
+      "startFrameIndex": 5,
+      "endFrameIndex": 5,
+      "speed": 1
+    },
+    {
+      "id": "4",
+      "name": "Attack Left",
+      "startFrameIndex": 3,
+      "endFrameIndex": 4,
+      "speed": 1
+    },
+    {
+      "id": "5",
+      "name": "Attack Up",
+      "startFrameIndex": 3,
+      "endFrameIndex": 4,
+      "speed": 1
+    },
+    {
+      "id": "6",
+      "name": "Attack Right",
+      "startFrameIndex": 3,
+      "endFrameIndex": 4,
+      "speed": 1
+    },
+    {
+      "id": "7",
+      "name": "Attack Down",
+      "startFrameIndex": 3,
+      "endFrameIndex": 4,
+      "speed": 1
+    },
+    {
+      "id": "8",
+      "name": "Walk Down",
+      "startFrameIndex": 0,
+      "endFrameIndex": 2,
+      "speed": 1
+    },
+    {
+      "id": "9",
+      "name": "Walk Left",
+      "startFrameIndex": 10,
+      "endFrameIndex": 13,
+      "speed": 1
+    },
+    {
+      "id": "10",
+      "name": "Walk Right",
+      "startFrameIndex": 5,
+      "endFrameIndex": 8,
+      "speed": 1
+    },
+    {
+      "id": "11",
+      "name": "Walk Up",
+      "startFrameIndex": 15,
+      "endFrameIndex": 18,
+      "speed": 1
+    },
+    {
+      "id": "12",
+      "name": "Die",
+      "startFrameIndex": 20,
+      "endFrameIndex": 20,
+      "speed": 1
+    },
+    {
+      "id": "13",
+      "name": "Hit",
+      "startFrameIndex": 21,
+      "endFrameIndex": 21,
+      "speed": 1
+    }
+  ],
+  "mapSlots": {
+    "map": "map",
+    "light": null,
+    "specular": null,
+    "alpha": null,
+    "normal": null
+  }
+}

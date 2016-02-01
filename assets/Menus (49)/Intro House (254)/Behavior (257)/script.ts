@@ -6,6 +6,8 @@ class IntroHouseBehavior extends Sup.Behavior {
   interval = null;
   
   awake() {
+    Game.playMusic("Ambient 1", 1);
+    
     this.doorRenderer = Sup.getActor("Door").spriteRenderer;
     this.characterRenderer = Sup.getActor("Character").spriteRenderer;
     Sup.setTimeout(2500, this.startKnocking);

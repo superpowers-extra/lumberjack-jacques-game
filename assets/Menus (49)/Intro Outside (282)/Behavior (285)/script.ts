@@ -3,10 +3,12 @@ class IntroOutsideBehavior extends Sup.Behavior {
   shadowActor: Sup.Actor;
 
   awake() {
+    Game.playMusic("Ambient 1", 1);
+    
     this.doorRenderer = Sup.getActor("Outside Door").spriteRenderer;
     this.shadowActor = Sup.getActor("Shadow");
     
-    new Sup.Tween(this.shadowActor, { y: -20 }).to({ y: 0 }, 3000)
+    new Sup.Tween(this.shadowActor, { y: -25 }).to({ y: -10 }, 3000)
     .easing(TWEEN.Easing.Quintic.Out)
     .onUpdate((obj) => {
       this.shadowActor.setLocalY(obj.y);

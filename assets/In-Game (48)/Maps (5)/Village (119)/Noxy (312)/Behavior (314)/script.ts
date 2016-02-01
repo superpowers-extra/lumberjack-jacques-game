@@ -14,9 +14,11 @@ class NoxyBehavior extends SimpleDialogBehavior {
   }
 
   interact() {
-    if (this.currentText === 3) {
+    if (NoxyBehavior.noxyHasLeft && Game.playerBehavior.activeInteractable == null) return;
+
+    if (this.currentText === 3 && !NoxyBehavior.noxyHasLeft) {
       // Increase max health and restore full health to the player
-      PlayerBehavior.maxHealth += 2;
+      Game.playerBehavior.addHeart();
       Game.playerBehavior.updateHealth(PlayerBehavior.maxHealth);
       Sup.Audio.playSound("In-Game/Maps/Village/Noxy/Power Up");
 
@@ -36,7 +38,10 @@ class NoxyBehavior extends SimpleDialogBehavior {
     
     if (this.ticks < NoxyBehavior.fadeOutTicks) {
       this.ticks++;
-      this.actor.spriteRenderer.setOpacity(Sup.Math.lerp(1, 0, this.ticks/NoxyBehavior.fadeOutTicks));
+      
+      const opacity = Sup.Math.lerp(1, 0, this.ticks/NoxyBehavior.fadeOutTicks);
+      this.actor.spriteRenderer.setOpacity(opacity);
+      this.actor.getChild("Shadow").spriteRenderer.setOpacity(opacity);
     }
     
     if (this.ticks >= NoxyBehavior.fadeOutTicks && Game.playerBehavior.activeInteractable !== this) {

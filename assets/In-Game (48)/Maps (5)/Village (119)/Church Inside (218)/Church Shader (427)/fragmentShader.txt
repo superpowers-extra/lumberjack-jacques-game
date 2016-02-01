@@ -1,0 +1,22 @@
+uniform sampler2D map;
+uniform sampler2D light;
+uniform sampler2D noiseTex;
+varying vec2 vUv;
+uniform float intensity;
+uniform float time;
+uniform float speed;
+uniform float threshold;
+
+void main() {
+  vec4 base = texture2D(map, vUv);
+  float n = texture2D(noiseTex, vec2(mod(time * speed,1.), .5)).r;
+  
+  if ( n > threshold )
+    {
+  vec3 light = texture2D(light, vUv).rgb;
+  
+  base.rgb += light * intensity * ( (n-threshold) / ( 1.-threshold) );
+  }
+  
+  gl_FragColor = base;
+}

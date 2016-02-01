@@ -1,11 +1,12 @@
 class PlayerBehavior extends Sup.Behavior {
 
   position = new Sup.Math.Vector2();
-  direction = Utils.Directions.Down;
+  moveDirection = Utils.Directions.Down;
+  lookDirection = Utils.Directions.Down;
   private velocity = new Sup.Math.Vector2();
   
   private isAttacking = false;
-  private hasAttackHit = false;
+  hasAttackHit = false;
   private attackCooldown = 0;
 
   autoPilot = false;
@@ -16,32 +17,29 @@ class PlayerBehavior extends Sup.Behavior {
 
   heartRenderers: Sup.SpriteRenderer[];
 
-  // temp
-  enemySpawnActor: Sup.Actor;
-  enemySpawnPos: Sup.Math.Vector2; 
+  hackSound = Sup.get("In-Game/Entities/Player/Sounds/Hack", Sup.Sound);
+  wooshSound = Sup.get("In-Game/Entities/Player/Sounds/Woosh", Sup.Sound);
+  shootSound = Sup.get("In-Game/Entities/Player/Sounds/Shoot", Sup.Sound);
+  reloadSound = Sup.get("In-Game/Entities/Player/Sounds/Reload Gun", Sup.Sound);
+  hitSound = Sup.get("In-Game/Entities/Player/Sounds/Hit", Sup.Sound);
+  isShotgunOut = false;
 
   awake() {
     Game.playerBehavior = this;    
-  }
-
-  start() {
-    // temp, for testing enemies
-    this.enemySpawnActor = Sup.getActor("Enemy Spawn");
-    if (this.enemySpawnActor != null)
-      this.enemySpawnPos = this.enemySpawnActor.getPosition().toVector2(); 
   }
 
   setup(spawnName: string) {
     // create healthbar
     this.heartRenderers = [];
     const heartsRoot = Sup.getActor("Hearts");
-    let offset = 1;
-    for (let i = 0; i < PlayerBehavior.maxHealth/2; i++) {
+    for (let i = 0; i < PlayerBehavior.maxHealth / 2; i++) {
       const heart = Sup.appendScene("In-Game/HUD/Items/Heart Prefab", heartsRoot)[0];
-      heart.setLocalPosition(i * offset, 0, 0);
+      heart.setLocalPosition(i, 0, 0);
       this.heartRenderers.push(heart.spriteRenderer);
     }
     this.updateHealth(PlayerBehavior.health);
+    
+    PlayerBehavior.setupInventory();
     
     let spawnActor = Sup.getActor("Markers").getChild(spawnName.replace("/", "_"));
     
@@ -53,16 +51,17 @@ class PlayerBehavior extends Sup.Behavior {
     this.position = spawnActor.getLocalPosition().toVector2();
     this.actor.arcadeBody2D.warpPosition(this.position);
     
-    let spawnDirection = spawnActor.getBehavior(TeleportBehavior).direction;
-    this.direction = Utils.getOppositeDirection(Utils.Directions[spawnDirection]);
-    this.actor.spriteRenderer.setAnimation(`Walk ${Utils.Directions[this.direction]}`);
+    let teleportBehavior = spawnActor.getBehavior(TeleportBehavior);
+    let spawnDirection = teleportBehavior != null ? teleportBehavior.direction : "Up";
+    this.moveDirection = this.lookDirection = Utils.getOppositeDirection(Utils.Directions[spawnDirection]);
+    this.actor.spriteRenderer.setAnimation(`Walk ${Utils.Directions[this.lookDirection]}`);
     
-    let angle = Utils.getAngleFromDirection(this.direction);
+    let angle = Utils.getAngleFromDirection(this.moveDirection);
     this.velocity.setFromAngle(angle).multiplyScalar(PlayerBehavior.enterSpeed);
     this.actor.arcadeBody2D.setVelocity(this.velocity);
   }
 
-  hit(direction: Utils.Directions) {
+  hit(direction: Utils.Directions, strong = false) {
     if (PlayerBehavior.health === 0 || this.hitTimer > 0) return;
 
     this.updateHealth(-1, true);
@@ -70,24 +69,38 @@ class PlayerBehavior extends Sup.Behavior {
     if (PlayerBehavior.health === 0) {
       // FIXME: play some kind of animation or effect
       Game.playerBehavior = null;
+      PlayerBehavior.health = PlayerBehavior.maxHealth;
       Game.loadMap(Game.currentMapName);
 
     } else {
-      this.hitTimer = PlayerBehavior.hitDelay;
-      this.velocity.setFromAngle(Utils.getAngleFromDirection(direction)).multiplyScalar(PlayerBehavior.hitSpeed);
+      this.hitTimer = strong ? PlayerBehavior.strongHitDelay : PlayerBehavior.hitDelay;
+      this.velocity.setFromAngle(Utils.getAngleFromDirection(direction)).multiplyScalar(strong ? PlayerBehavior.strongHitSpeed : PlayerBehavior.hitSpeed);
       this.actor.arcadeBody2D.setVelocity(this.velocity);
 
-      this.direction = Utils.getOppositeDirection(direction);
-      this.actor.spriteRenderer.setAnimation(`Idle ${Utils.Directions[this.direction]}`).pauseAnimation();
+      this.lookDirection = Utils.getOppositeDirection(direction);
+      this.actor.spriteRenderer.setAnimation(`Idle ${Utils.Directions[this.lookDirection]}`).pauseAnimation();
       const color = 3;
       this.actor.spriteRenderer.setColor(color, color, color);
     }
   }
   
-  // updte healthbar
+  addHeart() {
+    const heartsRoot = Sup.getActor("Hearts");
+    const heart = Sup.appendScene("In-Game/HUD/Items/Heart Prefab", heartsRoot)[0];
+    heart.setLocalPosition(PlayerBehavior.maxHealth / 2, 0, 0);
+    this.heartRenderers.push(heart.spriteRenderer);
+    
+    PlayerBehavior.maxHealth += 2;
+  }
+
+  // update healthbar
   updateHealth(health: number, relative = false) {
-    if (relative === true) PlayerBehavior.health += health;
-    else PlayerBehavior.health = health;
+    if (relative === true) {
+      PlayerBehavior.health += health;
+      if (health < 0) {
+        Sup.Audio.playSound(this.hitSound);
+      }
+    } else PlayerBehavior.health = health;
     PlayerBehavior.health = Sup.Math.clamp(PlayerBehavior.health, 0, PlayerBehavior.maxHealth);
     
     // update the health bar accordingly
@@ -120,15 +133,26 @@ class PlayerBehavior extends Sup.Behavior {
   }
 
   setDirection(direction: Utils.Directions, move: boolean) {
-    this.direction = direction;
+    this.moveDirection = direction;
+    if (!this.isShotgunOut) this.lookDirection = direction;
+    this.actor.spriteRenderer.setSprite("In-Game/Entities/Player/Sprite");
+    
     if (move) {
-      this.velocity.setFromAngle(Utils.getAngleFromDirection(this.direction)).multiplyScalar(PlayerBehavior.enterSpeed);
-      this.actor.spriteRenderer.setAnimation(`Walk ${Utils.Directions[this.direction]}`);
+      this.velocity.setFromAngle(Utils.getAngleFromDirection(this.moveDirection)).multiplyScalar(PlayerBehavior.enterSpeed);
+      this.actor.spriteRenderer.setAnimation(`Walk ${Utils.Directions[this.lookDirection]}`);
     } else {
       this.velocity.set(0, 0);
-      this.actor.spriteRenderer.setAnimation(`Idle ${Utils.Directions[this.direction]}`);
+      this.actor.spriteRenderer.setAnimation(`Idle ${Utils.Directions[this.lookDirection]}`);
     }
     this.actor.arcadeBody2D.setVelocity(this.velocity);
+  }
+
+  clearMotion() {
+    this.velocity.set(0, 0);
+    this.actor.arcadeBody2D.setVelocity(this.velocity);
+    this.actor.spriteRenderer.setSprite("In-Game/Entities/Player/Sprite");
+    this.actor.spriteRenderer.setAnimation(`Idle ${Utils.Directions[this.lookDirection]}`);
+    this.isAttacking = false;
   }
 
   update() {    
@@ -159,6 +183,28 @@ class PlayerBehavior extends Sup.Behavior {
     
     if (Fade.isFading) return;
 
+    // Attack shotgun
+    if (this.isShotgunOut) {
+      if (this.isAttacking) {
+        if (!this.actor.spriteRenderer.isAnimationPlaying()) {
+          this.isAttacking = false;
+          this.isShotgunOut = false;
+          this.actor.spriteRenderer.setSprite("In-Game/Entities/Player/Sprite");
+          
+          if (this.attackCooldown === 0) this.shoot();
+        }
+        
+      } else if (Sup.Input.wasKeyJustReleased("B") || Sup.Input.wasGamepadButtonJustReleased(0, 1)) {
+        this.isAttacking = true;
+        this.actor.spriteRenderer.setAnimation(`Shotgun Attack ${Utils.Directions[this.lookDirection]}`, false);
+      }
+      
+    } else if (PlayerBehavior.inventory["Rifle"].isActive && (Sup.Input.isKeyDown("B") || Sup.Input.isGamepadButtonDown(0, 1))) {
+      this.isShotgunOut = true;
+      Sup.Audio.playSound(this.reloadSound);
+      this.actor.spriteRenderer.setSprite("In-Game/Entities/Player/Sprite Shotgun");
+    }
+    
     this.velocity.set(0, 0);
     let newDirection: Utils.Directions;
     if (Sup.Input.isKeyDown("DOWN")       || Sup.Input.getGamepadAxisValue(0, 1) > 0.5)  { this.velocity.y = -1; }
@@ -168,10 +214,11 @@ class PlayerBehavior extends Sup.Behavior {
 
     if (this.velocity.x !== 0 || this.velocity.y !== 0) {
       this.velocity.normalize().multiplyScalar(this.isAttacking ? PlayerBehavior.attackMoveSpeed : PlayerBehavior.moveSpeed);
-      this.direction = Utils.getDirectionFromVector(this.velocity);
-      if (!this.isAttacking) this.actor.spriteRenderer.setAnimation(`Walk ${Utils.Directions[this.direction]}`);
+      this.moveDirection = Utils.getDirectionFromVector(this.velocity);
+      if (!this.isShotgunOut) this.lookDirection = this.moveDirection;
+      if (!this.isAttacking) this.actor.spriteRenderer.setAnimation(`Walk ${Utils.Directions[this.lookDirection]}`);
     } else {
-      if (!this.isAttacking) this.actor.spriteRenderer.setAnimation(`Idle ${Utils.Directions[this.direction]}`);
+      if (!this.isAttacking) this.actor.spriteRenderer.setAnimation(`Idle ${Utils.Directions[this.lookDirection]}`);
     }
     this.actor.arcadeBody2D.setVelocity(this.velocity);
 
@@ -182,17 +229,18 @@ class PlayerBehavior extends Sup.Behavior {
       if (!this.actor.spriteRenderer.isAnimationPlaying()) {
         this.isAttacking = false;
         
-      } else if (!this.hasAttackHit && this.actor.spriteRenderer.getAnimationFrameTime() / this.actor.spriteRenderer.getAnimationFrameCount() > 0.4) {
-        let closestEnemy: EnemyBehavior;
-        let closestEnemyDistance = PlayerBehavior.attackRange;
+      } else if (this.canAttack()) {
+        let closestEnemy: Enemy;
+        let closestEnemyDistance = Infinity;
         for (let enemy of Game.enemies) {
-          let diff = enemy.position.clone().subtract(this.position);
-          if (diff.length() < closestEnemyDistance && Math.abs(Sup.Math.wrapAngle(diff.angle() - Utils.getAngleFromDirection(this.direction))) < Math.PI * 1 / 3)
+          let diff = enemy.position.clone().add(0, enemy.radius).subtract(this.position);
+          if (diff.length() < PlayerBehavior.attackRange + enemy.radius && Math.abs(Sup.Math.wrapAngle(diff.angle() - Utils.getAngleFromDirection(this.lookDirection))) < Math.PI * 1 / 3)
             closestEnemy = enemy;
         }
         if (closestEnemy != null) {
           this.hasAttackHit = true;
-          closestEnemy.hit(this.direction);
+          Sup.Audio.playSound(this.hackSound);
+          closestEnemy.hit(this.lookDirection);
         }
       }
       
@@ -200,45 +248,42 @@ class PlayerBehavior extends Sup.Behavior {
       this.attackCooldown = PlayerBehavior.attackCooldownDelay;
       this.isAttacking = true;
       this.hasAttackHit = false;
-      this.actor.spriteRenderer.setAnimation(`Attack ${Utils.Directions[this.direction]}`, false);
-    }
-
-    // Attack shotgun
-    if (Sup.Input.wasKeyJustPressed("C") && this.attackCooldown === 0) {
-      this.attackCooldown = PlayerBehavior.attackCooldownDelay;
-
-      let bullet = Sup.appendScene("In-Game/Entities/Player/Bullet/Prefab")[0];
-      bullet.getBehavior(BulletBehavior).setup(this.position, this.direction);
+      this.actor.spriteRenderer.setAnimation(`Attack ${Utils.Directions[this.lookDirection]}`, false);
+      Sup.Audio.playSound(this.wooshSound);
     }
 
     // Interactions
-    if (Sup.Input.wasKeyJustPressed("SPACE") || Sup.Input.wasKeyJustPressed("RETURN") || Sup.Input.wasGamepadButtonJustPressed(0, 0)) {
+    if (!this.isShotgunOut && (Sup.Input.wasKeyJustPressed("SPACE") || Sup.Input.wasKeyJustPressed("RETURN") || Sup.Input.wasGamepadButtonJustPressed(0, 0))) {
       let closestInteractable: InteractableBehavior;
       let closestDistance = Infinity;
       for (let interactable of Game.interactables) {
         let diff = interactable.position.clone().subtract(this.position);
         let distance = this.position.distanceTo(interactable.position);
         
-        if (diff.length() < closestDistance && Math.abs(Sup.Math.wrapAngle(diff.angle() - Utils.getAngleFromDirection(this.direction))) < Math.PI * 1 / 3) {
+        if (diff.length() < closestDistance && Math.abs(Sup.Math.wrapAngle(diff.angle() - Utils.getAngleFromDirection(this.lookDirection))) < Math.PI * 1 / 3) {
         
           closestDistance = distance;
           closestInteractable = interactable;
         }
       }
-      
-      if (closestDistance < 2) {
+
+      if (closestDistance < 3) {
         closestInteractable.interact();
-        this.setDirection(this.direction, false);
+        this.clearMotion();
       }
     }
-    
-    // Spawn enemy (temporary)
-    if (Sup.Input.wasKeyJustReleased("1") && this.enemySpawnActor != null) {
-      Sup.appendScene("In-Game/Entities/Enemies/Eye/Prefab", this.enemySpawnActor);
-    }
-    if (Sup.Input.wasKeyJustReleased("2") && this.enemySpawnActor != null) {
-      Sup.appendScene("In-Game/Entities/Enemies/Ranged/Prefab", this.enemySpawnActor);
-    }
+  }
+
+  canAttack() {
+    return !this.hasAttackHit && this.actor.spriteRenderer.getAnimationFrameTime() / this.actor.spriteRenderer.getAnimationFrameCount() > 0.4;
+  }
+
+  shoot() {
+    this.attackCooldown = PlayerBehavior.shootCooldownDelay;
+    Sup.Audio.playSound(this.shootSound);
+
+    let bullet = Sup.appendScene("In-Game/Entities/Player/Bullet/Prefab")[0];
+    bullet.getBehavior(BulletBehavior).setup(this.position, this.lookDirection);
   }
 }
 Sup.registerBehavior(PlayerBehavior);
@@ -249,13 +294,68 @@ namespace PlayerBehavior {
   export const attackMoveSpeed = 0.08;
   
   export const hitDelay = 10;
+  export const strongHitDelay = 25;
   export const hitSpeed = 0.08;
+  export const strongHitSpeed = 0.12;
   
   export let maxHealth = 10;
   export let health = PlayerBehavior.maxHealth;
   
   export const attackCooldownDelay = 10;
+  export const shootCooldownDelay = 60;
 
   export const attackDelay = 16;
   export const attackRange = 3.5;
+  
+  export let inventory: { [itemName: string]: { isActive: boolean, renderer: Sup.SpriteRenderer }} = {
+    Bottle: {
+      isActive: false,
+      renderer: null
+    },
+    Key: {
+      isActive: false,
+      renderer: null
+    },
+    Book: {
+      isActive: false,
+      renderer: null
+    },
+    Rifle: {
+      isActive: false,
+      renderer: null
+    }
+  }
+  
+  export function setupInventory() {
+    const inventoryRoot = Game.cameraBehavior.actor.getChild("Inventory");
+    for (const itemName in PlayerBehavior.inventory) {
+      const itemActor = inventoryRoot.getChild(itemName).getChild("Item");
+      const renderer = itemActor.spriteRenderer;
+      renderer.setSprite(`In-Game/HUD/Items/${itemName}`);
+      PlayerBehavior.inventory[itemName].renderer = renderer;
+    }
+    
+    updateInventory();
+  };
+  
+  export function addToInventory(name: string) {
+    PlayerBehavior.inventory[name].isActive = true;
+    Sup.Audio.playSound("In-Game/Maps/Village/Noxy/Power Up");
+    
+    updateInventory();
+  }
+  
+  export function removeFromInventory(name: string) {
+    PlayerBehavior.inventory[name].isActive = false;
+    Sup.Audio.playSound("In-Game/Entities/Player/Sounds/Give");
+
+    updateInventory();
+  }
+  
+  function updateInventory() {
+    for (const name in PlayerBehavior.inventory) {
+      const data = PlayerBehavior.inventory[name];
+      data.renderer.setOpacity( data.isActive ? 1 : 0 );
+    }
+  }
 }

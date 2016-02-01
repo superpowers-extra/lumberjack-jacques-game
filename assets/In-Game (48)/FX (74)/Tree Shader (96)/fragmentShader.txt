@@ -5,13 +5,28 @@ uniform float intensity;
 uniform sampler2D deform;
 uniform float time;
 uniform vec3 color;
+//uniform vec2 texSize;
+//uniform float timeSteps;
 
 void main() {
   vec2 mUV = vUv;
   
-  if ( texture2D(deform, vUv).b > 0.5 )
+  if ( texture2D(deform, vUv).b > 0.5 ) 
     {
-   mUV += ( texture2D(deform, vUv+ speed * time).rg * 2. - 1. ) * intensity; 
+    float t = time;
+    //t = floor(t * timeSteps) / timeSteps;
+      
+    vec2 s = speed * t;
+    s += vUv;
+    //s = ( floor( s * texSize) / 0.5 ) / texSize;
+    
+    vec2 d = ( texture2D(deform, s).rg * 2. - 1. ) * intensity;
+    
+    //d = ( floor( d * texSize ) + 0.5 ) / texSize;
+    
+    mUV += d;
+    
+    //mUV = ( floor( mUV * texSize ) + 0.5 ) / texSize;
   }
   
   vec4 o = texture2D(map, mUV);

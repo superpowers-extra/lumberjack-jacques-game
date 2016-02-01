@@ -109,6 +109,13 @@
       "startFrameIndex": 48,
       "endFrameIndex": 56,
       "speed": 1
+    },
+    {
+      "id": "13",
+      "name": "Hit",
+      "startFrameIndex": 57,
+      "endFrameIndex": 57,
+      "speed": 1
     }
   ],
   "mapSlots": {

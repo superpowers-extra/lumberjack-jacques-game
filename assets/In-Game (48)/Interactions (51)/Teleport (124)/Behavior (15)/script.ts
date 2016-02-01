@@ -21,7 +21,8 @@ class TeleportBehavior extends Sup.Behavior {
       this.triggered = true;
       Game.playerBehavior.autoPilot = true;
       Game.playerBehavior.setDirection(Utils.Directions[this.direction], true);
-      Fade.start(Fade.Direction.Out, { duration: 400 }, () => { Game.loadMap(this.actor.getName().replace("_", "/")) });
+      Sup.log("teleport", this.actor.getName(), this.direction);
+      Fade.start(Fade.Direction.Out, null, () => { Game.loadMap(this.actor.getName().replace("_", "/")); });
     }
   }
 }

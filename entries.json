@@ -165,6 +165,28 @@
             "type": "sound"
           }
         ]
+      },
+      {
+        "id": "511",
+        "name": "The End",
+        "type": null,
+        "children": [
+          {
+            "id": "514",
+            "name": "Scene",
+            "type": "scene"
+          },
+          {
+            "id": "513",
+            "name": "Behavior",
+            "type": "script"
+          },
+          {
+            "id": "522",
+            "name": "eye",
+            "type": "sprite"
+          }
+        ]
       }
     ]
   },
@@ -214,9 +236,29 @@
                 "type": "sprite"
               },
               {
+                "id": "421",
+                "name": "Book",
+                "type": "sprite"
+              },
+              {
+                "id": "507",
+                "name": "Key",
+                "type": "sprite"
+              },
+              {
                 "id": "224",
                 "name": "Bottle",
                 "type": "sprite"
+              },
+              {
+                "id": "398",
+                "name": "Box",
+                "type": "sprite"
+              },
+              {
+                "id": "419",
+                "name": "Prefab",
+                "type": "scene"
               },
               {
                 "id": "248",
@@ -256,8 +298,113 @@
                 "id": "33",
                 "name": "player",
                 "type": "sprite"
+              },
+              {
+                "id": "425",
+                "name": "dyingPeasant",
+                "type": "sprite"
+              },
+              {
+                "id": "430",
+                "name": "shadyPeasant",
+                "type": "sprite"
+              },
+              {
+                "id": "475",
+                "name": "deliveryBoy",
+                "type": "sprite"
+              },
+              {
+                "id": "420",
+                "name": "chef",
+                "type": "sprite"
+              },
+              {
+                "id": "441",
+                "name": "waitress",
+                "type": "sprite"
+              },
+              {
+                "id": "417",
+                "name": "priest",
+                "type": "sprite"
+              },
+              {
+                "id": "418",
+                "name": "doctor",
+                "type": "sprite"
+              },
+              {
+                "id": "422",
+                "name": "cultist",
+                "type": "sprite"
+              },
+              {
+                "id": "437",
+                "name": "mayor",
+                "type": "sprite"
+              },
+              {
+                "id": "448",
+                "name": "oldLady",
+                "type": "sprite"
+              },
+              {
+                "id": "453",
+                "name": "mom",
+                "type": "sprite"
+              },
+              {
+                "id": "464",
+                "name": "dad",
+                "type": "sprite"
+              },
+              {
+                "id": "466",
+                "name": "goawayhouse",
+                "type": "sprite"
+              },
+              {
+                "id": "469",
+                "name": "boss",
+                "type": "sprite"
+              },
+              {
+                "id": "478",
+                "name": "child",
+                "type": "sprite"
+              },
+              {
+                "id": "477",
+                "name": "child2",
+                "type": "sprite"
+              },
+              {
+                "id": "479",
+                "name": "cat",
+                "type": "sprite"
+              },
+              {
+                "id": "502",
+                "name": "pig",
+                "type": "sprite"
+              },
+              {
+                "id": "538",
+                "name": "dowie",
+                "type": "sprite"
+              },
+              {
+                "id": "555",
+                "name": "chiome",
+                "type": "sprite"
               }
             ]
+          },
+          {
+            "id": "503",
+            "name": "Dialog Sound",
+            "type": "sound"
           }
         ]
       },
@@ -463,7 +610,7 @@
                   },
                   {
                     "id": "276",
-                    "name": "House 5",
+                    "name": "Empty House",
                     "type": null,
                     "children": [
                       {
@@ -475,6 +622,11 @@
                         "id": "278",
                         "name": "Sprite",
                         "type": "sprite"
+                      },
+                      {
+                        "id": "447",
+                        "name": "Empty House Behavior",
+                        "type": "script"
                       }
                     ]
                   },
@@ -501,20 +653,20 @@
                     "type": null,
                     "children": [
                       {
-                        "id": "134",
-                        "name": "Tavern",
-                        "type": "sprite"
+                        "id": "135",
+                        "name": "Prefab",
+                        "type": "scene"
                       },
                       {
-                        "id": "135",
-                        "name": "prefab",
-                        "type": "scene"
+                        "id": "134",
+                        "name": "Sprite",
+                        "type": "sprite"
                       }
                     ]
                   },
                   {
                     "id": "121",
-                    "name": "Church Cimetery",
+                    "name": "Church Cimentry",
                     "type": null,
                     "children": [
                       {
@@ -523,9 +675,41 @@
                         "type": "scene"
                       },
                       {
+                        "id": "481",
+                        "name": "Church Door Behavior",
+                        "type": "script"
+                      },
+                      {
                         "id": "122",
                         "name": "Church",
                         "type": "sprite"
+                      },
+                      {
+                        "id": "460",
+                        "name": "Opening Church Door",
+                        "type": "sound"
+                      },
+                      {
+                        "id": "476",
+                        "name": "Locked Church Door",
+                        "type": "sound"
+                      },
+                      {
+                        "id": "486",
+                        "name": "Priest",
+                        "type": null,
+                        "children": [
+                          {
+                            "id": "488",
+                            "name": "Prefab",
+                            "type": "scene"
+                          },
+                          {
+                            "id": "489",
+                            "name": "Priest Behavior",
+                            "type": "script"
+                          }
+                        ]
                       }
                     ]
                   }
@@ -692,6 +876,26 @@
                         "type": "scene"
                       }
                     ]
+                  },
+                  {
+                    "id": "410",
+                    "name": "Paved Road 1",
+                    "type": "sprite"
+                  },
+                  {
+                    "id": "411",
+                    "name": "Paved Road 2 Small",
+                    "type": "sprite"
+                  },
+                  {
+                    "id": "412",
+                    "name": "Paved Road 3 med",
+                    "type": "sprite"
+                  },
+                  {
+                    "id": "413",
+                    "name": "Paved Road 4",
+                    "type": "sprite"
                   }
                 ]
               },
@@ -716,6 +920,11 @@
                     "type": "sprite"
                   },
                   {
+                    "id": "521",
+                    "name": "PrefabCrate",
+                    "type": "scene"
+                  },
+                  {
                     "id": "227",
                     "name": "Rope",
                     "type": "sprite"
@@ -734,6 +943,57 @@
                         "id": "226",
                         "name": "Sprite",
                         "type": "sprite"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "432",
+                    "name": "Fence",
+                    "type": null,
+                    "children": [
+                      {
+                        "id": "431",
+                        "name": "Sprite",
+                        "type": "sprite"
+                      },
+                      {
+                        "id": "433",
+                        "name": "Prefab",
+                        "type": "scene"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "455",
+                    "name": "Tomb2",
+                    "type": null,
+                    "children": [
+                      {
+                        "id": "457",
+                        "name": "Sprite",
+                        "type": "sprite"
+                      },
+                      {
+                        "id": "459",
+                        "name": "Prefab",
+                        "type": "scene"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "454",
+                    "name": "Tomb1",
+                    "type": null,
+                    "children": [
+                      {
+                        "id": "456",
+                        "name": "Sprite",
+                        "type": "sprite"
+                      },
+                      {
+                        "id": "458",
+                        "name": "Prefab",
+                        "type": "scene"
                       }
                     ]
                   }
@@ -898,18 +1158,53 @@
                 "type": "scene"
               },
               {
+                "id": "551",
+                "name": "Dowie Behavior",
+                "type": "script"
+              },
+              {
+                "id": "554",
+                "name": "Chiome Behavior",
+                "type": "script"
+              },
+              {
+                "id": "446",
+                "name": "Howling",
+                "type": "sound"
+              },
+              {
+                "id": "399",
+                "name": "Wolf Intro Trigger Behavior",
+                "type": "script"
+              },
+              {
+                "id": "400",
+                "name": "Wolf Outro Trigger Behavior",
+                "type": "script"
+              },
+              {
                 "id": "305",
-                "name": "Shady Peasant",
+                "name": "Shady Peasants",
                 "type": null,
                 "children": [
                   {
                     "id": "306",
-                    "name": "Prefab",
+                    "name": "Main Prefab",
+                    "type": "scene"
+                  },
+                  {
+                    "id": "402",
+                    "name": "Secondary Prefab",
                     "type": "scene"
                   },
                   {
                     "id": "308",
-                    "name": "Behavior",
+                    "name": "Main Behavior",
+                    "type": "script"
+                  },
+                  {
+                    "id": "403",
+                    "name": "Secondary Behavior",
                     "type": "script"
                   }
                 ]
@@ -957,6 +1252,33 @@
                     "id": "232",
                     "name": "Prefab",
                     "type": "scene"
+                  },
+                  {
+                    "id": "375",
+                    "name": "Doctor",
+                    "type": null,
+                    "children": [
+                      {
+                        "id": "472",
+                        "name": "Sound",
+                        "type": "sound"
+                      },
+                      {
+                        "id": "376",
+                        "name": "Behavior",
+                        "type": "script"
+                      },
+                      {
+                        "id": "396",
+                        "name": "Book Behavior",
+                        "type": "script"
+                      },
+                      {
+                        "id": "377",
+                        "name": "Prefab",
+                        "type": "scene"
+                      }
+                    ]
                   }
                 ]
               },
@@ -969,6 +1291,38 @@
                     "id": "233",
                     "name": "Prefab",
                     "type": "scene"
+                  },
+                  {
+                    "id": "534",
+                    "name": "Old Lady Behavior",
+                    "type": "script"
+                  },
+                  {
+                    "id": "537",
+                    "name": "Cat Behavior",
+                    "type": "script"
+                  },
+                  {
+                    "id": "524",
+                    "name": "Props",
+                    "type": null,
+                    "children": [
+                      {
+                        "id": "525",
+                        "name": "Cat Poo Sprite",
+                        "type": "sprite"
+                      },
+                      {
+                        "id": "526",
+                        "name": "Cat Poo",
+                        "type": "scene"
+                      },
+                      {
+                        "id": "532",
+                        "name": "Fish Skull",
+                        "type": "sprite"
+                      }
+                    ]
                   }
                 ]
               },
@@ -981,6 +1335,53 @@
                     "id": "236",
                     "name": "Prefab",
                     "type": "scene"
+                  },
+                  {
+                    "id": "508",
+                    "name": "Props",
+                    "type": null,
+                    "children": [
+                      {
+                        "id": "509",
+                        "name": "Cooker Sprite",
+                        "type": "sprite"
+                      },
+                      {
+                        "id": "510",
+                        "name": "Cooker",
+                        "type": "scene"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "535",
+                    "name": "Child1 Behavior",
+                    "type": "script"
+                  },
+                  {
+                    "id": "536",
+                    "name": "Child2 Behavior",
+                    "type": "script"
+                  },
+                  {
+                    "id": "539",
+                    "name": "Child3 Behavior",
+                    "type": "script"
+                  },
+                  {
+                    "id": "541",
+                    "name": "Mother Behavior",
+                    "type": "script"
+                  },
+                  {
+                    "id": "542",
+                    "name": "Father Behavior",
+                    "type": "script"
+                  },
+                  {
+                    "id": "549",
+                    "name": "Baby Behavior",
+                    "type": "script"
                   }
                 ]
               },
@@ -1000,29 +1401,36 @@
                     "type": "sprite"
                   },
                   {
-                    "id": "297",
-                    "name": "The Band",
+                    "id": "342",
+                    "name": "Waitress",
                     "type": null,
                     "children": [
                       {
-                        "id": "298",
-                        "name": "1",
-                        "type": "sprite"
+                        "id": "347",
+                        "name": "Behavior",
+                        "type": "script"
                       },
                       {
-                        "id": "300",
-                        "name": "2",
-                        "type": "sprite"
+                        "id": "346",
+                        "name": "Prefab",
+                        "type": "scene"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "343",
+                    "name": "Chef",
+                    "type": null,
+                    "children": [
+                      {
+                        "id": "345",
+                        "name": "Behavior",
+                        "type": "script"
                       },
                       {
-                        "id": "301",
-                        "name": "3",
-                        "type": "sprite"
-                      },
-                      {
-                        "id": "302",
-                        "name": "4",
-                        "type": "sprite"
+                        "id": "344",
+                        "name": "Prefab",
+                        "type": "scene"
                       }
                     ]
                   }
@@ -1037,6 +1445,16 @@
                     "id": "238",
                     "name": "Prefab",
                     "type": "scene"
+                  },
+                  {
+                    "id": "404",
+                    "name": "Mass Wine Behavior",
+                    "type": "script"
+                  },
+                  {
+                    "id": "405",
+                    "name": "Mass Wine",
+                    "type": "scene"
                   }
                 ]
               },
@@ -1046,9 +1464,61 @@
                 "type": null,
                 "children": [
                   {
+                    "id": "427",
+                    "name": "Church Shader",
+                    "type": "shader"
+                  },
+                  {
                     "id": "239",
                     "name": "Prefab",
                     "type": "scene"
+                  },
+                  {
+                    "id": "424",
+                    "name": "Sprite",
+                    "type": "sprite"
+                  },
+                  {
+                    "id": "520",
+                    "name": "Autel",
+                    "type": "sprite"
+                  },
+                  {
+                    "id": "461",
+                    "name": "Props",
+                    "type": null,
+                    "children": [
+                      {
+                        "id": "462",
+                        "name": "Bench Sprite",
+                        "type": "sprite"
+                      },
+                      {
+                        "id": "463",
+                        "name": "Bench",
+                        "type": "scene"
+                      },
+                      {
+                        "id": "467",
+                        "name": "Candle Sprite",
+                        "type": "sprite"
+                      },
+                      {
+                        "id": "468",
+                        "name": "Candle",
+                        "type": "scene"
+                      },
+                      {
+                        "id": "473",
+                        "name": "Cross Sprite",
+                        "type": "sprite"
+                      },
+                      {
+                        "id": "474",
+                        "name": "Cross",
+                        "type": "scene"
+                      }
+                    ]
                   }
                 ]
               },
@@ -1109,13 +1579,23 @@
                       },
                       {
                         "id": "368",
-                        "name": "Pot",
+                        "name": "Pot Sprite",
                         "type": "sprite"
                       },
                       {
+                        "id": "515",
+                        "name": "Pot",
+                        "type": "scene"
+                      },
+                      {
                         "id": "370",
-                        "name": "Bag",
+                        "name": "Bag Sprite",
                         "type": "sprite"
+                      },
+                      {
+                        "id": "519",
+                        "name": "Bag",
+                        "type": "scene"
                       },
                       {
                         "id": "373",
@@ -1172,6 +1652,11 @@
                 "id": "246",
                 "name": "Prefab",
                 "type": "scene"
+              },
+              {
+                "id": "407",
+                "name": "Mine Path Door Behavior",
+                "type": "script"
               }
             ]
           },
@@ -1181,20 +1666,25 @@
             "type": null,
             "children": [
               {
-                "id": "219",
-                "name": "Mine Entrance",
+                "id": "414",
+                "name": "Room",
                 "type": null,
                 "children": [
                   {
-                    "id": "244",
+                    "id": "416",
                     "name": "Prefab",
                     "type": "scene"
+                  },
+                  {
+                    "id": "415",
+                    "name": "Mine Room",
+                    "type": "sprite"
                   }
                 ]
               },
               {
                 "id": "220",
-                "name": "Mine Boss Room",
+                "name": "Boss Room",
                 "type": null,
                 "children": [
                   {
@@ -1203,23 +1693,53 @@
                     "type": "scene"
                   },
                   {
-                    "id": "394",
-                    "name": "room",
-                    "type": null,
-                    "children": [
-                      {
-                        "id": "393",
-                        "name": "Sprite",
-                        "type": "sprite"
-                      },
-                      {
-                        "id": "395",
-                        "name": "Prefab",
-                        "type": "scene"
-                      }
-                    ]
+                    "id": "393",
+                    "name": "Room",
+                    "type": "sprite"
                   }
                 ]
+              },
+              {
+                "id": "435",
+                "name": "MineAssets",
+                "type": null,
+                "children": [
+                  {
+                    "id": "436",
+                    "name": "Candle01",
+                    "type": "sprite"
+                  },
+                  {
+                    "id": "438",
+                    "name": "Candle02",
+                    "type": "sprite"
+                  },
+                  {
+                    "id": "439",
+                    "name": "MineStone01",
+                    "type": "sprite"
+                  },
+                  {
+                    "id": "440",
+                    "name": "Minestone02",
+                    "type": "sprite"
+                  },
+                  {
+                    "id": "442",
+                    "name": "PrefabCandle01",
+                    "type": "scene"
+                  },
+                  {
+                    "id": "443",
+                    "name": "PrefabCandle02",
+                    "type": "scene"
+                  }
+                ]
+              },
+              {
+                "id": "465",
+                "name": "Mine Ambiance",
+                "type": "sound"
               }
             ]
           }
@@ -1247,7 +1767,17 @@
               },
               {
                 "id": "136",
-                "name": "Hero",
+                "name": "Sprite",
+                "type": "sprite"
+              },
+              {
+                "id": "529",
+                "name": "Sprite Shotgun",
+                "type": "sprite"
+              },
+              {
+                "id": "397",
+                "name": "Hero Get Item",
                 "type": "sprite"
               },
               {
@@ -1271,6 +1801,48 @@
                     "type": "sprite"
                   }
                 ]
+              },
+              {
+                "id": "428",
+                "name": "Sounds",
+                "type": null,
+                "children": [
+                  {
+                    "id": "426",
+                    "name": "Hack",
+                    "type": "sound"
+                  },
+                  {
+                    "id": "485",
+                    "name": "Woosh",
+                    "type": "sound"
+                  },
+                  {
+                    "id": "429",
+                    "name": "Shoot",
+                    "type": "sound"
+                  },
+                  {
+                    "id": "434",
+                    "name": "Reload Gun",
+                    "type": "sound"
+                  },
+                  {
+                    "id": "470",
+                    "name": "Hit",
+                    "type": "sound"
+                  },
+                  {
+                    "id": "504",
+                    "name": "Give",
+                    "type": "sound"
+                  }
+                ]
+              },
+              {
+                "id": "471",
+                "name": "Shotgun",
+                "type": "sprite"
               }
             ]
           },
@@ -1280,72 +1852,6 @@
             "type": null,
             "children": [
               {
-                "id": "343",
-                "name": "Chef",
-                "type": null,
-                "children": [
-                  {
-                    "id": "102",
-                    "name": "Chef",
-                    "type": "sprite"
-                  },
-                  {
-                    "id": "345",
-                    "name": "Behavior",
-                    "type": "script"
-                  },
-                  {
-                    "id": "344",
-                    "name": "Prefab",
-                    "type": "scene"
-                  }
-                ]
-              },
-              {
-                "id": "342",
-                "name": "Waitress",
-                "type": null,
-                "children": [
-                  {
-                    "id": "140",
-                    "name": "Waitress",
-                    "type": "sprite"
-                  },
-                  {
-                    "id": "347",
-                    "name": "Behavior",
-                    "type": "script"
-                  },
-                  {
-                    "id": "346",
-                    "name": "Prefab",
-                    "type": "scene"
-                  }
-                ]
-              },
-              {
-                "id": "375",
-                "name": "Doctor",
-                "type": null,
-                "children": [
-                  {
-                    "id": "150",
-                    "name": "Doctor",
-                    "type": "sprite"
-                  },
-                  {
-                    "id": "376",
-                    "name": "Behavior",
-                    "type": "script"
-                  },
-                  {
-                    "id": "377",
-                    "name": "Prefab",
-                    "type": "scene"
-                  }
-                ]
-              },
-              {
                 "id": "181",
                 "name": "Noxy",
                 "type": "sprite"
@@ -1354,6 +1860,33 @@
                 "id": "84",
                 "name": "Cat",
                 "type": "sprite"
+              },
+              {
+                "id": "451",
+                "name": "Sounds",
+                "type": null,
+                "children": [
+                  {
+                    "id": "450",
+                    "name": "Cat 2",
+                    "type": "sound"
+                  },
+                  {
+                    "id": "449",
+                    "name": "Cat 1",
+                    "type": "sound"
+                  },
+                  {
+                    "id": "483",
+                    "name": "Cat 3",
+                    "type": "sound"
+                  },
+                  {
+                    "id": "484",
+                    "name": "Cat 4",
+                    "type": "sound"
+                  }
+                ]
               },
               {
                 "id": "86",
@@ -1373,11 +1906,6 @@
               {
                 "id": "126",
                 "name": "Peasant2",
-                "type": "sprite"
-              },
-              {
-                "id": "143",
-                "name": "Cultist",
                 "type": "sprite"
               },
               {
@@ -1406,9 +1934,71 @@
                 "type": "sprite"
               },
               {
-                "id": "249",
-                "name": "Maire",
+                "id": "409",
+                "name": "Priest Plank",
                 "type": "sprite"
+              },
+              {
+                "id": "140",
+                "name": "Waitress",
+                "type": "sprite"
+              },
+              {
+                "id": "297",
+                "name": "The Band",
+                "type": null,
+                "children": [
+                  {
+                    "id": "298",
+                    "name": "1",
+                    "type": "sprite"
+                  },
+                  {
+                    "id": "300",
+                    "name": "2",
+                    "type": "sprite"
+                  },
+                  {
+                    "id": "301",
+                    "name": "3",
+                    "type": "sprite"
+                  },
+                  {
+                    "id": "302",
+                    "name": "4",
+                    "type": "sprite"
+                  }
+                ]
+              },
+              {
+                "id": "102",
+                "name": "Chef",
+                "type": "sprite"
+              },
+              {
+                "id": "150",
+                "name": "Doctor",
+                "type": "sprite"
+              },
+              {
+                "id": "540",
+                "name": "Dowie",
+                "type": "sprite"
+              },
+              {
+                "id": "552",
+                "name": "Chiome",
+                "type": "sprite"
+              },
+              {
+                "id": "553",
+                "name": "Woaf Woaf",
+                "type": "sound"
+              },
+              {
+                "id": "559",
+                "name": "chiomeSoundPlay",
+                "type": "script"
               }
             ]
           },
@@ -1433,58 +2023,41 @@
                 "type": "script"
               },
               {
-                "id": "144",
-                "name": "Static",
+                "id": "172",
+                "name": "Bullet",
                 "type": null,
                 "children": [
                   {
-                    "id": "309",
+                    "id": "175",
                     "name": "Prefab",
                     "type": "scene"
                   },
                   {
-                    "id": "146",
+                    "id": "174",
+                    "name": "Behavior",
+                    "type": "script"
+                  },
+                  {
+                    "id": "173",
                     "name": "Sprite",
                     "type": "sprite"
                   }
                 ]
               },
               {
-                "id": "163",
-                "name": "Ranged",
+                "id": "543",
+                "name": "Cultist",
                 "type": null,
                 "children": [
                   {
-                    "id": "307",
+                    "id": "545",
                     "name": "Prefab",
                     "type": "scene"
                   },
                   {
-                    "id": "166",
+                    "id": "550",
                     "name": "Sprite",
                     "type": "sprite"
-                  },
-                  {
-                    "id": "172",
-                    "name": "Bullet",
-                    "type": null,
-                    "children": [
-                      {
-                        "id": "175",
-                        "name": "Prefab",
-                        "type": "scene"
-                      },
-                      {
-                        "id": "174",
-                        "name": "Behavior",
-                        "type": "script"
-                      },
-                      {
-                        "id": "173",
-                        "name": "Sprite",
-                        "type": "sprite"
-                      }
-                    ]
                   }
                 ]
               },
@@ -1502,52 +2075,16 @@
                     "id": "303",
                     "name": "Sprite",
                     "type": "sprite"
-                  }
-                ]
-              },
-              {
-                "id": "315",
-                "name": "Shit Eater",
-                "type": null,
-                "children": [
-                  {
-                    "id": "327",
-                    "name": "Prefab",
-                    "type": "scene"
                   },
                   {
-                    "id": "316",
-                    "name": "Sprite",
-                    "type": "sprite"
-                  }
-                ]
-              },
-              {
-                "id": "320",
-                "name": "Eye",
-                "type": null,
-                "children": [
-                  {
-                    "id": "321",
-                    "name": "Eye",
-                    "type": "sprite"
-                  }
-                ]
-              },
-              {
-                "id": "326",
-                "name": "My Son",
-                "type": null,
-                "children": [
-                  {
-                    "id": "329",
-                    "name": "Prefab",
-                    "type": "scene"
+                    "id": "444",
+                    "name": "Hurt",
+                    "type": "sound"
                   },
                   {
-                    "id": "328",
-                    "name": "Sprite",
-                    "type": "sprite"
+                    "id": "487",
+                    "name": "Die",
+                    "type": "sound"
                   }
                 ]
               },
@@ -1565,6 +2102,11 @@
                     "id": "388",
                     "name": "Behavior",
                     "type": "script"
+                  },
+                  {
+                    "id": "355",
+                    "name": "Neck",
+                    "type": "sprite"
                   },
                   {
                     "id": "350",
@@ -1592,18 +2134,86 @@
                     "type": "sprite"
                   },
                   {
-                    "id": "355",
-                    "name": "Neck",
-                    "type": "sprite"
-                  },
-                  {
                     "id": "356",
-                    "name": "Shoulder Left",
+                    "name": "Left Shoulder",
                     "type": "sprite"
                   },
                   {
                     "id": "358",
-                    "name": "Shoulder Right",
+                    "name": "Right Shoulder",
+                    "type": "sprite"
+                  },
+                  {
+                    "id": "518",
+                    "name": "Sounds",
+                    "type": null,
+                    "children": [
+                      {
+                        "id": "517",
+                        "name": "Boss 1",
+                        "type": "sound"
+                      },
+                      {
+                        "id": "533",
+                        "name": "Boss 2",
+                        "type": "sound"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "315",
+                "name": "Shit Eater",
+                "type": null,
+                "children": [
+                  {
+                    "id": "327",
+                    "name": "Prefab",
+                    "type": "scene"
+                  },
+                  {
+                    "id": "316",
+                    "name": "Sprite",
+                    "type": "sprite"
+                  },
+                  {
+                    "id": "482",
+                    "name": "Shit",
+                    "type": "sprite"
+                  }
+                ]
+              },
+              {
+                "id": "320",
+                "name": "Eye",
+                "type": null,
+                "children": [
+                  {
+                    "id": "321",
+                    "name": "Eye",
+                    "type": "sprite"
+                  },
+                  {
+                    "id": "506",
+                    "name": "Sprite",
+                    "type": "sprite"
+                  }
+                ]
+              },
+              {
+                "id": "326",
+                "name": "My Son",
+                "type": null,
+                "children": [
+                  {
+                    "id": "329",
+                    "name": "Prefab",
+                    "type": "scene"
+                  },
+                  {
+                    "id": "328",
+                    "name": "Sprite",
                     "type": "sprite"
                   }
                 ]
@@ -1628,6 +2238,28 @@
                   {
                     "id": "390",
                     "name": "Spirit",
+                    "type": "sprite"
+                  }
+                ]
+              },
+              {
+                "id": "544",
+                "name": "Maire",
+                "type": null,
+                "children": [
+                  {
+                    "id": "546",
+                    "name": "Prefab",
+                    "type": "scene"
+                  },
+                  {
+                    "id": "548",
+                    "name": "Behavior",
+                    "type": "script"
+                  },
+                  {
+                    "id": "249",
+                    "name": "Sprite",
                     "type": "sprite"
                   }
                 ]
@@ -1716,6 +2348,11 @@
                 "id": "91",
                 "name": "Shader",
                 "type": "shader"
+              },
+              {
+                "id": "423",
+                "name": "Sound",
+                "type": "sound"
               }
             ]
           },
@@ -1792,6 +2429,33 @@
             "id": "176",
             "name": "Time Offset",
             "type": "script"
+          },
+          {
+            "id": "490",
+            "name": "Blood",
+            "type": null,
+            "children": [
+              {
+                "id": "491",
+                "name": "Prefab",
+                "type": "scene"
+              },
+              {
+                "id": "480",
+                "name": "Hit",
+                "type": "sprite"
+              },
+              {
+                "id": "527",
+                "name": "Big Hit",
+                "type": "sprite"
+              },
+              {
+                "id": "492",
+                "name": "Behavior",
+                "type": "script"
+              }
+            ]
           }
         ]
       }
@@ -1813,5 +2477,57 @@
         "type": "script"
       }
     ]
+  },
+  {
+    "id": "493",
+    "name": "Music",
+    "type": null,
+    "children": [
+      {
+        "id": "499",
+        "name": "Ambient 1",
+        "type": "sound"
+      },
+      {
+        "id": "498",
+        "name": "Ambient 2",
+        "type": "sound"
+      },
+      {
+        "id": "497",
+        "name": "Ambient 3",
+        "type": "sound"
+      },
+      {
+        "id": "494",
+        "name": "Orgue Metal",
+        "type": "sound"
+      },
+      {
+        "id": "495",
+        "name": "Drums Fight",
+        "type": "sound"
+      },
+      {
+        "id": "496",
+        "name": "Fight",
+        "type": "sound"
+      },
+      {
+        "id": "500",
+        "name": "Jazzy",
+        "type": "sound"
+      },
+      {
+        "id": "501",
+        "name": "Final Orgue",
+        "type": "sound"
+      }
+    ]
+  },
+  {
+    "id": "557",
+    "name": "Mayor Behavior",
+    "type": "script"
   }
 ]

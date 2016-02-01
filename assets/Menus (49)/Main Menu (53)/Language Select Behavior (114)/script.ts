@@ -1,3 +1,5 @@
+declare var window;
+
 class LanguageSelectBehavior extends Sup.Behavior {
   
   languageRenderers: Sup.TextRenderer[] = [];
@@ -16,6 +18,10 @@ class LanguageSelectBehavior extends Sup.Behavior {
     }
     
     this.languageRenderers[0].setOpacity(1).setColor(new Sup.Color(1, 1, 1));
+    
+    if (window.navigator.language.slice(0, 2) === "fr") {
+      this.updateLanguage(1);
+    }
   }
 
   update() {

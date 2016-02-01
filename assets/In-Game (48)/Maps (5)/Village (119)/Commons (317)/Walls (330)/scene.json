@@ -63,7 +63,7 @@
             "type": "box",
             "movable": true,
             "width": 6,
-            "height": 1,
+            "height": 2,
             "offset": {
               "x": 4,
               "y": -5.5
@@ -97,7 +97,7 @@
             "type": "box",
             "movable": true,
             "width": 6,
-            "height": 1,
+            "height": 2,
             "offset": {
               "x": -4,
               "y": -5.5

@@ -58,33 +58,6 @@
           "prefab": {
             "sceneAssetId": "108"
           }
-        },
-        {
-          "id": "56",
-          "name": "Lightning",
-          "children": [],
-          "components": [],
-          "position": {
-            "x": 0,
-            "y": 0,
-            "z": 8
-          },
-          "orientation": {
-            "x": 0,
-            "y": 0,
-            "z": 0,
-            "w": 1
-          },
-          "scale": {
-            "x": 1,
-            "y": 1,
-            "z": 1
-          },
-          "visible": true,
-          "layer": 0,
-          "prefab": {
-            "sceneAssetId": "151"
-          }
         }
       ],
       "components": [],
@@ -114,12 +87,77 @@
       "children": [
         {
           "id": "4",
-          "name": "From Start",
+          "name": "Village",
           "children": [],
-          "components": [],
+          "components": [
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "TeleportBehavior",
+                "propertyValues": {
+                  "direction": {
+                    "type": "string",
+                    "value": "Down"
+                  }
+                }
+              },
+              "id": "0"
+            },
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "spriteAssetId": "125",
+                "animationId": null,
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "1"
+            }
+          ],
           "position": {
+            "x": 0.063,
+            "y": -8.938,
+            "z": 5
+          },
+          "orientation": {
             "x": 0,
             "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 2,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "92",
+          "name": "Start Dialogs 1",
+          "children": [],
+          "components": [
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "MayorBehavior",
+                "propertyValues": {}
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 8.741257667541504,
+            "y": -4.577325344085693,
             "z": 0
           },
           "orientation": {
@@ -187,8 +225,8 @@
             }
           ],
           "position": {
-            "x": -19.629680633544922,
-            "y": -2.998231352080438e-8,
+            "x": -7.5,
+            "y": 0,
             "z": 0
           },
           "orientation": {
@@ -230,7 +268,7 @@
             }
           ],
           "position": {
-            "x": 19.705398559570312,
+            "x": 7.5625,
             "y": 1.895650029182434,
             "z": 0
           },
@@ -274,7 +312,32 @@
           ],
           "position": {
             "x": 4.21943998336792,
-            "y": 10.262940406799316,
+            "y": 8.1875,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "83",
+          "name": "Bottom",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": 0,
+            "y": -11,
             "z": 0
           },
           "orientation": {
@@ -294,7 +357,7 @@
         },
         {
           "id": "44",
-          "name": "Bottom",
+          "name": "Bottom Left",
           "children": [],
           "components": [
             {
@@ -302,7 +365,7 @@
               "config": {
                 "type": "box",
                 "movable": false,
-                "width": 70,
+                "width": 10,
                 "height": 1,
                 "offset": {
                   "x": 0,
@@ -316,8 +379,51 @@
             }
           ],
           "position": {
-            "x": 4.888490676879883,
-            "y": -10.29873275756836,
+            "x": 5.9375,
+            "y": -8.5625,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "82",
+          "name": "Bottom Right",
+          "children": [],
+          "components": [
+            {
+              "type": "ArcadeBody2D",
+              "config": {
+                "type": "box",
+                "movable": false,
+                "width": 10,
+                "height": 1,
+                "offset": {
+                  "x": 0,
+                  "y": 0
+                },
+                "tileMapAssetId": null,
+                "tileSetPropertyName": null,
+                "layersIndex": null
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": -5.8125,
+            "y": -8.5625,
             "z": 0
           },
           "orientation": {
@@ -362,13 +468,13 @@
       "name": "Scenery",
       "children": [
         {
-          "id": "39",
-          "name": "Entities",
+          "id": "64",
+          "name": "Bench",
           "children": [],
           "components": [],
           "position": {
-            "x": 0,
-            "y": 0,
+            "x": 3.5,
+            "y": 1.5625,
             "z": 0
           },
           "orientation": {
@@ -384,16 +490,18 @@
           },
           "visible": true,
           "layer": 0,
-          "prefab": null
+          "prefab": {
+            "sceneAssetId": "463"
+          }
         },
         {
-          "id": "35",
-          "name": "Trees",
+          "id": "65",
+          "name": "Bench",
           "children": [],
           "components": [],
           "position": {
-            "x": 0,
-            "y": 0,
+            "x": 3.5,
+            "y": -0.875,
             "z": 0
           },
           "orientation": {
@@ -409,17 +517,486 @@
           },
           "visible": true,
           "layer": 0,
-          "prefab": null
+          "prefab": {
+            "sceneAssetId": "463"
+          }
         },
         {
-          "id": "37",
-          "name": "Houses",
+          "id": "66",
+          "name": "Bench",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": 3.5,
+            "y": -3.3125,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "463"
+          }
+        },
+        {
+          "id": "67",
+          "name": "Bench",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": 3.5,
+            "y": -6,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "463"
+          }
+        },
+        {
+          "id": "68",
+          "name": "Bench",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": -3.375,
+            "y": 1.562999963760376,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "463"
+          }
+        },
+        {
+          "id": "69",
+          "name": "Bench",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": -3.375,
+            "y": -0.875,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "463"
+          }
+        },
+        {
+          "id": "70",
+          "name": "Bench",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": -3.375,
+            "y": -3.313,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "463"
+          }
+        },
+        {
+          "id": "71",
+          "name": "Bench",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": -3.375,
+            "y": -6,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "463"
+          }
+        },
+        {
+          "id": "72",
+          "name": "Candle",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": 3,
+            "y": 7.0625,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "468"
+          }
+        },
+        {
+          "id": "73",
+          "name": "Candle",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": 3,
+            "y": 4.625,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "468"
+          }
+        },
+        {
+          "id": "74",
+          "name": "Candle",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": -2.75,
+            "y": 4.625,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "468"
+          }
+        },
+        {
+          "id": "75",
+          "name": "Candle",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": -2.75,
+            "y": 7.0625,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "468"
+          }
+        },
+        {
+          "id": "76",
+          "name": "PrefabCandle01",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": -3.25,
+            "y": 7.5980000495910645,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "442"
+          }
+        },
+        {
+          "id": "77",
+          "name": "PrefabCandle01",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": 0.1875,
+            "y": 7.5980000495910645,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "442"
+          }
+        },
+        {
+          "id": "78",
+          "name": "PrefabCandle01",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": 3.4375,
+            "y": 7.5980000495910645,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "442"
+          }
+        },
+        {
+          "id": "79",
+          "name": "PrefabCandle02",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": -1.8125,
+            "y": 7.3125,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "443"
+          }
+        },
+        {
+          "id": "80",
+          "name": "PrefabCandle02",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": 2,
+            "y": 7.0625,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "443"
+          }
+        },
+        {
+          "id": "81",
+          "name": "Cross",
           "children": [],
           "components": [],
           "position": {
             "x": 0,
-            "y": 0,
+            "y": 7.375,
             "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "474"
+          }
+        },
+        {
+          "id": "84",
+          "name": "Autel",
+          "children": [],
+          "components": [
+            {
+              "type": "SpriteRenderer",
+              "config": {
+                "spriteAssetId": "520",
+                "animationId": "0",
+                "horizontalFlip": false,
+                "verticalFlip": false,
+                "castShadow": false,
+                "receiveShadow": false,
+                "color": "ffffff",
+                "overrideOpacity": false,
+                "opacity": null,
+                "materialType": "basic",
+                "shaderAssetId": null
+              },
+              "id": "0"
+            },
+            {
+              "type": "ArcadeBody2D",
+              "config": {
+                "type": "box",
+                "movable": true,
+                "width": 4,
+                "height": 2,
+                "offset": {
+                  "x": 0,
+                  "y": -1
+                },
+                "tileMapAssetId": null,
+                "tileSetPropertyName": null,
+                "layersIndex": null
+              },
+              "id": "1"
+            }
+          ],
+          "position": {
+            "x": -0.036,
+            "y": 5.852,
+            "z": 3
           },
           "orientation": {
             "x": 0,
@@ -463,31 +1040,13 @@
       "name": "Enemies",
       "children": [
         {
-          "id": "57",
-          "name": "Cultist",
+          "id": "85",
+          "name": "Mayor",
           "children": [],
-          "components": [
-            {
-              "type": "SpriteRenderer",
-              "config": {
-                "spriteAssetId": "143",
-                "animationId": null,
-                "horizontalFlip": false,
-                "verticalFlip": false,
-                "castShadow": false,
-                "receiveShadow": false,
-                "color": "ffffff",
-                "overrideOpacity": false,
-                "opacity": null,
-                "materialType": "basic",
-                "shaderAssetId": null
-              },
-              "id": "0"
-            }
-          ],
+          "components": [],
           "position": {
-            "x": -10.270715713500977,
-            "y": 5.4114155769348145,
+            "x": -0.02527627907693386,
+            "y": 3.75433611869812,
             "z": 8
           },
           "orientation": {
@@ -503,34 +1062,18 @@
           },
           "visible": true,
           "layer": 0,
-          "prefab": null
+          "prefab": {
+            "sceneAssetId": "546"
+          }
         },
         {
-          "id": "58",
+          "id": "86",
           "name": "Cultist",
           "children": [],
-          "components": [
-            {
-              "type": "SpriteRenderer",
-              "config": {
-                "spriteAssetId": "143",
-                "animationId": null,
-                "horizontalFlip": false,
-                "verticalFlip": false,
-                "castShadow": false,
-                "receiveShadow": false,
-                "color": "ffffff",
-                "overrideOpacity": false,
-                "opacity": null,
-                "materialType": "basic",
-                "shaderAssetId": null
-              },
-              "id": "0"
-            }
-          ],
+          "components": [],
           "position": {
-            "x": -13.244283676147461,
-            "y": 2.1404902935028076,
+            "x": -5.053290843963623,
+            "y": 5.67104434967041,
             "z": 8
           },
           "orientation": {
@@ -546,34 +1089,18 @@
           },
           "visible": true,
           "layer": 0,
-          "prefab": null
+          "prefab": {
+            "sceneAssetId": "545"
+          }
         },
         {
-          "id": "59",
+          "id": "87",
           "name": "Cultist",
           "children": [],
-          "components": [
-            {
-              "type": "SpriteRenderer",
-              "config": {
-                "spriteAssetId": "143",
-                "animationId": null,
-                "horizontalFlip": false,
-                "verticalFlip": false,
-                "castShadow": false,
-                "receiveShadow": false,
-                "color": "ffffff",
-                "overrideOpacity": false,
-                "opacity": null,
-                "materialType": "basic",
-                "shaderAssetId": null
-              },
-              "id": "0"
-            }
-          ],
+          "components": [],
           "position": {
-            "x": -9.477763175964355,
-            "y": 2.6856443881988525,
+            "x": -3.4470102787017822,
+            "y": 2.772493839263916,
             "z": 8
           },
           "orientation": {
@@ -589,77 +1116,18 @@
           },
           "visible": true,
           "layer": 0,
-          "prefab": null
+          "prefab": {
+            "sceneAssetId": "545"
+          }
         },
         {
-          "id": "60",
-          "name": "Maire",
-          "children": [],
-          "components": [
-            {
-              "type": "SpriteRenderer",
-              "config": {
-                "spriteAssetId": "249",
-                "animationId": null,
-                "horizontalFlip": false,
-                "verticalFlip": false,
-                "castShadow": false,
-                "receiveShadow": false,
-                "color": "ffffff",
-                "overrideOpacity": false,
-                "opacity": null,
-                "materialType": "basic",
-                "shaderAssetId": null
-              },
-              "id": "0"
-            }
-          ],
-          "position": {
-            "x": -14.33459186553955,
-            "y": 4.321106910705566,
-            "z": 8
-          },
-          "orientation": {
-            "x": 0,
-            "y": 0,
-            "z": 0,
-            "w": 1
-          },
-          "scale": {
-            "x": 1,
-            "y": 1,
-            "z": 1
-          },
-          "visible": true,
-          "layer": 0,
-          "prefab": null
-        },
-        {
-          "id": "61",
+          "id": "88",
           "name": "Cultist",
           "children": [],
-          "components": [
-            {
-              "type": "SpriteRenderer",
-              "config": {
-                "spriteAssetId": "143",
-                "animationId": null,
-                "horizontalFlip": false,
-                "verticalFlip": false,
-                "castShadow": false,
-                "receiveShadow": false,
-                "color": "ffffff",
-                "overrideOpacity": false,
-                "opacity": null,
-                "materialType": "basic",
-                "shaderAssetId": null
-              },
-              "id": "0"
-            }
-          ],
+          "components": [],
           "position": {
-            "x": -10.81586742401123,
-            "y": -0.23836445808410645,
+            "x": 0.0312507227063179,
+            "y": 1.6734596490859985,
             "z": 8
           },
           "orientation": {
@@ -675,34 +1143,18 @@
           },
           "visible": true,
           "layer": 0,
-          "prefab": null
+          "prefab": {
+            "sceneAssetId": "545"
+          }
         },
         {
-          "id": "62",
+          "id": "89",
           "name": "Cultist",
           "children": [],
-          "components": [
-            {
-              "type": "SpriteRenderer",
-              "config": {
-                "spriteAssetId": "143",
-                "animationId": null,
-                "horizontalFlip": false,
-                "verticalFlip": false,
-                "castShadow": false,
-                "receiveShadow": false,
-                "color": "ffffff",
-                "overrideOpacity": false,
-                "opacity": null,
-                "materialType": "basic",
-                "shaderAssetId": null
-              },
-              "id": "0"
-            }
-          ],
+          "components": [],
           "position": {
-            "x": -7.644063472747803,
-            "y": -0.04012686759233475,
+            "x": 4.028835773468018,
+            "y": 2.62756609916687,
             "z": 8
           },
           "orientation": {
@@ -718,7 +1170,36 @@
           },
           "visible": true,
           "layer": 0,
-          "prefab": null
+          "prefab": {
+            "sceneAssetId": "545"
+          }
+        },
+        {
+          "id": "90",
+          "name": "Cultist",
+          "children": [],
+          "components": [],
+          "position": {
+            "x": 5.393569469451904,
+            "y": 5.622735023498535,
+            "z": 8
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": {
+            "sceneAssetId": "545"
+          }
         }
       ],
       "components": [],
@@ -736,6 +1217,92 @@
       "scale": {
         "x": 1,
         "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "63",
+      "name": "Background",
+      "children": [],
+      "components": [
+        {
+          "type": "SpriteRenderer",
+          "config": {
+            "spriteAssetId": "424",
+            "animationId": null,
+            "horizontalFlip": false,
+            "verticalFlip": false,
+            "castShadow": false,
+            "receiveShadow": false,
+            "color": "ffffff",
+            "overrideOpacity": false,
+            "opacity": null,
+            "materialType": "shader",
+            "shaderAssetId": "427"
+          },
+          "id": "0"
+        }
+      ],
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": -5
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "91",
+      "name": "Black Background",
+      "children": [],
+      "components": [
+        {
+          "type": "SpriteRenderer",
+          "config": {
+            "spriteAssetId": "93",
+            "animationId": null,
+            "horizontalFlip": false,
+            "verticalFlip": false,
+            "castShadow": false,
+            "receiveShadow": false,
+            "color": "000000",
+            "overrideOpacity": false,
+            "opacity": null,
+            "materialType": "basic",
+            "shaderAssetId": null
+          },
+          "id": "0"
+        }
+      ],
+      "position": {
+        "x": 4.465,
+        "y": 0.35,
+        "z": -9
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 63,
+        "y": 50,
         "z": 1
       },
       "visible": true,

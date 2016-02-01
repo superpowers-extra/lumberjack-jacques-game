@@ -10,6 +10,10 @@
           "type": "Sup.Math.Vector2"
         },
         {
+          "name": "hasAttackHit",
+          "type": "boolean"
+        },
+        {
           "name": "autoPilot",
           "type": "boolean"
         },
@@ -18,8 +22,8 @@
           "type": "number"
         },
         {
-          "name": "enemySpawnPos",
-          "type": "Sup.Math.Vector2"
+          "name": "isShotgunOut",
+          "type": "boolean"
         }
       ]
     },
@@ -38,6 +42,14 @@
         },
         {
           "name": "cameraHeight",
+          "type": "number"
+        },
+        {
+          "name": "vibrateTimer",
+          "type": "number"
+        },
+        {
+          "name": "vibrateIntensity",
           "type": "number"
         }
       ]
@@ -72,7 +84,7 @@
     },
     "EnemyBehavior": {
       "scriptId": "39",
-      "line": 0,
+      "line": 4,
       "parentBehavior": null,
       "properties": [
         {
@@ -96,11 +108,11 @@
           "type": "boolean"
         },
         {
-          "name": "health",
+          "name": "hitTimer",
           "type": "number"
         },
         {
-          "name": "hitTimer",
+          "name": "health",
           "type": "number"
         }
       ]
@@ -136,12 +148,16 @@
         {
           "name": "ticks",
           "type": "number"
+        },
+        {
+          "name": "mineDoorPosition",
+          "type": "Sup.Math.Vector2"
         }
       ]
     },
     "LanguageSelectBehavior": {
       "scriptId": "114",
-      "line": 0,
+      "line": 2,
       "parentBehavior": null,
       "properties": [
         {
@@ -293,11 +309,191 @@
         {
           "name": "velocity",
           "type": "Sup.Math.Vector2"
+        },
+        {
+          "name": "soundIsPlaying",
+          "type": "boolean"
         }
       ]
     },
     "BettyJollyEnemyBehavior": {
       "scriptId": "388",
+      "line": 2,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "position",
+          "type": "Sup.Math.Vector2"
+        },
+        {
+          "name": "health",
+          "type": "number"
+        },
+        {
+          "name": "radius",
+          "type": "number"
+        }
+      ]
+    },
+    "BookBehavior": {
+      "scriptId": "396",
+      "line": 0,
+      "parentBehavior": "SimpleDialogBehavior",
+      "properties": []
+    },
+    "WolfOutroTriggerBehavior": {
+      "scriptId": "400",
+      "line": 0,
+      "parentBehavior": "InteractableBehavior",
+      "properties": []
+    },
+    "WolfIntroTriggerBehavior": {
+      "scriptId": "399",
+      "line": 0,
+      "parentBehavior": "InteractableBehavior",
+      "properties": []
+    },
+    "SecondaryShadyPeasantBehavior": {
+      "scriptId": "403",
+      "line": 0,
+      "parentBehavior": "SimpleDialogBehavior",
+      "properties": [
+        {
+          "name": "activated",
+          "type": "boolean"
+        }
+      ]
+    },
+    "MassWineBehavior": {
+      "scriptId": "404",
+      "line": 0,
+      "parentBehavior": "SimpleDialogBehavior",
+      "properties": []
+    },
+    "EmptyHouseBehavior": {
+      "scriptId": "447",
+      "line": 0,
+      "parentBehavior": "SimpleDialogBehavior",
+      "properties": []
+    },
+    "ChurchDoorBehavior": {
+      "scriptId": "481",
+      "line": 0,
+      "parentBehavior": "SimpleDialogBehavior",
+      "properties": []
+    },
+    "PriestBehavior": {
+      "scriptId": "489",
+      "line": 0,
+      "parentBehavior": "SimpleDialogBehavior",
+      "properties": []
+    },
+    "BloodBehavior": {
+      "scriptId": "492",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": []
+    },
+    "TheEndBehavior": {
+      "scriptId": "513",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": []
+    },
+    "OldLadyBehavior": {
+      "scriptId": "534",
+      "line": 0,
+      "parentBehavior": "SimpleDialogBehavior",
+      "properties": []
+    },
+    "CatBehavior": {
+      "scriptId": "537",
+      "line": 0,
+      "parentBehavior": "SimpleDialogBehavior",
+      "properties": []
+    },
+    "Child2Behavior": {
+      "scriptId": "536",
+      "line": 0,
+      "parentBehavior": "SimpleDialogBehavior",
+      "properties": []
+    },
+    "Child1Behavior": {
+      "scriptId": "535",
+      "line": 0,
+      "parentBehavior": "SimpleDialogBehavior",
+      "properties": []
+    },
+    "MotherBehavior": {
+      "scriptId": "541",
+      "line": 0,
+      "parentBehavior": "SimpleDialogBehavior",
+      "properties": []
+    },
+    "dadBehavior": {
+      "scriptId": "542",
+      "line": 0,
+      "parentBehavior": "SimpleDialogBehavior",
+      "properties": []
+    },
+    "BabyBehavior": {
+      "scriptId": "549",
+      "line": 0,
+      "parentBehavior": "SimpleDialogBehavior",
+      "properties": []
+    },
+    "MaireEnemyBehavior": {
+      "scriptId": "548",
+      "line": 0,
+      "parentBehavior": "EnemyBehavior",
+      "properties": [
+        {
+          "name": "health",
+          "type": "number"
+        },
+        {
+          "name": "deathTriggered",
+          "type": "boolean"
+        }
+      ]
+    },
+    "Child3Behavior": {
+      "scriptId": "539",
+      "line": 0,
+      "parentBehavior": "SimpleDialogBehavior",
+      "properties": []
+    },
+    "ChiomeBehavior": {
+      "scriptId": "554",
+      "line": 0,
+      "parentBehavior": "SimpleDialogBehavior",
+      "properties": []
+    },
+    "DowieBehavior": {
+      "scriptId": "551",
+      "line": 0,
+      "parentBehavior": "SimpleDialogBehavior",
+      "properties": []
+    },
+    "MinePathDoorBehavior": {
+      "scriptId": "407",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": []
+    },
+    "MayorBehavior": {
+      "scriptId": "557",
+      "line": 0,
+      "parentBehavior": "SimpleDialogBehavior",
+      "properties": [
+        {
+          "name": "ticks",
+          "type": "number"
+        }
+      ]
+    },
+    "ChiomeSoundPlayBehavior": {
+      "scriptId": "559",
       "line": 0,
       "parentBehavior": null,
       "properties": []

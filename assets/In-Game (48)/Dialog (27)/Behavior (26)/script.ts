@@ -11,12 +11,12 @@ class DialogBehavior extends Sup.Behavior {
     this.animatedText = this.actor.getChild("Text").getBehavior(AnimatedTextBehavior);
   }
   
-  show(speaker: string, text: string) {
+  show(speakerID: string, text: string) {
     this.actor.setVisible(true);
     
-    this.speaker = speaker;
-    // FIXME: restore if we have the potraits
-    // this.portraitRenderer.setSprite(`In-Game/Dialog/Portraits/${speaker}`);
+    this.speaker = Game.getText(speakerID);
+    const portrait = Sup.get(`In-Game/Dialog/Portraits/${speakerID}`, Sup.Sprite, { ignoreMissing: true });
+    this.portraitRenderer.setSprite(portrait);
 
     this.animatedText.setText(`${this.speaker.toUpperCase()}: ${text}`, this.speaker.length + 2);
   }

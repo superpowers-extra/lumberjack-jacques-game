@@ -7,8 +7,8 @@
       "children": [],
       "components": [],
       "position": {
-        "x": 0.6442731022834778,
-        "y": -0.7929515838623047,
+        "x": 0,
+        "y": 0,
         "z": 0
       },
       "orientation": {
@@ -29,7 +29,7 @@
       }
     },
     {
-      "id": "34",
+      "id": "77",
       "name": "Attached To Camera",
       "children": [],
       "components": [],
@@ -105,7 +105,7 @@
             "w": 1
           },
           "scale": {
-            "x": 1,
+            "x": 2,
             "y": 1,
             "z": 1
           },
@@ -848,8 +848,8 @@
           "children": [],
           "components": [],
           "position": {
-            "x": -3.9923512935638428,
-            "y": 2.4386489391326904,
+            "x": -3.9382970333099365,
+            "y": 2.4927024841308594,
             "z": 0.10000000149011612
           },
           "orientation": {
@@ -917,6 +917,49 @@
       "prefab": {
         "sceneAssetId": "330"
       }
+    },
+    {
+      "id": "76",
+      "name": "Black Background",
+      "children": [],
+      "components": [
+        {
+          "type": "SpriteRenderer",
+          "config": {
+            "spriteAssetId": "45",
+            "animationId": null,
+            "horizontalFlip": false,
+            "verticalFlip": false,
+            "castShadow": false,
+            "receiveShadow": false,
+            "color": "ffffff",
+            "overrideOpacity": false,
+            "opacity": null,
+            "materialType": "basic",
+            "shaderAssetId": null
+          },
+          "id": "0"
+        }
+      ],
+      "position": {
+        "x": -0.623,
+        "y": -2.434,
+        "z": -10
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": null
     }
   ]
 }

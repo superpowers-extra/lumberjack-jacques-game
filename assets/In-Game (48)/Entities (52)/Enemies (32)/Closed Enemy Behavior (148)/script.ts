@@ -45,8 +45,8 @@ class ClosedEnemyBehavior extends EnemyBehavior {
         }
         break;
 
-      case EnemyBehavior.States.Hitting:
-        this.doHitting();
+      case EnemyBehavior.States.Hurting:
+        this.doHurting();
         break;
         
       case EnemyBehavior.States.Dying:

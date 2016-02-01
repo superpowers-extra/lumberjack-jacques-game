@@ -21,14 +21,14 @@
   "animations": [
     {
       "id": "0",
-      "name": "1",
+      "name": "NoBottle",
       "startFrameIndex": 0,
       "endFrameIndex": 0,
       "speed": 1
     },
     {
       "id": "1",
-      "name": "2",
+      "name": "HasBottle",
       "startFrameIndex": 1,
       "endFrameIndex": 1,
       "speed": 1

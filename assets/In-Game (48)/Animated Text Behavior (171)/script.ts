@@ -81,7 +81,7 @@ class AnimatedTextBehavior extends Sup.Behavior {
     if (nextStop === -1) this.letterIndex = this.text.length;
     else this.letterIndex = nextStop;
     
-    this.actor.textRenderer.setText(this.text.replace(/\|/g, ""));
+    this.actor.textRenderer.setText(this.text.slice(0, this.letterIndex).replace(/\|/g, ""));
   }
 
   update() {

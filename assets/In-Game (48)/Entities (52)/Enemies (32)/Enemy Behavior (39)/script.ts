@@ -1,4 +1,11 @@
-abstract class EnemyBehavior extends Sup.Behavior {
+interface Enemy {
+  position: Sup.Math.Vector2;
+  radius: number;
+  
+  hit(direction: Utils.Directions);
+}
+
+abstract class EnemyBehavior extends Sup.Behavior implements Enemy {
   position: Sup.Math.Vector2;
   initialPosition: Sup.Math.Vector2;
   velocity = new Sup.Math.Vector2();
@@ -8,10 +15,9 @@ abstract class EnemyBehavior extends Sup.Behavior {
   changeStateTimer: number;
 
   aggressive = false;
-
-  health = 3;
-
   hitTimer = 0;
+  health = 3;
+  radius = 0.5;
 
   awake() {
     Game.enemies.push(this);
@@ -64,38 +70,49 @@ abstract class EnemyBehavior extends Sup.Behavior {
   }
 
   hit(direction: Utils.Directions) {
-    if (this.state === EnemyBehavior.States.Dying || this.state === EnemyBehavior.States.Hitting) return;
+    if (this.state === EnemyBehavior.States.Dying || this.state === EnemyBehavior.States.Hurting) return;
     
     this.health -= 1;
-    if (this.health === 0) {
+    if (this.health <= 0) {
+      let sound = Sup.get(`In-Game/Entities/Enemies/${this.actor.getName()}/Die`, Sup.Sound, { ignoreMissing: true });
+      if (sound != null) Sup.Audio.playSound(sound);
+      
       this.state = EnemyBehavior.States.Dying;
       this.actor.arcadeBody2D.setEnabled(false);
       if (this.direction === Utils.Directions.Left) this.actor.spriteRenderer.setHorizontalFlip(true);
       this.actor.spriteRenderer.setAnimation("Die", false);
       
     } else {
-      this.state = EnemyBehavior.States.Hitting;
+      this.state = EnemyBehavior.States.Hurting;
       this.hitTimer = EnemyBehavior.hitDelay;
       this.velocity.setFromAngle(Utils.getAngleFromDirection(direction)).multiplyScalar(EnemyBehavior.hitSpeed);
       this.direction = Utils.getOppositeDirection(direction);
       
-      let color = 3;
+      let sound = Sup.get(`In-Game/Entities/Enemies/${this.actor.getName()}/Hurt`, Sup.Sound, { ignoreMissing: true });
+      if (sound != null) Sup.Audio.playSound(sound);
+      
+      let color = 4;
       this.actor.spriteRenderer.setColor(color, color, color);
-      this.actor.spriteRenderer.setAnimation(`Idle ${Utils.Directions[this.direction]}`).pauseAnimation();
+      if (this.direction === Utils.Directions.Left) this.actor.spriteRenderer.setHorizontalFlip(true);
+      this.actor.spriteRenderer.setAnimation("Hit");
     }
+    
+    let bloodActor = Sup.appendScene("In-Game/FX/Blood/Prefab", this.actor)[0];
+    bloodActor.setLocalPosition(0, 1, 2);
   }
 
-  doHitting() {
+  doHurting() {
     this.hitTimer -= 1;
     if (this.hitTimer === 0) {
       this.actor.spriteRenderer.setColor(1, 1, 1);
+      this.actor.spriteRenderer.setHorizontalFlip(false);
       this.setCooldown();
     }
   }
 }
 
 namespace EnemyBehavior {
-  export enum States { Idle, Walking, Charging, Cooldown, Attacking, Hitting, Dying };
+  export enum States { Idle, Walking, Charging, Cooldown, Attacking, Hurting, Dying };
   export const minChangeStateDelay = [ 60, 60, 200, 20 ];
   export const maxChangeStateDelay = [ 80, 90, 300, 30 ];
   
@@ -107,7 +124,7 @@ namespace EnemyBehavior {
   export const hitRange = 3;
   
   export const passiveDistance = 20;
-  export const maxInitialPositionDistance = 5;
+  export const maxInitialPositionDistance = 3;
   
   export const hitSpeed = 0.08;
   export const hitDelay = 15;

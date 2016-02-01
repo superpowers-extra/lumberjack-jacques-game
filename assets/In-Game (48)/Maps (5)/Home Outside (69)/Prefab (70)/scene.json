@@ -170,38 +170,7 @@
           "id": "4",
           "name": "Start",
           "children": [],
-          "components": [
-            {
-              "type": "Behavior",
-              "config": {
-                "behaviorName": "TeleportBehavior",
-                "propertyValues": {
-                  "direction": {
-                    "type": "string",
-                    "value": "Up"
-                  }
-                }
-              },
-              "id": "0"
-            },
-            {
-              "type": "SpriteRenderer",
-              "config": {
-                "spriteAssetId": "125",
-                "animationId": null,
-                "horizontalFlip": false,
-                "verticalFlip": false,
-                "castShadow": false,
-                "receiveShadow": false,
-                "color": "ffffff",
-                "overrideOpacity": false,
-                "opacity": null,
-                "materialType": "basic",
-                "shaderAssetId": null
-              },
-              "id": "1"
-            }
-          ],
+          "components": [],
           "position": {
             "x": -4.439877033233643,
             "y": 2.4627444744110107,
@@ -671,9 +640,9 @@
               "children": [],
               "components": [],
               "position": {
-                "x": -21.52404022216797,
-                "y": 25.40908432006836,
-                "z": 1
+                "x": -21.078,
+                "y": 23.922,
+                "z": 0
               },
               "orientation": {
                 "x": 0,
@@ -1103,9 +1072,9 @@
               "children": [],
               "components": [],
               "position": {
-                "x": -17.568538665771484,
-                "y": 27.449703216552734,
-                "z": 8
+                "x": -17.048,
+                "y": 28.899,
+                "z": 2
               },
               "orientation": {
                 "x": 0,
@@ -1265,8 +1234,8 @@
               "children": [],
               "components": [],
               "position": {
-                "x": 13.701315879821777,
-                "y": 13.952617645263672,
+                "x": 13.701,
+                "y": 13.953,
                 "z": 8
               },
               "orientation": {
@@ -1346,8 +1315,8 @@
               "children": [],
               "components": [],
               "position": {
-                "x": -19.377519607543945,
-                "y": 17.289264678955078,
+                "x": -18.452409744262695,
+                "y": 17.91701889038086,
                 "z": 8
               },
               "orientation": {
@@ -1481,8 +1450,8 @@
               "children": [],
               "components": [],
               "position": {
-                "x": 35.84975814819336,
-                "y": -4.801642894744873,
+                "x": 33.80130386352539,
+                "y": -2.268603563308716,
                 "z": 8
               },
               "orientation": {
@@ -1508,8 +1477,8 @@
               "children": [],
               "components": [],
               "position": {
-                "x": 7.214037895202637,
-                "y": 21.688289642333984,
+                "x": -0.21988233923912048,
+                "y": 18.41736602783203,
                 "z": 8
               },
               "orientation": {
@@ -1535,9 +1504,9 @@
               "children": [],
               "components": [],
               "position": {
-                "x": 42.75349807739258,
-                "y": 10.734999656677246,
-                "z": 6
+                "x": 42.901676177978516,
+                "y": 10.28896427154541,
+                "z": 1
               },
               "orientation": {
                 "x": 0,
@@ -1616,8 +1585,8 @@
               "children": [],
               "components": [],
               "position": {
-                "x": -21.000734329223633,
-                "y": 13.139686584472656,
+                "x": -20.37298011779785,
+                "y": 12.214576721191406,
                 "z": 10
               },
               "orientation": {
@@ -1670,9 +1639,9 @@
               "children": [],
               "components": [],
               "position": {
-                "x": 18.567930221557617,
-                "y": 17.302074432373047,
-                "z": 10
+                "x": 22.136281967163086,
+                "y": 10.053927421569824,
+                "z": 7
               },
               "orientation": {
                 "x": 0,
@@ -3024,8 +2993,8 @@
             }
           ],
           "position": {
-            "x": 4.006392478942871,
-            "y": 23.45604705810547,
+            "x": 4.824123859405518,
+            "y": 24.64547348022461,
             "z": -5
           },
           "orientation": {
@@ -3067,8 +3036,8 @@
             }
           ],
           "position": {
-            "x": -20.080583572387695,
-            "y": 26.14549446105957,
+            "x": -13.501565933227539,
+            "y": 26.703039169311523,
             "z": -5
           },
           "orientation": {
@@ -3332,6 +3301,33 @@
       "layer": 0,
       "prefab": {
         "sceneAssetId": "207"
+      }
+    },
+    {
+      "id": "153",
+      "name": "Stump",
+      "children": [],
+      "components": [],
+      "position": {
+        "x": -10.927382469177246,
+        "y": 15.422557830810547,
+        "z": 10
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": {
+        "sceneAssetId": "235"
       }
     }
   ]

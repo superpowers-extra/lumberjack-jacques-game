@@ -340,6 +340,140 @@
               "prefab": null
             },
             {
+              "id": "14",
+              "name": "Inventory",
+              "children": [
+                {
+                  "id": "17",
+                  "name": "Bottle",
+                  "children": [],
+                  "components": [],
+                  "position": {
+                    "x": -8,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "orientation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                  },
+                  "scale": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 1
+                  },
+                  "visible": true,
+                  "layer": 0,
+                  "prefab": {
+                    "sceneAssetId": "419"
+                  }
+                },
+                {
+                  "id": "20",
+                  "name": "Key",
+                  "children": [],
+                  "components": [],
+                  "position": {
+                    "x": -5.5,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "orientation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                  },
+                  "scale": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 1
+                  },
+                  "visible": true,
+                  "layer": 0,
+                  "prefab": {
+                    "sceneAssetId": "419"
+                  }
+                },
+                {
+                  "id": "18",
+                  "name": "Book",
+                  "children": [],
+                  "components": [],
+                  "position": {
+                    "x": -3,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "orientation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                  },
+                  "scale": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 1
+                  },
+                  "visible": true,
+                  "layer": 0,
+                  "prefab": {
+                    "sceneAssetId": "419"
+                  }
+                },
+                {
+                  "id": "19",
+                  "name": "Rifle",
+                  "children": [],
+                  "components": [],
+                  "position": {
+                    "x": -0.5,
+                    "y": 0,
+                    "z": 0
+                  },
+                  "orientation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "w": 1
+                  },
+                  "scale": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 1
+                  },
+                  "visible": true,
+                  "layer": 0,
+                  "prefab": {
+                    "sceneAssetId": "419"
+                  }
+                }
+              ],
+              "components": [],
+              "position": {
+                "x": 17.803621292114258,
+                "y": 7.29729700088501,
+                "z": -3
+              },
+              "orientation": {
+                "x": 0,
+                "y": 0,
+                "z": 0,
+                "w": 1
+              },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+              },
+              "visible": true,
+              "layer": 0,
+              "prefab": null
+            },
+            {
               "id": "13",
               "name": "Goal",
               "children": [],

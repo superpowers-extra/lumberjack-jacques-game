@@ -11,8 +11,8 @@
   "alphaTest": 0.1,
   "frameOrder": "rows",
   "grid": {
-    "width": 8,
-    "height": 8
+    "width": 16,
+    "height": 16
   },
   "origin": {
     "x": 0.5,

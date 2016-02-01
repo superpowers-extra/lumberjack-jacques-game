@@ -1,0 +1,142 @@
+{
+  "formatVersion": 3,
+  "maps": [
+    "map"
+  ],
+  "filtering": "pixelated",
+  "wrapping": "clampToEdge",
+  "pixelsPerUnit": 16,
+  "framesPerSecond": 7,
+  "opacity": 1,
+  "alphaTest": 0.1,
+  "frameOrder": "rows",
+  "grid": {
+    "width": 64,
+    "height": 64
+  },
+  "origin": {
+    "x": 0.5,
+    "y": 0.32
+  },
+  "animations": [
+    {
+      "id": "0",
+      "name": "Attack Right",
+      "startFrameIndex": 1,
+      "endFrameIndex": 3,
+      "speed": 1.3
+    },
+    {
+      "id": "1",
+      "name": "Attack Up",
+      "startFrameIndex": 5,
+      "endFrameIndex": 7,
+      "speed": 1.3
+    },
+    {
+      "id": "2",
+      "name": "Attack Left",
+      "startFrameIndex": 9,
+      "endFrameIndex": 11,
+      "speed": 1.3
+    },
+    {
+      "id": "3",
+      "name": "Attack Down",
+      "startFrameIndex": 13,
+      "endFrameIndex": 15,
+      "speed": 1.3
+    },
+    {
+      "id": "4",
+      "name": "Walk Down",
+      "startFrameIndex": 16,
+      "endFrameIndex": 19,
+      "speed": 1
+    },
+    {
+      "id": "5",
+      "name": "Walk Left",
+      "startFrameIndex": 20,
+      "endFrameIndex": 23,
+      "speed": 1
+    },
+    {
+      "id": "6",
+      "name": "Walk Right",
+      "startFrameIndex": 24,
+      "endFrameIndex": 27,
+      "speed": 1
+    },
+    {
+      "id": "7",
+      "name": "Walk Up",
+      "startFrameIndex": 28,
+      "endFrameIndex": 31,
+      "speed": 1
+    },
+    {
+      "id": "8",
+      "name": "Idle Down",
+      "startFrameIndex": 32,
+      "endFrameIndex": 35,
+      "speed": 0.8
+    },
+    {
+      "id": "9",
+      "name": "Idle Left",
+      "startFrameIndex": 36,
+      "endFrameIndex": 39,
+      "speed": 0.8
+    },
+    {
+      "id": "10",
+      "name": "Idle Right",
+      "startFrameIndex": 40,
+      "endFrameIndex": 43,
+      "speed": 0.8
+    },
+    {
+      "id": "11",
+      "name": "Idle Up",
+      "startFrameIndex": 44,
+      "endFrameIndex": 47,
+      "speed": 0.8
+    },
+    {
+      "id": "12",
+      "name": "Shotgun Attack Down",
+      "startFrameIndex": 48,
+      "endFrameIndex": 51,
+      "speed": 1.5
+    },
+    {
+      "id": "13",
+      "name": "Shotgun Attack Left",
+      "startFrameIndex": 52,
+      "endFrameIndex": 55,
+      "speed": 1.5
+    },
+    {
+      "id": "14",
+      "name": "Shotgun Attack Right",
+      "startFrameIndex": 56,
+      "endFrameIndex": 59,
+      "speed": 1.5
+    },
+    {
+      "id": "15",
+      "name": "Shotgun Attack Up",
+      "startFrameIndex": 60,
+      "endFrameIndex": 63,
+      "speed": 1.5
+    }
+  ],
+  "mapSlots": {
+    "map": "map",
+    "light": null,
+    "specular": null,
+    "alpha": null,
+    "normal": null
+  }
+}
