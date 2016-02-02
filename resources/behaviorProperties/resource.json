@@ -96,31 +96,11 @@
           "type": "Sup.Math.Vector2"
         },
         {
-          "name": "initialPosition",
-          "type": "Sup.Math.Vector2"
-        },
-        {
-          "name": "velocity",
-          "type": "Sup.Math.Vector2"
-        },
-        {
-          "name": "changeStateTimer",
-          "type": "number"
-        },
-        {
-          "name": "aggressive",
-          "type": "boolean"
-        },
-        {
-          "name": "hitTimer",
-          "type": "number"
-        },
-        {
-          "name": "health",
-          "type": "number"
-        },
-        {
           "name": "radius",
+          "type": "number"
+        },
+        {
+          "name": "damage",
           "type": "number"
         }
       ]

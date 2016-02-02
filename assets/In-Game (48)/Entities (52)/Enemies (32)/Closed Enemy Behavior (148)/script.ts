@@ -41,7 +41,7 @@ class ClosedEnemyBehavior extends EnemyBehavior {
         if (!this.actor.spriteRenderer.isAnimationPlaying()) {
           this.setCooldown();
         } else if (this.actor.spriteRenderer.getAnimationFrameTime() / this.actor.spriteRenderer.getAnimationFrameCount() > 0.7 && distance <= EnemyBehavior.hitRange) {
-          Game.playerBehavior.hit(this.direction);
+          Game.playerBehavior.hit(this.direction, false, this.damage);
         }
         break;
 

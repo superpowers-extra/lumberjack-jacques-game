@@ -7,17 +7,18 @@ interface Enemy {
 
 abstract class EnemyBehavior extends Sup.Behavior implements Enemy {
   position: Sup.Math.Vector2;
-  initialPosition: Sup.Math.Vector2;
-  velocity = new Sup.Math.Vector2();
-  direction = Utils.Directions.Down;
+  protected initialPosition: Sup.Math.Vector2;
+  protected velocity = new Sup.Math.Vector2();
+  protected direction = Utils.Directions.Down;
 
-  state: EnemyBehavior.States;
-  changeStateTimer: number;
+  protected state: EnemyBehavior.States;
+  protected changeStateTimer: number;
 
-  aggressive = false;
-  hitTimer = 0;
-  health = 3;
+  protected aggressive = false;
+  protected hitTimer = 0;
+  protected health = 3;
   radius = 0.5;
+  damage = 1;
 
   awake() {
     Game.enemies.push(this);

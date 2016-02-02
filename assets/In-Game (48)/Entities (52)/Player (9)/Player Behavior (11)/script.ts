@@ -61,10 +61,10 @@ class PlayerBehavior extends Sup.Behavior {
     this.actor.arcadeBody2D.setVelocity(this.velocity);
   }
 
-  hit(direction: Utils.Directions, strong = false) {
+  hit(direction: Utils.Directions, strong = false, damage = 1) {
     if (PlayerBehavior.health === 0 || this.hitTimer > 0) return;
 
-    this.updateHealth(-1, true);
+    this.updateHealth(-damage, true);
     
     if (PlayerBehavior.health === 0) {
       // FIXME: play some kind of animation or effect
