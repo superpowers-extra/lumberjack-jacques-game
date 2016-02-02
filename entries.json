@@ -1469,6 +1469,11 @@
                     "type": "shader"
                   },
                   {
+                    "id": "557",
+                    "name": "Mayor Behavior",
+                    "type": "script"
+                  },
+                  {
                     "id": "239",
                     "name": "Prefab",
                     "type": "scene"
@@ -2524,10 +2529,5 @@
         "type": "sound"
       }
     ]
-  },
-  {
-    "id": "557",
-    "name": "Mayor Behavior",
-    "type": "script"
   }
 ]

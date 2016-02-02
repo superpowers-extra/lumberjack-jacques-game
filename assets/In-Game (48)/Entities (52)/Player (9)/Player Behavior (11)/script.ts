@@ -135,7 +135,10 @@ class PlayerBehavior extends Sup.Behavior {
   setDirection(direction: Utils.Directions, move: boolean) {
     this.moveDirection = direction;
     if (!this.isShotgunOut) this.lookDirection = direction;
-    this.actor.spriteRenderer.setSprite("In-Game/Entities/Player/Sprite");
+    
+    if (this.actor.spriteRenderer.getSprite().path !== "In-Game/Entities/Player/Sprite") {
+      this.actor.spriteRenderer.setSprite("In-Game/Entities/Player/Sprite");
+    }
     
     if (move) {
       this.velocity.setFromAngle(Utils.getAngleFromDirection(this.moveDirection)).multiplyScalar(PlayerBehavior.enterSpeed);

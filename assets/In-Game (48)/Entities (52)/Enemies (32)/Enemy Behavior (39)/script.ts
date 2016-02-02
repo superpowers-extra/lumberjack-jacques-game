@@ -37,7 +37,7 @@ abstract class EnemyBehavior extends Sup.Behavior implements Enemy {
       Utils.updateDepth(this.actor, this.position.y);
     }
     
-    if (Game.playerBehavior != null && Game.playerBehavior.activeInteractable == null) this.behavior();
+    if (Game.playerBehavior != null && Game.playerBehavior.activeInteractable == null || Game.playerBehavior.autoPilot) this.behavior();
     else this.setIdle();
     
     if (this.actor.arcadeBody2D.getEnabled()) this.actor.arcadeBody2D.setVelocity(this.velocity);

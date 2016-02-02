@@ -184,13 +184,13 @@ Game.texts["en"] = {
   church_key: "I definitely didn't plan to go to church anytime soon. Well, I got the key...",
   
   //Inside church
-  mayor_name: "Mayor",
-  cultist_name: "Cultist",
-  mayor: "This is unacceptable!| The sacrifice...| ran away? You are so incomponent.",
-  cultist: "Mister mayor, for what it's worth, the sacrifice created a very clever distraction...",
+  mayor: "Mayor",
+  cultist: "Cultist",
+  mayor_first: "This is unacceptable!| The sacrifice...| ran away? You are so incompetent.",
+  cultist_first: "Mister mayor, for what it's worth, the sacrifice created a very clever distraction...",
   mayor_1: "I don't care.| One of you will have to take his place, here and now.",
   cultist_1: "Have mercy, mister mayor...",
-  mayor_2: "Silence, idiots!| Someone's listening on us.",
+  mayor_2: "...|| Silence, idiots!| Someone's listening on us.",
   
   player_caught: "Me?| Oh no, no at all.| I was just stopping by... ",
   mayor_aggressive: "The lumberjack will do very nicely!| Let the sacrifice begins!",

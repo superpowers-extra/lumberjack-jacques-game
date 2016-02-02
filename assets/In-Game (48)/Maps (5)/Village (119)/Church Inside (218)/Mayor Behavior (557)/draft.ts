@@ -1,14 +1,16 @@
 class MayorBehavior extends SimpleDialogBehavior {
   static combatStarted = false;
 
+  playerEntering = true;
+
   dialogs =[
-    { name: "mayor_name", text:"mayor" },
-    { name: "cultist_name", text:"cultist" },
-    { name: "mayor_name", text:"mayor_1" },
-    { name: "cultist_name", text:"cultist_1" },
-    { name: "mayor_name", text:"mayor_2" },
+    { name: "mayor", text:"mayor_first" },
+    { name: "cultist", text:"cultist_first" },
+    { name: "mayor", text:"mayor_1" },
+    { name: "cultist", text:"cultist_1" },
+    { name: "mayor", text:"mayor_2" },
     { name: "player", text:"player_caught" },
-    { name: "mayor_name", text:"mayor_aggressive" },  
+    { name: "mayor", text:"mayor_aggressive" },  
   ];
   
   cultists: Sup.Actor[];
@@ -18,28 +20,33 @@ class MayorBehavior extends SimpleDialogBehavior {
     for (let enemy of enemies.getChildren()) {
       if (enemy.getName() == "Cultist") {
         this.cultists.push(enemy);
-        enemy.getBehavior(ClosedEnemyBehavior).destroy();
+        // enemy.getBehavior(ClosedEnemyBehavior).destroy();
       }
     }
-    
-    Sup.setTimeout(2000, ()=> {
-      Game.playerBehavior.clearMotion();
-      Game.playerBehavior.activeInteractable = this;
-      this.interact();
-      Sup.log("interact");
-    });
-
   }
 
-  activateCultists() {
-    for (const cultist of this.cultists) {
-      cultist.addBehavior(ClosedEnemyBehavior);
-    }
-    MayorBehavior.combatStarted = true;
-  }
+  // activateCultists() {
+  //   for (const cultist of this.cultists) {
+  //     cultist.addBehavior(ClosedEnemyBehavior);
+  //   }
+  //   MayorBehavior.combatStarted = true;
+  // }
 
   ticks = 0;
   update() {
+    if (this.playerEntering) {
+      Game.playerBehavior.autoPilot = true;
+      Game.playerBehavior.setDirection(Utils.Directions.Up, true);
+      
+      if (Game.playerBehavior.position.y >= -2) {
+        this.playerEntering = false;
+        Game.playerBehavior.autoPilot = false;
+        Game.playerBehavior.clearMotion();
+        Game.playerBehavior.activeInteractable = this;
+        this.interact();
+      }
+    }
+    
     this.ticks++;
     if (MayorBehavior.combatStarted === true && this.ticks % 30 == 0) {
       let aliveCultisits = 0;
@@ -50,14 +57,16 @@ class MayorBehavior extends SimpleDialogBehavior {
       }
       
       if (aliveCultisits <= 0) {
+        Game.playerBehavior.clearMotion();
+        
         // second dialogs
         this.dialogs = [
-          { name: "mayor_name", text: "mayor_defeated" },
+          { name: "mayor", text: "mayor_defeated" },
           { name: "player", text: "player_mayor" },
-          { name: "mayor_name", text: "mayor_defeated_1" },
+          { name: "mayor", text: "mayor_defeated_1" },
           { name: "player", text: "player_mayor_1" },
-          { name: "mayor_name", text: "mayor_defeated_2" },
-          { name: "mayor_name", text: "mayor_escape" },
+          { name: "mayor", text: "mayor_defeated_2" },
+          { name: "mayor", text: "mayor_escape" },
           { name: "player", text: "player_decided" },
           { name: "player", text: "player_gunshot" },
         ];
@@ -107,8 +116,9 @@ class MayorBehavior extends SimpleDialogBehavior {
   }
   
   onFinish() {
-    if (this.dialogs[0].text === "mayor") {
-      this.activateCultists();
+    if (this.dialogs[0].text === "mayor_first") {
+      MayorBehavior.combatStarted = true;
+      // this.activateCultists();
     }
   }
 }

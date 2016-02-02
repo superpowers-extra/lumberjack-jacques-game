@@ -1,30 +1,36 @@
 class MassWineBehavior extends SimpleDialogBehavior {
   dialogs = [
-    { name: "player", text: "tavern_basement_1" },
     { name: "player", text: "tavern_basement_2" },
     { name: "player", text: "tavern_basement_3" },
   ];
+
+  intro = true;
 
   awake() {
     if (MassWineBottle.bottlePickedUp === true) {
       this.actor.destroy();
       return;
     }
+    Game.playerBehavior.autoPilot = true;
+    Game.playerBehavior.clearMotion();
+    
     super.awake();
   }
 
   start() {
-    Sup.setTimeout(1000, ()=> {
+    Sup.setTimeout(500, () => {
+      Game.playerBehavior.autoPilot = false;
       Game.playerBehavior.activeInteractable = this;
-      this.interact();
-      Game.playerBehavior.activeInteractable = null;
+      Game.dialogBehavior.show("player", Game.getText("tavern_basement_1"));
     });
   }
 
   interact() {
-    if (Game.playerBehavior.activeInteractable == null) {
-      this.currentText = 1;
-      Game.playerBehavior.activeInteractable = this;
+    if (this.intro) {
+      this.intro = false;
+      Game.dialogBehavior.hide();
+      Game.playerBehavior.activeInteractable = null;
+      return;
     }
     
     super.interact();

@@ -60,7 +60,7 @@ Game.texts["fr"] = {
   waitress_hiThere: "Bonjour.",
   waitress_hiHandsome: "Bonjour, beau brun!",
   waitress_whatsUp: "Quoi de neuf?",
-  waitress_storyCut: "En temps normal,| je te raconterai ma triste vie amoureuse,| mais elle été coupée.",
+  waitress_storyCut: "En temps normal,| je te raconterai ma triste vie amoureuse,| mais elle a été coupée.",
   waitress_cutQuestionMark: "Coupée?",
   waitress_shortJam: "Au montage, oui.|| C'est une game jam très courte,| tu comprends.",
   waitress_aJamQuestionMark: "Une...| game jam?",
@@ -175,14 +175,16 @@ Game.texts["fr"] = {
   church_key: "Je ne m'attendais pas à mettre les pieds dans une église de si tôt. Bon, maintenant que j'ai la clé...",
   
   //Inside church
-  mayor: "C'est inacceptable!| Le sacrifice s'est...| enfui? Vous êtes des incapables.",
-  cultist: "Monsieur le maire, pour notre défense, le sacrifice a utilisé un habile stratagème de diversion...",
+  mayor: "Maire",
+  cultist: "Cultiste",
+  mayor_first: "C'est inacceptable!| Le sacrifice s'est...| enfui? Vous êtes des incapables.",
+  cultist_first: "Monsieur le maire, pour notre défense, le sacrifice a utilisé un habile stratagème de diversion...",
   mayor_1: "Je ne veux rien savoir.| L'un de vous va nous servir de sacrifice de remplacement, ici et maintenant.",
   cultist_1: "Pitié, Monsieur le maire...",
-  mayor_2: "Silence, bande d'idiots!| Quelqu'un nous écoute.",
+  mayor_2: "...|| Silence, bande d'idiots!| Quelqu'un nous écoute.",
   
   player_caught: "Moi?| Pas du tout, je passais par ici et... ",
-  mayor_aggressive: "Ce bûcheron fera l'affaire!| Que le rituel commence!",
+  mayor_aggressive: "Ce bûcheron fera l'affaire!| Que le sacrifice commence!",
 
   // (combat starts)
 

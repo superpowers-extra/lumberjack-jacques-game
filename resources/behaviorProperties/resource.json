@@ -84,7 +84,7 @@
     },
     "EnemyBehavior": {
       "scriptId": "39",
-      "line": 4,
+      "line": 7,
       "parentBehavior": null,
       "properties": [
         {
@@ -113,6 +113,10 @@
         },
         {
           "name": "health",
+          "type": "number"
+        },
+        {
+          "name": "radius",
           "type": "number"
         }
       ]
@@ -368,7 +372,12 @@
       "scriptId": "404",
       "line": 0,
       "parentBehavior": "SimpleDialogBehavior",
-      "properties": []
+      "properties": [
+        {
+          "name": "intro",
+          "type": "boolean"
+        }
+      ]
     },
     "EmptyHouseBehavior": {
       "scriptId": "447",
@@ -486,6 +495,10 @@
       "line": 0,
       "parentBehavior": "SimpleDialogBehavior",
       "properties": [
+        {
+          "name": "playerEntering",
+          "type": "boolean"
+        },
         {
           "name": "ticks",
           "type": "number"

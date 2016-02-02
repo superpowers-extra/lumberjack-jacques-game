@@ -19,11 +19,13 @@ class ChurchDoorBehavior extends SimpleDialogBehavior {
   }
 
   interact() {
-    if (this.dialogs[0].text === "church_nokey") {
-      Sup.Audio.playSound("In-Game/Maps/Global/Houses/Church Cimentry/Locked Church Door", 1, {loop: false});
-    }
-    else if (this.dialogs[0].text === "church_key") {
-      Sup.Audio.playSound("In-Game/Maps/Global/Houses/Church Cimentry/Opening Church Door", 1, {loop: false});
+    if (this.currentText === 0) {
+      if (this.dialogs[0].text === "church_nokey") {
+        Sup.Audio.playSound("In-Game/Maps/Global/Houses/Church Cimentry/Locked Church Door", 1, {loop: false});
+      }
+      else if (this.dialogs[0].text === "church_key") {
+        Sup.Audio.playSound("In-Game/Maps/Global/Houses/Church Cimentry/Opening Church Door", 1, {loop: false});
+      }
     }
     super.interact();
   }
