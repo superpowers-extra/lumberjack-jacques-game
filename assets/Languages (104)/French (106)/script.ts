@@ -192,14 +192,13 @@ Game.texts["fr"] = {
   mayor_defeated: "Vous n'auriez jamais dû venir ici! Vous ne vous rendez pas compte de ce que vous faites!",
   player_mayor: "Je me rends compte que vous êtes fous, et dangereux...",
   mayor_defeated_1: "Le rituel a déjà été accompli. Sans sacrifice, la bête nous anéantira!",
-  player_mayor_1: "De quelle bête parlez-vous?",
-  mayor_defeated_2: "Une puissance démoniaque que nous avons invoqué dans la mine. Elle se nourrit d'humains et sans sacrifice, nous anéantira tous! Vous avez tout gâché! Nous sommes perdus!",
+  player_mayor_1: "De quelle genre de bête est-ce qu'on parle?",
+  mayor_defeated_2: "La puissance démoniaque que nous avons invoqué dans la mine. Sans sacrifice humain, elle nous anéantira tous! Vous avez tout gâché!",
+  mayor_escape: "Et maintenant je m'enfuis avant que cette boîte de dialogue ne se referme! Mouahahaha!",
   
-  mayor_escape: "Tout le monde va mourir, vous y compris, mais ce terrible secret mourra avec nous! Mouahahaha!",
-  
-  player_decided: "On dirait que je n'ai plus qu'à aller demander gentillement à ce démon de déménager...",
-  
-  player_gunshot: "Tiens, j'ignorais que les prêtres gardaient leurs armes à feu sur l'autel...| Voilà qui saura m'être utile.",
+  player_woops: "...| !!|",
+  player_decided: "On dirait que je n'ai plus qu'à aller demander gentiment à ce démon de déménager.",
+  player_gunshot: "Je devrais prendre ce fusil-relique placé bien en vue sur l'autel. Il pourrait être utile... (B pour tirer.)",
 
   // Mine Path
   player_nogunshot: "L'entrée de cette mine est complètement barricadée. Si seulement j'avais un fusil pour l'exploser.",

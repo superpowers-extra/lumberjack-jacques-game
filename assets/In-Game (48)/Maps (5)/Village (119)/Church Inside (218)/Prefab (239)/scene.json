@@ -98,6 +98,10 @@
                   "direction": {
                     "type": "string",
                     "value": "Down"
+                  },
+                  "enabled": {
+                    "type": "boolean",
+                    "value": false
                   }
                 }
               },
@@ -446,7 +450,7 @@
                   "type": "SpriteRenderer",
                   "config": {
                     "spriteAssetId": "249",
-                    "animationId": null,
+                    "animationId": "0",
                     "horizontalFlip": false,
                     "verticalFlip": false,
                     "castShadow": false,

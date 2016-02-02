@@ -41,7 +41,7 @@ Game.texts["en"] = {
   shadyPeasant_wowRude: "(Wow,| rude.)",
   
   // Wolves
-  wolves_lookingAggressive: "Those wolves look strangely dangerous.| I'm glad I have my trusty axe.| (X to use.)",
+  wolves_lookingAggressive: "Those wolves look strangely dangerous.| I'm glad I have my trusty axe.| (X to swing.)",
   wolves_thatWasCrazy: "Something is definitely| off. Those enraged wolves...| Where the hell did they come from|!?",
   
   // Noxy Burger
@@ -197,16 +197,15 @@ Game.texts["en"] = {
   // (combat starts)
   
   mayor_defeated: "You should have never come! You don't realize what you have done!",
-  player_mayor: "What I realize is this:| you guys are crazy and very dangerous!",
+  player_mayor: "What I realize is this:| you are crazy and very dangerous!",
   mayor_defeated_1: "The ritual has already been accomplished. Without a sacrifice, the beast will kill us all!",
-  player_mayor_1: "What beast are you talking about?",
-  mayor_defeated_2: "A demonic power we summoned in the mine. It feeds off of humans. Without a sacrifice, we are doomed! You ruined it all! This is the end!",
+  player_mayor_1: "What kind of beast are we talking about?",
+  mayor_defeated_2: "A demonic power we summoned in the mine. It feeds off of humans. Without a sacrifice, we are doomed! You ruined it all!",
+  mayor_escape: "And now, I run away before this dialog box closes...| Mwahahaha!",
   
-  mayor_escape: "Everyone will die, you included!| But this terrible secret will die with us! Mwahahaha!",
-  
-  player_decided: "Well, I guess I'll pay a nice visit to that demon and ask him to move out...",
-  
-  player_gunshot: "Huh. I didn't know priests keep their weapon on the altar...| That will come in handy.",
+  player_woops: "...| !!|",
+  player_decided: "Well, I guess I'll pay a little visit to that demon and ask him to move out.",
+  player_gunshot: "I should grab that rifle relic conveniently displayed on the altar. It might come in handy... (B to shoot.)",
 
   // Mine Path
   

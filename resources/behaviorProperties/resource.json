@@ -62,6 +62,10 @@
         {
           "name": "direction",
           "type": "string"
+        },
+        {
+          "name": "enabled",
+          "type": "boolean"
         }
       ]
     },

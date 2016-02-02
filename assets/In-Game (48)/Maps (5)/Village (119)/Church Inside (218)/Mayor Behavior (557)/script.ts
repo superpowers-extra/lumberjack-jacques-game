@@ -20,6 +20,10 @@ class MayorBehavior extends SimpleDialogBehavior {
     if (Game.currentGoal === Game.Goals.Boss) {
       for (let cultist of this.cultists) cultist.destroy();
       this.actor.destroy();
+      Sup.getActor("Markers").getChild("Village").getBehavior(TeleportBehavior).enabled = true;
+    } else {
+      // Prevent leaving the church during the fight
+      Sup.getActor("Limits").getChild("Bottom Right").arcadeBody2D.setSize(14, 1);
     }
   }
 
@@ -40,15 +44,16 @@ class MayorBehavior extends SimpleDialogBehavior {
     
     this.ticks++;
     if (MayorBehavior.combatStarted === true && this.ticks % 30 == 0) {
-      let aliveCultisits = 0;
+      let aliveCultists = 0;
       for (const cultist of this.cultists) {
         if (cultist.isDestroyed() === false) {
-          aliveCultisits++;
+          aliveCultists++;
         }
       }
       
-      if (aliveCultisits <= 0) {
+      if (aliveCultists <= 0) {
         Game.playerBehavior.clearMotion();
+        Game.playMusic("Final Orgue", 0.5);
         
         // second dialogs
         this.dialogs = [
@@ -58,6 +63,7 @@ class MayorBehavior extends SimpleDialogBehavior {
           { name: "player", text: "player_mayor_1" },
           { name: "mayor", text: "mayor_defeated_2" },
           { name: "mayor", text: "mayor_escape" },
+          { name: "player", text: "player_woops" },
           { name: "player", text: "player_decided" },
           { name: "player", text: "player_gunshot" },
         ];
@@ -109,8 +115,9 @@ class MayorBehavior extends SimpleDialogBehavior {
   onFinish() {
     if (this.dialogs[0].text === "mayor_first") {
       MayorBehavior.combatStarted = true;
+      Game.playMusic("Fight");
     } else {
-      Game.setGoal(Game.Goals.Boss);
+      Game.setGoal(Game.Goals.Shotgun);
     }
   }
 }
