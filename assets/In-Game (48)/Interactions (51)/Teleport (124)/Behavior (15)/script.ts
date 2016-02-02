@@ -1,5 +1,6 @@
 class TeleportBehavior extends Sup.Behavior {
   direction: string;
+  enabled = true;
 
   private triggered = false;
   private position: Sup.Math.Vector2;
@@ -15,7 +16,7 @@ class TeleportBehavior extends Sup.Behavior {
   }
 
   update() {
-    if (Fade.isFading || Game.playerBehavior.autoPilot || this.triggered) return;
+    if (Fade.isFading || Game.playerBehavior.autoPilot || this.triggered || !this.enabled) return;
     
     if (Math.abs(Game.playerBehavior.position.x - this.position.x) <= this.size.x / 2 && Math.abs(Game.playerBehavior.position.y - this.position.y) <= this.size.y / 2) {
       this.triggered = true;
