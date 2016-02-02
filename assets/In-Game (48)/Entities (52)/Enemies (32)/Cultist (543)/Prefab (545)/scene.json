@@ -10,7 +10,7 @@
           "type": "SpriteRenderer",
           "config": {
             "spriteAssetId": "550",
-            "animationId": "",
+            "animationId": null,
             "horizontalFlip": false,
             "verticalFlip": false,
             "castShadow": false,
@@ -48,6 +48,10 @@
               "moveSpeed": {
                 "type": "number",
                 "value": 0.1
+              },
+              "damage": {
+                "type": "number",
+                "value": 2
               }
             }
           },
