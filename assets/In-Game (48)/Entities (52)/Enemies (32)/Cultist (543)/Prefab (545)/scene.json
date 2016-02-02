@@ -29,10 +29,10 @@
             "type": "box",
             "movable": true,
             "width": 1,
-            "height": 1,
+            "height": 0.8,
             "offset": {
               "x": 0,
-              "y": 0.3
+              "y": 0.2
             },
             "tileMapAssetId": null,
             "tileSetPropertyName": null,

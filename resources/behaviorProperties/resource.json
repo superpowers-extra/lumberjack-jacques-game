@@ -451,21 +451,6 @@
       "parentBehavior": "SimpleDialogBehavior",
       "properties": []
     },
-    "MaireEnemyBehavior": {
-      "scriptId": "548",
-      "line": 0,
-      "parentBehavior": "EnemyBehavior",
-      "properties": [
-        {
-          "name": "health",
-          "type": "number"
-        },
-        {
-          "name": "deathTriggered",
-          "type": "boolean"
-        }
-      ]
-    },
     "Child3Behavior": {
       "scriptId": "539",
       "line": 0,
@@ -509,6 +494,12 @@
       "scriptId": "559",
       "line": 0,
       "parentBehavior": null,
+      "properties": []
+    },
+    "AutelBehavior": {
+      "scriptId": "562",
+      "line": 0,
+      "parentBehavior": "InteractableBehavior",
       "properties": []
     }
   }

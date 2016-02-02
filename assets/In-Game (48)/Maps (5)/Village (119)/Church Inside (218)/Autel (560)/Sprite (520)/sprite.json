@@ -16,21 +16,21 @@
   },
   "origin": {
     "x": 0.5,
-    "y": 0.5
+    "y": 0.12
   },
   "animations": [
-    {
-      "id": "0",
-      "name": "Autel Shootgun",
-      "startFrameIndex": 0,
-      "endFrameIndex": 1,
-      "speed": 1
-    },
     {
       "id": "1",
       "name": "Autel",
       "startFrameIndex": 2,
       "endFrameIndex": 3,
+      "speed": 1
+    },
+    {
+      "id": "0",
+      "name": "Autel Shootgun",
+      "startFrameIndex": 0,
+      "endFrameIndex": 1,
       "speed": 1
     }
   ],

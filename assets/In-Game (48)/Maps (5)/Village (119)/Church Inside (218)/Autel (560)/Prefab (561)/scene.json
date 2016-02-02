@@ -3,14 +3,14 @@
   "nodes": [
     {
       "id": "0",
-      "name": "Mayor",
+      "name": "Autel",
       "children": [],
       "components": [
         {
           "type": "SpriteRenderer",
           "config": {
-            "spriteAssetId": "249",
-            "animationId": "0",
+            "spriteAssetId": "520",
+            "animationId": "",
             "horizontalFlip": false,
             "verticalFlip": false,
             "castShadow": false,
@@ -24,20 +24,12 @@
           "id": "0"
         },
         {
-          "type": "Behavior",
-          "config": {
-            "behaviorName": "MaireEnemyBehavior",
-            "propertyValues": {}
-          },
-          "id": "1"
-        },
-        {
           "type": "ArcadeBody2D",
           "config": {
             "type": "box",
             "movable": true,
-            "width": 1.3,
-            "height": 1,
+            "width": 4,
+            "height": 1.5,
             "offset": {
               "x": 0,
               "y": 0.5
@@ -45,6 +37,14 @@
             "tileMapAssetId": null,
             "tileSetPropertyName": null,
             "layersIndex": null
+          },
+          "id": "1"
+        },
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "AutelBehavior",
+            "propertyValues": {}
           },
           "id": "2"
         }

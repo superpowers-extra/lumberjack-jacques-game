@@ -2,6 +2,7 @@ class MayorBehavior extends SimpleDialogBehavior {
   static combatStarted = false;
 
   playerEntering = true;
+  cultists: Sup.Actor[];
 
   dialogs =[
     { name: "mayor", text:"mayor_first" },
@@ -13,23 +14,13 @@ class MayorBehavior extends SimpleDialogBehavior {
     { name: "mayor", text:"mayor_aggressive" },  
   ];
   
-  cultists: Sup.Actor[];
   start() {
-    const enemies = Sup.getActor("Enemies");
-    this.cultists = [];
-    for (let enemy of enemies.getChildren()) {
-      if (enemy.getName() == "Cultist") {
-        this.cultists.push(enemy);
-        enemy.getBehavior(ClosedEnemyBehavior).destroy();
-      }
+    this.cultists = Sup.getActor("Enemies").getChildren();
+    
+    if (Game.currentGoal === Game.Goals.Boss) {
+      for (let cultist of this.cultists) cultist.destroy();
+      this.actor.destroy();
     }
-  }
-
-  activateCultists() {
-    for (const cultist of this.cultists) {
-      cultist.addBehavior(ClosedEnemyBehavior);
-    }
-    MayorBehavior.combatStarted = true;
   }
 
   ticks = 0;
@@ -117,7 +108,9 @@ class MayorBehavior extends SimpleDialogBehavior {
   
   onFinish() {
     if (this.dialogs[0].text === "mayor_first") {
-      this.activateCultists();
+      MayorBehavior.combatStarted = true;
+    } else {
+      Game.setGoal(Game.Goals.Boss);
     }
   }
 }

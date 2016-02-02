@@ -33,11 +33,11 @@ class StartMenuBehavior extends Sup.Behavior {
       PlayerBehavior.inventory["Key"].isActive = true;
       Game.loadMap("Village");
       Game.currentGoal = Game.Goals.Village;
-    }/* else if (this.introTimeout == null && Sup.Input.wasKeyJustPressed("M")) {
+    } else if (this.introTimeout == null && Sup.Input.wasKeyJustPressed("M")) {
       PlayerBehavior.inventory["Rifle"].isActive = true;
       Game.loadMap("Mine Path");
       Game.currentGoal = Game.Goals.Mine;
-    } else if (this.introTimeout == null && Sup.Input.wasKeyJustPressed("B")) {
+    } /*else if (this.introTimeout == null && Sup.Input.wasKeyJustPressed("B")) {
       Game.loadMap("Mine/Boss Room");
       Game.currentGoal = Game.Goals.Boss;
     } else if (this.introTimeout == null && Sup.Input.wasKeyJustPressed("C")) {

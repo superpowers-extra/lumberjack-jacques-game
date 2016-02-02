@@ -1464,6 +1464,11 @@
                 "type": null,
                 "children": [
                   {
+                    "id": "239",
+                    "name": "Prefab",
+                    "type": "scene"
+                  },
+                  {
                     "id": "427",
                     "name": "Church Shader",
                     "type": "shader"
@@ -1474,19 +1479,36 @@
                     "type": "script"
                   },
                   {
-                    "id": "239",
-                    "name": "Prefab",
-                    "type": "scene"
+                    "id": "249",
+                    "name": "Mayor",
+                    "type": "sprite"
                   },
                   {
                     "id": "424",
-                    "name": "Sprite",
+                    "name": "Room",
                     "type": "sprite"
                   },
                   {
-                    "id": "520",
+                    "id": "560",
                     "name": "Autel",
-                    "type": "sprite"
+                    "type": null,
+                    "children": [
+                      {
+                        "id": "561",
+                        "name": "Prefab",
+                        "type": "scene"
+                      },
+                      {
+                        "id": "520",
+                        "name": "Sprite",
+                        "type": "sprite"
+                      },
+                      {
+                        "id": "562",
+                        "name": "Behavior",
+                        "type": "script"
+                      }
+                    ]
                   },
                   {
                     "id": "461",
@@ -2243,28 +2265,6 @@
                   {
                     "id": "390",
                     "name": "Spirit",
-                    "type": "sprite"
-                  }
-                ]
-              },
-              {
-                "id": "544",
-                "name": "Maire",
-                "type": null,
-                "children": [
-                  {
-                    "id": "546",
-                    "name": "Prefab",
-                    "type": "scene"
-                  },
-                  {
-                    "id": "548",
-                    "name": "Behavior",
-                    "type": "script"
-                  },
-                  {
-                    "id": "249",
-                    "name": "Sprite",
                     "type": "sprite"
                   }
                 ]
