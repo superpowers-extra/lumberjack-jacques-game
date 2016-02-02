@@ -26,7 +26,7 @@ class MassWineBehavior extends SimpleDialogBehavior {
   }
 
   interact() {
-    if (this.intro) {
+    if (this.intro && Game.dialogBehavior.animatedText.isTextFullyDisplayed()) {
       this.intro = false;
       Game.dialogBehavior.hide();
       Game.playerBehavior.activeInteractable = null;
