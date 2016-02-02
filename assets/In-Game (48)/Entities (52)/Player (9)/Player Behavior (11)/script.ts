@@ -237,8 +237,13 @@ class PlayerBehavior extends Sup.Behavior {
         let closestEnemyDistance = Infinity;
         for (let enemy of Game.enemies) {
           let diff = enemy.position.clone().add(0, enemy.radius).subtract(this.position);
-          if (diff.length() < PlayerBehavior.attackRange + enemy.radius && Math.abs(Sup.Math.wrapAngle(diff.angle() - Utils.getAngleFromDirection(this.lookDirection))) < Math.PI * 1 / 3)
-            closestEnemy = enemy;
+          let distance = diff.length();
+          if (distance < PlayerBehavior.attackRange + enemy.radius && Math.abs(Sup.Math.wrapAngle(diff.angle() - Utils.getAngleFromDirection(this.lookDirection))) < Math.PI * 1 / 3) {
+            if (distance < closestEnemyDistance) {
+              closestEnemyDistance = distance;
+              closestEnemy = enemy;
+            }
+          }
         }
         if (closestEnemy != null) {
           this.hasAttackHit = true;
@@ -264,7 +269,6 @@ class PlayerBehavior extends Sup.Behavior {
         let distance = this.position.distanceTo(interactable.position);
         
         if (diff.length() < closestDistance && Math.abs(Sup.Math.wrapAngle(diff.angle() - Utils.getAngleFromDirection(this.lookDirection))) < Math.PI * 1 / 3) {
-        
           closestDistance = distance;
           closestInteractable = interactable;
         }
