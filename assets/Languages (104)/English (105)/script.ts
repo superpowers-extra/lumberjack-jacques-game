@@ -168,6 +168,8 @@ Game.texts["en"] = {
   chiome_ouaf: "Waf waafeeuh!",
 
   //Graveyard
+  priest: "Priest",
+  
   player_coffin_nobottle: "Oh, hi!",
   coffin_nobottle: "...| Leave me alone.",
   

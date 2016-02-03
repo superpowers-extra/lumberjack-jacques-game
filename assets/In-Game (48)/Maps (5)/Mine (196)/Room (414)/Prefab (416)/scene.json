@@ -251,7 +251,7 @@
             "type": "box",
             "movable": true,
             "width": 7,
-            "height": 2,
+            "height": 1,
             "offset": {
               "x": 8,
               "y": 2
@@ -318,7 +318,7 @@
           "config": {
             "type": "box",
             "movable": true,
-            "width": 2,
+            "width": 1,
             "height": 8,
             "offset": {
               "x": 11,
@@ -1311,6 +1311,33 @@
       "visible": true,
       "layer": 0,
       "prefab": null
+    },
+    {
+      "id": "31",
+      "name": "Shit Eater",
+      "children": [],
+      "components": [],
+      "position": {
+        "x": -6.272883892059326,
+        "y": 1.2849414348602295,
+        "z": 0
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": {
+        "sceneAssetId": "327"
+      }
     }
   ]
 }

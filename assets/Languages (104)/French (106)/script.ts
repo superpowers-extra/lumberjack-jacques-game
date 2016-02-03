@@ -36,6 +36,10 @@ Game.texts["fr"] = {
   shadyPeasant_leaveMeAlone: "Silence, il va peut-être nous entendre.|| Enfin je veux dire,| les myrtilles vont nous entendre?",
   shadyPeasant_right: "Les myrtilles.|| Bien sûûûr.",
   
+  shadyPeasant_justLookingForBerries: "Je cueille des myrtilles.| Voilà voilà.",
+  shadyPeasant_goAway: "Hé le bûcheron, décampe!| T'ES NUL.| PERSONNE NE T'AIME.",
+  shadyPeasant_wowRude: "(Eh ben,| quel malpoli.)",
+  
   // Wolves
   wolves_lookingAggressive: "Ces loups ont l'air étrangement dangereux.| Heureusement, j'ai ma hache.| (X pour l'utiliser.)",
   wolves_thatWasCrazy: "Il s'est passé| quelque chose. Ces loups enragés...| D'où sortent-ils|!?",
@@ -161,6 +165,8 @@ Game.texts["fr"] = {
   chiome_ouaf: "Ouaf ouafeeuh!",
   
   //Graveyard
+  priest: "Prêtre",
+  
   player_coffin_nobottle: "Tiens, bonjour!",
   coffin_nobottle: "...| Laissez-moi tranquille.",
   

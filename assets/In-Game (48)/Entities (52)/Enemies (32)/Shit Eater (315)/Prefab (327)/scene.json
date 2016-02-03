@@ -10,7 +10,7 @@
           "type": "SpriteRenderer",
           "config": {
             "spriteAssetId": "316",
-            "animationId": null,
+            "animationId": "",
             "horizontalFlip": false,
             "verticalFlip": false,
             "castShadow": false,
@@ -22,6 +22,36 @@
             "shaderAssetId": null
           },
           "id": "0"
+        },
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "RangedEnemyBehavior",
+            "propertyValues": {
+              "projectileName": {
+                "type": "string",
+                "value": "Shit"
+              }
+            }
+          },
+          "id": "1"
+        },
+        {
+          "type": "ArcadeBody2D",
+          "config": {
+            "type": "box",
+            "movable": true,
+            "width": 2,
+            "height": 2,
+            "offset": {
+              "x": 0,
+              "y": 0.4
+            },
+            "tileMapAssetId": null,
+            "tileSetPropertyName": null,
+            "layersIndex": null
+          },
+          "id": "2"
         }
       ],
       "position": {

@@ -2068,6 +2068,16 @@
                     "id": "173",
                     "name": "Sprite",
                     "type": "sprite"
+                  },
+                  {
+                    "id": "482",
+                    "name": "Shit",
+                    "type": "sprite"
+                  },
+                  {
+                    "id": "506",
+                    "name": "Laser",
+                    "type": "sprite"
                   }
                 ]
               },
@@ -2112,6 +2122,35 @@
                     "id": "487",
                     "name": "Die",
                     "type": "sound"
+                  }
+                ]
+              },
+              {
+                "id": "315",
+                "name": "Shit Eater",
+                "type": null,
+                "children": [
+                  {
+                    "id": "327",
+                    "name": "Prefab",
+                    "type": "scene"
+                  },
+                  {
+                    "id": "316",
+                    "name": "Sprite",
+                    "type": "sprite"
+                  }
+                ]
+              },
+              {
+                "id": "320",
+                "name": "Eye",
+                "type": null,
+                "children": [
+                  {
+                    "id": "321",
+                    "name": "Eye",
+                    "type": "sprite"
                   }
                 ]
               },
@@ -2186,45 +2225,6 @@
                         "type": "sound"
                       }
                     ]
-                  }
-                ]
-              },
-              {
-                "id": "315",
-                "name": "Shit Eater",
-                "type": null,
-                "children": [
-                  {
-                    "id": "327",
-                    "name": "Prefab",
-                    "type": "scene"
-                  },
-                  {
-                    "id": "316",
-                    "name": "Sprite",
-                    "type": "sprite"
-                  },
-                  {
-                    "id": "482",
-                    "name": "Shit",
-                    "type": "sprite"
-                  }
-                ]
-              },
-              {
-                "id": "320",
-                "name": "Eye",
-                "type": null,
-                "children": [
-                  {
-                    "id": "321",
-                    "name": "Eye",
-                    "type": "sprite"
-                  },
-                  {
-                    "id": "506",
-                    "name": "Sprite",
-                    "type": "sprite"
                   }
                 ]
               },

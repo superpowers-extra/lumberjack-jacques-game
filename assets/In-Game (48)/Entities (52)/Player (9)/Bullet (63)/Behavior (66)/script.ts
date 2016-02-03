@@ -37,8 +37,13 @@ class BulletBehavior extends Sup.Behavior {
       BulletBehavior.doorOpened = true;
       Sup.getActor("Mine Door").destroy();
       this.actor.destroy();
+      return;
     }
-      
+    
+    if (Sup.ArcadePhysics2D.collides(this.actor.arcadeBody2D, Sup.ArcadePhysics2D.getAllBodies())) {
+      this.actor.destroy();
+      return;
+    }
   }
 }
 Sup.registerBehavior(BulletBehavior);

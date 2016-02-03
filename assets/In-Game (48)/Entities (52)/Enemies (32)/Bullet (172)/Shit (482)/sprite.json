@@ -21,7 +21,7 @@
   "animations": [
     {
       "id": "0",
-      "name": "Shoot",
+      "name": "Animation",
       "startFrameIndex": 0,
       "endFrameIndex": 2,
       "speed": 1

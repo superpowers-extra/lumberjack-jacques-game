@@ -1,6 +1,6 @@
 class MotherBehavior extends SimpleDialogBehavior {
  dialogs= [
-   {name:"mom", text:"mother_cry"},
+   {name:"mother", text:"mother_cry"},
    {name:"player", text:"player_mother"},
    
  ];

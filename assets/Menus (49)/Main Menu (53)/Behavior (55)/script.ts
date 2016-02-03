@@ -25,24 +25,17 @@ class StartMenuBehavior extends Sup.Behavior {
 
   update() {
     // DEBUG
-    if (this.introTimeout == null && Sup.Input.wasKeyJustPressed("I")) {
-      Game.loadMap("Village/Tavern Inside");
-      return;
-    }
-    else if (this.introTimeout == null && Sup.Input.wasKeyJustPressed("V")) {
+    if (this.introTimeout == null && Sup.Input.wasKeyJustPressed("V")) {
       PlayerBehavior.inventory["Key"].isActive = true;
       Game.loadMap("Village");
       Game.currentGoal = Game.Goals.Village;
     } else if (this.introTimeout == null && Sup.Input.wasKeyJustPressed("M")) {
       PlayerBehavior.inventory["Rifle"].isActive = true;
-      Game.loadMap("Mine Path");
+      Game.loadMap("Mine/Room");
       Game.currentGoal = Game.Goals.Mine;
     } /*else if (this.introTimeout == null && Sup.Input.wasKeyJustPressed("B")) {
       Game.loadMap("Mine/Boss Room");
       Game.currentGoal = Game.Goals.Boss;
-    } else if (this.introTimeout == null && Sup.Input.wasKeyJustPressed("C")) {
-      Game.loadMap("Village/Church Inside");
-      Game.currentGoal = Game.Goals.Village;
     }
     */
     

@@ -24,6 +24,8 @@ abstract class EnemyBehavior extends Sup.Behavior implements Enemy {
     Game.enemies.push(this);
     this.position = this.actor.getLocalPosition().toVector2();
     this.initialPosition = this.position.clone();
+    
+    this.setIdle();
   }
 
   onDestroy() {
@@ -38,13 +40,41 @@ abstract class EnemyBehavior extends Sup.Behavior implements Enemy {
       Utils.updateDepth(this.actor, this.position.y);
     }
     
-    if (Game.playerBehavior != null && Game.playerBehavior.activeInteractable == null && !Game.playerBehavior.autoPilot) this.behavior();
-    else this.setIdle();
+    if (Game.playerBehavior == null || Game.playerBehavior.activeInteractable != null || Game.playerBehavior.autoPilot) this.setIdle();
+    else {
+      if (this.changeStateTimer > 0) this.changeStateTimer -= 1;
+      const diffToPlayer = Game.playerBehavior.position.clone().subtract(this.position);
+      
+      switch (this.state) {
+        case EnemyBehavior.States.Idle:
+          if (this.changeStateTimer === 0) this.chooseAction(diffToPlayer);
+          break;
+
+        case EnemyBehavior.States.Walking:
+        case EnemyBehavior.States.Cooldown:
+          if (this.changeStateTimer === 0) this.setIdle();
+          break;
+          
+        case EnemyBehavior.States.Hurting:
+          this.doHurting();
+          break;
+
+        case EnemyBehavior.States.Dying:
+          if (!this.actor.spriteRenderer.isAnimationPlaying()) this.actor.destroy();
+          break;
+          
+        default:
+          if (this.changeStateTimer > 0) this.changeStateTimer -= 1;
+          this.behavior(diffToPlayer);
+          break;
+      }
+    }
     
     if (this.actor.arcadeBody2D.getEnabled()) this.actor.arcadeBody2D.setVelocity(this.velocity);
   }
 
-  abstract behavior();
+  abstract behavior(diffToPlayer: Sup.Math.Vector2);
+  abstract chooseAction(diffToPlayer: Sup.Math.Vector2);
   
   resetChangeTimer() {
     this.changeStateTimer = Sup.Math.Random.integer(EnemyBehavior.minChangeStateDelay[this.state], EnemyBehavior.maxChangeStateDelay[this.state]);
@@ -55,19 +85,45 @@ abstract class EnemyBehavior extends Sup.Behavior implements Enemy {
 
     this.velocity.set(0, 0);
 
-    this.actor.spriteRenderer.setPlaybackSpeed(1);
-    this.actor.spriteRenderer.setAnimation(`Idle ${Utils.Directions[this.direction]}`);
-
+    this.actor.spriteRenderer.setPlaybackSpeed(1).setAnimation(`Idle ${Utils.Directions[this.direction]}`);
     this.resetChangeTimer();
   }
 
   setCooldown() {
     this.state = EnemyBehavior.States.Cooldown;
     
-    this.actor.spriteRenderer.setPlaybackSpeed(1);
-    this.actor.spriteRenderer.setAnimation(`Idle ${Utils.Directions[this.direction]}`);
+    this.actor.spriteRenderer.setPlaybackSpeed(1).setAnimation(`Idle ${Utils.Directions[this.direction]}`);
+    this.resetChangeTimer();
+  }
+  
+  setWalking() {
+    this.state = EnemyBehavior.States.Walking;
+    
+    const diff = this.initialPosition.clone().subtract(this.position);
+    if (diff.length() > EnemyBehavior.maxInitialPositionDistance) {
+      this.velocity.copy(diff);
+      
+    } else {
+      let angle = Sup.Math.Random.float(-Math.PI, Math.PI);
+      this.velocity.setFromAngle(angle);
+    }
+    
+    this.velocity.normalize().multiplyScalar(EnemyBehavior.walkSpeed);
+    this.direction = Utils.getDirectionFromVector(this.velocity);
+
+    this.actor.spriteRenderer.setPlaybackSpeed(0.8);
+    this.actor.spriteRenderer.setAnimation(`Walk ${Utils.Directions[this.direction]}`);
 
     this.resetChangeTimer();
+  }
+  
+  setAttacking(diffToPlayer: Sup.Math.Vector2) {
+    this.state = EnemyBehavior.States.Attacking;
+
+    this.direction = Utils.getDirectionFromVector(diffToPlayer);
+    this.velocity.set(0, 0);
+    
+    this.actor.spriteRenderer.setPlaybackSpeed(1).setAnimation(`Attack ${Utils.Directions[this.direction]}`, false);
   }
 
   hit(direction: Utils.Directions) {
@@ -119,10 +175,6 @@ namespace EnemyBehavior {
   
   export const walkSpeed = 0.05;
   export const chargeSpeed = 0.14;
-  
-  export const chargeDistance = 10;
-  export const attackDistance = 2.5;
-  export const hitRange = 3;
   
   export const passiveDistance = 20;
   export const maxInitialPositionDistance = 3;

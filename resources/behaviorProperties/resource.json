@@ -177,7 +177,12 @@
       "scriptId": "165",
       "line": 0,
       "parentBehavior": "EnemyBehavior",
-      "properties": []
+      "properties": [
+        {
+          "name": "projectileName",
+          "type": "string"
+        }
+      ]
     },
     "AnimatedTextBehavior": {
       "scriptId": "171",
