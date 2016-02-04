@@ -154,9 +154,9 @@ Game.texts["en"] = {
   
   father: "Father",
   player_father: "Why does she cry so much?",
-  father_moaning: "*Marmonne* I don't know, man! We've got ten children to feed, ten!",
-  father_1: "What a bargain this little deal was.| Sending them to work at the mine was the best did we ever did.",
-  player_father1: "Je. QUOI???",
+  father_moaning: "*Mutters* I don't know, man! We've got ten children to feed, ten!",
+  father_1: "What a bargain this little deal was.| Sending them to work at the mine was the best thing we ever did.",
+  player_father1: "I. WHAT???",
   
   player_baby: "This baby has such a flat nose. He looks like a little pig...| I'd eat some.",
   baby: "*Yiiiionk*",
