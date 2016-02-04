@@ -133,6 +133,7 @@ Game.texts["en"] = {
   child_myDad: "My dad says if I'm not a good boy, he'll take me to the forest and I'll never find my way home again!",
   child_makesSense: "A man of principle.",
   
+  child2: "Child",
   child_whoAreYou: "Who are you?",
   child_imTheBatman: "I'M THE BATMAN.",
   child_whatsItLike: "And what's it like?",
