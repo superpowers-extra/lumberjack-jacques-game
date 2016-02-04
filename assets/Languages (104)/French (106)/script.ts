@@ -5,6 +5,7 @@ Game.texts["fr"] = {
   
   // Goals
   goal_Village: "Enquêter au village",
+  goal_Shotgun: "Récupérer le fusil",
   goal_Boss: "Exterminer le démon",
   
   // Player
