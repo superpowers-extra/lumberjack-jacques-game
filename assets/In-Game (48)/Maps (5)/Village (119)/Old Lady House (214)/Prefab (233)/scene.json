@@ -116,7 +116,8 @@
                 "overrideOpacity": false,
                 "opacity": null,
                 "materialType": "basic",
-                "shaderAssetId": null
+                "shaderAssetId": null,
+                "formatVersion": 1
               },
               "id": "1"
             }
@@ -185,7 +186,8 @@
                 },
                 "tileMapAssetId": null,
                 "tileSetPropertyName": null,
-                "layersIndex": null
+                "layersIndex": null,
+                "formatVersion": 1
               },
               "id": "0"
             }
@@ -228,7 +230,8 @@
                 },
                 "tileMapAssetId": null,
                 "tileSetPropertyName": null,
-                "layersIndex": null
+                "layersIndex": null,
+                "formatVersion": 1
               },
               "id": "0"
             }
@@ -271,7 +274,8 @@
                 },
                 "tileMapAssetId": null,
                 "tileSetPropertyName": null,
-                "layersIndex": null
+                "layersIndex": null,
+                "formatVersion": 1
               },
               "id": "0"
             }
@@ -314,7 +318,8 @@
                 },
                 "tileMapAssetId": null,
                 "tileSetPropertyName": null,
-                "layersIndex": null
+                "layersIndex": null,
+                "formatVersion": 1
               },
               "id": "0"
             }
@@ -437,7 +442,8 @@
                 "overrideOpacity": false,
                 "opacity": null,
                 "materialType": "basic",
-                "shaderAssetId": null
+                "shaderAssetId": null,
+                "formatVersion": 1
               },
               "id": "0"
             }
@@ -507,7 +513,8 @@
                 "overrideOpacity": false,
                 "opacity": null,
                 "materialType": "basic",
-                "shaderAssetId": null
+                "shaderAssetId": null,
+                "formatVersion": 1
               },
               "id": "0"
             }
@@ -577,7 +584,8 @@
                 "overrideOpacity": false,
                 "opacity": null,
                 "materialType": "basic",
-                "shaderAssetId": null
+                "shaderAssetId": null,
+                "formatVersion": 1
               },
               "id": "0"
             }
@@ -620,7 +628,8 @@
                 "overrideOpacity": false,
                 "opacity": null,
                 "materialType": "basic",
-                "shaderAssetId": null
+                "shaderAssetId": null,
+                "formatVersion": 1
               },
               "id": "0"
             }
@@ -663,7 +672,8 @@
                 "overrideOpacity": false,
                 "opacity": null,
                 "materialType": "basic",
-                "shaderAssetId": null
+                "shaderAssetId": null,
+                "formatVersion": 1
               },
               "id": "0"
             },
@@ -688,7 +698,8 @@
                 },
                 "tileMapAssetId": null,
                 "tileSetPropertyName": null,
-                "layersIndex": null
+                "layersIndex": null,
+                "formatVersion": 1
               },
               "id": "3"
             }
@@ -731,7 +742,8 @@
                 "overrideOpacity": false,
                 "opacity": null,
                 "materialType": "basic",
-                "shaderAssetId": null
+                "shaderAssetId": null,
+                "formatVersion": 1
               },
               "id": "0"
             },
@@ -756,7 +768,8 @@
                 },
                 "tileMapAssetId": null,
                 "tileSetPropertyName": null,
-                "layersIndex": null
+                "layersIndex": null,
+                "formatVersion": 1
               },
               "id": "3"
             }
@@ -799,7 +812,8 @@
                 "overrideOpacity": false,
                 "opacity": null,
                 "materialType": "basic",
-                "shaderAssetId": null
+                "shaderAssetId": null,
+                "formatVersion": 1
               },
               "id": "0"
             },
@@ -824,7 +838,8 @@
                 },
                 "tileMapAssetId": null,
                 "tileSetPropertyName": null,
-                "layersIndex": null
+                "layersIndex": null,
+                "formatVersion": 1
               },
               "id": "2"
             }
@@ -867,7 +882,8 @@
                 "overrideOpacity": false,
                 "opacity": null,
                 "materialType": "basic",
-                "shaderAssetId": null
+                "shaderAssetId": null,
+                "formatVersion": 1
               },
               "id": "0"
             },
@@ -884,7 +900,8 @@
                 },
                 "tileMapAssetId": null,
                 "tileSetPropertyName": null,
-                "layersIndex": null
+                "layersIndex": null,
+                "formatVersion": 1
               },
               "id": "1"
             },
@@ -935,7 +952,8 @@
                 "overrideOpacity": false,
                 "opacity": null,
                 "materialType": "basic",
-                "shaderAssetId": null
+                "shaderAssetId": null,
+                "formatVersion": 1
               },
               "id": "0"
             },
@@ -960,7 +978,8 @@
                 },
                 "tileMapAssetId": null,
                 "tileSetPropertyName": null,
-                "layersIndex": null
+                "layersIndex": null,
+                "formatVersion": 1
               },
               "id": "2"
             }
@@ -1003,7 +1022,8 @@
                 "overrideOpacity": false,
                 "opacity": null,
                 "materialType": "basic",
-                "shaderAssetId": null
+                "shaderAssetId": null,
+                "formatVersion": 1
               },
               "id": "0"
             },
@@ -1028,7 +1048,8 @@
                 },
                 "tileMapAssetId": null,
                 "tileSetPropertyName": null,
-                "layersIndex": null
+                "layersIndex": null,
+                "formatVersion": 1
               },
               "id": "2"
             }
@@ -1071,7 +1092,8 @@
                 "overrideOpacity": false,
                 "opacity": null,
                 "materialType": "basic",
-                "shaderAssetId": null
+                "shaderAssetId": null,
+                "formatVersion": 1
               },
               "id": "0"
             },
@@ -1096,7 +1118,8 @@
                 },
                 "tileMapAssetId": null,
                 "tileSetPropertyName": null,
-                "layersIndex": null
+                "layersIndex": null,
+                "formatVersion": 1
               },
               "id": "2"
             }
@@ -1139,7 +1162,8 @@
                 "overrideOpacity": false,
                 "opacity": null,
                 "materialType": "basic",
-                "shaderAssetId": null
+                "shaderAssetId": null,
+                "formatVersion": 1
               },
               "id": "0"
             },
@@ -1164,7 +1188,8 @@
                 },
                 "tileMapAssetId": null,
                 "tileSetPropertyName": null,
-                "layersIndex": null
+                "layersIndex": null,
+                "formatVersion": 1
               },
               "id": "2"
             }
@@ -1207,7 +1232,8 @@
                 "overrideOpacity": false,
                 "opacity": null,
                 "materialType": "basic",
-                "shaderAssetId": null
+                "shaderAssetId": null,
+                "formatVersion": 1
               },
               "id": "0"
             },
@@ -1232,7 +1258,8 @@
                 },
                 "tileMapAssetId": null,
                 "tileSetPropertyName": null,
-                "layersIndex": null
+                "layersIndex": null,
+                "formatVersion": 1
               },
               "id": "2"
             }
@@ -1275,7 +1302,8 @@
                 "overrideOpacity": false,
                 "opacity": null,
                 "materialType": "basic",
-                "shaderAssetId": null
+                "shaderAssetId": null,
+                "formatVersion": 1
               },
               "id": "0"
             },
@@ -1300,7 +1328,8 @@
                 },
                 "tileMapAssetId": null,
                 "tileSetPropertyName": null,
-                "layersIndex": null
+                "layersIndex": null,
+                "formatVersion": 1
               },
               "id": "2"
             }
@@ -1343,7 +1372,8 @@
                 "overrideOpacity": false,
                 "opacity": null,
                 "materialType": "basic",
-                "shaderAssetId": null
+                "shaderAssetId": null,
+                "formatVersion": 1
               },
               "id": "0"
             },
@@ -1368,7 +1398,8 @@
                 },
                 "tileMapAssetId": null,
                 "tileSetPropertyName": null,
-                "layersIndex": null
+                "layersIndex": null,
+                "formatVersion": 1
               },
               "id": "2"
             }

@@ -23,7 +23,8 @@
                 "overrideOpacity": false,
                 "opacity": null,
                 "materialType": "shader",
-                "shaderAssetId": "101"
+                "shaderAssetId": "101",
+                "formatVersion": 1
               },
               "id": "0"
             }
@@ -63,7 +64,8 @@
             "overrideOpacity": false,
             "opacity": null,
             "materialType": "shader",
-            "shaderAssetId": "87"
+            "shaderAssetId": "87",
+            "formatVersion": 1
           },
           "id": "0"
         },
@@ -80,7 +82,8 @@
             },
             "tileMapAssetId": null,
             "tileSetPropertyName": null,
-            "layersIndex": null
+            "layersIndex": null,
+            "formatVersion": 1
           },
           "id": "1"
         },
@@ -105,7 +108,8 @@
             },
             "tileMapAssetId": null,
             "tileSetPropertyName": null,
-            "layersIndex": null
+            "layersIndex": null,
+            "formatVersion": 1
           },
           "id": "3"
         },
@@ -122,7 +126,8 @@
             },
             "tileMapAssetId": null,
             "tileSetPropertyName": null,
-            "layersIndex": null
+            "layersIndex": null,
+            "formatVersion": 1
           },
           "id": "4"
         }

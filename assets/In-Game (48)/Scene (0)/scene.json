@@ -57,7 +57,8 @@
                         "overrideOpacity": false,
                         "opacity": null,
                         "materialType": "basic",
-                        "shaderAssetId": null
+                        "shaderAssetId": null,
+                        "formatVersion": 1
                       },
                       "id": "0"
                     }
@@ -100,7 +101,8 @@
                         "overrideOpacity": false,
                         "opacity": null,
                         "materialType": "basic",
-                        "shaderAssetId": null
+                        "shaderAssetId": null,
+                        "formatVersion": 1
                       },
                       "id": "0"
                     }
@@ -138,7 +140,8 @@
                         "alignment": "left",
                         "size": 32,
                         "color": "444444",
-                        "verticalAlignment": "top"
+                        "verticalAlignment": "top",
+                        "formatVersion": 1
                       },
                       "id": "1"
                     },
@@ -220,7 +223,8 @@
                     "overrideOpacity": false,
                     "opacity": null,
                     "materialType": "basic",
-                    "shaderAssetId": null
+                    "shaderAssetId": null,
+                    "formatVersion": 1
                   },
                   "id": "0"
                 }
@@ -263,7 +267,8 @@
                     "overrideOpacity": false,
                     "opacity": null,
                     "materialType": "basic",
-                    "shaderAssetId": null
+                    "shaderAssetId": null,
+                    "formatVersion": 1
                   },
                   "id": "0"
                 }
@@ -486,7 +491,8 @@
                     "alignment": "left",
                     "size": null,
                     "color": null,
-                    "verticalAlignment": "center"
+                    "verticalAlignment": "center",
+                    "formatVersion": 1
                   },
                   "id": "0"
                 }
@@ -527,7 +533,8 @@
                 },
                 "depth": 0,
                 "nearClippingPlane": 0.1,
-                "farClippingPlane": 20
+                "farClippingPlane": 20,
+                "formatVersion": 1
               },
               "id": "0"
             },
