@@ -14,9 +14,9 @@ class ClosedEnemyBehavior extends EnemyBehavior {
           this.setIdle();
 
         } else {
-          this.velocity.copy(diffToPlayer).normalize().multiplyScalar(EnemyBehavior.chargeSpeed);
+          this.velocity.copy(diffToPlayer).normalize().multiplyScalar(EnemyBehavior.fastSpeed);
           this.direction = Utils.getDirectionFromVector(this.velocity);
-          this.actor.spriteRenderer.setAnimation(`Walk ${Utils.Directions[this.direction]}`);
+          this.actor.spriteRenderer.setAnimation(this.getAnimation("Walk"));
         }
         break;
 
@@ -38,7 +38,7 @@ class ClosedEnemyBehavior extends EnemyBehavior {
   setCharging() {
     this.state = EnemyBehavior.States.Charging;
     
-    this.actor.spriteRenderer.setPlaybackSpeed(1).setAnimation(`Walk ${Utils.Directions[this.direction]}`);;
+    this.actor.spriteRenderer.setPlaybackSpeed(1).setAnimation(this.getAnimation("Walk"));;
     this.resetChangeTimer();
   }
 }

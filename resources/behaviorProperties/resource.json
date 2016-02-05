@@ -96,6 +96,10 @@
           "type": "Sup.Math.Vector2"
         },
         {
+          "name": "allDirections",
+          "type": "boolean"
+        },
+        {
           "name": "radius",
           "type": "number"
         },

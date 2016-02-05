@@ -13,6 +13,7 @@ abstract class EnemyBehavior extends Sup.Behavior implements Enemy {
 
   protected state: EnemyBehavior.States;
   protected changeStateTimer: number;
+  allDirections = true;
 
   protected aggressive = false;
   protected hitTimer = 0;
@@ -80,19 +81,24 @@ abstract class EnemyBehavior extends Sup.Behavior implements Enemy {
     this.changeStateTimer = Sup.Math.Random.integer(EnemyBehavior.minChangeStateDelay[this.state], EnemyBehavior.maxChangeStateDelay[this.state]);
   }
   
+  getAnimation(name: string) {
+    if (this.allDirections) name += ` ${Utils.Directions[this.direction]}`;
+    return name;
+  }
+  
   setIdle() {
     this.state = EnemyBehavior.States.Idle;
 
     this.velocity.set(0, 0);
 
-    this.actor.spriteRenderer.setPlaybackSpeed(1).setAnimation(`Idle ${Utils.Directions[this.direction]}`);
+    this.actor.spriteRenderer.setPlaybackSpeed(1).setAnimation(this.getAnimation("Idle"));
     this.resetChangeTimer();
   }
 
   setCooldown() {
     this.state = EnemyBehavior.States.Cooldown;
     
-    this.actor.spriteRenderer.setPlaybackSpeed(1).setAnimation(`Idle ${Utils.Directions[this.direction]}`);
+    this.actor.spriteRenderer.setPlaybackSpeed(1).setAnimation(this.getAnimation("Idle"));
     this.resetChangeTimer();
   }
   
@@ -111,8 +117,7 @@ abstract class EnemyBehavior extends Sup.Behavior implements Enemy {
     this.velocity.normalize().multiplyScalar(EnemyBehavior.walkSpeed);
     this.direction = Utils.getDirectionFromVector(this.velocity);
 
-    this.actor.spriteRenderer.setPlaybackSpeed(0.8);
-    this.actor.spriteRenderer.setAnimation(`Walk ${Utils.Directions[this.direction]}`);
+    this.actor.spriteRenderer.setPlaybackSpeed(0.8).setAnimation(this.getAnimation("Walk"));
 
     this.resetChangeTimer();
   }
@@ -123,7 +128,7 @@ abstract class EnemyBehavior extends Sup.Behavior implements Enemy {
     this.direction = Utils.getDirectionFromVector(diffToPlayer);
     this.velocity.set(0, 0);
     
-    this.actor.spriteRenderer.setPlaybackSpeed(1).setAnimation(`Attack ${Utils.Directions[this.direction]}`, false);
+    this.actor.spriteRenderer.setPlaybackSpeed(1).setAnimation(this.getAnimation("Attack"), false);
   }
 
   hit(direction: Utils.Directions) {
@@ -151,7 +156,7 @@ abstract class EnemyBehavior extends Sup.Behavior implements Enemy {
       let color = 4;
       this.actor.spriteRenderer.setColor(color, color, color);
       if (this.direction === Utils.Directions.Left) this.actor.spriteRenderer.setHorizontalFlip(true);
-      this.actor.spriteRenderer.setAnimation("Hit");
+      this.actor.spriteRenderer.setAnimation("Hit", false);
     }
     
     let bloodActor = Sup.appendScene("In-Game/FX/Blood/Prefab", this.actor)[0];
@@ -169,12 +174,12 @@ abstract class EnemyBehavior extends Sup.Behavior implements Enemy {
 }
 
 namespace EnemyBehavior {
-  export enum States { Idle, Walking, Charging, Cooldown, Attacking, Hurting, Dying };
-  export const minChangeStateDelay = [ 60, 60, 200, 20 ];
-  export const maxChangeStateDelay = [ 80, 90, 300, 30 ];
+  export enum States { Idle, Walking, Charging, Cooldown, Fleeing, Attacking, Hurting, Dying };
+  export const minChangeStateDelay = [ 60, 60, 200, 20, 40 ];
+  export const maxChangeStateDelay = [ 80, 90, 300, 30, 70 ];
   
   export const walkSpeed = 0.05;
-  export const chargeSpeed = 0.14;
+  export const fastSpeed = 0.14;
   
   export const passiveDistance = 20;
   export const maxInitialPositionDistance = 3;

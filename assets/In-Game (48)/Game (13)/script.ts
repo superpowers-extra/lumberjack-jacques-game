@@ -3,7 +3,7 @@ namespace Game {
   export let cameraBehavior: CameraBehavior;
   export let dialogBehavior: DialogBehavior;
 
-  export enum Goals { None, Village, Mine, Shotgun, Boss };
+  export enum Goals { None, Village, Shotgun, Boss };
   export let currentGoal = Goals.None;
 
   export let enemies: Enemy[];

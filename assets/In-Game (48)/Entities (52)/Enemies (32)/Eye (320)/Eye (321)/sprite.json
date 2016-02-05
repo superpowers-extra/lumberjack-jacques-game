@@ -16,21 +16,21 @@
   },
   "origin": {
     "x": 0.5,
-    "y": 0.5
+    "y": 0.34
   },
   "animations": [
     {
-      "id": "0",
-      "name": "Move",
+      "id": "3",
+      "name": "Idle",
       "startFrameIndex": 0,
-      "endFrameIndex": 3,
+      "endFrameIndex": 0,
       "speed": 1
     },
     {
-      "id": "1",
-      "name": "Die",
-      "startFrameIndex": 6,
-      "endFrameIndex": 11,
+      "id": "0",
+      "name": "Walk",
+      "startFrameIndex": 0,
+      "endFrameIndex": 3,
       "speed": 1
     },
     {
@@ -38,6 +38,20 @@
       "name": "Attack",
       "startFrameIndex": 12,
       "endFrameIndex": 15,
+      "speed": 1
+    },
+    {
+      "id": "4",
+      "name": "Hit",
+      "startFrameIndex": 4,
+      "endFrameIndex": 5,
+      "speed": 1
+    },
+    {
+      "id": "1",
+      "name": "Die",
+      "startFrameIndex": 6,
+      "endFrameIndex": 11,
       "speed": 1
     }
   ],

@@ -1377,6 +1377,60 @@
       "prefab": {
         "sceneAssetId": "327"
       }
+    },
+    {
+      "id": "32",
+      "name": "Shit Eater",
+      "children": [],
+      "components": [],
+      "position": {
+        "x": 14.665078163146973,
+        "y": -10.031529426574707,
+        "z": 0
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": {
+        "sceneAssetId": "327"
+      }
+    },
+    {
+      "id": "33",
+      "name": "Shit Eater",
+      "children": [],
+      "components": [],
+      "position": {
+        "x": 1.6037780046463013,
+        "y": 3.328885316848755,
+        "z": 0
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": true,
+      "layer": 0,
+      "prefab": {
+        "sceneAssetId": "327"
+      }
     }
   ]
 }

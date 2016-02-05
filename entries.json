@@ -2148,6 +2148,11 @@
                 "type": null,
                 "children": [
                   {
+                    "id": "563",
+                    "name": "Prefab",
+                    "type": "scene"
+                  },
+                  {
                     "id": "321",
                     "name": "Eye",
                     "type": "sprite"
