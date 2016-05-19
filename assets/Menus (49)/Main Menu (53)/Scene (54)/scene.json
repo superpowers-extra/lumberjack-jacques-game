@@ -124,7 +124,9 @@
                         "size": null,
                         "color": null,
                         "verticalAlignment": "center",
-                        "formatVersion": 1
+                        "formatVersion": 2,
+                        "overrideOpacity": false,
+                        "opacity": null
                       },
                       "id": "0"
                     }
@@ -189,7 +191,9 @@
                         "size": null,
                         "color": null,
                         "verticalAlignment": "center",
-                        "formatVersion": 1
+                        "formatVersion": 2,
+                        "overrideOpacity": false,
+                        "opacity": null
                       },
                       "id": "0"
                     }
@@ -326,7 +330,9 @@
                 "size": null,
                 "color": "ffffff",
                 "verticalAlignment": "center",
-                "formatVersion": 1
+                "formatVersion": 2,
+                "overrideOpacity": false,
+                "opacity": null
               },
               "id": "1"
             }
@@ -387,7 +393,9 @@
             "size": null,
             "color": null,
             "verticalAlignment": "top",
-            "formatVersion": 1
+            "formatVersion": 2,
+            "overrideOpacity": false,
+            "opacity": null
           },
           "id": "0"
         },

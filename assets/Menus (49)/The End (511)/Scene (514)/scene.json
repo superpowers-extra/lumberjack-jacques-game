@@ -298,7 +298,9 @@
             "size": null,
             "color": null,
             "verticalAlignment": "center",
-            "formatVersion": 1
+            "formatVersion": 2,
+            "overrideOpacity": false,
+            "opacity": null
           },
           "id": "0"
         }

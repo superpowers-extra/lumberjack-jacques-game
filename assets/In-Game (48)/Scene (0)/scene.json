@@ -141,7 +141,9 @@
                         "size": 32,
                         "color": "444444",
                         "verticalAlignment": "top",
-                        "formatVersion": 1
+                        "formatVersion": 2,
+                        "overrideOpacity": false,
+                        "opacity": null
                       },
                       "id": "1"
                     },
@@ -492,7 +494,9 @@
                     "size": null,
                     "color": null,
                     "verticalAlignment": "center",
-                    "formatVersion": 1
+                    "formatVersion": 2,
+                    "overrideOpacity": false,
+                    "opacity": null
                   },
                   "id": "0"
                 }
