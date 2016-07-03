@@ -1,2538 +1,2541 @@
-[
-  {
-    "id": "198",
-    "name": "Sound credits",
-    "type": "script"
-  },
-  {
-    "id": "56",
-    "name": "Utils",
-    "type": null,
-    "children": [
-      {
-        "id": "67",
-        "name": "Script",
-        "type": "script"
-      },
-      {
-        "id": "46",
-        "name": "Fade",
-        "type": null,
-        "children": [
-          {
-            "id": "47",
-            "name": "Fade Manager",
-            "type": "script"
-          },
-          {
-            "id": "45",
-            "name": "Black Screen",
-            "type": "sprite"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "49",
-    "name": "Menus",
-    "type": null,
-    "children": [
-      {
-        "id": "149",
-        "name": "Font",
-        "type": "font"
-      },
-      {
-        "id": "141",
-        "name": "Gamepad",
-        "type": null,
-        "children": [
-          {
-            "id": "142",
-            "name": "A",
-            "type": "sprite"
-          }
-        ]
-      },
-      {
-        "id": "53",
-        "name": "Main Menu",
-        "type": null,
-        "children": [
-          {
-            "id": "54",
-            "name": "Scene",
-            "type": "scene"
-          },
-          {
-            "id": "55",
-            "name": "Behavior",
-            "type": "script"
-          },
-          {
-            "id": "114",
-            "name": "Language Select Behavior",
-            "type": "script"
-          },
-          {
-            "id": "158",
-            "name": "Background",
-            "type": "sprite"
-          },
-          {
-            "id": "251",
-            "name": "Logo",
-            "type": "sprite"
-          },
-          {
-            "id": "348",
-            "name": "Logo Shader",
-            "type": "shader"
-          }
-        ]
-      },
-      {
-        "id": "254",
-        "name": "Intro House",
-        "type": null,
-        "children": [
-          {
-            "id": "255",
-            "name": "Scene",
-            "type": "scene"
-          },
-          {
-            "id": "257",
-            "name": "Behavior",
-            "type": "script"
-          },
-          {
-            "id": "256",
-            "name": "Background",
-            "type": "sprite"
-          },
-          {
-            "id": "267",
-            "name": "Character",
-            "type": "sprite"
-          },
-          {
-            "id": "275",
-            "name": "Door",
-            "type": "sprite"
-          },
-          {
-            "id": "287",
-            "name": "Knock Sound",
-            "type": "sound"
-          },
-          {
-            "id": "299",
-            "name": "Rocking Chair",
-            "type": "sound"
-          }
-        ]
-      },
-      {
-        "id": "282",
-        "name": "Intro Outside",
-        "type": null,
-        "children": [
-          {
-            "id": "283",
-            "name": "Scene",
-            "type": "scene"
-          },
-          {
-            "id": "285",
-            "name": "Behavior",
-            "type": "script"
-          },
-          {
-            "id": "284",
-            "name": "Outside Door",
-            "type": "sprite"
-          },
-          {
-            "id": "286",
-            "name": "Shadow",
-            "type": "sprite"
-          },
-          {
-            "id": "291",
-            "name": "Open Door Sound",
-            "type": "sound"
-          }
-        ]
-      },
-      {
-        "id": "511",
-        "name": "The End",
-        "type": null,
-        "children": [
-          {
-            "id": "514",
-            "name": "Scene",
-            "type": "scene"
-          },
-          {
-            "id": "513",
-            "name": "Behavior",
-            "type": "script"
-          },
-          {
-            "id": "522",
-            "name": "eye",
-            "type": "sprite"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "48",
-    "name": "In-Game",
-    "type": null,
-    "children": [
-      {
-        "id": "0",
-        "name": "Scene",
-        "type": "scene"
-      },
-      {
-        "id": "13",
-        "name": "Game",
-        "type": "script"
-      },
-      {
-        "id": "58",
-        "name": "Debug Behavior",
-        "type": "script"
-      },
-      {
-        "id": "171",
-        "name": "Animated Text Behavior",
-        "type": "script"
-      },
-      {
-        "id": "221",
-        "name": "HUD",
-        "type": null,
-        "children": [
-          {
-            "id": "14",
-            "name": "Camera Behavior",
-            "type": "script"
-          },
-          {
-            "id": "247",
-            "name": "Items",
-            "type": null,
-            "children": [
-              {
-                "id": "223",
-                "name": "Rifle",
-                "type": "sprite"
-              },
-              {
-                "id": "421",
-                "name": "Book",
-                "type": "sprite"
-              },
-              {
-                "id": "507",
-                "name": "Key",
-                "type": "sprite"
-              },
-              {
-                "id": "224",
-                "name": "Bottle",
-                "type": "sprite"
-              },
-              {
-                "id": "398",
-                "name": "Box",
-                "type": "sprite"
-              },
-              {
-                "id": "419",
-                "name": "Prefab",
-                "type": "scene"
-              },
-              {
-                "id": "248",
-                "name": "Heart",
-                "type": "sprite"
-              },
-              {
-                "id": "250",
-                "name": "Heart Prefab",
-                "type": "scene"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "id": "27",
-        "name": "Dialog",
-        "type": null,
-        "children": [
-          {
-            "id": "26",
-            "name": "Behavior",
-            "type": "script"
-          },
-          {
-            "id": "28",
-            "name": "Frame",
-            "type": "sprite"
-          },
-          {
-            "id": "57",
-            "name": "Portraits",
-            "type": null,
-            "children": [
-              {
-                "id": "33",
-                "name": "player",
-                "type": "sprite"
-              },
-              {
-                "id": "425",
-                "name": "dyingPeasant",
-                "type": "sprite"
-              },
-              {
-                "id": "430",
-                "name": "shadyPeasant",
-                "type": "sprite"
-              },
-              {
-                "id": "475",
-                "name": "deliveryBoy",
-                "type": "sprite"
-              },
-              {
-                "id": "420",
-                "name": "chef",
-                "type": "sprite"
-              },
-              {
-                "id": "441",
-                "name": "waitress",
-                "type": "sprite"
-              },
-              {
-                "id": "417",
-                "name": "priest",
-                "type": "sprite"
-              },
-              {
-                "id": "418",
-                "name": "doctor",
-                "type": "sprite"
-              },
-              {
-                "id": "422",
-                "name": "cultist",
-                "type": "sprite"
-              },
-              {
-                "id": "437",
-                "name": "mayor",
-                "type": "sprite"
-              },
-              {
-                "id": "448",
-                "name": "oldLady",
-                "type": "sprite"
-              },
-              {
-                "id": "453",
-                "name": "mom",
-                "type": "sprite"
-              },
-              {
-                "id": "464",
-                "name": "dad",
-                "type": "sprite"
-              },
-              {
-                "id": "466",
-                "name": "goawayhouse",
-                "type": "sprite"
-              },
-              {
-                "id": "469",
-                "name": "boss",
-                "type": "sprite"
-              },
-              {
-                "id": "478",
-                "name": "child",
-                "type": "sprite"
-              },
-              {
-                "id": "477",
-                "name": "child2",
-                "type": "sprite"
-              },
-              {
-                "id": "479",
-                "name": "cat",
-                "type": "sprite"
-              },
-              {
-                "id": "502",
-                "name": "pig",
-                "type": "sprite"
-              },
-              {
-                "id": "538",
-                "name": "dowie",
-                "type": "sprite"
-              },
-              {
-                "id": "555",
-                "name": "chiome",
-                "type": "sprite"
-              }
-            ]
-          },
-          {
-            "id": "503",
-            "name": "Dialog Sound",
-            "type": "sound"
-          }
-        ]
-      },
-      {
-        "id": "51",
-        "name": "Interactions",
-        "type": null,
-        "children": [
-          {
-            "id": "124",
-            "name": "Teleport",
-            "type": null,
-            "children": [
-              {
-                "id": "15",
-                "name": "Behavior",
-                "type": "script"
-              },
-              {
-                "id": "125",
-                "name": "Sprite",
-                "type": "sprite"
-              }
-            ]
-          },
-          {
-            "id": "38",
-            "name": "Interactable Behavior",
-            "type": "script"
-          },
-          {
-            "id": "40",
-            "name": "Simple Dialog Behavior",
-            "type": "script"
-          }
-        ]
-      },
-      {
-        "id": "5",
-        "name": "Maps",
-        "type": null,
-        "children": [
-          {
-            "id": "117",
-            "name": "Template",
-            "type": "scene"
-          },
-          {
-            "id": "71",
-            "name": "Global",
-            "type": null,
-            "children": [
-              {
-                "id": "93",
-                "name": "Background",
-                "type": "sprite"
-              },
-              {
-                "id": "94",
-                "name": "Trees",
-                "type": null,
-                "children": [
-                  {
-                    "id": "211",
-                    "name": "RandomTreeColor",
-                    "type": "script"
-                  },
-                  {
-                    "id": "80",
-                    "name": "Dark Tree",
-                    "type": null,
-                    "children": [
-                      {
-                        "id": "81",
-                        "name": "Prefab",
-                        "type": "scene"
-                      },
-                      {
-                        "id": "73",
-                        "name": "Sprite",
-                        "type": "sprite"
-                      }
-                    ]
-                  },
-                  {
-                    "id": "97",
-                    "name": "Light Tree",
-                    "type": null,
-                    "children": [
-                      {
-                        "id": "98",
-                        "name": "Prefab",
-                        "type": "scene"
-                      },
-                      {
-                        "id": "68",
-                        "name": "Sprite",
-                        "type": "sprite"
-                      }
-                    ]
-                  },
-                  {
-                    "id": "240",
-                    "name": "Pine Tree",
-                    "type": null,
-                    "children": [
-                      {
-                        "id": "242",
-                        "name": "Prefab",
-                        "type": "scene"
-                      },
-                      {
-                        "id": "225",
-                        "name": "Sprite",
-                        "type": "sprite"
-                      }
-                    ]
-                  },
-                  {
-                    "id": "212",
-                    "name": "Tree Wall Horizontal",
-                    "type": "scene"
-                  },
-                  {
-                    "id": "222",
-                    "name": "Tree Wall Vertical",
-                    "type": "scene"
-                  }
-                ]
-              },
-              {
-                "id": "95",
-                "name": "Houses",
-                "type": null,
-                "children": [
-                  {
-                    "id": "99",
-                    "name": "House 1",
-                    "type": null,
-                    "children": [
-                      {
-                        "id": "100",
-                        "name": "Prefab",
-                        "type": "scene"
-                      },
-                      {
-                        "id": "76",
-                        "name": "Sprite",
-                        "type": "sprite"
-                      }
-                    ]
-                  },
-                  {
-                    "id": "262",
-                    "name": "House 2",
-                    "type": null,
-                    "children": [
-                      {
-                        "id": "264",
-                        "name": "Prefab",
-                        "type": "scene"
-                      },
-                      {
-                        "id": "265",
-                        "name": "Sprite",
-                        "type": "sprite"
-                      }
-                    ]
-                  },
-                  {
-                    "id": "269",
-                    "name": "House 3",
-                    "type": null,
-                    "children": [
-                      {
-                        "id": "270",
-                        "name": "Sprite",
-                        "type": "sprite"
-                      },
-                      {
-                        "id": "271",
-                        "name": "Prefab",
-                        "type": "scene"
-                      }
-                    ]
-                  },
-                  {
-                    "id": "272",
-                    "name": "House 4",
-                    "type": null,
-                    "children": [
-                      {
-                        "id": "273",
-                        "name": "Prefab",
-                        "type": "scene"
-                      },
-                      {
-                        "id": "274",
-                        "name": "Sprite",
-                        "type": "sprite"
-                      }
-                    ]
-                  },
-                  {
-                    "id": "276",
-                    "name": "Empty House",
-                    "type": null,
-                    "children": [
-                      {
-                        "id": "277",
-                        "name": "Prefab",
-                        "type": "scene"
-                      },
-                      {
-                        "id": "278",
-                        "name": "Sprite",
-                        "type": "sprite"
-                      },
-                      {
-                        "id": "447",
-                        "name": "Empty House Behavior",
-                        "type": "script"
-                      }
-                    ]
-                  },
-                  {
-                    "id": "279",
-                    "name": "House 6",
-                    "type": null,
-                    "children": [
-                      {
-                        "id": "280",
-                        "name": "Prefab",
-                        "type": "scene"
-                      },
-                      {
-                        "id": "281",
-                        "name": "Sprite",
-                        "type": "sprite"
-                      }
-                    ]
-                  },
-                  {
-                    "id": "133",
-                    "name": "Tavern",
-                    "type": null,
-                    "children": [
-                      {
-                        "id": "135",
-                        "name": "Prefab",
-                        "type": "scene"
-                      },
-                      {
-                        "id": "134",
-                        "name": "Sprite",
-                        "type": "sprite"
-                      }
-                    ]
-                  },
-                  {
-                    "id": "121",
-                    "name": "Church Cimentry",
-                    "type": null,
-                    "children": [
-                      {
-                        "id": "123",
-                        "name": "Prefab",
-                        "type": "scene"
-                      },
-                      {
-                        "id": "481",
-                        "name": "Church Door Behavior",
-                        "type": "script"
-                      },
-                      {
-                        "id": "122",
-                        "name": "Church",
-                        "type": "sprite"
-                      },
-                      {
-                        "id": "460",
-                        "name": "Opening Church Door",
-                        "type": "sound"
-                      },
-                      {
-                        "id": "476",
-                        "name": "Locked Church Door",
-                        "type": "sound"
-                      },
-                      {
-                        "id": "486",
-                        "name": "Priest",
-                        "type": null,
-                        "children": [
-                          {
-                            "id": "488",
-                            "name": "Prefab",
-                            "type": "scene"
-                          },
-                          {
-                            "id": "489",
-                            "name": "Priest Behavior",
-                            "type": "script"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "137",
-                "name": "Exit village",
-                "type": null,
-                "children": [
-                  {
-                    "id": "138",
-                    "name": "exit vilage",
-                    "type": "sprite"
-                  },
-                  {
-                    "id": "139",
-                    "name": "prefab",
-                    "type": "scene"
-                  }
-                ]
-              },
-              {
-                "id": "153",
-                "name": "Path",
-                "type": null,
-                "children": [
-                  {
-                    "id": "155",
-                    "name": "Scene",
-                    "type": "scene"
-                  },
-                  {
-                    "id": "156",
-                    "name": "Scene (1)",
-                    "type": "scene"
-                  },
-                  {
-                    "id": "157",
-                    "name": "LongPath",
-                    "type": "sprite"
-                  },
-                  {
-                    "id": "154",
-                    "name": "Path",
-                    "type": "sprite"
-                  }
-                ]
-              },
-              {
-                "id": "187",
-                "name": "Foliage",
-                "type": null,
-                "children": [
-                  {
-                    "id": "260",
-                    "name": "Stone01",
-                    "type": null,
-                    "children": [
-                      {
-                        "id": "191",
-                        "name": "Stone01",
-                        "type": "sprite"
-                      },
-                      {
-                        "id": "263",
-                        "name": "Prefab",
-                        "type": "scene"
-                      }
-                    ]
-                  },
-                  {
-                    "id": "266",
-                    "name": "Stone02 (1)",
-                    "type": null,
-                    "children": [
-                      {
-                        "id": "192",
-                        "name": "Stone02",
-                        "type": "sprite"
-                      },
-                      {
-                        "id": "268",
-                        "name": "Prefab",
-                        "type": "scene"
-                      }
-                    ]
-                  },
-                  {
-                    "id": "194",
-                    "name": "Stone03",
-                    "type": "sprite"
-                  },
-                  {
-                    "id": "185",
-                    "name": "Grasspatch2",
-                    "type": "sprite"
-                  },
-                  {
-                    "id": "179",
-                    "name": "GrassPath1",
-                    "type": "sprite"
-                  },
-                  {
-                    "id": "199",
-                    "name": "DirtPath1",
-                    "type": "sprite"
-                  },
-                  {
-                    "id": "208",
-                    "name": "DirtPath2",
-                    "type": "sprite"
-                  },
-                  {
-                    "id": "209",
-                    "name": "DirtPath3",
-                    "type": "sprite"
-                  },
-                  {
-                    "id": "230",
-                    "name": "Exit Glow Path",
-                    "type": "sprite"
-                  },
-                  {
-                    "id": "293",
-                    "name": "Cliffs",
-                    "type": null,
-                    "children": [
-                      {
-                        "id": "294",
-                        "name": "Cliffs01",
-                        "type": "sprite"
-                      },
-                      {
-                        "id": "295",
-                        "name": "Prefab",
-                        "type": "scene"
-                      }
-                    ]
-                  },
-                  {
-                    "id": "332",
-                    "name": "MineEntrance",
-                    "type": null,
-                    "children": [
-                      {
-                        "id": "333",
-                        "name": "MineEntrance",
-                        "type": "sprite"
-                      },
-                      {
-                        "id": "334",
-                        "name": "MineEntrance (1)",
-                        "type": "scene"
-                      },
-                      {
-                        "id": "340",
-                        "name": "MineDor",
-                        "type": "sprite"
-                      },
-                      {
-                        "id": "341",
-                        "name": "Prefab",
-                        "type": "scene"
-                      }
-                    ]
-                  },
-                  {
-                    "id": "410",
-                    "name": "Paved Road 1",
-                    "type": "sprite"
-                  },
-                  {
-                    "id": "411",
-                    "name": "Paved Road 2 Small",
-                    "type": "sprite"
-                  },
-                  {
-                    "id": "412",
-                    "name": "Paved Road 3 med",
-                    "type": "sprite"
-                  },
-                  {
-                    "id": "413",
-                    "name": "Paved Road 4",
-                    "type": "sprite"
-                  }
-                ]
-              },
-              {
-                "id": "190",
-                "name": "Town",
-                "type": null,
-                "children": [
-                  {
-                    "id": "200",
-                    "name": "Barrel01",
-                    "type": "sprite"
-                  },
-                  {
-                    "id": "201",
-                    "name": "Bucket01",
-                    "type": "sprite"
-                  },
-                  {
-                    "id": "202",
-                    "name": "Crate01",
-                    "type": "sprite"
-                  },
-                  {
-                    "id": "521",
-                    "name": "PrefabCrate",
-                    "type": "scene"
-                  },
-                  {
-                    "id": "227",
-                    "name": "Rope",
-                    "type": "sprite"
-                  },
-                  {
-                    "id": "228",
-                    "name": "Well",
-                    "type": null,
-                    "children": [
-                      {
-                        "id": "229",
-                        "name": "Prefab",
-                        "type": "scene"
-                      },
-                      {
-                        "id": "226",
-                        "name": "Sprite",
-                        "type": "sprite"
-                      }
-                    ]
-                  },
-                  {
-                    "id": "432",
-                    "name": "Fence",
-                    "type": null,
-                    "children": [
-                      {
-                        "id": "431",
-                        "name": "Sprite",
-                        "type": "sprite"
-                      },
-                      {
-                        "id": "433",
-                        "name": "Prefab",
-                        "type": "scene"
-                      }
-                    ]
-                  },
-                  {
-                    "id": "455",
-                    "name": "Tomb2",
-                    "type": null,
-                    "children": [
-                      {
-                        "id": "457",
-                        "name": "Sprite",
-                        "type": "sprite"
-                      },
-                      {
-                        "id": "459",
-                        "name": "Prefab",
-                        "type": "scene"
-                      }
-                    ]
-                  },
-                  {
-                    "id": "454",
-                    "name": "Tomb1",
-                    "type": null,
-                    "children": [
-                      {
-                        "id": "456",
-                        "name": "Sprite",
-                        "type": "sprite"
-                      },
-                      {
-                        "id": "458",
-                        "name": "Prefab",
-                        "type": "scene"
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "203",
-                "name": "Bush",
-                "type": null,
-                "children": [
-                  {
-                    "id": "207",
-                    "name": "Prefab",
-                    "type": "scene"
-                  },
-                  {
-                    "id": "205",
-                    "name": "Sprite",
-                    "type": "sprite"
-                  }
-                ]
-              },
-              {
-                "id": "234",
-                "name": "Stump",
-                "type": null,
-                "children": [
-                  {
-                    "id": "235",
-                    "name": "Prefab",
-                    "type": "scene"
-                  },
-                  {
-                    "id": "195",
-                    "name": "Sprite",
-                    "type": "sprite"
-                  }
-                ]
-              },
-              {
-                "id": "288",
-                "name": "Totem",
-                "type": null,
-                "children": [
-                  {
-                    "id": "289",
-                    "name": "Totem",
-                    "type": "sprite"
-                  },
-                  {
-                    "id": "290",
-                    "name": "totem",
-                    "type": "scene"
-                  }
-                ]
-              },
-              {
-                "id": "360",
-                "name": "Shelve",
-                "type": null,
-                "children": [
-                  {
-                    "id": "361",
-                    "name": "Sprite",
-                    "type": "sprite"
-                  },
-                  {
-                    "id": "363",
-                    "name": "Scene",
-                    "type": "scene"
-                  }
-                ]
-              },
-              {
-                "id": "364",
-                "name": "MineWall01",
-                "type": null,
-                "children": [
-                  {
-                    "id": "365",
-                    "name": "Sprite",
-                    "type": "sprite"
-                  },
-                  {
-                    "id": "366",
-                    "name": "Prefab",
-                    "type": "scene"
-                  },
-                  {
-                    "id": "371",
-                    "name": "Prefab2",
-                    "type": "scene"
-                  },
-                  {
-                    "id": "367",
-                    "name": "Sprite2",
-                    "type": "sprite"
-                  }
-                ]
-              },
-              {
-                "id": "380",
-                "name": "MineFloor",
-                "type": null,
-                "children": [
-                  {
-                    "id": "381",
-                    "name": "Sprite",
-                    "type": "sprite"
-                  },
-                  {
-                    "id": "383",
-                    "name": "Prefab",
-                    "type": "scene"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "id": "69",
-            "name": "Home Outside",
-            "type": null,
-            "children": [
-              {
-                "id": "70",
-                "name": "Prefab",
-                "type": "scene"
-              },
-              {
-                "id": "253",
-                "name": "Dying Peasant",
-                "type": null,
-                "children": [
-                  {
-                    "id": "258",
-                    "name": "Prefab",
-                    "type": "scene"
-                  },
-                  {
-                    "id": "259",
-                    "name": "Behavior",
-                    "type": "script"
-                  },
-                  {
-                    "id": "116",
-                    "name": "Sprite",
-                    "type": "sprite"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "id": "243",
-            "name": "Forest House Village",
-            "type": null,
-            "children": [
-              {
-                "id": "292",
-                "name": "Prefab",
-                "type": "scene"
-              },
-              {
-                "id": "551",
-                "name": "Dowie Behavior",
-                "type": "script"
-              },
-              {
-                "id": "554",
-                "name": "Chiome Behavior",
-                "type": "script"
-              },
-              {
-                "id": "446",
-                "name": "Howling",
-                "type": "sound"
-              },
-              {
-                "id": "399",
-                "name": "Wolf Intro Trigger Behavior",
-                "type": "script"
-              },
-              {
-                "id": "400",
-                "name": "Wolf Outro Trigger Behavior",
-                "type": "script"
-              },
-              {
-                "id": "305",
-                "name": "Shady Peasants",
-                "type": null,
-                "children": [
-                  {
-                    "id": "306",
-                    "name": "Main Prefab",
-                    "type": "scene"
-                  },
-                  {
-                    "id": "402",
-                    "name": "Secondary Prefab",
-                    "type": "scene"
-                  },
-                  {
-                    "id": "308",
-                    "name": "Main Behavior",
-                    "type": "script"
-                  },
-                  {
-                    "id": "403",
-                    "name": "Secondary Behavior",
-                    "type": "script"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "id": "119",
-            "name": "Village",
-            "type": null,
-            "children": [
-              {
-                "id": "120",
-                "name": "Prefab",
-                "type": "scene"
-              },
-              {
-                "id": "312",
-                "name": "Noxy",
-                "type": null,
-                "children": [
-                  {
-                    "id": "314",
-                    "name": "Behavior",
-                    "type": "script"
-                  },
-                  {
-                    "id": "313",
-                    "name": "Prefab",
-                    "type": "scene"
-                  },
-                  {
-                    "id": "386",
-                    "name": "Power Up",
-                    "type": "sound"
-                  }
-                ]
-              },
-              {
-                "id": "213",
-                "name": "Doctor House",
-                "type": null,
-                "children": [
-                  {
-                    "id": "232",
-                    "name": "Prefab",
-                    "type": "scene"
-                  },
-                  {
-                    "id": "375",
-                    "name": "Doctor",
-                    "type": null,
-                    "children": [
-                      {
-                        "id": "472",
-                        "name": "Sound",
-                        "type": "sound"
-                      },
-                      {
-                        "id": "376",
-                        "name": "Behavior",
-                        "type": "script"
-                      },
-                      {
-                        "id": "396",
-                        "name": "Book Behavior",
-                        "type": "script"
-                      },
-                      {
-                        "id": "377",
-                        "name": "Prefab",
-                        "type": "scene"
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "214",
-                "name": "Old Lady House",
-                "type": null,
-                "children": [
-                  {
-                    "id": "233",
-                    "name": "Prefab",
-                    "type": "scene"
-                  },
-                  {
-                    "id": "534",
-                    "name": "Old Lady Behavior",
-                    "type": "script"
-                  },
-                  {
-                    "id": "537",
-                    "name": "Cat Behavior",
-                    "type": "script"
-                  },
-                  {
-                    "id": "524",
-                    "name": "Props",
-                    "type": null,
-                    "children": [
-                      {
-                        "id": "525",
-                        "name": "Cat Poo Sprite",
-                        "type": "sprite"
-                      },
-                      {
-                        "id": "526",
-                        "name": "Cat Poo",
-                        "type": "scene"
-                      },
-                      {
-                        "id": "532",
-                        "name": "Fish Skull",
-                        "type": "sprite"
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "215",
-                "name": "Family House",
-                "type": null,
-                "children": [
-                  {
-                    "id": "236",
-                    "name": "Prefab",
-                    "type": "scene"
-                  },
-                  {
-                    "id": "508",
-                    "name": "Props",
-                    "type": null,
-                    "children": [
-                      {
-                        "id": "509",
-                        "name": "Cooker Sprite",
-                        "type": "sprite"
-                      },
-                      {
-                        "id": "510",
-                        "name": "Cooker",
-                        "type": "scene"
-                      }
-                    ]
-                  },
-                  {
-                    "id": "535",
-                    "name": "Child1 Behavior",
-                    "type": "script"
-                  },
-                  {
-                    "id": "536",
-                    "name": "Child2 Behavior",
-                    "type": "script"
-                  },
-                  {
-                    "id": "539",
-                    "name": "Child3 Behavior",
-                    "type": "script"
-                  },
-                  {
-                    "id": "541",
-                    "name": "Mother Behavior",
-                    "type": "script"
-                  },
-                  {
-                    "id": "542",
-                    "name": "Father Behavior",
-                    "type": "script"
-                  },
-                  {
-                    "id": "549",
-                    "name": "Baby Behavior",
-                    "type": "script"
-                  }
-                ]
-              },
-              {
-                "id": "216",
-                "name": "Tavern Inside",
-                "type": null,
-                "children": [
-                  {
-                    "id": "237",
-                    "name": "Prefab",
-                    "type": "scene"
-                  },
-                  {
-                    "id": "296",
-                    "name": "Interior",
-                    "type": "sprite"
-                  },
-                  {
-                    "id": "342",
-                    "name": "Waitress",
-                    "type": null,
-                    "children": [
-                      {
-                        "id": "347",
-                        "name": "Behavior",
-                        "type": "script"
-                      },
-                      {
-                        "id": "346",
-                        "name": "Prefab",
-                        "type": "scene"
-                      }
-                    ]
-                  },
-                  {
-                    "id": "343",
-                    "name": "Chef",
-                    "type": null,
-                    "children": [
-                      {
-                        "id": "345",
-                        "name": "Behavior",
-                        "type": "script"
-                      },
-                      {
-                        "id": "344",
-                        "name": "Prefab",
-                        "type": "scene"
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "217",
-                "name": "Tavern Basement",
-                "type": null,
-                "children": [
-                  {
-                    "id": "238",
-                    "name": "Prefab",
-                    "type": "scene"
-                  },
-                  {
-                    "id": "404",
-                    "name": "Mass Wine Behavior",
-                    "type": "script"
-                  },
-                  {
-                    "id": "405",
-                    "name": "Mass Wine",
-                    "type": "scene"
-                  }
-                ]
-              },
-              {
-                "id": "218",
-                "name": "Church Inside",
-                "type": null,
-                "children": [
-                  {
-                    "id": "239",
-                    "name": "Prefab",
-                    "type": "scene"
-                  },
-                  {
-                    "id": "427",
-                    "name": "Church Shader",
-                    "type": "shader"
-                  },
-                  {
-                    "id": "557",
-                    "name": "Mayor Behavior",
-                    "type": "script"
-                  },
-                  {
-                    "id": "249",
-                    "name": "Mayor",
-                    "type": "sprite"
-                  },
-                  {
-                    "id": "424",
-                    "name": "Room",
-                    "type": "sprite"
-                  },
-                  {
-                    "id": "560",
-                    "name": "Autel",
-                    "type": null,
-                    "children": [
-                      {
-                        "id": "561",
-                        "name": "Prefab",
-                        "type": "scene"
-                      },
-                      {
-                        "id": "520",
-                        "name": "Sprite",
-                        "type": "sprite"
-                      },
-                      {
-                        "id": "562",
-                        "name": "Behavior",
-                        "type": "script"
-                      }
-                    ]
-                  },
-                  {
-                    "id": "461",
-                    "name": "Props",
-                    "type": null,
-                    "children": [
-                      {
-                        "id": "462",
-                        "name": "Bench Sprite",
-                        "type": "sprite"
-                      },
-                      {
-                        "id": "463",
-                        "name": "Bench",
-                        "type": "scene"
-                      },
-                      {
-                        "id": "467",
-                        "name": "Candle Sprite",
-                        "type": "sprite"
-                      },
-                      {
-                        "id": "468",
-                        "name": "Candle",
-                        "type": "scene"
-                      },
-                      {
-                        "id": "473",
-                        "name": "Cross Sprite",
-                        "type": "sprite"
-                      },
-                      {
-                        "id": "474",
-                        "name": "Cross",
-                        "type": "scene"
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "317",
-                "name": "Commons",
-                "type": null,
-                "children": [
-                  {
-                    "id": "318",
-                    "name": "House Interior",
-                    "type": "sprite"
-                  },
-                  {
-                    "id": "330",
-                    "name": "Walls",
-                    "type": "scene"
-                  },
-                  {
-                    "id": "323",
-                    "name": "Props",
-                    "type": null,
-                    "children": [
-                      {
-                        "id": "325",
-                        "name": "Torch",
-                        "type": "sprite"
-                      },
-                      {
-                        "id": "331",
-                        "name": "Table Sprite",
-                        "type": "sprite"
-                      },
-                      {
-                        "id": "335",
-                        "name": "Table",
-                        "type": "scene"
-                      },
-                      {
-                        "id": "336",
-                        "name": "Plate",
-                        "type": "sprite"
-                      },
-                      {
-                        "id": "337",
-                        "name": "Glass",
-                        "type": "sprite"
-                      },
-                      {
-                        "id": "338",
-                        "name": "Stool Sprite",
-                        "type": "sprite"
-                      },
-                      {
-                        "id": "339",
-                        "name": "Stool",
-                        "type": "scene"
-                      },
-                      {
-                        "id": "368",
-                        "name": "Pot Sprite",
-                        "type": "sprite"
-                      },
-                      {
-                        "id": "515",
-                        "name": "Pot",
-                        "type": "scene"
-                      },
-                      {
-                        "id": "370",
-                        "name": "Bag Sprite",
-                        "type": "sprite"
-                      },
-                      {
-                        "id": "519",
-                        "name": "Bag",
-                        "type": "scene"
-                      },
-                      {
-                        "id": "373",
-                        "name": "Shelf Sprite",
-                        "type": "sprite"
-                      },
-                      {
-                        "id": "374",
-                        "name": "Shelf",
-                        "type": "scene"
-                      },
-                      {
-                        "id": "378",
-                        "name": "Chest Sprite",
-                        "type": "sprite"
-                      },
-                      {
-                        "id": "379",
-                        "name": "Chest",
-                        "type": "scene"
-                      },
-                      {
-                        "id": "384",
-                        "name": "Table2 Sprite",
-                        "type": "sprite"
-                      },
-                      {
-                        "id": "385",
-                        "name": "Table2",
-                        "type": "scene"
-                      },
-                      {
-                        "id": "391",
-                        "name": "Table90 Sprite",
-                        "type": "sprite"
-                      },
-                      {
-                        "id": "392",
-                        "name": "Table90",
-                        "type": "scene"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "id": "177",
-            "name": "Mine Path",
-            "type": null,
-            "children": [
-              {
-                "id": "246",
-                "name": "Prefab",
-                "type": "scene"
-              },
-              {
-                "id": "407",
-                "name": "Mine Path Door Behavior",
-                "type": "script"
-              }
-            ]
-          },
-          {
-            "id": "196",
-            "name": "Mine",
-            "type": null,
-            "children": [
-              {
-                "id": "414",
-                "name": "Room",
-                "type": null,
-                "children": [
-                  {
-                    "id": "416",
-                    "name": "Prefab",
-                    "type": "scene"
-                  },
-                  {
-                    "id": "415",
-                    "name": "Mine Room",
-                    "type": "sprite"
-                  }
-                ]
-              },
-              {
-                "id": "220",
-                "name": "Boss Room",
-                "type": null,
-                "children": [
-                  {
-                    "id": "245",
-                    "name": "Prefab",
-                    "type": "scene"
-                  },
-                  {
-                    "id": "393",
-                    "name": "Room",
-                    "type": "sprite"
-                  }
-                ]
-              },
-              {
-                "id": "435",
-                "name": "MineAssets",
-                "type": null,
-                "children": [
-                  {
-                    "id": "436",
-                    "name": "Candle01",
-                    "type": "sprite"
-                  },
-                  {
-                    "id": "438",
-                    "name": "Candle02",
-                    "type": "sprite"
-                  },
-                  {
-                    "id": "439",
-                    "name": "MineStone01",
-                    "type": "sprite"
-                  },
-                  {
-                    "id": "440",
-                    "name": "Minestone02",
-                    "type": "sprite"
-                  },
-                  {
-                    "id": "442",
-                    "name": "PrefabCandle01",
-                    "type": "scene"
-                  },
-                  {
-                    "id": "443",
-                    "name": "PrefabCandle02",
-                    "type": "scene"
-                  }
-                ]
-              },
-              {
-                "id": "465",
-                "name": "Mine Ambiance",
-                "type": "sound"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "id": "52",
-        "name": "Entities",
-        "type": null,
-        "children": [
-          {
-            "id": "9",
-            "name": "Player",
-            "type": null,
-            "children": [
-              {
-                "id": "10",
-                "name": "Prefab",
-                "type": "scene"
-              },
-              {
-                "id": "11",
-                "name": "Player Behavior",
-                "type": "script"
-              },
-              {
-                "id": "136",
-                "name": "Sprite",
-                "type": "sprite"
-              },
-              {
-                "id": "529",
-                "name": "Sprite Shotgun",
-                "type": "sprite"
-              },
-              {
-                "id": "397",
-                "name": "Hero Get Item",
-                "type": "sprite"
-              },
-              {
-                "id": "63",
-                "name": "Bullet",
-                "type": null,
-                "children": [
-                  {
-                    "id": "64",
-                    "name": "Prefab",
-                    "type": "scene"
-                  },
-                  {
-                    "id": "66",
-                    "name": "Behavior",
-                    "type": "script"
-                  },
-                  {
-                    "id": "65",
-                    "name": "Sprite",
-                    "type": "sprite"
-                  }
-                ]
-              },
-              {
-                "id": "428",
-                "name": "Sounds",
-                "type": null,
-                "children": [
-                  {
-                    "id": "426",
-                    "name": "Hack",
-                    "type": "sound"
-                  },
-                  {
-                    "id": "485",
-                    "name": "Woosh",
-                    "type": "sound"
-                  },
-                  {
-                    "id": "429",
-                    "name": "Shoot",
-                    "type": "sound"
-                  },
-                  {
-                    "id": "434",
-                    "name": "Reload Gun",
-                    "type": "sound"
-                  },
-                  {
-                    "id": "470",
-                    "name": "Hit",
-                    "type": "sound"
-                  },
-                  {
-                    "id": "504",
-                    "name": "Give",
-                    "type": "sound"
-                  }
-                ]
-              },
-              {
-                "id": "471",
-                "name": "Shotgun",
-                "type": "sprite"
-              }
-            ]
-          },
-          {
-            "id": "8",
-            "name": "Characters",
-            "type": null,
-            "children": [
-              {
-                "id": "181",
-                "name": "Noxy",
-                "type": "sprite"
-              },
-              {
-                "id": "84",
-                "name": "Cat",
-                "type": "sprite"
-              },
-              {
-                "id": "451",
-                "name": "Sounds",
-                "type": null,
-                "children": [
-                  {
-                    "id": "450",
-                    "name": "Cat 2",
-                    "type": "sound"
-                  },
-                  {
-                    "id": "449",
-                    "name": "Cat 1",
-                    "type": "sound"
-                  },
-                  {
-                    "id": "483",
-                    "name": "Cat 3",
-                    "type": "sound"
-                  },
-                  {
-                    "id": "484",
-                    "name": "Cat 4",
-                    "type": "sound"
-                  }
-                ]
-              },
-              {
-                "id": "86",
-                "name": "Old Man",
-                "type": "sprite"
-              },
-              {
-                "id": "85",
-                "name": "Old Lady",
-                "type": "sprite"
-              },
-              {
-                "id": "92",
-                "name": "Child",
-                "type": "sprite"
-              },
-              {
-                "id": "126",
-                "name": "Peasant2",
-                "type": "sprite"
-              },
-              {
-                "id": "160",
-                "name": "Child2",
-                "type": "sprite"
-              },
-              {
-                "id": "167",
-                "name": "Cradle",
-                "type": "sprite"
-              },
-              {
-                "id": "169",
-                "name": "Mom",
-                "type": "sprite"
-              },
-              {
-                "id": "189",
-                "name": "Dad",
-                "type": "sprite"
-              },
-              {
-                "id": "231",
-                "name": "Priest",
-                "type": "sprite"
-              },
-              {
-                "id": "409",
-                "name": "Priest Plank",
-                "type": "sprite"
-              },
-              {
-                "id": "140",
-                "name": "Waitress",
-                "type": "sprite"
-              },
-              {
-                "id": "297",
-                "name": "The Band",
-                "type": null,
-                "children": [
-                  {
-                    "id": "298",
-                    "name": "1",
-                    "type": "sprite"
-                  },
-                  {
-                    "id": "300",
-                    "name": "2",
-                    "type": "sprite"
-                  },
-                  {
-                    "id": "301",
-                    "name": "3",
-                    "type": "sprite"
-                  },
-                  {
-                    "id": "302",
-                    "name": "4",
-                    "type": "sprite"
-                  }
-                ]
-              },
-              {
-                "id": "102",
-                "name": "Chef",
-                "type": "sprite"
-              },
-              {
-                "id": "150",
-                "name": "Doctor",
-                "type": "sprite"
-              },
-              {
-                "id": "540",
-                "name": "Dowie",
-                "type": "sprite"
-              },
-              {
-                "id": "552",
-                "name": "Chiome",
-                "type": "sprite"
-              },
-              {
-                "id": "553",
-                "name": "Woaf Woaf",
-                "type": "sound"
-              },
-              {
-                "id": "559",
-                "name": "chiomeSoundPlay",
-                "type": "script"
-              }
-            ]
-          },
-          {
-            "id": "32",
-            "name": "Enemies",
-            "type": null,
-            "children": [
-              {
-                "id": "39",
-                "name": "Enemy Behavior",
-                "type": "script"
-              },
-              {
-                "id": "148",
-                "name": "Closed Enemy Behavior",
-                "type": "script"
-              },
-              {
-                "id": "165",
-                "name": "Ranged Enemy Behavior",
-                "type": "script"
-              },
-              {
-                "id": "172",
-                "name": "Bullet",
-                "type": null,
-                "children": [
-                  {
-                    "id": "175",
-                    "name": "Prefab",
-                    "type": "scene"
-                  },
-                  {
-                    "id": "174",
-                    "name": "Behavior",
-                    "type": "script"
-                  },
-                  {
-                    "id": "173",
-                    "name": "Sprite",
-                    "type": "sprite"
-                  },
-                  {
-                    "id": "482",
-                    "name": "Shit",
-                    "type": "sprite"
-                  },
-                  {
-                    "id": "506",
-                    "name": "Laser",
-                    "type": "sprite"
-                  }
-                ]
-              },
-              {
-                "id": "543",
-                "name": "Cultist",
-                "type": null,
-                "children": [
-                  {
-                    "id": "545",
-                    "name": "Prefab",
-                    "type": "scene"
-                  },
-                  {
-                    "id": "550",
-                    "name": "Sprite",
-                    "type": "sprite"
-                  }
-                ]
-              },
-              {
-                "id": "304",
-                "name": "Dark Dog",
-                "type": null,
-                "children": [
-                  {
-                    "id": "310",
-                    "name": "Prefab",
-                    "type": "scene"
-                  },
-                  {
-                    "id": "303",
-                    "name": "Sprite",
-                    "type": "sprite"
-                  },
-                  {
-                    "id": "444",
-                    "name": "Hurt",
-                    "type": "sound"
-                  },
-                  {
-                    "id": "487",
-                    "name": "Die",
-                    "type": "sound"
-                  }
-                ]
-              },
-              {
-                "id": "315",
-                "name": "Shit Eater",
-                "type": null,
-                "children": [
-                  {
-                    "id": "327",
-                    "name": "Prefab",
-                    "type": "scene"
-                  },
-                  {
-                    "id": "316",
-                    "name": "Sprite",
-                    "type": "sprite"
-                  }
-                ]
-              },
-              {
-                "id": "320",
-                "name": "Eye",
-                "type": null,
-                "children": [
-                  {
-                    "id": "563",
-                    "name": "Prefab",
-                    "type": "scene"
-                  },
-                  {
-                    "id": "321",
-                    "name": "Eye",
-                    "type": "sprite"
-                  }
-                ]
-              },
-              {
-                "id": "349",
-                "name": "Betty Jolly",
-                "type": null,
-                "children": [
-                  {
-                    "id": "387",
-                    "name": "Prefab",
-                    "type": "scene"
-                  },
-                  {
-                    "id": "388",
-                    "name": "Behavior",
-                    "type": "script"
-                  },
-                  {
-                    "id": "355",
-                    "name": "Neck",
-                    "type": "sprite"
-                  },
-                  {
-                    "id": "350",
-                    "name": "Hand Close",
-                    "type": "sprite"
-                  },
-                  {
-                    "id": "352",
-                    "name": "Hand Open",
-                    "type": "sprite"
-                  },
-                  {
-                    "id": "353",
-                    "name": "Head Close",
-                    "type": "sprite"
-                  },
-                  {
-                    "id": "354",
-                    "name": "Head Open",
-                    "type": "sprite"
-                  },
-                  {
-                    "id": "359",
-                    "name": "Tongue",
-                    "type": "sprite"
-                  },
-                  {
-                    "id": "356",
-                    "name": "Left Shoulder",
-                    "type": "sprite"
-                  },
-                  {
-                    "id": "358",
-                    "name": "Right Shoulder",
-                    "type": "sprite"
-                  },
-                  {
-                    "id": "518",
-                    "name": "Sounds",
-                    "type": null,
-                    "children": [
-                      {
-                        "id": "517",
-                        "name": "Boss 1",
-                        "type": "sound"
-                      },
-                      {
-                        "id": "533",
-                        "name": "Boss 2",
-                        "type": "sound"
-                      }
-                    ]
-                  }
-                ]
-              },
-              {
-                "id": "326",
-                "name": "My Son",
-                "type": null,
-                "children": [
-                  {
-                    "id": "329",
-                    "name": "Prefab",
-                    "type": "scene"
-                  },
-                  {
-                    "id": "328",
-                    "name": "Sprite",
-                    "type": "sprite"
-                  }
-                ]
-              },
-              {
-                "id": "322",
-                "name": "Spider",
-                "type": null,
-                "children": [
-                  {
-                    "id": "324",
-                    "name": "Spider",
-                    "type": "sprite"
-                  }
-                ]
-              },
-              {
-                "id": "389",
-                "name": "Spirit",
-                "type": null,
-                "children": [
-                  {
-                    "id": "390",
-                    "name": "Spirit",
-                    "type": "sprite"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "id": "182",
-            "name": "Common",
-            "type": null,
-            "children": [
-              {
-                "id": "184",
-                "name": "Blob Shadow",
-                "type": "sprite"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "id": "74",
-        "name": "FX",
-        "type": null,
-        "children": [
-          {
-            "id": "107",
-            "name": "Fog",
-            "type": null,
-            "children": [
-              {
-                "id": "108",
-                "name": "Prefab",
-                "type": "scene"
-              },
-              {
-                "id": "77",
-                "name": "Sprite",
-                "type": "sprite"
-              },
-              {
-                "id": "75",
-                "name": "Shader",
-                "type": "shader"
-              }
-            ]
-          },
-          {
-            "id": "109",
-            "name": "Rain Ground",
-            "type": null,
-            "children": [
-              {
-                "id": "110",
-                "name": "Prefab",
-                "type": "scene"
-              },
-              {
-                "id": "88",
-                "name": "Sprite",
-                "type": "sprite"
-              },
-              {
-                "id": "89",
-                "name": "Shader",
-                "type": "shader"
-              }
-            ]
-          },
-          {
-            "id": "111",
-            "name": "Rain Drops",
-            "type": null,
-            "children": [
-              {
-                "id": "112",
-                "name": "Prefab",
-                "type": "scene"
-              },
-              {
-                "id": "90",
-                "name": "Sprite",
-                "type": "sprite"
-              },
-              {
-                "id": "91",
-                "name": "Shader",
-                "type": "shader"
-              },
-              {
-                "id": "423",
-                "name": "Sound",
-                "type": "sound"
-              }
-            ]
-          },
-          {
-            "id": "87",
-            "name": "House Shader",
-            "type": "shader"
-          },
-          {
-            "id": "96",
-            "name": "Tree Shader",
-            "type": "shader"
-          },
-          {
-            "id": "115",
-            "name": "Smoke",
-            "type": null,
-            "children": [
-              {
-                "id": "101",
-                "name": "Shader",
-                "type": "shader"
-              },
-              {
-                "id": "103",
-                "name": "Sprite",
-                "type": "sprite"
-              },
-              {
-                "id": "118",
-                "name": "Prefab",
-                "type": "scene"
-              }
-            ]
-          },
-          {
-            "id": "127",
-            "name": "Lightning",
-            "type": null,
-            "children": [
-              {
-                "id": "151",
-                "name": "Prefab",
-                "type": "scene"
-              },
-              {
-                "id": "152",
-                "name": "Lightning",
-                "type": "script"
-              },
-              {
-                "id": "128",
-                "name": "Sprite",
-                "type": "sprite"
-              },
-              {
-                "id": "129",
-                "name": "Shader",
-                "type": "shader"
-              },
-              {
-                "id": "186",
-                "name": "Sound",
-                "type": "sound"
-              }
-            ]
-          },
-          {
-            "id": "168",
-            "name": "Border Mask",
-            "type": "sprite"
-          },
-          {
-            "id": "176",
-            "name": "Time Offset",
-            "type": "script"
-          },
-          {
-            "id": "490",
-            "name": "Blood",
-            "type": null,
-            "children": [
-              {
-                "id": "491",
-                "name": "Prefab",
-                "type": "scene"
-              },
-              {
-                "id": "480",
-                "name": "Hit",
-                "type": "sprite"
-              },
-              {
-                "id": "527",
-                "name": "Big Hit",
-                "type": "sprite"
-              },
-              {
-                "id": "492",
-                "name": "Behavior",
-                "type": "script"
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": "104",
-    "name": "Languages",
-    "type": null,
-    "children": [
-      {
-        "id": "105",
-        "name": "English",
-        "type": "script"
-      },
-      {
-        "id": "106",
-        "name": "French",
-        "type": "script"
-      }
-    ]
-  },
-  {
-    "id": "493",
-    "name": "Music",
-    "type": null,
-    "children": [
-      {
-        "id": "499",
-        "name": "Ambient 1",
-        "type": "sound"
-      },
-      {
-        "id": "498",
-        "name": "Ambient 2",
-        "type": "sound"
-      },
-      {
-        "id": "497",
-        "name": "Ambient 3",
-        "type": "sound"
-      },
-      {
-        "id": "494",
-        "name": "Orgue Metal",
-        "type": "sound"
-      },
-      {
-        "id": "495",
-        "name": "Drums Fight",
-        "type": "sound"
-      },
-      {
-        "id": "496",
-        "name": "Fight",
-        "type": "sound"
-      },
-      {
-        "id": "500",
-        "name": "Jazzy",
-        "type": "sound"
-      },
-      {
-        "id": "501",
-        "name": "Final Orgue",
-        "type": "sound"
-      }
-    ]
-  }
-]
+{
+  "nextEntryId": 564,
+  "nodes": [
+    {
+      "id": "198",
+      "name": "Sound credits",
+      "type": "script"
+    },
+    {
+      "id": "56",
+      "name": "Utils",
+      "type": null,
+      "children": [
+        {
+          "id": "67",
+          "name": "Script",
+          "type": "script"
+        },
+        {
+          "id": "46",
+          "name": "Fade",
+          "type": null,
+          "children": [
+            {
+              "id": "47",
+              "name": "Fade Manager",
+              "type": "script"
+            },
+            {
+              "id": "45",
+              "name": "Black Screen",
+              "type": "sprite"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "49",
+      "name": "Menus",
+      "type": null,
+      "children": [
+        {
+          "id": "149",
+          "name": "Font",
+          "type": "font"
+        },
+        {
+          "id": "141",
+          "name": "Gamepad",
+          "type": null,
+          "children": [
+            {
+              "id": "142",
+              "name": "A",
+              "type": "sprite"
+            }
+          ]
+        },
+        {
+          "id": "53",
+          "name": "Main Menu",
+          "type": null,
+          "children": [
+            {
+              "id": "54",
+              "name": "Scene",
+              "type": "scene"
+            },
+            {
+              "id": "55",
+              "name": "Behavior",
+              "type": "script"
+            },
+            {
+              "id": "114",
+              "name": "Language Select Behavior",
+              "type": "script"
+            },
+            {
+              "id": "158",
+              "name": "Background",
+              "type": "sprite"
+            },
+            {
+              "id": "251",
+              "name": "Logo",
+              "type": "sprite"
+            },
+            {
+              "id": "348",
+              "name": "Logo Shader",
+              "type": "shader"
+            }
+          ]
+        },
+        {
+          "id": "254",
+          "name": "Intro House",
+          "type": null,
+          "children": [
+            {
+              "id": "255",
+              "name": "Scene",
+              "type": "scene"
+            },
+            {
+              "id": "257",
+              "name": "Behavior",
+              "type": "script"
+            },
+            {
+              "id": "256",
+              "name": "Background",
+              "type": "sprite"
+            },
+            {
+              "id": "267",
+              "name": "Character",
+              "type": "sprite"
+            },
+            {
+              "id": "275",
+              "name": "Door",
+              "type": "sprite"
+            },
+            {
+              "id": "287",
+              "name": "Knock Sound",
+              "type": "sound"
+            },
+            {
+              "id": "299",
+              "name": "Rocking Chair",
+              "type": "sound"
+            }
+          ]
+        },
+        {
+          "id": "282",
+          "name": "Intro Outside",
+          "type": null,
+          "children": [
+            {
+              "id": "283",
+              "name": "Scene",
+              "type": "scene"
+            },
+            {
+              "id": "285",
+              "name": "Behavior",
+              "type": "script"
+            },
+            {
+              "id": "284",
+              "name": "Outside Door",
+              "type": "sprite"
+            },
+            {
+              "id": "286",
+              "name": "Shadow",
+              "type": "sprite"
+            },
+            {
+              "id": "291",
+              "name": "Open Door Sound",
+              "type": "sound"
+            }
+          ]
+        },
+        {
+          "id": "511",
+          "name": "The End",
+          "type": null,
+          "children": [
+            {
+              "id": "514",
+              "name": "Scene",
+              "type": "scene"
+            },
+            {
+              "id": "513",
+              "name": "Behavior",
+              "type": "script"
+            },
+            {
+              "id": "522",
+              "name": "eye",
+              "type": "sprite"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "48",
+      "name": "In-Game",
+      "type": null,
+      "children": [
+        {
+          "id": "0",
+          "name": "Scene",
+          "type": "scene"
+        },
+        {
+          "id": "13",
+          "name": "Game",
+          "type": "script"
+        },
+        {
+          "id": "58",
+          "name": "Debug Behavior",
+          "type": "script"
+        },
+        {
+          "id": "171",
+          "name": "Animated Text Behavior",
+          "type": "script"
+        },
+        {
+          "id": "221",
+          "name": "HUD",
+          "type": null,
+          "children": [
+            {
+              "id": "14",
+              "name": "Camera Behavior",
+              "type": "script"
+            },
+            {
+              "id": "247",
+              "name": "Items",
+              "type": null,
+              "children": [
+                {
+                  "id": "223",
+                  "name": "Rifle",
+                  "type": "sprite"
+                },
+                {
+                  "id": "421",
+                  "name": "Book",
+                  "type": "sprite"
+                },
+                {
+                  "id": "507",
+                  "name": "Key",
+                  "type": "sprite"
+                },
+                {
+                  "id": "224",
+                  "name": "Bottle",
+                  "type": "sprite"
+                },
+                {
+                  "id": "398",
+                  "name": "Box",
+                  "type": "sprite"
+                },
+                {
+                  "id": "419",
+                  "name": "Prefab",
+                  "type": "scene"
+                },
+                {
+                  "id": "248",
+                  "name": "Heart",
+                  "type": "sprite"
+                },
+                {
+                  "id": "250",
+                  "name": "Heart Prefab",
+                  "type": "scene"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "27",
+          "name": "Dialog",
+          "type": null,
+          "children": [
+            {
+              "id": "26",
+              "name": "Behavior",
+              "type": "script"
+            },
+            {
+              "id": "28",
+              "name": "Frame",
+              "type": "sprite"
+            },
+            {
+              "id": "57",
+              "name": "Portraits",
+              "type": null,
+              "children": [
+                {
+                  "id": "33",
+                  "name": "player",
+                  "type": "sprite"
+                },
+                {
+                  "id": "425",
+                  "name": "dyingPeasant",
+                  "type": "sprite"
+                },
+                {
+                  "id": "430",
+                  "name": "shadyPeasant",
+                  "type": "sprite"
+                },
+                {
+                  "id": "475",
+                  "name": "deliveryBoy",
+                  "type": "sprite"
+                },
+                {
+                  "id": "420",
+                  "name": "chef",
+                  "type": "sprite"
+                },
+                {
+                  "id": "441",
+                  "name": "waitress",
+                  "type": "sprite"
+                },
+                {
+                  "id": "417",
+                  "name": "priest",
+                  "type": "sprite"
+                },
+                {
+                  "id": "418",
+                  "name": "doctor",
+                  "type": "sprite"
+                },
+                {
+                  "id": "422",
+                  "name": "cultist",
+                  "type": "sprite"
+                },
+                {
+                  "id": "437",
+                  "name": "mayor",
+                  "type": "sprite"
+                },
+                {
+                  "id": "448",
+                  "name": "oldLady",
+                  "type": "sprite"
+                },
+                {
+                  "id": "453",
+                  "name": "mom",
+                  "type": "sprite"
+                },
+                {
+                  "id": "464",
+                  "name": "dad",
+                  "type": "sprite"
+                },
+                {
+                  "id": "466",
+                  "name": "goawayhouse",
+                  "type": "sprite"
+                },
+                {
+                  "id": "469",
+                  "name": "boss",
+                  "type": "sprite"
+                },
+                {
+                  "id": "478",
+                  "name": "child",
+                  "type": "sprite"
+                },
+                {
+                  "id": "477",
+                  "name": "child2",
+                  "type": "sprite"
+                },
+                {
+                  "id": "479",
+                  "name": "cat",
+                  "type": "sprite"
+                },
+                {
+                  "id": "502",
+                  "name": "pig",
+                  "type": "sprite"
+                },
+                {
+                  "id": "538",
+                  "name": "dowie",
+                  "type": "sprite"
+                },
+                {
+                  "id": "555",
+                  "name": "chiome",
+                  "type": "sprite"
+                }
+              ]
+            },
+            {
+              "id": "503",
+              "name": "Dialog Sound",
+              "type": "sound"
+            }
+          ]
+        },
+        {
+          "id": "51",
+          "name": "Interactions",
+          "type": null,
+          "children": [
+            {
+              "id": "124",
+              "name": "Teleport",
+              "type": null,
+              "children": [
+                {
+                  "id": "15",
+                  "name": "Behavior",
+                  "type": "script"
+                },
+                {
+                  "id": "125",
+                  "name": "Sprite",
+                  "type": "sprite"
+                }
+              ]
+            },
+            {
+              "id": "38",
+              "name": "Interactable Behavior",
+              "type": "script"
+            },
+            {
+              "id": "40",
+              "name": "Simple Dialog Behavior",
+              "type": "script"
+            }
+          ]
+        },
+        {
+          "id": "5",
+          "name": "Maps",
+          "type": null,
+          "children": [
+            {
+              "id": "117",
+              "name": "Template",
+              "type": "scene"
+            },
+            {
+              "id": "71",
+              "name": "Global",
+              "type": null,
+              "children": [
+                {
+                  "id": "93",
+                  "name": "Background",
+                  "type": "sprite"
+                },
+                {
+                  "id": "94",
+                  "name": "Trees",
+                  "type": null,
+                  "children": [
+                    {
+                      "id": "211",
+                      "name": "RandomTreeColor",
+                      "type": "script"
+                    },
+                    {
+                      "id": "80",
+                      "name": "Dark Tree",
+                      "type": null,
+                      "children": [
+                        {
+                          "id": "81",
+                          "name": "Prefab",
+                          "type": "scene"
+                        },
+                        {
+                          "id": "73",
+                          "name": "Sprite",
+                          "type": "sprite"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "97",
+                      "name": "Light Tree",
+                      "type": null,
+                      "children": [
+                        {
+                          "id": "98",
+                          "name": "Prefab",
+                          "type": "scene"
+                        },
+                        {
+                          "id": "68",
+                          "name": "Sprite",
+                          "type": "sprite"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "240",
+                      "name": "Pine Tree",
+                      "type": null,
+                      "children": [
+                        {
+                          "id": "242",
+                          "name": "Prefab",
+                          "type": "scene"
+                        },
+                        {
+                          "id": "225",
+                          "name": "Sprite",
+                          "type": "sprite"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "212",
+                      "name": "Tree Wall Horizontal",
+                      "type": "scene"
+                    },
+                    {
+                      "id": "222",
+                      "name": "Tree Wall Vertical",
+                      "type": "scene"
+                    }
+                  ]
+                },
+                {
+                  "id": "95",
+                  "name": "Houses",
+                  "type": null,
+                  "children": [
+                    {
+                      "id": "99",
+                      "name": "House 1",
+                      "type": null,
+                      "children": [
+                        {
+                          "id": "100",
+                          "name": "Prefab",
+                          "type": "scene"
+                        },
+                        {
+                          "id": "76",
+                          "name": "Sprite",
+                          "type": "sprite"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "262",
+                      "name": "House 2",
+                      "type": null,
+                      "children": [
+                        {
+                          "id": "264",
+                          "name": "Prefab",
+                          "type": "scene"
+                        },
+                        {
+                          "id": "265",
+                          "name": "Sprite",
+                          "type": "sprite"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "269",
+                      "name": "House 3",
+                      "type": null,
+                      "children": [
+                        {
+                          "id": "270",
+                          "name": "Sprite",
+                          "type": "sprite"
+                        },
+                        {
+                          "id": "271",
+                          "name": "Prefab",
+                          "type": "scene"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "272",
+                      "name": "House 4",
+                      "type": null,
+                      "children": [
+                        {
+                          "id": "273",
+                          "name": "Prefab",
+                          "type": "scene"
+                        },
+                        {
+                          "id": "274",
+                          "name": "Sprite",
+                          "type": "sprite"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "276",
+                      "name": "Empty House",
+                      "type": null,
+                      "children": [
+                        {
+                          "id": "277",
+                          "name": "Prefab",
+                          "type": "scene"
+                        },
+                        {
+                          "id": "278",
+                          "name": "Sprite",
+                          "type": "sprite"
+                        },
+                        {
+                          "id": "447",
+                          "name": "Empty House Behavior",
+                          "type": "script"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "279",
+                      "name": "House 6",
+                      "type": null,
+                      "children": [
+                        {
+                          "id": "280",
+                          "name": "Prefab",
+                          "type": "scene"
+                        },
+                        {
+                          "id": "281",
+                          "name": "Sprite",
+                          "type": "sprite"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "133",
+                      "name": "Tavern",
+                      "type": null,
+                      "children": [
+                        {
+                          "id": "135",
+                          "name": "Prefab",
+                          "type": "scene"
+                        },
+                        {
+                          "id": "134",
+                          "name": "Sprite",
+                          "type": "sprite"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "121",
+                      "name": "Church Cimentry",
+                      "type": null,
+                      "children": [
+                        {
+                          "id": "123",
+                          "name": "Prefab",
+                          "type": "scene"
+                        },
+                        {
+                          "id": "481",
+                          "name": "Church Door Behavior",
+                          "type": "script"
+                        },
+                        {
+                          "id": "122",
+                          "name": "Church",
+                          "type": "sprite"
+                        },
+                        {
+                          "id": "460",
+                          "name": "Opening Church Door",
+                          "type": "sound"
+                        },
+                        {
+                          "id": "476",
+                          "name": "Locked Church Door",
+                          "type": "sound"
+                        },
+                        {
+                          "id": "486",
+                          "name": "Priest",
+                          "type": null,
+                          "children": [
+                            {
+                              "id": "488",
+                              "name": "Prefab",
+                              "type": "scene"
+                            },
+                            {
+                              "id": "489",
+                              "name": "Priest Behavior",
+                              "type": "script"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "137",
+                  "name": "Exit village",
+                  "type": null,
+                  "children": [
+                    {
+                      "id": "138",
+                      "name": "exit vilage",
+                      "type": "sprite"
+                    },
+                    {
+                      "id": "139",
+                      "name": "prefab",
+                      "type": "scene"
+                    }
+                  ]
+                },
+                {
+                  "id": "153",
+                  "name": "Path",
+                  "type": null,
+                  "children": [
+                    {
+                      "id": "155",
+                      "name": "Scene",
+                      "type": "scene"
+                    },
+                    {
+                      "id": "156",
+                      "name": "Scene (1)",
+                      "type": "scene"
+                    },
+                    {
+                      "id": "157",
+                      "name": "LongPath",
+                      "type": "sprite"
+                    },
+                    {
+                      "id": "154",
+                      "name": "Path",
+                      "type": "sprite"
+                    }
+                  ]
+                },
+                {
+                  "id": "187",
+                  "name": "Foliage",
+                  "type": null,
+                  "children": [
+                    {
+                      "id": "260",
+                      "name": "Stone01",
+                      "type": null,
+                      "children": [
+                        {
+                          "id": "191",
+                          "name": "Stone01",
+                          "type": "sprite"
+                        },
+                        {
+                          "id": "263",
+                          "name": "Prefab",
+                          "type": "scene"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "266",
+                      "name": "Stone02 (1)",
+                      "type": null,
+                      "children": [
+                        {
+                          "id": "192",
+                          "name": "Stone02",
+                          "type": "sprite"
+                        },
+                        {
+                          "id": "268",
+                          "name": "Prefab",
+                          "type": "scene"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "194",
+                      "name": "Stone03",
+                      "type": "sprite"
+                    },
+                    {
+                      "id": "185",
+                      "name": "Grasspatch2",
+                      "type": "sprite"
+                    },
+                    {
+                      "id": "179",
+                      "name": "GrassPath1",
+                      "type": "sprite"
+                    },
+                    {
+                      "id": "199",
+                      "name": "DirtPath1",
+                      "type": "sprite"
+                    },
+                    {
+                      "id": "208",
+                      "name": "DirtPath2",
+                      "type": "sprite"
+                    },
+                    {
+                      "id": "209",
+                      "name": "DirtPath3",
+                      "type": "sprite"
+                    },
+                    {
+                      "id": "230",
+                      "name": "Exit Glow Path",
+                      "type": "sprite"
+                    },
+                    {
+                      "id": "293",
+                      "name": "Cliffs",
+                      "type": null,
+                      "children": [
+                        {
+                          "id": "294",
+                          "name": "Cliffs01",
+                          "type": "sprite"
+                        },
+                        {
+                          "id": "295",
+                          "name": "Prefab",
+                          "type": "scene"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "332",
+                      "name": "MineEntrance",
+                      "type": null,
+                      "children": [
+                        {
+                          "id": "333",
+                          "name": "MineEntrance",
+                          "type": "sprite"
+                        },
+                        {
+                          "id": "334",
+                          "name": "MineEntrance (1)",
+                          "type": "scene"
+                        },
+                        {
+                          "id": "340",
+                          "name": "MineDor",
+                          "type": "sprite"
+                        },
+                        {
+                          "id": "341",
+                          "name": "Prefab",
+                          "type": "scene"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "410",
+                      "name": "Paved Road 1",
+                      "type": "sprite"
+                    },
+                    {
+                      "id": "411",
+                      "name": "Paved Road 2 Small",
+                      "type": "sprite"
+                    },
+                    {
+                      "id": "412",
+                      "name": "Paved Road 3 med",
+                      "type": "sprite"
+                    },
+                    {
+                      "id": "413",
+                      "name": "Paved Road 4",
+                      "type": "sprite"
+                    }
+                  ]
+                },
+                {
+                  "id": "190",
+                  "name": "Town",
+                  "type": null,
+                  "children": [
+                    {
+                      "id": "200",
+                      "name": "Barrel01",
+                      "type": "sprite"
+                    },
+                    {
+                      "id": "201",
+                      "name": "Bucket01",
+                      "type": "sprite"
+                    },
+                    {
+                      "id": "202",
+                      "name": "Crate01",
+                      "type": "sprite"
+                    },
+                    {
+                      "id": "521",
+                      "name": "PrefabCrate",
+                      "type": "scene"
+                    },
+                    {
+                      "id": "227",
+                      "name": "Rope",
+                      "type": "sprite"
+                    },
+                    {
+                      "id": "228",
+                      "name": "Well",
+                      "type": null,
+                      "children": [
+                        {
+                          "id": "229",
+                          "name": "Prefab",
+                          "type": "scene"
+                        },
+                        {
+                          "id": "226",
+                          "name": "Sprite",
+                          "type": "sprite"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "432",
+                      "name": "Fence",
+                      "type": null,
+                      "children": [
+                        {
+                          "id": "431",
+                          "name": "Sprite",
+                          "type": "sprite"
+                        },
+                        {
+                          "id": "433",
+                          "name": "Prefab",
+                          "type": "scene"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "455",
+                      "name": "Tomb2",
+                      "type": null,
+                      "children": [
+                        {
+                          "id": "457",
+                          "name": "Sprite",
+                          "type": "sprite"
+                        },
+                        {
+                          "id": "459",
+                          "name": "Prefab",
+                          "type": "scene"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "454",
+                      "name": "Tomb1",
+                      "type": null,
+                      "children": [
+                        {
+                          "id": "456",
+                          "name": "Sprite",
+                          "type": "sprite"
+                        },
+                        {
+                          "id": "458",
+                          "name": "Prefab",
+                          "type": "scene"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "203",
+                  "name": "Bush",
+                  "type": null,
+                  "children": [
+                    {
+                      "id": "207",
+                      "name": "Prefab",
+                      "type": "scene"
+                    },
+                    {
+                      "id": "205",
+                      "name": "Sprite",
+                      "type": "sprite"
+                    }
+                  ]
+                },
+                {
+                  "id": "234",
+                  "name": "Stump",
+                  "type": null,
+                  "children": [
+                    {
+                      "id": "235",
+                      "name": "Prefab",
+                      "type": "scene"
+                    },
+                    {
+                      "id": "195",
+                      "name": "Sprite",
+                      "type": "sprite"
+                    }
+                  ]
+                },
+                {
+                  "id": "288",
+                  "name": "Totem",
+                  "type": null,
+                  "children": [
+                    {
+                      "id": "289",
+                      "name": "Totem",
+                      "type": "sprite"
+                    },
+                    {
+                      "id": "290",
+                      "name": "totem",
+                      "type": "scene"
+                    }
+                  ]
+                },
+                {
+                  "id": "360",
+                  "name": "Shelve",
+                  "type": null,
+                  "children": [
+                    {
+                      "id": "361",
+                      "name": "Sprite",
+                      "type": "sprite"
+                    },
+                    {
+                      "id": "363",
+                      "name": "Scene",
+                      "type": "scene"
+                    }
+                  ]
+                },
+                {
+                  "id": "364",
+                  "name": "MineWall01",
+                  "type": null,
+                  "children": [
+                    {
+                      "id": "365",
+                      "name": "Sprite",
+                      "type": "sprite"
+                    },
+                    {
+                      "id": "366",
+                      "name": "Prefab",
+                      "type": "scene"
+                    },
+                    {
+                      "id": "371",
+                      "name": "Prefab2",
+                      "type": "scene"
+                    },
+                    {
+                      "id": "367",
+                      "name": "Sprite2",
+                      "type": "sprite"
+                    }
+                  ]
+                },
+                {
+                  "id": "380",
+                  "name": "MineFloor",
+                  "type": null,
+                  "children": [
+                    {
+                      "id": "381",
+                      "name": "Sprite",
+                      "type": "sprite"
+                    },
+                    {
+                      "id": "383",
+                      "name": "Prefab",
+                      "type": "scene"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "69",
+              "name": "Home Outside",
+              "type": null,
+              "children": [
+                {
+                  "id": "70",
+                  "name": "Prefab",
+                  "type": "scene"
+                },
+                {
+                  "id": "253",
+                  "name": "Dying Peasant",
+                  "type": null,
+                  "children": [
+                    {
+                      "id": "258",
+                      "name": "Prefab",
+                      "type": "scene"
+                    },
+                    {
+                      "id": "259",
+                      "name": "Behavior",
+                      "type": "script"
+                    },
+                    {
+                      "id": "116",
+                      "name": "Sprite",
+                      "type": "sprite"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "243",
+              "name": "Forest House Village",
+              "type": null,
+              "children": [
+                {
+                  "id": "292",
+                  "name": "Prefab",
+                  "type": "scene"
+                },
+                {
+                  "id": "551",
+                  "name": "Dowie Behavior",
+                  "type": "script"
+                },
+                {
+                  "id": "554",
+                  "name": "Chiome Behavior",
+                  "type": "script"
+                },
+                {
+                  "id": "446",
+                  "name": "Howling",
+                  "type": "sound"
+                },
+                {
+                  "id": "399",
+                  "name": "Wolf Intro Trigger Behavior",
+                  "type": "script"
+                },
+                {
+                  "id": "400",
+                  "name": "Wolf Outro Trigger Behavior",
+                  "type": "script"
+                },
+                {
+                  "id": "305",
+                  "name": "Shady Peasants",
+                  "type": null,
+                  "children": [
+                    {
+                      "id": "306",
+                      "name": "Main Prefab",
+                      "type": "scene"
+                    },
+                    {
+                      "id": "402",
+                      "name": "Secondary Prefab",
+                      "type": "scene"
+                    },
+                    {
+                      "id": "308",
+                      "name": "Main Behavior",
+                      "type": "script"
+                    },
+                    {
+                      "id": "403",
+                      "name": "Secondary Behavior",
+                      "type": "script"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "119",
+              "name": "Village",
+              "type": null,
+              "children": [
+                {
+                  "id": "120",
+                  "name": "Prefab",
+                  "type": "scene"
+                },
+                {
+                  "id": "312",
+                  "name": "Noxy",
+                  "type": null,
+                  "children": [
+                    {
+                      "id": "314",
+                      "name": "Behavior",
+                      "type": "script"
+                    },
+                    {
+                      "id": "313",
+                      "name": "Prefab",
+                      "type": "scene"
+                    },
+                    {
+                      "id": "386",
+                      "name": "Power Up",
+                      "type": "sound"
+                    }
+                  ]
+                },
+                {
+                  "id": "213",
+                  "name": "Doctor House",
+                  "type": null,
+                  "children": [
+                    {
+                      "id": "232",
+                      "name": "Prefab",
+                      "type": "scene"
+                    },
+                    {
+                      "id": "375",
+                      "name": "Doctor",
+                      "type": null,
+                      "children": [
+                        {
+                          "id": "472",
+                          "name": "Sound",
+                          "type": "sound"
+                        },
+                        {
+                          "id": "376",
+                          "name": "Behavior",
+                          "type": "script"
+                        },
+                        {
+                          "id": "396",
+                          "name": "Book Behavior",
+                          "type": "script"
+                        },
+                        {
+                          "id": "377",
+                          "name": "Prefab",
+                          "type": "scene"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "214",
+                  "name": "Old Lady House",
+                  "type": null,
+                  "children": [
+                    {
+                      "id": "233",
+                      "name": "Prefab",
+                      "type": "scene"
+                    },
+                    {
+                      "id": "534",
+                      "name": "Old Lady Behavior",
+                      "type": "script"
+                    },
+                    {
+                      "id": "537",
+                      "name": "Cat Behavior",
+                      "type": "script"
+                    },
+                    {
+                      "id": "524",
+                      "name": "Props",
+                      "type": null,
+                      "children": [
+                        {
+                          "id": "525",
+                          "name": "Cat Poo Sprite",
+                          "type": "sprite"
+                        },
+                        {
+                          "id": "526",
+                          "name": "Cat Poo",
+                          "type": "scene"
+                        },
+                        {
+                          "id": "532",
+                          "name": "Fish Skull",
+                          "type": "sprite"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "215",
+                  "name": "Family House",
+                  "type": null,
+                  "children": [
+                    {
+                      "id": "236",
+                      "name": "Prefab",
+                      "type": "scene"
+                    },
+                    {
+                      "id": "508",
+                      "name": "Props",
+                      "type": null,
+                      "children": [
+                        {
+                          "id": "509",
+                          "name": "Cooker Sprite",
+                          "type": "sprite"
+                        },
+                        {
+                          "id": "510",
+                          "name": "Cooker",
+                          "type": "scene"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "535",
+                      "name": "Child1 Behavior",
+                      "type": "script"
+                    },
+                    {
+                      "id": "536",
+                      "name": "Child2 Behavior",
+                      "type": "script"
+                    },
+                    {
+                      "id": "539",
+                      "name": "Child3 Behavior",
+                      "type": "script"
+                    },
+                    {
+                      "id": "541",
+                      "name": "Mother Behavior",
+                      "type": "script"
+                    },
+                    {
+                      "id": "542",
+                      "name": "Father Behavior",
+                      "type": "script"
+                    },
+                    {
+                      "id": "549",
+                      "name": "Baby Behavior",
+                      "type": "script"
+                    }
+                  ]
+                },
+                {
+                  "id": "216",
+                  "name": "Tavern Inside",
+                  "type": null,
+                  "children": [
+                    {
+                      "id": "237",
+                      "name": "Prefab",
+                      "type": "scene"
+                    },
+                    {
+                      "id": "296",
+                      "name": "Interior",
+                      "type": "sprite"
+                    },
+                    {
+                      "id": "342",
+                      "name": "Waitress",
+                      "type": null,
+                      "children": [
+                        {
+                          "id": "347",
+                          "name": "Behavior",
+                          "type": "script"
+                        },
+                        {
+                          "id": "346",
+                          "name": "Prefab",
+                          "type": "scene"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "343",
+                      "name": "Chef",
+                      "type": null,
+                      "children": [
+                        {
+                          "id": "345",
+                          "name": "Behavior",
+                          "type": "script"
+                        },
+                        {
+                          "id": "344",
+                          "name": "Prefab",
+                          "type": "scene"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "217",
+                  "name": "Tavern Basement",
+                  "type": null,
+                  "children": [
+                    {
+                      "id": "238",
+                      "name": "Prefab",
+                      "type": "scene"
+                    },
+                    {
+                      "id": "404",
+                      "name": "Mass Wine Behavior",
+                      "type": "script"
+                    },
+                    {
+                      "id": "405",
+                      "name": "Mass Wine",
+                      "type": "scene"
+                    }
+                  ]
+                },
+                {
+                  "id": "218",
+                  "name": "Church Inside",
+                  "type": null,
+                  "children": [
+                    {
+                      "id": "239",
+                      "name": "Prefab",
+                      "type": "scene"
+                    },
+                    {
+                      "id": "427",
+                      "name": "Church Shader",
+                      "type": "shader"
+                    },
+                    {
+                      "id": "557",
+                      "name": "Mayor Behavior",
+                      "type": "script"
+                    },
+                    {
+                      "id": "249",
+                      "name": "Mayor",
+                      "type": "sprite"
+                    },
+                    {
+                      "id": "424",
+                      "name": "Room",
+                      "type": "sprite"
+                    },
+                    {
+                      "id": "560",
+                      "name": "Autel",
+                      "type": null,
+                      "children": [
+                        {
+                          "id": "561",
+                          "name": "Prefab",
+                          "type": "scene"
+                        },
+                        {
+                          "id": "520",
+                          "name": "Sprite",
+                          "type": "sprite"
+                        },
+                        {
+                          "id": "562",
+                          "name": "Behavior",
+                          "type": "script"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "461",
+                      "name": "Props",
+                      "type": null,
+                      "children": [
+                        {
+                          "id": "462",
+                          "name": "Bench Sprite",
+                          "type": "sprite"
+                        },
+                        {
+                          "id": "463",
+                          "name": "Bench",
+                          "type": "scene"
+                        },
+                        {
+                          "id": "467",
+                          "name": "Candle Sprite",
+                          "type": "sprite"
+                        },
+                        {
+                          "id": "468",
+                          "name": "Candle",
+                          "type": "scene"
+                        },
+                        {
+                          "id": "473",
+                          "name": "Cross Sprite",
+                          "type": "sprite"
+                        },
+                        {
+                          "id": "474",
+                          "name": "Cross",
+                          "type": "scene"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "317",
+                  "name": "Commons",
+                  "type": null,
+                  "children": [
+                    {
+                      "id": "318",
+                      "name": "House Interior",
+                      "type": "sprite"
+                    },
+                    {
+                      "id": "330",
+                      "name": "Walls",
+                      "type": "scene"
+                    },
+                    {
+                      "id": "323",
+                      "name": "Props",
+                      "type": null,
+                      "children": [
+                        {
+                          "id": "325",
+                          "name": "Torch",
+                          "type": "sprite"
+                        },
+                        {
+                          "id": "331",
+                          "name": "Table Sprite",
+                          "type": "sprite"
+                        },
+                        {
+                          "id": "335",
+                          "name": "Table",
+                          "type": "scene"
+                        },
+                        {
+                          "id": "336",
+                          "name": "Plate",
+                          "type": "sprite"
+                        },
+                        {
+                          "id": "337",
+                          "name": "Glass",
+                          "type": "sprite"
+                        },
+                        {
+                          "id": "338",
+                          "name": "Stool Sprite",
+                          "type": "sprite"
+                        },
+                        {
+                          "id": "339",
+                          "name": "Stool",
+                          "type": "scene"
+                        },
+                        {
+                          "id": "368",
+                          "name": "Pot Sprite",
+                          "type": "sprite"
+                        },
+                        {
+                          "id": "515",
+                          "name": "Pot",
+                          "type": "scene"
+                        },
+                        {
+                          "id": "370",
+                          "name": "Bag Sprite",
+                          "type": "sprite"
+                        },
+                        {
+                          "id": "519",
+                          "name": "Bag",
+                          "type": "scene"
+                        },
+                        {
+                          "id": "373",
+                          "name": "Shelf Sprite",
+                          "type": "sprite"
+                        },
+                        {
+                          "id": "374",
+                          "name": "Shelf",
+                          "type": "scene"
+                        },
+                        {
+                          "id": "378",
+                          "name": "Chest Sprite",
+                          "type": "sprite"
+                        },
+                        {
+                          "id": "379",
+                          "name": "Chest",
+                          "type": "scene"
+                        },
+                        {
+                          "id": "384",
+                          "name": "Table2 Sprite",
+                          "type": "sprite"
+                        },
+                        {
+                          "id": "385",
+                          "name": "Table2",
+                          "type": "scene"
+                        },
+                        {
+                          "id": "391",
+                          "name": "Table90 Sprite",
+                          "type": "sprite"
+                        },
+                        {
+                          "id": "392",
+                          "name": "Table90",
+                          "type": "scene"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "177",
+              "name": "Mine Path",
+              "type": null,
+              "children": [
+                {
+                  "id": "246",
+                  "name": "Prefab",
+                  "type": "scene"
+                },
+                {
+                  "id": "407",
+                  "name": "Mine Path Door Behavior",
+                  "type": "script"
+                }
+              ]
+            },
+            {
+              "id": "196",
+              "name": "Mine",
+              "type": null,
+              "children": [
+                {
+                  "id": "414",
+                  "name": "Room",
+                  "type": null,
+                  "children": [
+                    {
+                      "id": "416",
+                      "name": "Prefab",
+                      "type": "scene"
+                    },
+                    {
+                      "id": "415",
+                      "name": "Mine Room",
+                      "type": "sprite"
+                    }
+                  ]
+                },
+                {
+                  "id": "220",
+                  "name": "Boss Room",
+                  "type": null,
+                  "children": [
+                    {
+                      "id": "245",
+                      "name": "Prefab",
+                      "type": "scene"
+                    },
+                    {
+                      "id": "393",
+                      "name": "Room",
+                      "type": "sprite"
+                    }
+                  ]
+                },
+                {
+                  "id": "435",
+                  "name": "MineAssets",
+                  "type": null,
+                  "children": [
+                    {
+                      "id": "436",
+                      "name": "Candle01",
+                      "type": "sprite"
+                    },
+                    {
+                      "id": "438",
+                      "name": "Candle02",
+                      "type": "sprite"
+                    },
+                    {
+                      "id": "439",
+                      "name": "MineStone01",
+                      "type": "sprite"
+                    },
+                    {
+                      "id": "440",
+                      "name": "Minestone02",
+                      "type": "sprite"
+                    },
+                    {
+                      "id": "442",
+                      "name": "PrefabCandle01",
+                      "type": "scene"
+                    },
+                    {
+                      "id": "443",
+                      "name": "PrefabCandle02",
+                      "type": "scene"
+                    }
+                  ]
+                },
+                {
+                  "id": "465",
+                  "name": "Mine Ambiance",
+                  "type": "sound"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "52",
+          "name": "Entities",
+          "type": null,
+          "children": [
+            {
+              "id": "9",
+              "name": "Player",
+              "type": null,
+              "children": [
+                {
+                  "id": "10",
+                  "name": "Prefab",
+                  "type": "scene"
+                },
+                {
+                  "id": "11",
+                  "name": "Player Behavior",
+                  "type": "script"
+                },
+                {
+                  "id": "136",
+                  "name": "Sprite",
+                  "type": "sprite"
+                },
+                {
+                  "id": "529",
+                  "name": "Sprite Shotgun",
+                  "type": "sprite"
+                },
+                {
+                  "id": "397",
+                  "name": "Hero Get Item",
+                  "type": "sprite"
+                },
+                {
+                  "id": "63",
+                  "name": "Bullet",
+                  "type": null,
+                  "children": [
+                    {
+                      "id": "64",
+                      "name": "Prefab",
+                      "type": "scene"
+                    },
+                    {
+                      "id": "66",
+                      "name": "Behavior",
+                      "type": "script"
+                    },
+                    {
+                      "id": "65",
+                      "name": "Sprite",
+                      "type": "sprite"
+                    }
+                  ]
+                },
+                {
+                  "id": "428",
+                  "name": "Sounds",
+                  "type": null,
+                  "children": [
+                    {
+                      "id": "426",
+                      "name": "Hack",
+                      "type": "sound"
+                    },
+                    {
+                      "id": "485",
+                      "name": "Woosh",
+                      "type": "sound"
+                    },
+                    {
+                      "id": "429",
+                      "name": "Shoot",
+                      "type": "sound"
+                    },
+                    {
+                      "id": "434",
+                      "name": "Reload Gun",
+                      "type": "sound"
+                    },
+                    {
+                      "id": "470",
+                      "name": "Hit",
+                      "type": "sound"
+                    },
+                    {
+                      "id": "504",
+                      "name": "Give",
+                      "type": "sound"
+                    }
+                  ]
+                },
+                {
+                  "id": "471",
+                  "name": "Shotgun",
+                  "type": "sprite"
+                }
+              ]
+            },
+            {
+              "id": "8",
+              "name": "Characters",
+              "type": null,
+              "children": [
+                {
+                  "id": "181",
+                  "name": "Noxy",
+                  "type": "sprite"
+                },
+                {
+                  "id": "84",
+                  "name": "Cat",
+                  "type": "sprite"
+                },
+                {
+                  "id": "451",
+                  "name": "Sounds",
+                  "type": null,
+                  "children": [
+                    {
+                      "id": "450",
+                      "name": "Cat 2",
+                      "type": "sound"
+                    },
+                    {
+                      "id": "449",
+                      "name": "Cat 1",
+                      "type": "sound"
+                    },
+                    {
+                      "id": "483",
+                      "name": "Cat 3",
+                      "type": "sound"
+                    },
+                    {
+                      "id": "484",
+                      "name": "Cat 4",
+                      "type": "sound"
+                    }
+                  ]
+                },
+                {
+                  "id": "86",
+                  "name": "Old Man",
+                  "type": "sprite"
+                },
+                {
+                  "id": "85",
+                  "name": "Old Lady",
+                  "type": "sprite"
+                },
+                {
+                  "id": "92",
+                  "name": "Child",
+                  "type": "sprite"
+                },
+                {
+                  "id": "126",
+                  "name": "Peasant2",
+                  "type": "sprite"
+                },
+                {
+                  "id": "160",
+                  "name": "Child2",
+                  "type": "sprite"
+                },
+                {
+                  "id": "167",
+                  "name": "Cradle",
+                  "type": "sprite"
+                },
+                {
+                  "id": "169",
+                  "name": "Mom",
+                  "type": "sprite"
+                },
+                {
+                  "id": "189",
+                  "name": "Dad",
+                  "type": "sprite"
+                },
+                {
+                  "id": "231",
+                  "name": "Priest",
+                  "type": "sprite"
+                },
+                {
+                  "id": "409",
+                  "name": "Priest Plank",
+                  "type": "sprite"
+                },
+                {
+                  "id": "140",
+                  "name": "Waitress",
+                  "type": "sprite"
+                },
+                {
+                  "id": "297",
+                  "name": "The Band",
+                  "type": null,
+                  "children": [
+                    {
+                      "id": "298",
+                      "name": "1",
+                      "type": "sprite"
+                    },
+                    {
+                      "id": "300",
+                      "name": "2",
+                      "type": "sprite"
+                    },
+                    {
+                      "id": "301",
+                      "name": "3",
+                      "type": "sprite"
+                    },
+                    {
+                      "id": "302",
+                      "name": "4",
+                      "type": "sprite"
+                    }
+                  ]
+                },
+                {
+                  "id": "102",
+                  "name": "Chef",
+                  "type": "sprite"
+                },
+                {
+                  "id": "150",
+                  "name": "Doctor",
+                  "type": "sprite"
+                },
+                {
+                  "id": "540",
+                  "name": "Dowie",
+                  "type": "sprite"
+                },
+                {
+                  "id": "552",
+                  "name": "Chiome",
+                  "type": "sprite"
+                },
+                {
+                  "id": "553",
+                  "name": "Woaf Woaf",
+                  "type": "sound"
+                },
+                {
+                  "id": "559",
+                  "name": "chiomeSoundPlay",
+                  "type": "script"
+                }
+              ]
+            },
+            {
+              "id": "32",
+              "name": "Enemies",
+              "type": null,
+              "children": [
+                {
+                  "id": "39",
+                  "name": "Enemy Behavior",
+                  "type": "script"
+                },
+                {
+                  "id": "148",
+                  "name": "Closed Enemy Behavior",
+                  "type": "script"
+                },
+                {
+                  "id": "165",
+                  "name": "Ranged Enemy Behavior",
+                  "type": "script"
+                },
+                {
+                  "id": "172",
+                  "name": "Bullet",
+                  "type": null,
+                  "children": [
+                    {
+                      "id": "175",
+                      "name": "Prefab",
+                      "type": "scene"
+                    },
+                    {
+                      "id": "174",
+                      "name": "Behavior",
+                      "type": "script"
+                    },
+                    {
+                      "id": "173",
+                      "name": "Sprite",
+                      "type": "sprite"
+                    },
+                    {
+                      "id": "482",
+                      "name": "Shit",
+                      "type": "sprite"
+                    },
+                    {
+                      "id": "506",
+                      "name": "Laser",
+                      "type": "sprite"
+                    }
+                  ]
+                },
+                {
+                  "id": "543",
+                  "name": "Cultist",
+                  "type": null,
+                  "children": [
+                    {
+                      "id": "545",
+                      "name": "Prefab",
+                      "type": "scene"
+                    },
+                    {
+                      "id": "550",
+                      "name": "Sprite",
+                      "type": "sprite"
+                    }
+                  ]
+                },
+                {
+                  "id": "304",
+                  "name": "Dark Dog",
+                  "type": null,
+                  "children": [
+                    {
+                      "id": "310",
+                      "name": "Prefab",
+                      "type": "scene"
+                    },
+                    {
+                      "id": "303",
+                      "name": "Sprite",
+                      "type": "sprite"
+                    },
+                    {
+                      "id": "444",
+                      "name": "Hurt",
+                      "type": "sound"
+                    },
+                    {
+                      "id": "487",
+                      "name": "Die",
+                      "type": "sound"
+                    }
+                  ]
+                },
+                {
+                  "id": "315",
+                  "name": "Shit Eater",
+                  "type": null,
+                  "children": [
+                    {
+                      "id": "327",
+                      "name": "Prefab",
+                      "type": "scene"
+                    },
+                    {
+                      "id": "316",
+                      "name": "Sprite",
+                      "type": "sprite"
+                    }
+                  ]
+                },
+                {
+                  "id": "320",
+                  "name": "Eye",
+                  "type": null,
+                  "children": [
+                    {
+                      "id": "563",
+                      "name": "Prefab",
+                      "type": "scene"
+                    },
+                    {
+                      "id": "321",
+                      "name": "Eye",
+                      "type": "sprite"
+                    }
+                  ]
+                },
+                {
+                  "id": "349",
+                  "name": "Betty Jolly",
+                  "type": null,
+                  "children": [
+                    {
+                      "id": "387",
+                      "name": "Prefab",
+                      "type": "scene"
+                    },
+                    {
+                      "id": "388",
+                      "name": "Behavior",
+                      "type": "script"
+                    },
+                    {
+                      "id": "355",
+                      "name": "Neck",
+                      "type": "sprite"
+                    },
+                    {
+                      "id": "350",
+                      "name": "Hand Close",
+                      "type": "sprite"
+                    },
+                    {
+                      "id": "352",
+                      "name": "Hand Open",
+                      "type": "sprite"
+                    },
+                    {
+                      "id": "353",
+                      "name": "Head Close",
+                      "type": "sprite"
+                    },
+                    {
+                      "id": "354",
+                      "name": "Head Open",
+                      "type": "sprite"
+                    },
+                    {
+                      "id": "359",
+                      "name": "Tongue",
+                      "type": "sprite"
+                    },
+                    {
+                      "id": "356",
+                      "name": "Left Shoulder",
+                      "type": "sprite"
+                    },
+                    {
+                      "id": "358",
+                      "name": "Right Shoulder",
+                      "type": "sprite"
+                    },
+                    {
+                      "id": "518",
+                      "name": "Sounds",
+                      "type": null,
+                      "children": [
+                        {
+                          "id": "517",
+                          "name": "Boss 1",
+                          "type": "sound"
+                        },
+                        {
+                          "id": "533",
+                          "name": "Boss 2",
+                          "type": "sound"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "326",
+                  "name": "My Son",
+                  "type": null,
+                  "children": [
+                    {
+                      "id": "329",
+                      "name": "Prefab",
+                      "type": "scene"
+                    },
+                    {
+                      "id": "328",
+                      "name": "Sprite",
+                      "type": "sprite"
+                    }
+                  ]
+                },
+                {
+                  "id": "322",
+                  "name": "Spider",
+                  "type": null,
+                  "children": [
+                    {
+                      "id": "324",
+                      "name": "Spider",
+                      "type": "sprite"
+                    }
+                  ]
+                },
+                {
+                  "id": "389",
+                  "name": "Spirit",
+                  "type": null,
+                  "children": [
+                    {
+                      "id": "390",
+                      "name": "Spirit",
+                      "type": "sprite"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "182",
+              "name": "Common",
+              "type": null,
+              "children": [
+                {
+                  "id": "184",
+                  "name": "Blob Shadow",
+                  "type": "sprite"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "74",
+          "name": "FX",
+          "type": null,
+          "children": [
+            {
+              "id": "107",
+              "name": "Fog",
+              "type": null,
+              "children": [
+                {
+                  "id": "108",
+                  "name": "Prefab",
+                  "type": "scene"
+                },
+                {
+                  "id": "77",
+                  "name": "Sprite",
+                  "type": "sprite"
+                },
+                {
+                  "id": "75",
+                  "name": "Shader",
+                  "type": "shader"
+                }
+              ]
+            },
+            {
+              "id": "109",
+              "name": "Rain Ground",
+              "type": null,
+              "children": [
+                {
+                  "id": "110",
+                  "name": "Prefab",
+                  "type": "scene"
+                },
+                {
+                  "id": "88",
+                  "name": "Sprite",
+                  "type": "sprite"
+                },
+                {
+                  "id": "89",
+                  "name": "Shader",
+                  "type": "shader"
+                }
+              ]
+            },
+            {
+              "id": "111",
+              "name": "Rain Drops",
+              "type": null,
+              "children": [
+                {
+                  "id": "112",
+                  "name": "Prefab",
+                  "type": "scene"
+                },
+                {
+                  "id": "90",
+                  "name": "Sprite",
+                  "type": "sprite"
+                },
+                {
+                  "id": "91",
+                  "name": "Shader",
+                  "type": "shader"
+                },
+                {
+                  "id": "423",
+                  "name": "Sound",
+                  "type": "sound"
+                }
+              ]
+            },
+            {
+              "id": "87",
+              "name": "House Shader",
+              "type": "shader"
+            },
+            {
+              "id": "96",
+              "name": "Tree Shader",
+              "type": "shader"
+            },
+            {
+              "id": "115",
+              "name": "Smoke",
+              "type": null,
+              "children": [
+                {
+                  "id": "101",
+                  "name": "Shader",
+                  "type": "shader"
+                },
+                {
+                  "id": "103",
+                  "name": "Sprite",
+                  "type": "sprite"
+                },
+                {
+                  "id": "118",
+                  "name": "Prefab",
+                  "type": "scene"
+                }
+              ]
+            },
+            {
+              "id": "127",
+              "name": "Lightning",
+              "type": null,
+              "children": [
+                {
+                  "id": "151",
+                  "name": "Prefab",
+                  "type": "scene"
+                },
+                {
+                  "id": "152",
+                  "name": "Lightning",
+                  "type": "script"
+                },
+                {
+                  "id": "128",
+                  "name": "Sprite",
+                  "type": "sprite"
+                },
+                {
+                  "id": "129",
+                  "name": "Shader",
+                  "type": "shader"
+                },
+                {
+                  "id": "186",
+                  "name": "Sound",
+                  "type": "sound"
+                }
+              ]
+            },
+            {
+              "id": "168",
+              "name": "Border Mask",
+              "type": "sprite"
+            },
+            {
+              "id": "176",
+              "name": "Time Offset",
+              "type": "script"
+            },
+            {
+              "id": "490",
+              "name": "Blood",
+              "type": null,
+              "children": [
+                {
+                  "id": "491",
+                  "name": "Prefab",
+                  "type": "scene"
+                },
+                {
+                  "id": "480",
+                  "name": "Hit",
+                  "type": "sprite"
+                },
+                {
+                  "id": "527",
+                  "name": "Big Hit",
+                  "type": "sprite"
+                },
+                {
+                  "id": "492",
+                  "name": "Behavior",
+                  "type": "script"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "104",
+      "name": "Languages",
+      "type": null,
+      "children": [
+        {
+          "id": "105",
+          "name": "English",
+          "type": "script"
+        },
+        {
+          "id": "106",
+          "name": "French",
+          "type": "script"
+        }
+      ]
+    },
+    {
+      "id": "493",
+      "name": "Music",
+      "type": null,
+      "children": [
+        {
+          "id": "499",
+          "name": "Ambient 1",
+          "type": "sound"
+        },
+        {
+          "id": "498",
+          "name": "Ambient 2",
+          "type": "sound"
+        },
+        {
+          "id": "497",
+          "name": "Ambient 3",
+          "type": "sound"
+        },
+        {
+          "id": "494",
+          "name": "Orgue Metal",
+          "type": "sound"
+        },
+        {
+          "id": "495",
+          "name": "Drums Fight",
+          "type": "sound"
+        },
+        {
+          "id": "496",
+          "name": "Fight",
+          "type": "sound"
+        },
+        {
+          "id": "500",
+          "name": "Jazzy",
+          "type": "sound"
+        },
+        {
+          "id": "501",
+          "name": "Final Orgue",
+          "type": "sound"
+        }
+      ]
+    }
+  ]
+}
