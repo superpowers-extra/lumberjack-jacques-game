@@ -90,7 +90,11 @@
             "tileMapAssetId": null,
             "tileSetPropertyName": null,
             "layersIndex": null,
-            "formatVersion": 1
+            "formatVersion": 2,
+            "bounce": {
+              "x": 0,
+              "y": 0
+            }
           },
           "id": "1"
         },
@@ -108,7 +112,11 @@
             "tileMapAssetId": null,
             "tileSetPropertyName": null,
             "layersIndex": null,
-            "formatVersion": 1
+            "formatVersion": 2,
+            "bounce": {
+              "x": 0,
+              "y": 0
+            }
           },
           "id": "2"
         },
@@ -126,7 +134,11 @@
             "tileMapAssetId": null,
             "tileSetPropertyName": null,
             "layersIndex": null,
-            "formatVersion": 1
+            "formatVersion": 2,
+            "bounce": {
+              "x": 0,
+              "y": 0
+            }
           },
           "id": "3"
         },
@@ -144,7 +156,11 @@
             "tileMapAssetId": null,
             "tileSetPropertyName": null,
             "layersIndex": null,
-            "formatVersion": 1
+            "formatVersion": 2,
+            "bounce": {
+              "x": 0,
+              "y": 0
+            }
           },
           "id": "4"
         },
@@ -162,7 +178,11 @@
             "tileMapAssetId": null,
             "tileSetPropertyName": null,
             "layersIndex": null,
-            "formatVersion": 1
+            "formatVersion": 2,
+            "bounce": {
+              "x": 0,
+              "y": 0
+            }
           },
           "id": "5"
         },
@@ -180,7 +200,11 @@
             "tileMapAssetId": null,
             "tileSetPropertyName": null,
             "layersIndex": null,
-            "formatVersion": 1
+            "formatVersion": 2,
+            "bounce": {
+              "x": 0,
+              "y": 0
+            }
           },
           "id": "6"
         },
@@ -198,7 +222,11 @@
             "tileMapAssetId": null,
             "tileSetPropertyName": null,
             "layersIndex": null,
-            "formatVersion": 1
+            "formatVersion": 2,
+            "bounce": {
+              "x": 0,
+              "y": 0
+            }
           },
           "id": "7"
         },
@@ -216,7 +244,11 @@
             "tileMapAssetId": null,
             "tileSetPropertyName": null,
             "layersIndex": null,
-            "formatVersion": 1
+            "formatVersion": 2,
+            "bounce": {
+              "x": 0,
+              "y": 0
+            }
           },
           "id": "8"
         },
@@ -234,7 +266,11 @@
             "tileMapAssetId": null,
             "tileSetPropertyName": null,
             "layersIndex": null,
-            "formatVersion": 1
+            "formatVersion": 2,
+            "bounce": {
+              "x": 0,
+              "y": 0
+            }
           },
           "id": "9"
         },
@@ -252,7 +288,11 @@
             "tileMapAssetId": null,
             "tileSetPropertyName": null,
             "layersIndex": null,
-            "formatVersion": 1
+            "formatVersion": 2,
+            "bounce": {
+              "x": 0,
+              "y": 0
+            }
           },
           "id": "10"
         },
@@ -270,7 +310,11 @@
             "tileMapAssetId": null,
             "tileSetPropertyName": null,
             "layersIndex": null,
-            "formatVersion": 1
+            "formatVersion": 2,
+            "bounce": {
+              "x": 0,
+              "y": 0
+            }
           },
           "id": "11"
         },
@@ -288,7 +332,11 @@
             "tileMapAssetId": null,
             "tileSetPropertyName": null,
             "layersIndex": null,
-            "formatVersion": 1
+            "formatVersion": 2,
+            "bounce": {
+              "x": 0,
+              "y": 0
+            }
           },
           "id": "12"
         },
@@ -306,7 +354,11 @@
             "tileMapAssetId": null,
             "tileSetPropertyName": null,
             "layersIndex": null,
-            "formatVersion": 1
+            "formatVersion": 2,
+            "bounce": {
+              "x": 0,
+              "y": 0
+            }
           },
           "id": "13"
         },
@@ -324,7 +376,11 @@
             "tileMapAssetId": null,
             "tileSetPropertyName": null,
             "layersIndex": null,
-            "formatVersion": 1
+            "formatVersion": 2,
+            "bounce": {
+              "x": 0,
+              "y": 0
+            }
           },
           "id": "14"
         },
@@ -342,7 +398,11 @@
             "tileMapAssetId": null,
             "tileSetPropertyName": null,
             "layersIndex": null,
-            "formatVersion": 1
+            "formatVersion": 2,
+            "bounce": {
+              "x": 0,
+              "y": 0
+            }
           },
           "id": "15"
         },
@@ -360,7 +420,11 @@
             "tileMapAssetId": null,
             "tileSetPropertyName": null,
             "layersIndex": null,
-            "formatVersion": 1
+            "formatVersion": 2,
+            "bounce": {
+              "x": 0,
+              "y": 0
+            }
           },
           "id": "16"
         },
@@ -378,7 +442,11 @@
             "tileMapAssetId": null,
             "tileSetPropertyName": null,
             "layersIndex": null,
-            "formatVersion": 1
+            "formatVersion": 2,
+            "bounce": {
+              "x": 0,
+              "y": 0
+            }
           },
           "id": "17"
         },
@@ -396,7 +464,11 @@
             "tileMapAssetId": null,
             "tileSetPropertyName": null,
             "layersIndex": null,
-            "formatVersion": 1
+            "formatVersion": 2,
+            "bounce": {
+              "x": 0,
+              "y": 0
+            }
           },
           "id": "18"
         },
@@ -414,7 +486,11 @@
             "tileMapAssetId": null,
             "tileSetPropertyName": null,
             "layersIndex": null,
-            "formatVersion": 1
+            "formatVersion": 2,
+            "bounce": {
+              "x": 0,
+              "y": 0
+            }
           },
           "id": "19"
         },
@@ -432,7 +508,11 @@
             "tileMapAssetId": null,
             "tileSetPropertyName": null,
             "layersIndex": null,
-            "formatVersion": 1
+            "formatVersion": 2,
+            "bounce": {
+              "x": 0,
+              "y": 0
+            }
           },
           "id": "20"
         },
@@ -450,7 +530,11 @@
             "tileMapAssetId": null,
             "tileSetPropertyName": null,
             "layersIndex": null,
-            "formatVersion": 1
+            "formatVersion": 2,
+            "bounce": {
+              "x": 0,
+              "y": 0
+            }
           },
           "id": "21"
         },
@@ -468,7 +552,11 @@
             "tileMapAssetId": null,
             "tileSetPropertyName": null,
             "layersIndex": null,
-            "formatVersion": 1
+            "formatVersion": 2,
+            "bounce": {
+              "x": 0,
+              "y": 0
+            }
           },
           "id": "22"
         },
@@ -486,7 +574,11 @@
             "tileMapAssetId": null,
             "tileSetPropertyName": null,
             "layersIndex": null,
-            "formatVersion": 1
+            "formatVersion": 2,
+            "bounce": {
+              "x": 0,
+              "y": 0
+            }
           },
           "id": "23"
         },
@@ -504,7 +596,11 @@
             "tileMapAssetId": null,
             "tileSetPropertyName": null,
             "layersIndex": null,
-            "formatVersion": 1
+            "formatVersion": 2,
+            "bounce": {
+              "x": 0,
+              "y": 0
+            }
           },
           "id": "24"
         }
@@ -570,7 +666,11 @@
                 "tileMapAssetId": null,
                 "tileSetPropertyName": null,
                 "layersIndex": null,
-                "formatVersion": 1
+                "formatVersion": 2,
+                "bounce": {
+                  "x": 0,
+                  "y": 0
+                }
               },
               "id": "1"
             }
@@ -632,7 +732,11 @@
                 "tileMapAssetId": null,
                 "tileSetPropertyName": null,
                 "layersIndex": null,
-                "formatVersion": 1
+                "formatVersion": 2,
+                "bounce": {
+                  "x": 0,
+                  "y": 0
+                }
               },
               "id": "1"
             }

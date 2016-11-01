@@ -32,7 +32,11 @@
                 "tileMapAssetId": null,
                 "tileSetPropertyName": null,
                 "layersIndex": null,
-                "formatVersion": 1
+                "formatVersion": 2,
+                "bounce": {
+                  "x": 0,
+                  "y": 0
+                }
               },
               "id": "1"
             }
@@ -91,7 +95,11 @@
             "tileMapAssetId": null,
             "tileSetPropertyName": null,
             "layersIndex": null,
-            "formatVersion": 1
+            "formatVersion": 2,
+            "bounce": {
+              "x": 0,
+              "y": 0
+            }
           },
           "id": "1"
         },
@@ -109,7 +117,11 @@
             "tileMapAssetId": null,
             "tileSetPropertyName": null,
             "layersIndex": null,
-            "formatVersion": 1
+            "formatVersion": 2,
+            "bounce": {
+              "x": 0,
+              "y": 0
+            }
           },
           "id": "2"
         },
@@ -127,7 +139,11 @@
             "tileMapAssetId": null,
             "tileSetPropertyName": null,
             "layersIndex": null,
-            "formatVersion": 1
+            "formatVersion": 2,
+            "bounce": {
+              "x": 0,
+              "y": 0
+            }
           },
           "id": "3"
         },
@@ -145,7 +161,11 @@
             "tileMapAssetId": null,
             "tileSetPropertyName": null,
             "layersIndex": null,
-            "formatVersion": 1
+            "formatVersion": 2,
+            "bounce": {
+              "x": 0,
+              "y": 0
+            }
           },
           "id": "4"
         },
@@ -163,7 +183,11 @@
             "tileMapAssetId": null,
             "tileSetPropertyName": null,
             "layersIndex": null,
-            "formatVersion": 1
+            "formatVersion": 2,
+            "bounce": {
+              "x": 0,
+              "y": 0
+            }
           },
           "id": "5"
         },
@@ -181,7 +205,11 @@
             "tileMapAssetId": null,
             "tileSetPropertyName": null,
             "layersIndex": null,
-            "formatVersion": 1
+            "formatVersion": 2,
+            "bounce": {
+              "x": 0,
+              "y": 0
+            }
           },
           "id": "6"
         },
@@ -199,7 +227,11 @@
             "tileMapAssetId": null,
             "tileSetPropertyName": null,
             "layersIndex": null,
-            "formatVersion": 1
+            "formatVersion": 2,
+            "bounce": {
+              "x": 0,
+              "y": 0
+            }
           },
           "id": "7"
         },
@@ -217,7 +249,11 @@
             "tileMapAssetId": null,
             "tileSetPropertyName": null,
             "layersIndex": null,
-            "formatVersion": 1
+            "formatVersion": 2,
+            "bounce": {
+              "x": 0,
+              "y": 0
+            }
           },
           "id": "8"
         }

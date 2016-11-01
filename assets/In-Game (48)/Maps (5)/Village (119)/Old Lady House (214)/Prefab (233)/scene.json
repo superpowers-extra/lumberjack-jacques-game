@@ -187,7 +187,11 @@
                 "tileMapAssetId": null,
                 "tileSetPropertyName": null,
                 "layersIndex": null,
-                "formatVersion": 1
+                "formatVersion": 2,
+                "bounce": {
+                  "x": 0,
+                  "y": 0
+                }
               },
               "id": "0"
             }
@@ -231,7 +235,11 @@
                 "tileMapAssetId": null,
                 "tileSetPropertyName": null,
                 "layersIndex": null,
-                "formatVersion": 1
+                "formatVersion": 2,
+                "bounce": {
+                  "x": 0,
+                  "y": 0
+                }
               },
               "id": "0"
             }
@@ -275,7 +283,11 @@
                 "tileMapAssetId": null,
                 "tileSetPropertyName": null,
                 "layersIndex": null,
-                "formatVersion": 1
+                "formatVersion": 2,
+                "bounce": {
+                  "x": 0,
+                  "y": 0
+                }
               },
               "id": "0"
             }
@@ -319,7 +331,11 @@
                 "tileMapAssetId": null,
                 "tileSetPropertyName": null,
                 "layersIndex": null,
-                "formatVersion": 1
+                "formatVersion": 2,
+                "bounce": {
+                  "x": 0,
+                  "y": 0
+                }
               },
               "id": "0"
             }
@@ -699,7 +715,11 @@
                 "tileMapAssetId": null,
                 "tileSetPropertyName": null,
                 "layersIndex": null,
-                "formatVersion": 1
+                "formatVersion": 2,
+                "bounce": {
+                  "x": 0,
+                  "y": 0
+                }
               },
               "id": "3"
             }
@@ -769,7 +789,11 @@
                 "tileMapAssetId": null,
                 "tileSetPropertyName": null,
                 "layersIndex": null,
-                "formatVersion": 1
+                "formatVersion": 2,
+                "bounce": {
+                  "x": 0,
+                  "y": 0
+                }
               },
               "id": "3"
             }
@@ -839,7 +863,11 @@
                 "tileMapAssetId": null,
                 "tileSetPropertyName": null,
                 "layersIndex": null,
-                "formatVersion": 1
+                "formatVersion": 2,
+                "bounce": {
+                  "x": 0,
+                  "y": 0
+                }
               },
               "id": "2"
             }
@@ -901,7 +929,11 @@
                 "tileMapAssetId": null,
                 "tileSetPropertyName": null,
                 "layersIndex": null,
-                "formatVersion": 1
+                "formatVersion": 2,
+                "bounce": {
+                  "x": 0,
+                  "y": 0
+                }
               },
               "id": "1"
             },
@@ -979,7 +1011,11 @@
                 "tileMapAssetId": null,
                 "tileSetPropertyName": null,
                 "layersIndex": null,
-                "formatVersion": 1
+                "formatVersion": 2,
+                "bounce": {
+                  "x": 0,
+                  "y": 0
+                }
               },
               "id": "2"
             }
@@ -1049,7 +1085,11 @@
                 "tileMapAssetId": null,
                 "tileSetPropertyName": null,
                 "layersIndex": null,
-                "formatVersion": 1
+                "formatVersion": 2,
+                "bounce": {
+                  "x": 0,
+                  "y": 0
+                }
               },
               "id": "2"
             }
@@ -1119,7 +1159,11 @@
                 "tileMapAssetId": null,
                 "tileSetPropertyName": null,
                 "layersIndex": null,
-                "formatVersion": 1
+                "formatVersion": 2,
+                "bounce": {
+                  "x": 0,
+                  "y": 0
+                }
               },
               "id": "2"
             }
@@ -1189,7 +1233,11 @@
                 "tileMapAssetId": null,
                 "tileSetPropertyName": null,
                 "layersIndex": null,
-                "formatVersion": 1
+                "formatVersion": 2,
+                "bounce": {
+                  "x": 0,
+                  "y": 0
+                }
               },
               "id": "2"
             }
@@ -1259,7 +1307,11 @@
                 "tileMapAssetId": null,
                 "tileSetPropertyName": null,
                 "layersIndex": null,
-                "formatVersion": 1
+                "formatVersion": 2,
+                "bounce": {
+                  "x": 0,
+                  "y": 0
+                }
               },
               "id": "2"
             }
@@ -1329,7 +1381,11 @@
                 "tileMapAssetId": null,
                 "tileSetPropertyName": null,
                 "layersIndex": null,
-                "formatVersion": 1
+                "formatVersion": 2,
+                "bounce": {
+                  "x": 0,
+                  "y": 0
+                }
               },
               "id": "2"
             }
@@ -1399,7 +1455,11 @@
                 "tileMapAssetId": null,
                 "tileSetPropertyName": null,
                 "layersIndex": null,
-                "formatVersion": 1
+                "formatVersion": 2,
+                "bounce": {
+                  "x": 0,
+                  "y": 0
+                }
               },
               "id": "2"
             }
